@@ -1,0 +1,306 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  10 MAY 2013 16:39
+entering extended mode
+**Dissertation.tex
+
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
+ertation.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\full
+page.sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip43
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Documents and Settings\Administrator\Application Data\MiKTeX\2.9\tex\latex
+\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Documents and Settings\Administrator\Application Data\MiKTeX\2.9\tex\latex
+\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@ALC@unique=\count88
+\c@ALC@line=\count89
+\c@ALC@rem=\count90
+\c@ALC@depth=\count91
+\ALC@tlm=\skip44
+\algorithmicindent=\skip45
+)
+("C:\Documents and Settings\Administrator\Application Data\MiKTeX\2.9\tex\latex
+\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count92
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+\@float@every@algorithm=\toks17
+\c@algorithm=\count93
+)
+("C:\Documents and Settings\Administrator\Application Data\MiKTeX\2.9\tex\latex
+\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip46
+\subfigcapskip=\skip47
+\subfigcaptopadj=\dimen105
+\subfigbottomskip=\skip48
+\subfigcapmargin=\dimen106
+\subfiglabelskip=\skip49
+\c@subfigure=\count94
+\c@lofdepth=\count95
+\c@subtable=\count96
+\c@lotdepth=\count97
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+
+("C:\Documents and Settings\Administrator\Application Data\MiKTeX\2.9\tex\latex
+\subfigure\subfigure.cfg")
+\subfig@top=\skip50
+\subfig@bottom=\skip51
+)
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
+ertation.aux"
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/titlePage.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/abstractPage.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/introChapter1.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/backgroundChapter2.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/frameworkChapter3.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/casestudyIChapter4.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/casestudyIIChapter5.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/conclusionsChapter6.aux"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/titlePage.tex"
+File: ./pics/lums.eps Graphic file (type eps)
+ <./pics/lums.eps> [1
+
+
+] [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 59.
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+[3]) [4]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
+ertation.toc" [5
+
+
+] [6])
+\tf@toc=\write3
+ [7]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
+ertation.lof")
+\tf@lof=\write4
+ [8
+
+]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
+ertation.lot")
+\tf@lot=\write5
+ [9
+
+]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/abstractPage.tex" [1
+
+])
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/introChapter1.tex"
+Chapter 1.
+
+Overfull \hbox (6.8827pt too wide) in paragraph at lines 12--12
+[]\OT1/cmr/bx/n/17.28 Prevalent en-ergy ef-fi-ciency im-prove-ment tech-niques 
+
+ []
+
+[1
+
+
+
+]) [2] [3]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/backgroundChapter2.tex"
+Chapter 2.
+[4
+
+
+
+]) [5]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/frameworkChapter3.tex"
+Chapter 3.
+) [6
+
+
+
+] [7]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/casestudyIChapter4.tex"
+Chapter 4.
+
+Overfull \hbox (6.29442pt too wide) in paragraph at lines 9--9
+[]\OT1/cmr/bx/n/14.4 Sensitivity of elec-tric-ity cost sav-ings to ex-tent of g
+eo-diversity 
+ []
+
+) [8
+
+
+
+] [9]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/casestudyIIChapter5.tex"
+Chapter 5.
+[10
+
+
+
+]) [11]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/conclusionsChapter6.tex"
+Chapter 6.
+) [12
+
+
+
+]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
+ertation.bbl") [13
+
+
+]
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
+ertation.aux"
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/titlePage.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/abstractPage.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/introChapter1.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/backgroundChapter2.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/frameworkChapter3.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/casestudyIChapter4.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/casestudyIIChapter5.aux")
+("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
+ions/conclusionsChapter6.aux")) ) 
+Here is how much of TeX's memory you used:
+ 1115 strings out of 494046
+ 20195 string characters out of 3148332
+ 67136 words of memory out of 3000000
+ 4363 multiletter control sequences out of 15000+200000
+ 10159 words of font info for 35 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 25i,5n,24p,928b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Dissertation.dvi (23 pages, 37924 bytes).

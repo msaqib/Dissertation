@@ -1,0 +1,12 @@
+\chapter{Case Study II: Cellular Networks}
+
+\section{Instantiating the generalized optimization formulation} Derive the objective function and constraints. Clearly outline the assumptions that we've made about the geo-diverse data centers.
+
+\section{Experimental Setup} 
+
+\section{Results}
+\subsection{Sensitivity of electricity cost savings to the duration of an optimization interval} We may optimize at different frequencies, such as once an hour or twice an hour. In this section, we study the sensitivity of electricity cost savings to the frequency of re-optimization
+\subsection{Sensitivity of electricity cost savings to the resource pruning granularity} We may have two states for a BTS: (i) 6+6+6, (ii) 3+3+3. Or, we may have three states: (i) 6+6+6, (ii) 4+4+4, and (iii) 2+2+2. How do the two-state and three-state resource pruning granularity settings comapre in terms of electricity cost savings? 
+\subsection{Sensitivity of electricity cost savings to the margin of state-change damping} Suppose that we are using a two-state resource pruning model. If $t_{max}$ is the call capacity of a 6+6+6 site, then the call capacity of the half-pruned site is $t_{max}/2$. If we deactivate TRXs immediately when the instantaneous call volume reaches $t_{max}/2$, we are likely to have many transitions due to short-term variations in call volume. We, therefore, wait until the instantaneous call volume is $t_{max}/2 - \epsilon$ before we switch to a $3+3+3$ configuration. The value of $\epsilon$ is a configurable parameter which can take a value from $0$ (very aggressive, lots of transients, perhaps more savings) to $t_{max}/2$ (very conservative, no transients, no savings either). How do the electricity cost savings vary with the value of $\epsilon$.
+
+\section{Discussion}
