@@ -1,7 +1,146 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{brill:DataCenterCrisis:UI:2007}
-K.~G. Brill, ``The invisible crisis in the data center: The economic meltdown
-  of moore's law,'' tech. rep., The Uptime Institute, 2007.
+\bibitem{CostOfADC}
+J.~Verge, ``{Google Pumps \$400 Million More into Iowa, Investment Now Tops
+  \$1.5 Billion},'' April 2013.
+\newblock [Online; accessed 23-May-2013].
+
+\bibitem{costcellsite}
+``{Mobile Broadband: The Benefits of Additional Spectrum},'' tech. rep.,
+  Federal Communications Commission, October 2010.
+\newblock White Paper.
+
+\bibitem{FBLease}
+R.~Miller, ``{Facebook: \$50 Million A Year on Data Centers},'' September 2010.
+\newblock [Online; accessed 24-May-2013].
+
+\bibitem{costCloud}
+A.~Greenberg, J.~Hamilton, D.~A. Maltz, and P.~Patel, ``The cost of a cloud:
+  Research problems in data center networks,'' in {\em Computer Communications
+  Review}, vol.~39, January 2009.
+
+\bibitem{mbakwe:btshybribpower:2011:necec}
+S.~Mbakwe, M.~T. Iqbal, and A.~Hsaio, ``Design of a 1.5kw hybrid
+  wind/photovoltiac power system for a telecoms base station in remote location
+  of benin city nigeria,'' in {\em IEEE NECEC}, November 2011.
+
+\bibitem{TIAnnualReport}
+T.~Italia, ``{Telecom Italia Annual Report 2012},'' January 2013.
+\newblock [Online; accessed 24-May-2013].
+
+\bibitem{Peng:2011:TPS:2030613.2030628}
+C.~Peng, S.-B. Lee, S.~Lu, H.~Luo, and H.~Li, ``Traffic-driven power saving in
+  operational 3g cellular networks,'' in {\em Proceedings of the 17th annual
+  international conference on Mobile computing and networking}, MobiCom '11,
+  (New York, NY, USA), pp.~121--132, ACM, 2011.
+
+\bibitem{Fan:power:ICSA:2007}
+X.~Fan, W.-D. Weber, and L.~A. Barroso, ``Power provisioning for a
+  warehouse-sized computer,'' in {\em ISCA '07: Proceedings of the 34th annual
+  international symposium on Computer architecture}, (New York, NY, USA),
+  pp.~13--23, ACM Press, 2007.
+
+\bibitem{1248656}
+C.~Fraleigh, S.~Moon, B.~Lyles, C.~Cotton, M.~Khan, D.~Moll, R.~Rockell,
+  T.~Seely, and S.~Diot, ``Packet-level traffic measurements from the sprint ip
+  backbone,'' {\em Network, IEEE}, vol.~17, no.~6, pp.~6--16, 2003.
+
+\bibitem{10.1109/MC.2007.443}
+L.~A. Barroso and U.~Holzle, ``The case for energy-proportional computing,''
+  {\em Computer}, vol.~40, pp.~33--37, 2007.
+
+\bibitem{VirtualizationCutsPower}
+V.~Inc, ``{Reduce Energy Costs and Go Green With VMWare Green IT Solutions},''
+  March 2009.
+\newblock [Online; accessed 26-May-2013].
+
+\bibitem{Chase:2001:MES:502059.502045}
+J.~S. Chase, D.~C. Anderson, P.~N. Thakar, A.~M. Vahdat, and R.~P. Doyle,
+  ``Managing energy and server resources in hosting centers,'' {\em SIGOPS
+  Oper. Syst. Rev.}, vol.~35, pp.~103--116, Oct. 2001.
+
+\bibitem{Chen:2008:ESP:1387589.1387613}
+G.~Chen, W.~He, J.~Liu, S.~Nath, L.~Rigas, L.~Xiao, and F.~Zhao, ``Energy-aware
+  server provisioning and load dispatching for connection-intensive internet
+  services,'' in {\em Proceedings of the 5th USENIX Symposium on Networked
+  Systems Design and Implementation}, NSDI'08, (Berkeley, CA, USA),
+  pp.~337--350, USENIX Association, 2008.
+
+\bibitem{Meisner:2009:PES:1508244.1508269}
+D.~Meisner, B.~T. Gold, and T.~F. Wenisch, ``Powernap: eliminating server idle
+  power,'' in {\em Proceedings of the 14th international conference on
+  Architectural support for programming languages and operating systems},
+  ASPLOS XIV, (New York, NY, USA), pp.~205--216, ACM, 2009.
+
+\bibitem{Lin_dynamicright-sizing}
+M.~Lin, A.~Wierman, L.~L.~H. Andrew, and E.~Thereska, ``Dynamic right-sizing
+  for power-proportional data centers,'' in {\em IEEE INFOCOM}, 2011.
+
+\bibitem{qureshiHotnets}
+A.~Qureshi, ``{Plugging Into Energy Market Diversity},'' in {\em 7th ACM
+  Workshop on Hot Topics in Networks (HotNets)}, (Calgary, Canada), October
+  2008.
+
+\bibitem{dcnetworking:vahdat:micro:2010}
+A.~Vahdat, M.~Al-Fares, N.~Farrington, R.~Mysore, G.~Porter, and
+  S.~Radhakrishnan, ``Scale-out networking in the data center,'' {\em Micro,
+  IEEE}, vol.~30, no.~4, pp.~29--41, 2010.
+
+\bibitem{Abts:2012:GTD:2184319.2184335}
+D.~Abts and B.~Felderman, ``A guided tour of data-center networking,'' {\em
+  Commun. ACM}, vol.~55, pp.~44--51, June 2012.
+
+\bibitem{rfc1034}
+P.~Mockapetris, ``{Domain names - concepts and facilities}.'' RFC 1034
+  (INTERNET STANDARD), Nov. 1987.
+\newblock Updated by RFCs 1101, 1183, 1348, 1876, 1982, 2065, 2181, 2308, 2535,
+  4033, 4034, 4035, 4343, 4035, 4592, 5936.
+
+\bibitem{rfc1035}
+P.~Mockapetris, ``{Domain names - implementation and specification}.'' RFC 1035
+  (INTERNET STANDARD), Nov. 1987.
+\newblock Updated by RFCs 1101, 1183, 1348, 1876, 1982, 1995, 1996, 2065, 2136,
+  2181, 2137, 2308, 2535, 2673, 2845, 3425, 3658, 4033, 4034, 4035, 4343, 5936,
+  5966, 6604.
+
+\bibitem{rfc1945}
+T.~Berners-Lee, R.~Fielding, and H.~Frystyk, ``{Hypertext Transfer Protocol --
+  HTTP/1.0}.'' RFC 1945 (Informational), May 1996.
+
+\bibitem{Mahadevan:2009:PBF:1560132.1560210}
+P.~Mahadevan, P.~Sharma, S.~Banerjee, and P.~Ranganathan, ``A power
+  benchmarking framework for network devices,'' in {\em Proceedings of the 8th
+  International IFIP-TC 6 Networking Conference}, NETWORKING '09, (Berlin,
+  Heidelberg), pp.~795--808, Springer-Verlag, 2009.
+
+\bibitem{Vishwanath:13}
+A.~Vishwanath, J.~Zhu, K.~Hinton, R.~Ayre, and R.~Tucker, ``Estimating the
+  energy consumption for packet processing, storage and switching in optical-ip
+  routers,'' in {\em Optical Fiber Communication Conference/National Fiber
+  Optic Engineers Conference 2013}, p.~OM3A.6, Optical Society of America,
+  2013.
+
+\bibitem{Chabarek08powerawareness}
+J.~Chabarek, J.~Sommers, P.~Barford, C.~Estan, D.~Tsiang, and S.~Wright,
+  ``Power awareness in network design and routing,'' in {\em In Proc. IEEE
+  INFOCOM}, 2008.
+
+\bibitem{wiki:mobileoperators}
+Wikipedia, ``List of mobile network operators,'' 2013.
+\newblock [Online; accessed 09-July-2013].
+
+\bibitem{Louhi:2007:BTSPower:INTELEC}
+J.~T. Louhi, ``Energy efficiency of modern cellular base stations,'' in {\em
+  IEEE INTELEC '07}, (New York, NY, USA), pp.~475--476, IEEE, 2007.
+
+\bibitem{Oh:Comm:2011}
+E.~Oh, B.~Krishnamachari, X.~Liu, and Z.~Niu, ``Toward dynamic energy-efficient
+  operation of cellular network infrastructure,'' in {\em IEEE Communications
+  Magazine}, June 2011.
+
+\bibitem{Lorincz:BTS-Measure:Sensors:2012}
+J.~Lorincz, T.~Garma, and G.~Petrovic, ``Measurements and modelling of base
+  station power consumption under real traffic loads,'' {\em Sensors}, vol.~12,
+  no.~4, pp.~4281--4310, 2012.
 
 \end{thebibliography}

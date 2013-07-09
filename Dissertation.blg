@@ -9,3 +9,16 @@ A level-1 auxiliary file: sections/casestudyIIChapter5.aux
 A level-1 auxiliary file: sections/conclusionsChapter6.aux
 The style file: ieeetr.bst
 Database file #1: ref.bib
+Repeated entry---line 3545 of file ref.bib
+ : @inproceedings{Chabarek08powerawareness
+ :                                        ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in CostOfADC
+Warning--empty author in costcellsite
+Warning--empty journal in FBLease
+Warning--can't use both volume and number fields in costCloud
+Warning--empty journal in TIAnnualReport
+Warning--empty journal in VirtualizationCutsPower
+Name 2 in "Arun Vishwanath and Jiazhen Zhu, and K. Hinton and Robert Ayre and Rod Tucker" has a comma at the end for entry Vishwanath:13
+while executing---line 963 of file ieeetr.bst
+(There were 2 error messages)

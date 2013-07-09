@@ -1,5 +1,7 @@
 \chapter{A generalized framework for electricity cost optimization}
-\label{chap:framework}
+\label{chap:framework} In the last chapter, we have seen that networks, such as geo-diverse data centers and cellular networks, are energy inefficient. This is due to lack of energy proportionality coupled with significant variations in workload. We have also observed that these networks are plagued by high electricity costs. For a given electricity price, if these networks were energy efficient, high electricity costs would only be due to heavy workload. However, energy inefficient networks consume a lot more energy than they ideally should. Hence, high network electricity costs are a source of concern. 
+
+One way to deal with this energy inefficiency is what we call resource pruning (RP). The idea is to deactivate some network resources when they are not needed. Since the workload is variable, the operator must periodically determine the optimal network configuration, i.e., the active/inactive state of each network resource and the mapping of each unit of workload to 
 
 \section{Modeling the electricity cost minimization problem in networks and systems} Discuss how different network types can periodically use RP and WR to minimize electricity costs. Show that this problem is NP-Hard. Describe the concept of network state and motivate a state trajectory optimization problem. Describe transition costs and formulate a mathematical optimization problem. 
 \subsection{The objective function} Provide the mathematical form of the objective function that is designed to solve the optimal state trajectory problem.
