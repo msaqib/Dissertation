@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  9 JUL 2013 18:52
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  14 JUL 2013 04:30
 entering extended mode
 **Dissertation.tex
 
@@ -304,7 +304,9 @@ Chapter 3.
 
 
 
-]) [26]
+]
+File: pics/mappingexample.eps Graphic file (type eps)
+ <pics/mappingexample.eps>) [26] [27] [28]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/casestudyIChapter4.tex"
 Chapter 4.
@@ -314,38 +316,38 @@ Overfull \hbox (6.29442pt too wide) in paragraph at lines 9--9
 eo-diversity 
  []
 
-) [27
+) [29
 
 
 
-] [28]
+] [30]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/casestudyIIChapter5.tex"
 Chapter 5.
-[29
+[31
 
 
 
-]) [30]
+]) [32]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/conclusionsChapter6.tex"
 Chapter 6.
-) [31
+) [33
 
 
 
 ]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
-ertation.bbl" [32
+ertation.bbl" [34
 
 
-] [33]
+] [35]
 Underfull \hbox (badness 1406) in paragraph at lines 107--109
 [][]\OT1/cmr/m/n/12 T. Berners-Lee, R. Field-ing, and H. Frystyk, ``Hy-per-text
  Trans-fer Pro-to-col --
  []
 
-[34]) [35]
+[36]) [37]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
 ertation.aux"
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
@@ -365,12 +367,12 @@ ions/casestudyIIChapter5.aux")
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/conclusionsChapter6.aux")) ) 
 Here is how much of TeX's memory you used:
- 1779 strings out of 494046
- 28109 string characters out of 3148332
- 77861 words of memory out of 3000000
- 5000 multiletter control sequences out of 15000+200000
+ 1782 strings out of 494046
+ 28170 string characters out of 3148332
+ 77872 words of memory out of 3000000
+ 5002 multiletter control sequences out of 15000+200000
  11287 words of font info for 40 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,10n,24p,1537b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,24p,1537b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (45 pages, 106092 bytes).
+Output written on Dissertation.dvi (47 pages, 110608 bytes).
