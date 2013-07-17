@@ -143,4 +143,10 @@ J.~Lorincz, T.~Garma, and G.~Petrovic, ``Measurements and modelling of base
   station power consumption under real traffic loads,'' {\em Sensors}, vol.~12,
   no.~4, pp.~4281--4310, 2012.
 
+\bibitem{dina:p2pdelay:infocom:2004}
+B.-Y. Choi, S.~Moon, Z.-L. Zhang, K.~Papagiannaki, and C.~Diot, ``Analysis of
+  point-to-point packet delay in an operational network,'' in {\em INFOCOM
+  2004. Twenty-third AnnualJoint Conference of the IEEE Computer and
+  Communications Societies}, vol.~3, pp.~1797--1807 vol.3, 2004.
+
 \end{thebibliography}
