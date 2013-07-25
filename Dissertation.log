@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  15 JUL 2013 12:48
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  25 JUL 2013 12:52
 entering extended mode
 **Dissertation.tex
 
@@ -304,9 +304,17 @@ Chapter 3.
 
 
 
-] [26]
+] [26] [27]
 File: pics/mappingexample.eps Graphic file (type eps)
- <pics/mappingexample.eps>) [27] [28] [29]
+ <pics/mappingexample.eps> [28] [29] [30]
+Overfull \hbox (7.39417pt too wide) in paragraph at lines 54--55
+[][]\OT1/cmr/m/n/12 Here $\OML/cmm/m/it/12 C\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S
+[]\OT1/cmr/m/n/12 )$ rep-re-sents a func-tion that eval-u-ates the cost of be-i
+ng in state $\OML/cmm/m/it/12 S[]$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 T\OT1/
+cmr/m/n/12 (\OML/cmm/m/it/12 S[]; S[]\OT1/cmr/m/n/12 )$
+ []
+
+[31] [32]) [33] [34]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/casestudyIChapter4.tex"
 Chapter 4.
@@ -316,38 +324,38 @@ Overfull \hbox (6.29442pt too wide) in paragraph at lines 9--9
 eo-diversity 
  []
 
-) [30
+) [35
 
 
 
-] [31]
+] [36]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/casestudyIIChapter5.tex"
 Chapter 5.
-[32
+[37
 
 
 
-]) [33]
+]) [38]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/conclusionsChapter6.tex"
 Chapter 6.
-) [34
+) [39
 
 
 
 ]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
-ertation.bbl" [35
+ertation.bbl" [40
 
 
-] [36]
+] [41]
 Underfull \hbox (badness 1406) in paragraph at lines 107--109
 [][]\OT1/cmr/m/n/12 T. Berners-Lee, R. Field-ing, and H. Frystyk, ``Hy-per-text
  Trans-fer Pro-to-col --
  []
 
-[37]) [38]
+[42] [43]) [44]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
 ertation.aux"
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
@@ -367,12 +375,12 @@ ions/casestudyIIChapter5.aux")
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/conclusionsChapter6.aux")) ) 
 Here is how much of TeX's memory you used:
- 1783 strings out of 494046
- 28198 string characters out of 3148332
- 78363 words of memory out of 3000000
- 5003 multiletter control sequences out of 15000+200000
+ 1793 strings out of 494046
+ 28442 string characters out of 3148332
+ 78966 words of memory out of 3000000
+ 5013 multiletter control sequences out of 15000+200000
  11287 words of font info for 40 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,10n,24p,1537b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,24p,1980b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (48 pages, 115292 bytes).
+Output written on Dissertation.dvi (54 pages, 135336 bytes).
