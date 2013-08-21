@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  25 JUL 2013 12:52
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  21 AUG 2013 11:09
 entering extended mode
 **Dissertation.tex
 
@@ -247,15 +247,15 @@ ertation.toc" [5
 \tf@toc=\write3
  [7]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
-ertation.lof")
-\tf@lof=\write4
- [8
+ertation.lof" [8
 
-]
+])
+\tf@lof=\write4
+ [9]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
 ertation.lot")
 \tf@lot=\write5
- [9
+ [10
 
 ]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
@@ -318,44 +318,94 @@ cmr/m/n/12 (\OML/cmm/m/it/12 S[]; S[]\OT1/cmr/m/n/12 )$
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/casestudyIChapter4.tex"
 Chapter 4.
+[35
 
-Overfull \hbox (6.29442pt too wide) in paragraph at lines 9--9
-[]\OT1/cmr/bx/n/14.4 Sensitivity of elec-tric-ity cost sav-ings to ex-tent of g
-eo-diversity 
+
+
+] [36] [37] [38] [39] [40] [41] [42]
+Overfull \hbox (37.09555pt too wide) in paragraph at lines 126--147
+ [][] 
  []
 
-) [35
+[43] [44] [45]
+Missing character: There is no ò in font cmr12!
+ [46] [47] [48] [49]
+File: pics/workloadr.eps Graphic file (type eps)
+ <pics/workloadr.eps>
+File: pics/workloadhist-new.eps Graphic file (type eps)
 
+<pics/workloadhist-new.eps>
+Overfull \hbox (19.44852pt too wide) in paragraph at lines 269--282
+[][][]   [] 
+ []
 
+[50] [51] [52] [53] [54]
+File: pics/s1vseqr.eps Graphic file (type eps)
+ <pics/s1vseqr.eps> [55] [56] [57]
+File: pics/s3r.eps Graphic file (type eps)
+ <pics/s3r.eps>
+File: pics/s4.eps Graphic file (type eps)
 
-] [36]
+<pics/s4.eps>
+Overfull \hbox (19.44852pt too wide) in paragraph at lines 557--570
+[][][]   [] 
+ []
+
+[58] [59] [60] [61]
+File: pics/flowchart.eps Graphic file (type eps)
+ <pics/flowchart.eps>
+File: pics/workload-pred-error-mean.eps Graphic file (type eps)
+ <pics/workload-pred-error-mean.eps>
+File: pics/workload-pred-error-2.eps Graphic file (type eps)
+
+<pics/workload-pred-error-2.eps>
+File: pics/traj-corr.eps Graphic file (type eps)
+ <pics/traj-corr.eps> [62] [63]
+File: pics/sw-cost-error-2.eps Graphic file (type eps)
+
+<pics/sw-cost-error-2.eps>
+File: pics/s6.eps Graphic file (type eps)
+ <pics/s6.eps>
+File: pics/fvar-0.01bs.eps Graphic file (type eps)
+ <pics/fvar-0.01bs.eps> [64] [65]
+File: pics/fvar-0.65bs.eps Graphic file (type eps)
+
+<pics/fvar-0.65bs.eps> [66]
+File: pics/rb-heur1error.eps Graphic file (type eps)
+ <pics/rb-heur1error.eps>) [67] [68]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/casestudyIIChapter5.tex"
 Chapter 5.
-[37
+[69
 
 
 
-]) [38]
+]) [70]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/conclusionsChapter6.tex"
 Chapter 6.
-) [39
+) [71
 
 
 
 ]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
-ertation.bbl" [40
+ertation.bbl" [72
 
 
-] [41]
+] [73]
 Underfull \hbox (badness 1406) in paragraph at lines 107--109
 [][]\OT1/cmr/m/n/12 T. Berners-Lee, R. Field-ing, and H. Frystyk, ``Hy-per-text
  Trans-fer Pro-to-col --
  []
 
-[42] [43]) [44]
+[74] [75] [76]
+Underfull \hbox (badness 2478) in paragraph at lines 231--233
+[][]\OT1/cmr/m/n/12 U. Bhaskar and L. Fleis-cher, ``On-line mixed pack-ing and 
+cov-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
+ []
+
+[77] [78] [79] [80]) [81]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Diss
 ertation.aux"
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
@@ -375,12 +425,12 @@ ions/casestudyIIChapter5.aux")
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sect
 ions/conclusionsChapter6.aux")) ) 
 Here is how much of TeX's memory you used:
- 1793 strings out of 494046
- 28442 string characters out of 3148332
- 78966 words of memory out of 3000000
- 5013 multiletter control sequences out of 15000+200000
- 11287 words of font info for 40 fonts, out of 3000000 for 9000
+ 1953 strings out of 494046
+ 30983 string characters out of 3148332
+ 89690 words of memory out of 3000000
+ 5157 multiletter control sequences out of 15000+200000
+ 11908 words of font info for 42 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,10n,24p,1980b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,24p,2555b,636s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (54 pages, 135336 bytes).
+Output written on Dissertation.dvi (92 pages, 261176 bytes).

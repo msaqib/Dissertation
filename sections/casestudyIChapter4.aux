@@ -1,42 +1,176 @@
 \relax 
+\citation{costCloud}
+\citation{brill:DataCenterCrisis:UI:2007}
+\citation{Belady_EC_2007}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Case Study I: Geo-diverse Data Centers}{35}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:casestudy1}{{4}{35}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Instantiating the generalized optimization formulation}{35}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Experimental setup}{36}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Results}{36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Sensitivity of electricity cost savings to extent of overprovisioning}{36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Sensitivity of electricity cost savings to extent of geo-diversity}{36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Sensitivity of electricity cost savings to magnitude of transition costs}{36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Sensitivity of electricity cost savings to resource pruning granularity}{36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Sensitivity of electricity cost savings to workload estimation errors}{36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.6}Sliding window re-optimization}{36}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Discussion}{36}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Prelude}{35}}
+\citation{Pelley:dcpower:weed:2009}
+\citation{blackburn:serverpower:thegreengrid:2008}
+\citation{Fan:power:ICSA:2007}
+\citation{Li:Optimal:TSG:2012}
+\citation{LinInfocom11}
+\citation{serverEnergy}
+\citation{Mazzucco2012415}
+\citation{rao2010}
+\citation{qureshi2009cutting}
+\citation{Li:Optimal:TSG:2012}
+\citation{Li:Optimal:TSG:2012}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Related work}{37}}
+\citation{Kayaaslan:2011:EQP:2009916.2010047}
+\citation{Buchbinder:2011:OJR:2008780.2008798}
+\citation{Bhaskar:2012:CoRR}
+\citation{LinInfocom11}
+\citation{Urgaonkar:2011:OPC:1993744.1993766}
+\citation{serverEnergy}
+\citation{Mazzucco:Maximizing:2011:CoRR}
+\citation{Oh:2011:ECS:2170444.2170458}
+\citation{Chase:2001:MES:502059.502045}
+\citation{serverEnergy}
+\citation{Mazzucco:Maximizing:2011:CoRR}
+\citation{Oh:2011:ECS:2170444.2170458}
+\citation{Chase:2001:MES:502059.502045}
+\citation{Chen:2008:ESP:1387589.1387613}
+\citation{Rao:2011:TSG}
+\citation{Le:HotPower:2009}
+\citation{Zheng2011275}
+\citation{Koutitas:2010:JGE}
+\citation{abbasi2011dahm}
+\citation{chiaraviglio2010greencoop}
+\citation{Phan:2012:GECCO}
+\citation{Liu:2011:SIGMETRICS}
+\citation{Liu:2011:GREENMETRICS}
+\citation{Sucevic:2011:PDE:2160803.2160864}
+\citation{Fang:2011:COP:1995896.1995940}
+\citation{Javed:2008:ULP:1485753.1485792}
+\citation{Logenthiran2011138}
+\citation{Celli:2001:PICA}
+\citation{FahadJavedAdOpt.SASO.2009.26}
+\citation{Marsan:2010:SAM:1791314.1791340}
+\citation{Cavdar:2011:ECOC}
+\citation{Peng:2011:TPS:2030613.2030628}
+\citation{Lee:ServerConsolidation:2011:Globecom}
+\citation{Pinheiro01loadbalancing}
+\citation{Yao:DCPowerReduction:2012:INFOCOM}
+\citation{Herodotou:Starfish:2011:CIDR}
+\citation{Herodotou:2011:NOS:2038916.2038934}
+\citation{Aikema:ElecCostHPC:2011:ISSST}
+\citation{Pang_IMC_2004}
+\citation{LabovitzSigcomm}
+\citation{qureshi2009cutting}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Sources of transition costs in the data center scenario}{40}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Instantiating the generalized optimization formulation}{41}}
+\newlabel{sec:case1:instantiating}{{4.4}{41}}
+\newlabel{eq:dcpower}{{4.3}{42}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Data Center Network Model Parameters}}{44}}
+\newlabel{tab:model}{{4.1}{44}}
+\newlabel{eq:objective}{{4.5}{44}}
+\newlabel{eq:capcon}{{4.6}{44}}
+\newlabel{eq:workcon}{{4.7}{44}}
+\newlabel{eq:integer1}{{4.8}{44}}
+\newlabel{eq:p1}{{4.9}{44}}
+\newlabel{eq:bcon}{{4.10}{44}}
+\newlabel{eq:scon}{{4.11}{45}}
+\newlabel{eq:bcon1}{{4.12}{45}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Heuristic for the RED-BL problem}}{49}}
+\newlabel{algo:heur1}{{1}{49}}
+\citation{Nazir:2008:UFM:1452520.1452527}
+\citation{10.1109/MC.2007.443}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Experimental setup}{50}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Application workload}{50}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Normalized workload}}{50}}
+\newlabel{fig:workloadr}{{4.1}{50}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Workload intensity histogram}}{50}}
+\newlabel{fig:workloadhist}{{4.2}{50}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Sources of electricity prices used in our work}}{51}}
+\newlabel{tab:locations}{{4.2}{51}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Electricity prices}{51}}
+\newlabel{subsec:prices}{{4.5.2}{51}}
+\newlabel{subsec:mso}{{2}{51}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Algorithms for Workload Distribution/Relocation}{51}}
+\newlabel{subsec:metrics}{{4.5.3}{51}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Algorithms compared in our work}}{52}}
+\newlabel{tab:algos}{{4.3}{52}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces A comparison of the algorithms studied in this paper}}{52}}
+\newlabel{tab:algosmatrix}{{4.4}{52}}
+\citation{qureshi2009cutting}
+\citation{qureshi2009cutting}
+\citation{qureshi2009cutting}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Percentage savings with over-provisioning}}{55}}
+\newlabel{fig:s1r}{{4.3}{55}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Results}{55}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}Sensitivity of electricity cost savings to extent of overprovisioning}{56}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Sensitivity of electricity cost savings to magnitude of transition costs}{57}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Total cost vs transition overhead}}{58}}
+\newlabel{fig:s3r}{{4.4}{58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Cost estimation error due to workload estimation error}}{58}}
+\newlabel{fig:s4r}{{4.5}{58}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.3}Sensitivity of electricity cost savings to resource pruning granularity}{58}}
+\newlabel{eq:gcapcon}{{4.13}{59}}
+\newlabel{eq:gworkcon}{{4.14}{59}}
+\newlabel{eq:ginteger1}{{4.15}{59}}
+\newlabel{eq:gp1}{{4.16}{59}}
+\newlabel{eq:gbcon}{{4.17}{59}}
+\newlabel{eq:gscon}{{4.18}{59}}
+\newlabel{eq:gbcon1}{{4.19}{59}}
+\citation{rhc}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.4}Sliding window re-optimization}{60}}
+\citation{arma}
+\newlabel{eq:lcapcon}{{4.21}{62}}
+\newlabel{eq:lworkcon}{{4.22}{62}}
+\newlabel{eq:linteger1}{{4.23}{62}}
+\newlabel{eq:lp1}{{4.24}{62}}
+\newlabel{eq:lbcon}{{4.25}{62}}
+\newlabel{eq:lscon}{{4.26}{62}}
+\newlabel{eq:lbcon1}{{4.27}{62}}
+\newlabel{eq:lscon1}{{4.28}{62}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow for Sliding Window Optimization Experiments}}{63}}
+\newlabel{fig:flowchart}{{4.6}{63}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Mean absolute workload prediction error vs sliding window size}}{63}}
+\newlabel{fig:workload-pred-error-mean}{{4.7}{63}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Distribution of workload prediction error for sliding window size of 12 hours}}{63}}
+\newlabel{fig:workload-pred-error-dist}{{4.8}{63}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Local trajectory correction technique for three consecutive intervals}}{63}}
+\newlabel{fig:traj-corr}{{4.9}{63}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Percentage error of sliding window forecasts compared to global optimal with error-free workload}}{65}}
+\newlabel{fig:s5r}{{4.10}{65}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Cost saving vs (de)activation granularity}}{65}}
+\newlabel{fig:granular-deactivation}{{4.11}{65}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces For bs = 0.01}}{66}}
+\newlabel{fig:fvar1}{{4.12}{66}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Sensitivity of electricity cost savings to the server idle-peak power ratio}{66}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.8}Performance of the heuristic algorithm}{66}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces For bs = 0.65}}{67}}
+\newlabel{fig:fvar2}{{4.13}{67}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.9}Discussion}{67}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces The minimum, maximum and average percentage difference between the cost of our heuristic and RED-BL}}{68}}
+\newlabel{fig:heur1perf}{{4.14}{68}}
 \@setckpt{sections/casestudyIChapter4}{
-\setcounter{page}{37}
-\setcounter{equation}{0}
-\setcounter{enumi}{3}
+\setcounter{page}{69}
+\setcounter{equation}{28}
+\setcounter{enumi}{2}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{0}
+\setcounter{footnote}{3}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{4}
-\setcounter{section}{4}
+\setcounter{section}{9}
 \setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{0}
-\setcounter{table}{0}
-\setcounter{ALC@unique}{0}
-\setcounter{ALC@line}{0}
+\setcounter{figure}{14}
+\setcounter{table}{4}
+\setcounter{ALC@unique}{23}
+\setcounter{ALC@line}{23}
 \setcounter{ALC@rem}{0}
 \setcounter{ALC@depth}{0}
 \setcounter{float@type}{8}
-\setcounter{algorithm}{0}
+\setcounter{algorithm}{1}
 \setcounter{parentequation}{0}
 \setcounter{subfigure}{0}
 \setcounter{lofdepth}{1}

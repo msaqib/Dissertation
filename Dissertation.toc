@@ -28,25 +28,31 @@
 \contentsline {subsection}{\numberline {3.2.2}The constraints}{32}
 \contentsline {subsection}{\numberline {3.2.3}Comments on the problem formulation}{33}
 \contentsline {chapter}{\numberline {4}Case Study I: Geo-diverse Data Centers}{35}
-\contentsline {section}{\numberline {4.1}Instantiating the generalized optimization formulation}{35}
-\contentsline {section}{\numberline {4.2}Experimental setup}{36}
-\contentsline {section}{\numberline {4.3}Results}{36}
-\contentsline {subsection}{\numberline {4.3.1}Sensitivity of electricity cost savings to extent of overprovisioning}{36}
-\contentsline {subsection}{\numberline {4.3.2}Sensitivity of electricity cost savings to extent of geo-diversity}{36}
-\contentsline {subsection}{\numberline {4.3.3}Sensitivity of electricity cost savings to magnitude of transition costs}{36}
-\contentsline {subsection}{\numberline {4.3.4}Sensitivity of electricity cost savings to resource pruning granularity}{36}
-\contentsline {subsection}{\numberline {4.3.5}Sensitivity of electricity cost savings to workload estimation errors}{36}
-\contentsline {subsection}{\numberline {4.3.6}Sliding window re-optimization}{36}
-\contentsline {section}{\numberline {4.4}Discussion}{36}
-\contentsline {chapter}{\numberline {5}Case Study II: Cellular Networks}{37}
-\contentsline {section}{\numberline {5.1}Instantiating the generalized optimization formulation}{37}
-\contentsline {section}{\numberline {5.2}Experimental setup}{37}
-\contentsline {section}{\numberline {5.3}Results}{37}
-\contentsline {subsection}{\numberline {5.3.1}Sensitivity of electricity cost savings to the duration of an optimization interval}{37}
-\contentsline {subsection}{\numberline {5.3.2}Sensitivity of electricity cost savings to the resource pruning granularity}{38}
-\contentsline {subsection}{\numberline {5.3.3}Sensitivity of electricity cost savings to the margin of state-change damping}{38}
-\contentsline {section}{\numberline {5.4}Discussion}{38}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{39}
-\contentsline {section}{\numberline {6.1}Contributions}{39}
-\contentsline {section}{\numberline {6.2}Limitations}{39}
-\contentsline {section}{\numberline {6.3}Future work}{39}
+\contentsline {section}{\numberline {4.1}Prelude}{35}
+\contentsline {section}{\numberline {4.2}Related work}{37}
+\contentsline {section}{\numberline {4.3}Sources of transition costs in the data center scenario}{40}
+\contentsline {section}{\numberline {4.4}Instantiating the generalized optimization formulation}{41}
+\contentsline {section}{\numberline {4.5}Experimental setup}{50}
+\contentsline {subsection}{\numberline {4.5.1}Application workload}{50}
+\contentsline {subsection}{\numberline {4.5.2}Electricity prices}{51}
+\contentsline {subsection}{\numberline {4.5.3}Algorithms for Workload Distribution/Relocation}{51}
+\contentsline {section}{\numberline {4.6}Results}{55}
+\contentsline {subsection}{\numberline {4.6.1}Sensitivity of electricity cost savings to extent of overprovisioning}{56}
+\contentsline {subsection}{\numberline {4.6.2}Sensitivity of electricity cost savings to magnitude of transition costs}{57}
+\contentsline {subsection}{\numberline {4.6.3}Sensitivity of electricity cost savings to resource pruning granularity}{58}
+\contentsline {subsection}{\numberline {4.6.4}Sliding window re-optimization}{60}
+\contentsline {section}{\numberline {4.7}Sensitivity of electricity cost savings to the server idle-peak power ratio}{66}
+\contentsline {section}{\numberline {4.8}Performance of the heuristic algorithm}{66}
+\contentsline {section}{\numberline {4.9}Discussion}{67}
+\contentsline {chapter}{\numberline {5}Case Study II: Cellular Networks}{69}
+\contentsline {section}{\numberline {5.1}Instantiating the generalized optimization formulation}{69}
+\contentsline {section}{\numberline {5.2}Experimental setup}{69}
+\contentsline {section}{\numberline {5.3}Results}{69}
+\contentsline {subsection}{\numberline {5.3.1}Sensitivity of electricity cost savings to the duration of an optimization interval}{69}
+\contentsline {subsection}{\numberline {5.3.2}Sensitivity of electricity cost savings to the resource pruning granularity}{70}
+\contentsline {subsection}{\numberline {5.3.3}Sensitivity of electricity cost savings to the margin of state-change damping}{70}
+\contentsline {section}{\numberline {5.4}Discussion}{70}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{71}
+\contentsline {section}{\numberline {6.1}Contributions}{71}
+\contentsline {section}{\numberline {6.2}Limitations}{71}
+\contentsline {section}{\numberline {6.3}Future work}{71}

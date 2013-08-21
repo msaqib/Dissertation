@@ -150,7 +150,8 @@ B.-Y. Choi, S.~Moon, Z.-L. Zhang, K.~Papagiannaki, and C.~Diot, ``Analysis of
   Communications Societies}, vol.~3, pp.~1797--1807 vol.3, 2004.
 
 \bibitem{kellerer:knapsackproblems:2005}
-
+H.~Kellerer, U.~Pferschy, and D.~Pisinger, {\em Knapsack Problems}.
+\newblock Springer-Verlag, 2005.
 
 \bibitem{Chekuri99aptas}
 C.~Chekuri and S.~Khanna, ``A ptas for the multiple knapsack problem,''
@@ -164,5 +165,238 @@ N.~Padhy, ``Unit commitment-a bibliographical survey,'' {\em Power Systems,
 A.~H. Land and A.~G. Doig, ``An automatic method of solving discrete
   programming problems,'' {\em Econometrica}, vol.~28, no.~3, pp.~497--520,
   1960.
+
+\bibitem{brill:DataCenterCrisis:UI:2007}
+K.~G. Brill, ``The invisible crisis in the data center: The economic meltdown
+  of moore's law,'' tech. rep., The Uptime Institute, 2007.
+
+\bibitem{Belady_EC_2007}
+C.~L. Belady, ``In the data center, power and cooling costs more than the it
+  equipment it supports,'' {\em Electronics Cooling}, vol.~23, Jan. 2007.
+
+\bibitem{Pelley:dcpower:weed:2009}
+S.~Pelley, D.~Meisner, T.~F. Wenisch, and J.~W. VanGilder, ``Understanding and
+  abstracting total data center power,'' {\em Proc. 2009 Workshop on Energy
+  Efficient Design (WEED '09)}, June 2009.
+
+\bibitem{blackburn:serverpower:thegreengrid:2008}
+``Five ways to reduce data center server power consumption.'' White Paper, Apr.
+  2008.
+
+\bibitem{Li:Optimal:TSG:2012}
+J.~Li, Z.~Li, K.~Ren, and X.~Liu, ``Towards optimal electric demand management
+  for internet data centers,'' {\em IEEE Trans. Smart Grid}, vol.~3, no.~1,
+  pp.~183--192, 2012.
+
+\bibitem{LinInfocom11}
+M.~Lin, A.~Wierman, L.~Andrew, and E.~Thereska, ``Dynamic right-sizing for
+  power-proportional data centers,'' in {\em INFOCOM, 2011 Proceedings IEEE},
+  pp.~1098 --1106, april 2011.
+
+\bibitem{serverEnergy}
+Y.~Chen, A.~Das, W.~Qin, A.~Sivasubramaniam, Q.~Wang, and N.~Gautam, ``Managing
+  server energy and operational costs in hosting centers,'' in {\em ACM
+  SIGMETRICS}, (New York, NY, USA), pp.~303--314, ACM, 2005.
+
+\bibitem{Mazzucco2012415}
+M.~Mazzucco and D.~Dyachuk, ``Balancing electricity bill and performance in
+  server farms with setup costs,'' {\em Future Generation Computer Systems},
+  vol.~28, no.~2, pp.~415 -- 426, 2012.
+
+\bibitem{rao2010}
+L.~Rao, X.~Liu, L.~Xie, and W.~Liu, ``{Minimizing Electricity Cost:
+  Optimization of Distributed Internet Data Centers in a
+  Multi-Electricity-Market Environment},'' in {\em IEEE Conference on Computer
+  Communications 2010 (INFOCOM'2010)}, (San Diego, USA), March 2010.
+
+\bibitem{qureshi2009cutting}
+A.~Qureshi, R.~Weber, H.~Balakrishnan, J.~Guttag, and B.~Maggs, ``{Cutting the
+  Electric Bill for Internet-Scale Systems},'' in {\em ACM SIGCOMM},
+  (Barcelona, Spain), August 2009.
+
+\bibitem{Kayaaslan:2011:EQP:2009916.2010047}
+E.~Kayaaslan, B.~B. Cambazoglu, R.~Blanco, F.~P. Junqueira, and C.~Aykanat,
+  ``Energy-price-driven query processing in multi-center web search engines,''
+  in {\em Proceedings of the 34th international ACM SIGIR conference on
+  Research and development in Information Retrieval}, SIGIR '11, (New York, NY,
+  USA), pp.~983--992, ACM, 2011.
+
+\bibitem{Buchbinder:2011:OJR:2008780.2008798}
+N.~Buchbinder, N.~Jain, and I.~Menache, ``Online job-migration for reducing the
+  electricity bill in the cloud,'' in {\em Proceedings of the 10th
+  international IFIP TC 6 conference on Networking - Volume Part I},
+  NETWORKING'11, (Berlin, Heidelberg), pp.~172--185, Springer-Verlag, 2011.
+
+\bibitem{Bhaskar:2012:CoRR}
+U.~Bhaskar and L.~Fleischer, ``Online mixed packing and covering,'' {\em CoRR},
+  vol.~abs/1203.6695, 2012.
+
+\bibitem{Urgaonkar:2011:OPC:1993744.1993766}
+R.~Urgaonkar, B.~Urgaonkar, M.~J. Neely, and A.~Sivasubramaniam, ``Optimal
+  power cost management using stored energy in data centers,'' in {\em
+  Proceedings of the ACM SIGMETRICS joint international conference on
+  Measurement and modeling of computer systems}, SIGMETRICS '11, (New York, NY,
+  USA), pp.~221--232, ACM, 2011.
+
+\bibitem{Mazzucco:Maximizing:2011:CoRR}
+M.~Mazzucco, D.~Dyachuk, and R.~Deters, ``Maximizing cloud providers revenues
+  via energy aware allocation policies,'' {\em CoRR}, vol.~abs/1102.3058, 2011.
+
+\bibitem{Oh:2011:ECS:2170444.2170458}
+F.~Y.-K. Oh, H.~S. Kim, H.~Eom, and H.~Y. Yeom, ``Enabling consolidation and
+  scaling down to provide power management for cloud computing,'' in {\em
+  Proceedings of the 3rd USENIX conference on Hot topics in cloud computing},
+  HotCloud'11, (Berkeley, CA, USA), pp.~14--14, USENIX Association, 2011.
+
+\bibitem{Rao:2011:TSG}
+L.~Rao, X.~Liu, L.~Xie, and Z.~Pang, ``Hedging against uncertainty: A tale of
+  internet data center operations under smart grid environment,'' {\em Smart
+  Grid, IEEE Transactions on}, vol.~2, pp.~555 --563, sept. 2011.
+
+\bibitem{Le:HotPower:2009}
+K.~Le, R.~Bianchini, M.~Martonosi, and T.~D. Nguyen, ``Cost- and energy-aware
+  load distribution across data centers,'' in {\em Workshop on Power Aware
+  Computing and Systems (HotPower '09)}, pp.~1--5, 2009.
+
+\bibitem{Zheng2011275}
+X.~Zheng and Y.~Cai, ``Energy-aware load dispatching in geographically located
+  internet data centers,'' {\em Sustainable Computing: Informatics and
+  Systems}, vol.~1, no.~4, pp.~275 -- 285, 2011.
+
+\bibitem{Koutitas:2010:JGE}
+G.~Koutitas and P.~Demestichas, ``Challenges for energy efficiency in local and
+  regional data centers,'' {\em Journal of Green Engineering}, vol.~1, pp.~1 --
+  32, October 2010.
+
+\bibitem{abbasi2011dahm}
+Z.~Abbasi, T.~Mukherjee, G.~Varsamopoulos, and S.~Gupta, ``Dahm: A green and
+  dynamic web application hosting manager across geographically distributed
+  data centers12,'' {\em Atlanta}, vol.~60, p.~80, 2011.
+
+\bibitem{chiaraviglio2010greencoop}
+L.~Chiaraviglio and I.~Matta, ``Greencoop: cooperative green routing with
+  energy-efficient servers,'' in {\em Proceedings of the 1st International
+  Conference on Energy-Efficient Computing and Networking}, pp.~191--194, ACM,
+  2010.
+
+\bibitem{Phan:2012:GECCO}
+D.~H. Phan, J.~Suzuki, R.~Carroll, S.~Balasubramaniam, W.~Donnelly, and
+  D.~Botvich, ``Evolutionary multiobjective optimization for green clouds,'' in
+  {\em ACM GECCO 2012}, ACM, 2012.
+
+\bibitem{Liu:2011:SIGMETRICS}
+Z.~Liu, M.~Lin, A.~Wierman, S.~H. Low, and L.~Andrew, ``Greening geographical
+  load balancing,'' in {\em Proceedings of the 2011 ACM SIGMETRICS}, SIGMETRICS
+  '11, (San Jose, California, USA), ACM, 2011.
+
+\bibitem{Liu:2011:GREENMETRICS}
+Z.~Liu, M.~Lin, A.~Wierman, S.~H. Low, and L.~Andrew, ``Geographical load
+  balancing with renewables,'' in {\em Proceedings of the 2011 ACM
+  GREENMETRICS}, GREENMETRICS '11, ACM, 2011.
+
+\bibitem{Sucevic:2011:PDE:2160803.2160864}
+A.~Sucevic, L.~L. Andrew, and T.~T. Nguyen, ``Powering down for energy
+  efficient peer-to-peer file distribution,'' {\em SIGMETRICS Perform. Eval.
+  Rev.}, vol.~39, pp.~72--76, Dec. 2011.
+
+\bibitem{Fang:2011:COP:1995896.1995940}
+Z.~Fang, L.~Zhao, R.~R. Iyer, C.~F. Fajardo, G.~F. Garcia, S.~E. Lee, B.~Li,
+  S.~R. King, X.~Jiang, and S.~Makineni, ``Cost-effectively offering private
+  buffers in socs and cmps,'' in {\em Proceedings of the international
+  conference on Supercomputing}, ICS '11, (New York, NY, USA), pp.~275--284,
+  ACM, 2011.
+
+\bibitem{Javed:2008:ULP:1485753.1485792}
+F.~Javed and N.~Arshad, ``On the use of linear programming in optimizing energy
+  costs,'' in {\em Proceedings of the 3rd International Workshop on
+  Self-Organizing Systems}, IWSOS '08, (Berlin, Heidelberg), pp.~305--310,
+  Springer-Verlag, 2008.
+
+\bibitem{Logenthiran2011138}
+T.~Logenthiran, D.~Srinivasan, and A.~M. Khambadkone, ``Multi-agent system for
+  energy resource scheduling of integrated microgrids in a distributed
+  system,'' {\em Electric Power Systems Research}, vol.~81, no.~1, pp.~138 --
+  148, 2011.
+
+\bibitem{Celli:2001:PICA}
+G.~Celli and F.~Pilo, ``Optimal distributed generation allocation in mv
+  distribution networks,'' in {\em Power Industry Computer Applications, 2001.
+  PICA 2001. Innovative Computing for Power - Electric Energy Meets the Market.
+  22nd IEEE Power Engineering Society International Conference on}, pp.~81
+  --86, 2001.
+
+\bibitem{FahadJavedAdOpt.SASO.2009.26}
+F.~Javed and N.~Arshad, ``Adopt: An adaptive optimization framework for
+  large-scale power distribution systems,'' {\em Self-Adaptive and
+  Self-Organizing Systems, IEEE International Conference on}, vol.~0,
+  pp.~254--264, 2009.
+
+\bibitem{Marsan:2010:SAM:1791314.1791340}
+M.~A. Marsan, L.~Chiaraviglio, D.~Ciullo, and M.~Meo, ``A simple analytical
+  model for the energy-efficient activation of access points in dense wlans,''
+  in {\em Proceedings of the 1st International Conference on Energy-Efficient
+  Computing and Networking}, e-Energy '10, (New York, NY, USA), pp.~159--168,
+  ACM, 2010.
+
+\bibitem{Cavdar:2011:ECOC}
+C.~Cavdar, A.~Yayimli, and L.~Wosinska, ``How to cut the electric bill in
+  optical wdm networks with time-zones and time-of-use prices,'' in {\em
+  Optical Communication (ECOC), 2011 37th European Conference and Exhibition
+  on}, pp.~1 --3, sept. 2011.
+
+\bibitem{Lee:ServerConsolidation:2011:Globecom}
+S.~Lee and S.~Sahu, ``Efficient server consolidation considering intra-cluster
+  traffic,'' in {\em GLOBECOM}, pp.~1--6, 2011.
+
+\bibitem{Pinheiro01loadbalancing}
+E.~Pinheiro, R.~Bianchini, E.~V. Carrera, and T.~Heath, ``Load balancing and
+  unbalancing for power and performance in cluster-based systems,'' 2001.
+
+\bibitem{Yao:DCPowerReduction:2012:INFOCOM}
+Y.~Yao, L.~Huang, A.~Sharma, L.~Golubchik, and M.~Neely, ``Data centers power
+  reduction: A two time scale approach for delay tolerant workloads,'' in {\em
+  INFOCOM, 2012 Proceedings IEEE}, pp.~1431 --1439, march 2012.
+
+\bibitem{Herodotou:Starfish:2011:CIDR}
+H.~Herodotou, H.~Lim, G.~Luo, N.~Borisov, L.~Dong, F.~B. Cetin, and S.~Babu,
+  ``Starfish: A self-tuning system for big data analytics,'' in {\em 5th
+  Biennial Conference on Innovative Data Systems Research (CIDR) 2011}, pp.~261
+  --272, January 2011.
+
+\bibitem{Herodotou:2011:NOS:2038916.2038934}
+H.~Herodotou, F.~Dong, and S.~Babu, ``No one (cluster) size fits all: automatic
+  cluster sizing for data-intensive analytics,'' in {\em Proceedings of the 2nd
+  ACM Symposium on Cloud Computing}, SOCC '11, (New York, NY, USA),
+  pp.~18:1--18:14, ACM, 2011.
+
+\bibitem{Aikema:ElecCostHPC:2011:ISSST}
+D.~Aikema and R.~Simmonds, ``Electrical cost savings and clean energy usage
+  potential for hpc workloads,'' in {\em Sustainable Systems and Technology
+  (ISSST), 2011 IEEE International Symposium on}, pp.~1 --6, may 2011.
+
+\bibitem{Pang_IMC_2004}
+J.~Pang, A.~Akella, A.~Shaikh, B.~Krishnamurthy, and S.~Seshan, ``On the
+  responsiveness of {DNS}-based netowrk control,'' in {\em IMC '04: Proceedings
+  of the 4th ACM SIGCOMM conference on Internet measurement}, pp.~21--26, ACM,
+  2004.
+
+\bibitem{LabovitzSigcomm}
+C.~Labovitz, A.~Ahuja, A.~Bose, and F.~Jahanian, ``{Delayed Internet Routing
+  Convergence},'' in {\em Proc. of the ACM SIGCOMM}, August 2000.
+
+\bibitem{Nazir:2008:UFM:1452520.1452527}
+A.~Nazir, S.~Raza, and C.-N. Chuah, ``Unveiling facebook: a measurement study
+  of social network based applications,'' in {\em Proceedings of the 8th ACM
+  SIGCOMM conference on Internet measurement}, IMC '08, (New York, NY, USA),
+  pp.~43--56, ACM, 2008.
+
+\bibitem{rhc}
+W.~H. Kwon and S.~H. Han, {\em Receding Horizon Control}.
+\newblock Elsevier, 2005.
+
+\bibitem{arma}
+G.~Box, G.~M.~J. ~, and G.~C. Reinsel, {\em Time Series Analysis: Forecasting
+  and Control}.
+\newblock Prentice-Hall, 1994.
 
 \end{thebibliography}
