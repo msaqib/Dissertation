@@ -181,10 +181,12 @@ x_i^j \le c_i \hspace{6 pt} \forall i, \forall j \label{eq:capcon}\\
 \sum_{i = 1}^{m} x_i^j = w^j \hspace{6 pt} \forall j \label{eq:workcon}\\
 p_i^j, b_i^j, s_i^j \in \{0,1\} \hspace{6 pt} \forall i, \forall j \label{eq:integer1}\\
 p_i^j \ge x_i^j \hspace{6 pt} \forall i, \forall j \label{eq:p1}\\
-b_i^j \ge p_i^j - p_i^{j-1} \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:bcon}
+b_i^j \ge p_i^j - p_i^{j-1} \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:bcon}\\
+%\end{align}
+%\begin{align}
+s_i^j \ge p_i^{j-1} - p_i^j \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:scon}
 \end{align}
 \begin{align}
-s_i^j \ge p_i^{j-1} - p_i^j \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:scon}\\
 b_i^0 = p_i^0, s_i^0 = 0 \hspace{6 pt} \forall i \label{eq:bcon1}
 \end{align}
 
@@ -217,6 +219,8 @@ i m n - (n + m)(1 + 2 + ... + (i-1)) + 1 + 4 + ... + (i-1)^2\notag \\
 i mn - (n + m)\frac{i(i+1)}{2} + \frac{n(n-1)(2n-1)}{6}\notag
 \end{align}
 Substituting $i$ by $n$, we get the overall worst case running time for the average electricity price calculation step as O(m$n^2$ + $n^3$). The overall worst case running time of the entire algorithm (including the average electriciry price sorting step) is O(m$n^2$ + $n^3$ + m lg m).
+
+In the best case, only one data center is sufficient to handle all workload throughout the planning window and the outer repeat-until loop is only entered once. The average electricity cost is computed in O(mn), and the data center indices are sorted in O(m lg m). Removal of the sole selected data center's index from the array of available data center indices is done in O(m), whereas the increment of $g_1$ and decrement of $g_2$ is O(n). Hence, the best case running time complexity of the algorithm is O(mn + m lg m).
 
 \begin{algorithm}
 \caption{Heuristic for the RED-BL problem}
@@ -554,19 +558,19 @@ LI does not (de)activate unneeded elastic load and thus it's electricity cost is
 
 
 \begin{figure}[htbp]
-  \begin{minipage}[b]{0.5\linewidth}
+  %\begin{minipage}[b]{0.5\linewidth}
     \centering
     \includegraphics[width=1\linewidth]{pics/s3r.eps}
     \caption{Total cost vs transition overhead}
     \label{fig:s3r}
-  \end{minipage}
-  \hspace{0.5cm}
-  \begin{minipage}[b]{0.5\linewidth}
-    \centering
-    \includegraphics[width=1\linewidth]{pics/s4.eps}
-    \caption{Cost estimation error due to workload estimation error}
-    \label{fig:s4r}
-  \end{minipage}
+  %\end{minipage}
+  %\hspace{0.5cm}
+%  \begin{minipage}[b]{0.5\linewidth}
+%    \centering
+%    \includegraphics[width=1\linewidth]{pics/s4.eps}
+%    \caption{Cost estimation error due to workload estimation error}
+%    \label{fig:s4r}
+%  \end{minipage}
 \end{figure}
 
 \subsection{Sensitivity of electricity cost savings to resource pruning granularity}
@@ -585,9 +589,9 @@ x_i^j \le c_i \hspace{6 pt} \forall i, \forall j \label{eq:gcapcon}\\
 \sum_{i = 1}^{m} x_i^j = w^j \hspace{6 pt} \forall j \label{eq:gworkcon}\\
 p_i^j, b_i^j, s_i^j \in \{0,1,...,l\} \hspace{6 pt} \forall i, \forall j \label{eq:ginteger1}\\
 p_i^j \ge x_i^j*l/c_i \hspace{6 pt} \forall i, \forall j \label{eq:gp1}\\
-b_i^j \ge p_i^j - p_i^{j-1} \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:gbcon}
-\end{align}
-\begin{align}
+b_i^j \ge p_i^j - p_i^{j-1} \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:gbcon}\\
+%\end{align}
+%\begin{align}
 s_i^j \ge p_i^{j-1} - p_i^j \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:gscon}\\
 b_i^0 = p_i^0, s_i^0 = 0 \hspace{6 pt} \forall i \label{eq:gbcon1}
 \end{align}
@@ -618,34 +622,40 @@ p_i^j, b_i^j, s_i^j \in \{0,1\} \hspace{6 pt} \forall i \label{eq:linteger1}\\
 p_i^j \ge x_i^j \hspace{6 pt} \forall i \label{eq:lp1}\\
 b_i^j \ge p_i^j - \hat{p}_i^j \hspace{6 pt} \forall i \label{eq:lbcon}\\
 s_i^j \ge \hat{p}_i^j - p_i^j \hspace{6 pt} \forall i \label{eq:lscon}\\
-\hat{b}_i^j \ge \hat{p}_i^j - p_i^{j-1} \hspace{6 pt} \forall i \label{eq:lbcon1} 
-\end{align}
-\begin{align}
+\hat{b}_i^j \ge \hat{p}_i^j - p_i^{j-1} \hspace{6 pt} \forall i \label{eq:lbcon1} \\
+%\end{align}
+%\begin{align}
 \hat{s}_i^j \ge p_i^{j-1} - \hat{p}_i^j \hspace{6 pt} \forall i \label{eq:lscon1}
 \end{align}
 
+\begin{figure}
+\includegraphics[width=1\linewidth]{pics/flowchart2.eps}
+\caption{What}
+\label{fig:flowchart}
+\end{figure}
+
 \begin{figure}[htbp]
-  \begin{minipage}[t]{0.49\linewidth}
+  \begin{minipage}{0.45\textwidth}
     \centering
-        \includegraphics[width=1\textwidth]{pics/flowchart.eps}
-    \caption{Flow for Sliding Window Optimization Experiments}
-    \label{fig:flowchart}
+    \includegraphics[width=0.8\textwidth]{pics/workload-pred-error-mean.eps}
+    \caption{Mean absolute workload prediction error vs sliding window size}
+    \label{fig:workload-pred-error-mean}
   \end{minipage}
   %\hspace{0.5cm}
-  \begin{minipage}[b]{0.49\linewidth}
-    \centering     
-    \includegraphics[height=0.2\textheight]{pics/workload-pred-error-mean.eps}
-    \caption{Mean absolute workload prediction error vs sliding window size}
-    \label{fig:workload-pred-error-mean}    
-    \includegraphics[height=0.22\textheight]{pics/workload-pred-error-2.eps}
-    \caption{Distribution of workload prediction error for sliding window size of 12 hours}
-    \label{fig:workload-pred-error-dist}
-    \includegraphics[height=0.2\textheight]{pics/traj-corr.eps}
+  \begin{minipage}{0.45\textwidth}
+    \centering         
+    \includegraphics[width=0.8\textwidth]{pics/traj-corr.eps}
     \caption{Local trajectory correction technique for three consecutive intervals}
     \label{fig:traj-corr}
     \end{minipage}
 \end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{pics/workload-pred-error-2.eps}
+    \caption{Distribution of workload prediction error for sliding window size of 12 hours}
+    \label{fig:workload-pred-error-dist}
+    \end{figure}
     
     Given that the planning window size is $n$ intervals, the possible values for $\gamma$ are $1, 2, .., \gamma$. We experimented with all possible values for $\gamma$. Figure~\ref{fig:flowchart} shows the flow of our experiments. We first pick a value for the window sliding interval and estimate the workload for the next $n$-intervals and then invoke RED-BL. As an example, consider $\gamma=2$. We start by forecasting the workload for the first $n$-intervals, denoted by $\hat{W}_1^2 = [\hat{w}_{1,1}^2, \hat{w}_{2,1}^2, ..., \hat{w}_{n,1}^2]$. Here, $\hat{w}_{j,1}^2$, for instance, represents the workload forecast for interval $j$ during the first forecasting operation while the value of $\gamma$ is 2. For workload forecasting, we trained an ARMA(4, 4)~\cite{arma} model on a day's workload. Using $\hat{W}^2_1$ as the expected workload vector, we propose a RED-BL deployment plan for the first $n$-intervals. After the lapse of $\gamma$ intervals, i.e., at the start of the third interval (for $\gamma$ = 2), we forecast the workload for the next $n$ intervals, leveraging the additional information about the actual workload for the first two intervals which was not available in the first forecast step at $t=0$. This forecast is denoted by $\hat{W}_2^2 = [\hat{w}_{3,2}^2, \hat{w}_{4,2}^2, ..., \hat{w}_{n+2,2}^2]$. Then, we compute the RED-BL deployment plan for intervals $3, 4,..., n+2$ as the global trajectory correction step. Since the window sliding interval size is $\gamma$ and the number of intervals in our experiments is $n$, the number of times the window must slide, for a given value of $\gamma$ is $\lceil n/\gamma \rceil$. For $\gamma$ = 1, our scheme reduces to something resembling receding horizon control.
     
@@ -671,17 +681,23 @@ The difference of the electricity cost resulting from the use of the sliding win
 \end{figure}
 
 \section{Sensitivity of electricity cost savings to the server idle-peak power ratio}
+Chip manufacturers and computer vendors are striving to improve server energy propotional/efficient. It would be interesting to see how the electricity cost savings for RED-BL would improve as the server's idle to peak power ratio ($f$) drops. To this end, we conducted a set of experiments in which we kept all other parameters fixed while varying $f$ from 0 to 1.  Note that $f$=0 means that the servers are completely energy proportional, whereas $f$=1 means that the server power consumption is totally inelastic.
+
+Figure~\ref{fig:fvar1} shows the variation of electricity cost savings as the value of $f$ is varied while the $b$/$s$ parameteres are kept at a low value of 0.01. In this setting, we wish to investigate if server energy proportionality improvement really matters if the bootup/shutdown costs were really low. Figure~\ref{fig:fvar1} shows that for an increase from $f$=0 to $f$=1, the global optimal solution over the planning window only spans an increase in average total electricity cost of 8.34\%. Also, a drop from the typical $f$=0.6 all the way to $f$=0 results in a 4.88\% drop in total electricity cost. It is noticeable that the bootup/shutdown overheads are really small and the idling fraction of electricity costs increases almost linearly with the value of $f$.
+ 
 \begin{figure}
 \includegraphics[width=1\textwidth]{pics/fvar-0.01bs.eps}
-\caption{For bs = 0.01}
+\caption{Average daily total electricity cost and it's components vs f, For bs = 0.01}
 \label{fig:fvar1}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=1\textwidth]{pics/fvar-0.65bs.eps}
-\caption{For bs = 0.65}
+\caption{Average daily total electricity cost and it's components vs f, For bs = 0.65}
 \label{fig:fvar2}
 \end{figure}
+
+Figure~\ref{fig:fvar2} shows the same results for $b$/$s$=0.65. In this case, an increase from $f$=0 to $f$=1 spans an 11.44\% increase in average daily total electricity costs. Also, as $f$ drops from the typical $f$=0.65 all the way to $f$=0, the total electricity cost of the global optimal solution over the planning window drops by 7.42\%. Since the bootup/shutdown overhead is significant in this case, for all values of $f$, the total electricity cost of the global optimal solution over the planning window is characterized by an almost fixed contribution from bootup/shutdown, while the idling fraction increase almost linearly.
 
 \section{Performance of the heuristic algorithm}
 Figure~\ref{fig:heur1perf} shows the performance of our heuristic algorithm compared to the optimal solution of the problem for various values of the (de)activation overhead parameters. For each value of the $b$/$s$ parameters, we have plotted the average error over the seven days in our workload dataset (the curve) as well as the minimum and maximum error for any given day (the vertical bars). The performance of the heuristic is the worst for $b$/$s$ = 0, because the heuristic avoids bootup/shutdown which has zero cost for $b$/$s$ = 0. For other small values of $b$/$s$ also, the bootup/shutdown overhead is not significant and by avoiding it, our heuristic fares relatively poorly compared to the optimal solution. As the value of $b$/$s$ increases, our heuristic's error compared to the optimal solution drops until it starts a slight rise. The rising trend in the heuristic's performance for relatively high values of $b$/$s$ is because in this regime, it may often be better to allow idling of some data centers instead of a bootup at the intervals defined by $p_1$ and shutdown at those defined by $p_2$. We observed similar trends for other values of $f$ as well, when $b$/$s$ is varied from 0 to 1.
@@ -692,5 +708,15 @@ Figure~\ref{fig:heur1perf} shows the performance of our heuristic algorithm comp
 \label{fig:heur1perf}
 \end{figure}
 
-
 \section{Discussion}
+In this chapter, we have instantiated the generalized problem formulation of joint workload relocation and resource pruning to optimize electricity costs for geo-diverse data centers. The generalized formulation performs a state trajectory optimization and in case of geo-diverse data centers, the network state consists of a combination of discrete as well as continuous variables. 
+
+Our formulation determines a deployment configuration plan that is optimal over a planning window consisting of several intervals in the form of bootup/shutdown times for each data center as well as the workload to be mapped to each data center for all intervals in the planning window. Discrete optimization problems such as ours are difficult to solve exactly because of their computational complexity. However, using the CPLEX solver we were able to compute the optimal plans for planning windows consisting of 24 one-hour intervals within a few seconds. 
+
+Our problem formulation involves several parameters whose values are expected to vary over time (for instance, the value of idle to peak power consumption ratio is expected to improve as chip and server energy proportionality improves), from one operator to another (for instance, the over provisioning ratio) and from application to application (for instance, the value of the transition cost). With so many parameters, each with many possible values, it is not possible to exhaustively test RED-BL. However, in such a case, it suffices to know the sensitivity of electricity cost savings to the variation in each parameter, while all others are held at some reasonable default values. We performed a series of such experiments for each parameter and reported the results.
+
+Since RED-BL devises a deployment plan for a planning window based on workload forecasts, which may be somewhat erroneous, in a practical setting, RED-BL plans must be revised periodically to bring the system closer to an optimal state. For this purpose, we proposed a sliding-window re-optimization procedure and evaluated it's performance.
+
+We used workload datasets from three live Internet applications. While the number of applications is quite small for a large geo-diverse data center operator, the statistical characteristics of the dataset are reasonably representative of such a scenario. We also used real electricity prices from 33 locations in the US that were publicly available.
+
+While we find that RED-BL finds a useful application in electricity cost optimization of geo-diverse data centers, our work is not the final word on this problem. Several avenues of further exploration are yet to be explored. We have listed some future work in Chapter~\ref{chap:conclusions}.

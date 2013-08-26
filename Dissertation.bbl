@@ -399,4 +399,96 @@ G.~Box, G.~M.~J. ~, and G.~C. Reinsel, {\em Time Series Analysis: Forecasting
   and Control}.
 \newblock Prentice-Hall, 1994.
 
+\bibitem{Peng:2011:BTSSaving:Mobicom}
+C.~Peng, S.-B. Lee, S.~Lu, H.~Luo, and H.~Li, ``Traffic-driven power saving in
+  operational 3g cellular networks,'' in {\em ACM MobiCom '11}, pp.~121--132,
+  2011.
+
+\bibitem{He:CellularPower:JN:2012}
+H.~He, J.~Sun, Y.~Wang, Q.~Liu, and J.~Yuan, ``Cluster analysis based
+  switching-off scheme of base stations for energy saving,'' {\em Journal of
+  Networks}, vol.~7, no.~3, pp.~494--501, 2012.
+
+\bibitem{Tipper:Dimming:Globecom:2010}
+D.~T.~A. Rezgui, Krishnamurthy, and P.~Pacharintanaku, ``Dimming cellular
+  networks,'' in {\em IEEE GLOBECOM'10}, December 2010.
+
+\bibitem{Blume:2010:BLTJ:CellularPower}
+O.~Blume, ``Energy savings in mobile networks based on adaptation to traffic
+  statistics,'' {\em Bell Labs Technical Journal}, vol.~15, pp.~77--94,
+  September 2010.
+
+\bibitem{Deruyck20112036}
+M.~Deruyck, E.~Tanghe, W.~Joseph, and L.~Martens, ``Modelling and optimization
+  of power consumption in wireless access networks,'' {\em Computer
+  Communications}, vol.~34, no.~17, pp.~2036 -- 2046, 2011.
+
+\bibitem{6056687}
+S.~McLaughlin, P.~M. Grant, J.~Thompson, H.~Haas, D.~Laurenson, C.~Khirallah,
+  Y.~Hou, and R.~Wang, ``Techniques for improving cellular radio base station
+  energy efficiency,'' {\em Wireless Communications, IEEE}, vol.~18, no.~5,
+  pp.~10--17, 2011.
+
+\bibitem{5783984}
+C.~Han, T.~Harrold, S.~Armour, I.~Krikidis, S.~Videv, P.~M. Grant, H.~Haas,
+  J.~Thompson, I.~Ku, C.-X. Wang, T.~A. Le, M.~Nakhai, J.~Zhang, and L.~Hanzo,
+  ``Green radio: radio techniques to enable energy-efficient wireless
+  networks,'' {\em Communications Magazine, IEEE}, vol.~49, no.~6, pp.~46--54,
+  2011.
+
+\bibitem{Kavitha20131373}
+V.~Kavitha, S.~Ramanath, and M.~Debbah, ``Satisfying demands in a multicellular
+  network: A universal power allocation algorithm,'' {\em Computer
+  Communications}, vol.~36, no.~12, pp.~1373 -- 1386, 2013.
+
+\bibitem{Xu:powercontrol:2013}
+H.~Xu, X.~Zhou, and Y.~Chen, ``Automatic uplink resource management in mobile
+  cellular networks: A utility-based cooperative power control strategy,'' {\em
+  International Journal of Wireless Information Networks}, pp.~1--10, 2013.
+
+\bibitem{Bhaumik:2010:BSC:1851290.1851300}
+S.~Bhaumik, G.~Narlikar, S.~Chattopadhyay, and S.~Kanugovi, ``Breathe to stay
+  cool: adjusting cell sizes to reduce energy consumption,'' in {\em
+  Proceedings of the first ACM SIGCOMM workshop on Green networking}, Green
+  Networking '10, (New York, NY, USA), pp.~41--46, ACM, 2010.
+
+\bibitem{6189819}
+T.~Han and N.~Ansari, ``Ice: Intelligent cell breathing to optimize the
+  utilization of green energy,'' {\em Communications Letters, IEEE}, vol.~16,
+  no.~6, pp.~866--869, 2012.
+
+\bibitem{6576465}
+R.~Thakur, A.~Sengupta, and C.~Siva Ram~Murthy, ``Improving capacity and energy
+  efficiency of femtocell based cellular network through cell biasing,'' in
+  {\em Modeling Optimization in Mobile, Ad Hoc Wireless Networks (WiOpt), 2013
+  11th International Symposium on}, pp.~436--443, 2013.
+
+\bibitem{6491498}
+R.~Estrada, A.~Jarray, H.~Otrok, Z.~Dziong, and H.~Barada, ``Energy-efficient
+  resource allocation model for ofdma macro-femtocell networks,'' {\em
+  Vehicular Technology, IEEE Transactions on}, vol.~PP, no.~99, pp.~1--1, 2013.
+
+\bibitem{Gerla:1995:MMM:276418.276421}
+M.~Gerla and J.~T.-C. Tsai, ``Multicluster, mobile, multimedia radio network,''
+  {\em Wireless Networks}, vol.~1, pp.~255--265, Aug. 1995.
+
+\bibitem{flexibsc}
+N.~S. Networks, ``{Flexi BSC (BSC14)}.'' \url{http://bit.ly/QMD8O5}, June 2011.
+
+\bibitem{ericssonclaim}
+Ericsson, ``{Vodafone Germany first to launch Ericsson's power-saving feature
+  to reduce energy consumption and cut $CO_2$ emissions}.''
+  \url{http://bit.ly/Sls1v1}, December 2007.
+
+\bibitem{mobilinksitecount}
+Mobilink, ``{Mobilink Network}.'' \url{http://bit.ly/UWXYzB}, September 2012.
+
+\bibitem{ptaannreport}
+{Pakistan Telecommunication Authority}, ``{Pakistan Telecommunication
+  Authority, 2011 Annual Report}.'' \url{http://bit.ly/S8YtWS}, December 2011.
+
+\bibitem{telenorsitecount}
+Wikipedia, ``{Telenor Pakistan - Wikipedia}.'' \url{http://bit.ly/R1Uyqm},
+  September 2012.
+
 \end{thebibliography}

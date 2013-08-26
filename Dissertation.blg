@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: C:\Documents and Settings\Administrator\My Documents\Diss\..\GitHub\Dissertation\Dissertation.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Dissertation.aux
 A level-1 auxiliary file: sections/titlePage.aux
 A level-1 auxiliary file: sections/abstractPage.aux
 A level-1 auxiliary file: sections/introChapter1.aux
@@ -9,10 +9,6 @@ A level-1 auxiliary file: sections/casestudyIIChapter5.aux
 A level-1 auxiliary file: sections/conclusionsChapter6.aux
 The style file: ieeetr.bst
 Database file #1: ref.bib
-Repeated entry---line 3545 of file ref.bib
- : @inproceedings{Chabarek08powerawareness
- :                                        ,
-I'm skipping whatever remains of this entry
 A bad cross reference---entry "Lee:ServerConsolidation:2011:Globecom"
 refers to entry "DBLP:conf/globecom/2011", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/globecom/2011"
@@ -22,7 +18,5 @@ Warning--empty journal in FBLease
 Warning--can't use both volume and number fields in costCloud
 Warning--empty journal in TIAnnualReport
 Warning--empty journal in VirtualizationCutsPower
-Name 2 in "Arun Vishwanath and Jiazhen Zhu, and K. Hinton and Robert Ayre and Rod Tucker" has a comma at the end for entry Vishwanath:13
-while executing---line 963 of file ieeetr.bst
 Warning--empty booktitle in Chekuri99aptas
-(There were 3 error messages)
+(There was 1 error message)
