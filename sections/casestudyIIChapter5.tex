@@ -280,7 +280,7 @@ In the above extrapolation, we have assumed that the same amount of energy savin
 We also ran experiments for each BTS model in which the electricity cost for the optimal as well as the heuristic solution (Algorithm 1) was computed. We assessed the performance of our heuristic by computing the difference (error) in the electricity cost of the two solutions. For statistical significance, we computed the error in our heuristic relative to the optimal solution over 48 different experiment runs for each BTS model. The resulting CDF of the heuristic error (in Wh) is plotted in Fig.~\ref{fig:results5}. We can see in Fig.~\ref{fig:results5} that our heuristic is quite close to the optimal solution most of the time, especially for the Model 1 and Model 2 BTS. For Model 3 BTS, while the error is comparatively larger, since the amount of savings with the optimal solution is quite high (Fig.~\ref{fig:case2:results2}), the heuristic will still result in significant energy savings.  
 
 \subsection{Sensitivity of electricity cost savings to the resource pruning granularity} %We may have two states for a BTS: (i) 6+6+6, (ii) 3+3+3. Or, we may have three states: (i) 6+6+6, (ii) 4+4+4, and (iii) 2+2+2. How do the two-state and three-state resource pruning granularity settings comapre in terms of electricity cost savings? 
-\label{subsec:case2:results:granularity} We have observed that going from a 6+6+6 configuration to a 2+2+2 configuration can save a significant amount of energy. Intuition suggests that going to a finer granularity of resource pruning should enable greater energy savings. We now present two cases that are different from the configuration considered so far. In the first case, we consider the ability to (de)activate TRXs in pairs, i.e., a site may be in one of three configurations at a given time: 6+6+6, 4+4+4 or 2+2+2. In the second case, we consider the ability to (de)activate each TRX on a site independently, i.e., at a given time, a site may be in one of six possible configurations. 
+\label{subsec:case2:results:granularity} In our experimental results discussed so far, we have observed that going from a 6+6+6 configuration to a 2+2+2 configuration can save a significant amount of energy. Intuition suggests that going to a finer granularity of resource pruning should enable greater energy savings. We now present two cases that are different from the configuration considered so far. In the first case, we consider the ability to (de)activate TRXs in pairs, i.e., a site may be in one of three configurations at a given time: 6+6+6, 4+4+4 or 2+2+2. In the second case, we consider the ability to (de)activate each TRX on a site independently, i.e., at a given time, a site may be in one of six possible configurations. 
 
 For the first case, a simple extension of the optimization model given in~\ref{subsec:case2:instantiate:multi-cell} as follows:
 
@@ -297,9 +297,9 @@ subject to the following constraints:
 & w_{i,j}, x_j, y_j \in \{0,1\} \qquad \forall i, j%\\
 \end{align}
 
-Here, $x_j$ is a binary indicator variables that is 0 if the traffic at BTS j is below $\delta1 - \epsilon$ and 1 otherwise. Similarly, $y_j$ is an indicator variable that is 0 if the traffic at BTS j is below $\delta2$ and 1 otherwise.
+Here, $x_j$ is a binary indicator variables that is 0 if the traffic at BTS $j$ is below $\delta1 - \epsilon$ and 1 otherwise. Similarly, $y_j$ is an indicator variable that is 0 if the traffic at BTS $j$ is below $\delta2$ and 1 otherwise.
 
-For the second case, we present the following slightly different optimization formulation. Consider an integer variable $z_j$ which represents the number of TRXs active on BTS j. The power consumption at BTS j may be given by $P_1 + p \sum_{i=1}^{n} w_{i,j} + \gamma z_j$, where p is the slope of the power consumption vs traffic volume curve. The RED-BL optimization problem for the multi-BTS setting in this case is:
+For the second case, we present the following slightly different optimization formulation. Consider an integer variable $z_j$ which represents the number of TRXs active on BTS $j$. The power consumption at BTS $j$ may be given by $P_1 + p \sum_{i=1}^{n} w_{i,j} + \gamma z_j$, where p is the slope of the power consumption vs traffic volume curve. The RED-BL optimization problem for the multi-BTS setting in this case is:
 
 \begin{align}
 \textit{minimize} \quad \sum_{j=1}^{m} z_j
@@ -313,8 +313,23 @@ subject to the following constraints:
 & w_{i,j} \in \{0,1\}; \quad z_j \in \{1,2,3,4,5,6\}\qquad \forall i, j%\\
 \end{align}
 
-The third constraint ensures that $z_j$ picks a value at least equal to the minmimum number of TRXs required at BTS j. Since the optimization is a minimization problem, the solver will pick $z_j$ to be exactly equal to the minimum number of TRXs required for the current traffic load.
+The first constraint ensures that each call is handled at exactly one BTS. The second one ensures that a call is mapped to a BTS that may handle it. The third constraint ensures that $z_j$ picks a value at least equal to the minmimum number of TRXs required at BTS $j$. Since the optimization is a minimization problem, the solver will pick $z_j$ to be exactly equal to the minimum number of TRXs required for the current traffic load. The fourth constraint is the capacity constraint on the BTS. The last set of constraints specify the domains of the decision variables.
 
+In this scenario, we conducted simulation experiments where a re-optimization was performed every six minutes using model 1 BTS. 
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Granularity & BTS Model 1 & BTS Model 2 & BTS Model 3\\
+\hline 2-State & 0\% & 0\% &  0\% \\
+\hline 3-State & 6.8124\% & 0\% &  0\% \\
+\hline 6-State & 14.6964\% & 0\% &  0\% \\
+\hline
+\end{tabular}
+\caption{Percentage electricity savings for different granularity of resource pruning}
+\label{tab:granularityresults}
+\end{table}
 
 
 \subsection{Sensitivity of electricity cost savings to the margin of state-change damping} %Suppose that we are using a two-state resource pruning model. If $t_{max}$ is the call capacity of a 6+6+6 site, then the call capacity of the half-pruned site is $t_{max}/2$. If we deactivate TRXs immediately when the instantaneous call volume reaches $t_{max}/2$, we are likely to have many transitions due to short-term variations in call volume. We, therefore, wait until the instantaneous call volume is $t_{max}/2 - \epsilon$ before we switch to a $3+3+3$ configuration. The value of $\epsilon$ is a configurable parameter which can take a value from $0$ (very aggressive, lots of transients, perhaps more savings) to $t_{max}/2$ (very conservative, no transients, no savings either). How do the electricity cost savings vary with the value of $\epsilon$.

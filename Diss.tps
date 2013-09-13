@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=sections\casestudyIIChapter5.tex
 
 [Frame0_View0,0]
-TopLine=341
-Cursor=28268
+TopLine=450
+Cursor=35070
 
 [Frame1]
 Flags=0
@@ -35,7 +35,7 @@ Class=BibTeXView
 Document=ref.bib
 
 [Frame1_View0,0]
-TopLine=3824
+TopLine=3822
 Cursor=132951
 
 [Frame2]
@@ -53,7 +53,7 @@ Class=LaTeXView
 Document=Dissertation.tex
 
 [Frame2_View0,0]
-TopLine=25
+TopLine=23
 Cursor=1217
 
 [Frame3]
