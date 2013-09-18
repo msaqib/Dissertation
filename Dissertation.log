@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  12 SEP 2013 16:18
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.9.23)  18 SEP 2013 11:05
 entering extended mode
 **Dissertation.tex
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\Dissertation.tex"
@@ -356,7 +356,7 @@ File: pics/heuristicerror-touchedup.eps Graphic file (type eps)
 
 <pics/heuristicerror-touchedup.eps> [88] [89] [90] [91]
 File: pics/epsilonresults.eps Graphic file (type eps)
- <pics/epsilonresults.eps>) [92] [93]
+ <pics/epsilonresults.eps> [92]) [93]
 ("C:\Documents and Settings\Administrator\My Documents\GitHub\Dissertation\sections/conclusionsChapter6.tex"
 Chapter 6.
 ) [94
@@ -392,12 +392,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2091 strings out of 494046
- 33234 string characters out of 3148332
- 91150 words of memory out of 3000000
- 5281 multiletter control sequences out of 15000+200000
+ 2092 strings out of 494046
+ 33253 string characters out of 3148332
+ 91161 words of memory out of 3000000
+ 5282 multiletter control sequences out of 15000+200000
  12778 words of font info for 45 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  27i,10n,24p,2555b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (118 pages, 278736 bytes).
+Output written on Dissertation.dvi (118 pages, 280240 bytes).

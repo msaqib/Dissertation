@@ -91,13 +91,13 @@ and works within the GSM specifications.
 
 Much prior work focuses primarily on recent and future generation cellular networks such as WiMax and LTE. The operational nature of GSM, the focus of our thesis, is so different from these networks that the energy efficiency improvement techniques proposed for such networks do not apply to GSM. Nonetheless, in this section, we do touch upon some of the recent work on energy efficiency in non-GSM networks as well. In~\cite{Deruyck20112036}, Deruyck et. al. have proposed a useful metric, power consumption per covered area, to measure the energy efficiency of WiMax, fixed WiMax, UMTS, HSPA and LTE. The authors rank these networks in order of energy efficiency based on their proposed metric and also investigate the impact of MIMO on energy efficiency of these networks. Good surveys of BTS energy efficiency improvement techniques for 3G networks may be found in~\cite{6056687,5783984}.
 
-Transmit power adjustment for BTSs is critical for the operation of networks such as CDMA and WiMax, as it determines the interference level in the cells. Several researchers have investigated optimal transmit power allocation techniques, for instance seee~\cite{Kavitha20131373,Xu:powercontrol:2013}. Transmit power adjustment using cell-breathing was proposed in~\cite{Bhaumik:2010:BSC:1851290.1851300} with the objective of reducing energy consumption in 3G cellular networks. Han et. al. also proposed a cell-breathing based approach for cellular networks in the presence of green energy sources in~\cite{6189819}.
+Transmit power adjustment for BTSs is critical for the operation of networks such as CDMA and WiMax, as it determines the interference level in the cells. Several researchers have investigated optimal transmit power allocation techniques, for instance see~\cite{Kavitha20131373,Xu:powercontrol:2013}. Transmit power adjustment using cell-breathing was proposed in~\cite{Bhaumik:2010:BSC:1851290.1851300} with the objective of reducing energy consumption in 3G cellular networks. Han et. al. also proposed a cell-breathing based approach for cellular networks in the presence of green energy sources in~\cite{6189819}.
 
 Small cells such as pico and femto cells are also gaining popularity due to better energy efficiency compared to large macro-cells. Such cells are generally deployed within large organization's premises to enhance indoor coverage without significant increase in transmit power. We have not considered this type of cells because our conversations with network operators revealed that they are not common in the developing world. The interested reader will find some investigation of energy efficiency improvement and power optimization in the presence of pico and femto cells can be found in~\cite{6576465,6491498} 
 
 \section{Instantiating the generalized optimization formulation} %Derive the objective function and constraints. Clearly outline the assumptions that we've made about the geo-diverse data centers.
 \label{sec:case2:instantiate}
-The RED-BL optimization problem minimizes the sum of state and transition costs for a network over a sequence of consecutive intervals in a planning window. The state cost for a particular interval is the sum of electricity cost incurred at all BTSs in the network. In order to compute the state cost, we will first derive a mathematical model for electricity consumption at a single BTS. Then, we willgeneralize it to a multi-BTS cellular network setting to represent the state cost for a single interval. The transition cost would be the cost of electricity incurred in activating or deactivating TRXs. Our conversations with network operators reveal that transitions into and out of BTS Power Saving mode do not consume a noticeable amount of power. Also, these transitions are reasonably fast in contrast to the delayed convergence due to transitions in the geo-diverse data center scenario. The RED-BL transition costs in cellular networks may, therefore, be ignored.
+The RED-BL optimization problem minimizes the sum of state and transition costs for a network over a sequence of consecutive intervals in a planning window. The state cost for a particular interval is the sum of electricity cost incurred at all BTSs in the network. In order to compute the state cost, we will first derive a mathematical model for electricity consumption at a single BTS. Then, we will generalize it to a multi-BTS cellular network setting to represent the state cost for a single interval. The transition cost would be the cost of electricity incurred in activating or deactivating TRXs. Our conversations with network operators reveal that transitions into and out of BTS Power Saving mode do not consume a noticeable amount of power. Also, these transitions are reasonably fast in contrast to the delayed convergence due to transitions in the geo-diverse data center scenario. The RED-BL transition costs in cellular networks may, therefore, be ignored.
 
 \subsection{Single Base Transceiver Station (BTS)}
 \label{sec:case2:instantiate:single-cell}
@@ -313,18 +313,18 @@ subject to the following constraints:
 & w_{i,j} \in \{0,1\}; \quad z_j \in \{1,2,3,4,5,6\}\qquad \forall i, j%\\
 \end{align}
 
-The first constraint ensures that each call is handled at exactly one BTS. The second one ensures that a call is mapped to a BTS that may handle it. The third constraint ensures that $z_j$ picks a value at least equal to the minmimum number of TRXs required at BTS $j$. Since the optimization is a minimization problem, the solver will pick $z_j$ to be exactly equal to the minimum number of TRXs required for the current traffic load. The fourth constraint is the capacity constraint on the BTS. The last set of constraints specify the domains of the decision variables.
+The first constraint ensures that each call is handled at exactly one BTS. The second one ensures that a call is mapped to a BTS that may handle it. The third constraint ensures that $z_j$ picks a value at least equal to the minimum number of TRXs required at BTS $j$. Since the optimization is a minimization problem, the solver will pick $z_j$ to be exactly equal to the minimum number of TRXs required for the current traffic load. The fourth constraint is the capacity constraint on the BTS. The last set of constraints specify the domains of the decision variables.
 
-In this scenario, we conducted simulation experiments where a re-optimization was performed every six minutes using model 1 BTS. 
+In this scenario, we conducted simulation experiments where a re-optimization was performed every six minutes using model 1 BTS. The results of these experiments are given in Table~\ref{tab:granularityresults}. For all three BTS models, we see that going from a 2-state model to a 3-state model gives a relatively small increase in energy savings compared to the jump from 3-state to 6-state model.  
 
 \begin{table}
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
 Granularity & BTS Model 1 & BTS Model 2 & BTS Model 3\\
-\hline 2-State & 0\% & 0\% &  0\% \\
-\hline 3-State & 6.8124\% & 0\% &  0\% \\
-\hline 6-State & 14.6964\% & 0\% &  0\% \\
+\hline 2-State & 5.38\% & 6.29\% &  14.94\% \\
+\hline 3-State & 6.81\% & 7.73\% &  18.62\% \\
+\hline 6-State & 14.69\% & 25.33\% &  33.69\% \\
 \hline
 \end{tabular}
 \caption{Percentage electricity savings for different granularity of resource pruning}
@@ -345,3 +345,11 @@ We carried out experiments to assess the impact of the value of $\epsilon$ on th
 \end{figure}
 
 \section{Discussion}
+\label{sec:discuss:case2} In this chapter, we have seen an application of RED-BL to cellular networks. The nature of cellular networks is different compared to geo-diverse data centers (considered in the previous chapter) in the following ways:
+
+\begin{itemize}
+\item The workload (calls) has limited geographic flexibility and may only be handled at a few candidate resources (BTSs)
+\item There is no geo-diversity in electricity prices
+\end{itemize}
+
+For resource pruning and workload relocation, we utilized two features built in to currently deployed equipment in the form of BTS power savings and network-controlled call handoff, respectively. Our simulation results show that jointly using workload relocation and resource pruning can bring in considerably higher gains in electricity savings compared to using resource pruning alone. Our results show the promising potential that RED-BL holds in greening current generation cellular networks.
