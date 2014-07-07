@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  7 JUL 2014 17:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  7 JUL 2014 21:43
 entering extended mode
 **Dissertation.tex
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.tex
@@ -258,9 +258,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 ] [2] [3]
 File: pics/enerprop.eps Graphic file (type eps)
 
-<pics/enerprop.eps> [4]
+<pics/enerprop.eps> [4] [5]
 File: pics/waridworkload.eps Graphic file (type eps)
- <pics/waridworkload.eps> [5] [6] [7] [8] [9]) [10]
+ <pics/waridworkload.eps> [6] [7] [8] [9]) [10]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/backgroundChapter2.tex
 Chapter 2.
 [11
@@ -409,10 +409,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2097 strings out of 493922
  30947 string characters out of 3147304
- 91303 words of memory out of 3000000
+ 91302 words of memory out of 3000000
  5288 multiletter control sequences out of 15000+200000
  12778 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,10n,24p,2555b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (122 pages, 336148 bytes).
+Output written on Dissertation.dvi (122 pages, 338012 bytes).
