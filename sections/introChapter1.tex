@@ -21,7 +21,9 @@ An ISP's network is a mostly dumb but fast carrier of IP packets, also known as 
 
 
 %Shed some light on the role networks play in our lives, highlighting different types of networks.
-So far, we have seen that computer networks are critical resources that enable the services that we rely on in our everyday lives. The deployment of these computer networks involves huge expenses. For instance, Google announced building a data center in Iowa at a cost of \$400 Million~\cite{CostOfADC}. Furthermore, according to~\cite{costcellsite}, the capital cost of a typical cellular network site is \$550,000\footnote{This does not include spectrum licensing costs. Furthermore, an operator needs to deploy many sites. A site at about every 800 meters is common in urban settings}. 
+So far, we have seen that computer networks are critical resources that enable the services that we rely on in our everyday lives. In this thesis, we will focus primarily on cellular networks and geo-diverse data centers. 
+
+The deployment of these computer networks involves huge expenses. For instance, Google announced building a data center in Iowa at a cost of \$400 Million~\cite{CostOfADC}. Furthermore, according to~\cite{costcellsite}, the capital cost of a typical cellular network site is \$550,000\footnote{This does not include spectrum licensing costs. Furthermore, an operator needs to deploy many sites. A site at about every 800 meters is common in urban settings}. 
 
 The recurring operational cost of these networks is also quite high. For instance, in 2009, Facebook spent \$50 Million on leasing the data center space, alone~\cite{FBLease}. In the context of geo-diverse data centers, other contributors to operational expenses include staff salaries, maintenance costs, the cost of inter-data center network connectivity and electricity bill. Optimizing operational costs is critical for network operators in order to offer cost-effective services to consumers and maximize their profit.
 
@@ -44,16 +46,15 @@ Ideally, a network's power consumption should be a linear function of workload s
 \label{fig:ener-prop}
 \end{figure} 
 
-A network that is not energy proportional is energy inefficient (i.e., consumes a lot more energy than it should) in the low-workload regimes. It has been observed for many networks that workload is variable and periodic. Figure~\ref{fig:varwork} shows the workload for call traffic at a cellular site in a large operational GSM network in Pakistan. It shows that call traffic has diurnal cycles and that traffic peaks for only a short period of time during a day. Furthermore, the workload peak is quite high compared to the trough. ISP~\cite{1248656} and data center~\cite{10.1109/MC.2007.443} traffic also show similar trends. In order to meet peak expected workload amicably, networks are dimensioned according to the peak workload. Since the workload is far from the peak most of the time and networks are not energy proportional, most networks are energy inefficient. Recent years have witnessed significant research effort aimed at improving network energy efficiency in packet networks, cellular networks and geo-diverse data centers. Effectively, such research aims to lower the y-intercept of the red line in Figure~\ref{fig:ener-prop}. 
+Lack of energy proportionality is of little concern if the network consistently operates in the high workload region because in this region, the power consumption for a real network is close to ideal. However, most networks today have time-varying traffic which is in the low-workload region for considerable amount of time during a given day. Figure~\ref{fig:varwork} shows the workload for call traffic at a cellular site in a large operational GSM network in Pakistan. It shows that call traffic has diurnal cycles and that traffic peaks for only a short period of time during a day. Furthermore, the workload peak is quite high compared to the trough. ISP~\cite{1248656} and data center~\cite{10.1109/MC.2007.443} traffic also show similar trends. 
+
+In order to meet peak expected workload amicably, networks are dimensioned according to the peak workload. Since the workload is far from the peak most of the time and networks are not energy proportional, most networks have a much higher energy consumption than what they would ideally incur. In other words, today's networks are energy inefficient. Another way to look at energy efficiency is through the lens of performance per Watt, a useful metric for energy efficiency of a network. The performance per Watt for today's networks is quite low. Therefore, it is important to lower the y-intercept of the solid line in Figure~\ref{fig:ener-prop} thereby reducing the electricity cost of today's networks without compromising on the performance that they deliver. Recent years have seen significant research focus on improving energy efficiency in both cellular and geo-diverse data center networks.
 
 \begin{figure}
 \includegraphics[width=1\textwidth]{pics/waridworkload.eps}
 \caption{Call traffic for an oeprational cellular site over two days}
 \label{fig:varwork}
 \end{figure} 
-
-We have observed earlier that network electricity costs are quite high. An energy efficient network would only incur high electricity costs if it handled a lot of workload. On the other hand, for energy inefficient networks, such as those prevalent today, high electricity costs are not justifiable by high workload because the workload is quite variable. In other words, today's networks have very poor performance per Watt characteristics. Therefore, reducing the electricity costs in today's networks is critically important.  
-
 
 \section{Prevalent electricity cost reduction techniques} %\textit{Electricity cost} = \textit{amount of energy consumed} $\times$ \textit{unit price of electricity}. Therefore, electricity cost may be cut by reducing either or both of the quantities on the right hand side. 
 
