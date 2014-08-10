@@ -1,17 +1,17 @@
-\chapter{Background - Different Types of Networks and Their Similarities }
+\chapter{Background - Power consumption models in geo-diverse data centers and cellular networks}
 \label{chap:background}
-In this thesis, we claim that many different types of networks are quite similar in terms of power consumption. In this chapter, we take an essentials-only look at two different types of networks with a view to establishing the similarity between them. This similarity motivates the formulation of a generalized electricity cost optimization framework. 
+In this chapter, we first describe the power consumption models for geo-diverse data centers and mobile cellular networks. Then, we draw similarities between these two networks to come up with an abstract power consumption model. This generalized power consumption model motivates the formulation of a generalized electricity cost optimization framework in the next chapter. 
 
 \section{Geo-Diverse Data Centers} Organizations like Microsoft, Facebook, Amazon and Google run a plethora of applications. Some of these applications are accessible by the general public. Google Docs is one such application. Such organizations also run private applications for the consumption of authorized internal users only. These applications run on servers that are hosted at sites called data centers.
 
 A data center is a site that has equipment such as servers, storage and networking equipment, in addition to some allied equipment such as airconditioning and power supplies. A given data center may host only public applications, only private applications or even both. Furthermore, some public data center operators allow a client to host their own applications, whereas some only offer a fixed set of internally developed applications. For instance, one may run a custom application on a server leased on Amazon's data centers, but on the other hand, Google's search cluster only hosts the Google search application. 
 
-Operators typically deploy multiple data centers at different geographic locations. This is done for two reasons. First, having data centers at different locations provides fault tolerance. If one site goes down for some reason, the other site may take over as a backup. Also, multiple remote sites are less likely to affected simultaneously by a natural disaster. A second reason to have multiple data centers is to have low latency to clients at different locations. For instance, Amazon has multiple data centers in different continents, thereby ascertaining that no matter where a client may be, there is an Amazon data center relatively close by compared to the case if Amazon only had one data center in the US. Figure~\ref{fig:googledcmap} shows the locations of Google's data centers across the globe (according to royal.pingdom.com as of April 2008).
+Operators typically deploy multiple data centers at different geographic locations. This is done for two reasons. First, having data centers at different locations provides fault tolerance. If one site goes down for some reason, the other site may take over as a backup. Also, multiple remote sites are less likely to affected simultaneously by a natural disaster. A second reason to have multiple data centers is to have low latency to clients at different locations. For instance, Amazon has multiple data centers in different continents, thereby ascertaining that no matter where a client may be, there is an Amazon data center relatively close by compared to the case if Amazon only had one data center in the US. Figure~\ref{fig:googledcmap} shows the locations of Google's data centers across the globe (according to www.google.com/about/datacenters/inside/locations/ as of August 10, 2014).
 
 \begin{figure}
-\includegraphics[width=1\textwidth]{pics/googledcmap.eps}
+\includegraphics[width=1\textwidth]{pics/googledcmap2.eps}
 \label{fig:googledcmap}
-\caption{Google Data Center Locations - Source: royal.pingdom.com}
+\caption{Google Data Center Locations - Source: www.google.com/about/datacenters/inside/locations/}
 \end{figure}
 \subsection{Structure}
 Before delving into the internal structure and composition of a data center, let us consider a data center as a single resource. This view helps provide only the high-level details of an operator's network. At this level, each one of an operator's data centers are inter-connected by means of high-speed inter data center network links. These links serve to carry various types of traffic, some of which are given below:

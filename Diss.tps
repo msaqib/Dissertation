@@ -17,7 +17,7 @@ Class=LaTeXView
 Document=sections\casestudyIIChapter5.tex
 
 [Frame0_View0,0]
-TopLine=518
+TopLine=530
 Cursor=38533
 
 [Frame1]
@@ -35,7 +35,7 @@ Class=BibTeXView
 Document=ref.bib
 
 [Frame1_View0,0]
-TopLine=3847
+TopLine=3859
 Cursor=132951
 
 [Frame2]
@@ -126,7 +126,7 @@ Document=sections\titlePage.tex
 
 [Frame6_View0,0]
 TopLine=50
-Cursor=2609
+Cursor=2388
 
 [Frame7]
 Flags=0
@@ -143,8 +143,8 @@ Class=LaTeXView
 Document=sections\introChapter1.tex
 
 [Frame7_View0,0]
-TopLine=99
-Cursor=9645
+TopLine=182
+Cursor=18295
 
 [Frame8]
 Flags=0
@@ -161,10 +161,10 @@ Class=LaTeXView
 Document=sections\backgroundChapter2.tex
 
 [Frame8_View0,0]
-TopLine=0
-Cursor=73
+TopLine=4
+Cursor=675
 
 [SessionInfo]
 FrameCount=9
-ActiveFrame=7
+ActiveFrame=8
 
