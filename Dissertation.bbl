@@ -107,28 +107,6 @@ P.~Mockapetris, ``{Domain names - implementation and specification}.'' RFC 1035
 T.~Berners-Lee, R.~Fielding, and H.~Frystyk, ``{Hypertext Transfer Protocol --
   HTTP/1.0}.'' RFC 1945 (Informational), May 1996.
 
-\bibitem{Mahadevan:2009:PBF:1560132.1560210}
-P.~Mahadevan, P.~Sharma, S.~Banerjee, and P.~Ranganathan, ``A power
-  benchmarking framework for network devices,'' in {\em Proceedings of the 8th
-  International IFIP-TC 6 Networking Conference}, NETWORKING '09, (Berlin,
-  Heidelberg), pp.~795--808, Springer-Verlag, 2009.
-
-\bibitem{Vishwanath:13}
-A.~Vishwanath, J.~Zhu, K.~Hinton, R.~Ayre, and R.~Tucker, ``Estimating the
-  energy consumption for packet processing, storage and switching in optical-ip
-  routers,'' in {\em Optical Fiber Communication Conference/National Fiber
-  Optic Engineers Conference 2013}, p.~OM3A.6, Optical Society of America,
-  2013.
-
-\bibitem{Chabarek08powerawareness}
-J.~Chabarek, J.~Sommers, P.~Barford, C.~Estan, D.~Tsiang, and S.~Wright,
-  ``Power awareness in network design and routing,'' in {\em In Proc. IEEE
-  INFOCOM}, 2008.
-
-\bibitem{wiki:mobileoperators}
-Wikipedia, ``List of mobile network operators,'' 2013.
-\newblock [Online; accessed 09-July-2013].
-
 \bibitem{Louhi:2007:BTSPower:INTELEC}
 J.~T. Louhi, ``Energy efficiency of modern cellular base stations,'' in {\em
   IEEE INTELEC '07}, (New York, NY, USA), pp.~475--476, IEEE, 2007.
@@ -471,6 +449,11 @@ R.~Estrada, A.~Jarray, H.~Otrok, Z.~Dziong, and H.~Barada, ``Energy-efficient
 \bibitem{Gerla:1995:MMM:276418.276421}
 M.~Gerla and J.~T.-C. Tsai, ``Multicluster, mobile, multimedia radio network,''
   {\em Wireless Networks}, vol.~1, pp.~255--265, Aug. 1995.
+
+\bibitem{Chabarek08powerawareness}
+J.~Chabarek, J.~Sommers, P.~Barford, C.~Estan, D.~Tsiang, and S.~Wright,
+  ``Power awareness in network design and routing,'' in {\em In Proc. IEEE
+  INFOCOM}, 2008.
 
 \bibitem{flexibsc}
 N.~S. Networks, ``{Flexi BSC (BSC14)}.'' \url{http://bit.ly/QMD8O5}, June 2011.
