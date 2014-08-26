@@ -6,28 +6,28 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces The modern data center's architecture}}{15}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Resolving the IP address for a server hosted in a data center}}{18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces An example of mapping variable workload to capacity-limited network resources with geo-temporal diversity in electricity prices. Three consecutive intervals $t_1$, $t_2$ and $t_3$ are considered. Workload and electricity prices may only change between two consecutive intervals. (a) Workload considered in this example. (b) Electricity prices for the locations at which the two network resources are situated. (c) A uniform mapping of workload to network resources does not exploit electricity price diversity. (d) Mapping workload to network resources in order of their current electricity price. Due to lack of energy proportionality, only slight savings in electricity cost are possible. (e) Deactivating idle resources alongwith the resource mapping strategy of (d) may result in significant electricity cost savings.}}{31}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An example of mapping variable workload to capacity-limited network resources with geo-temporal diversity in electricity prices. Three consecutive intervals $t_1$, $t_2$ and $t_3$ are considered. Workload and electricity prices may only change between two consecutive intervals. (a) Workload considered in this example. (b) Electricity prices for the locations at which the two network resources are situated. (c) A uniform mapping of workload to network resources does not exploit electricity price diversity. (d) Mapping workload to network resources in order of their current electricity price. Due to lack of energy proportionality, only slight savings in electricity cost are possible. (e) Deactivating idle resources alongwith the resource mapping strategy of (d) may result in significant electricity cost savings.}}{29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Normalized workload}}{52}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Workload intensity histogram}}{52}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Percentage savings with over-provisioning}}{57}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Total cost vs transition overhead}}{60}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces What}}{64}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean absolute workload prediction error vs sliding window size}}{65}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Local trajectory correction technique for three consecutive intervals}}{65}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Distribution of workload prediction error for sliding window size of 12 hours}}{65}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Percentage error of sliding window forecasts compared to global optimal with error-free workload}}{67}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Cost saving vs (de)activation granularity}}{68}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Average daily total electricity cost and it's components vs f, For bs = 0.01}}{69}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Average daily total electricity cost and it's components vs f, For bs = 0.65}}{70}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces The minimum, maximum and average percentage difference between the cost of our heuristic and RED-BL}}{71}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Normalized workload}}{50}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Workload intensity histogram}}{50}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Percentage savings with over-provisioning}}{55}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Total cost vs transition overhead}}{58}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces What}}{62}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean absolute workload prediction error vs sliding window size}}{63}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Local trajectory correction technique for three consecutive intervals}}{63}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Distribution of workload prediction error for sliding window size of 12 hours}}{63}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Percentage error of sliding window forecasts compared to global optimal with error-free workload}}{65}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Cost saving vs (de)activation granularity}}{66}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Average daily total electricity cost and it's components vs f, For bs = 0.01}}{67}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Average daily total electricity cost and it's components vs f, For bs = 0.65}}{68}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces The minimum, maximum and average percentage difference between the cost of our heuristic and RED-BL}}{69}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Location of the BTS sites in our dataset (spread over a $31.25$ $km^2$ urban terrain)}}{75}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Empirical CDF of the number of potential serving BTSs for a call in our dataset (large metropolitan area)}}{76}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Normalized traffic for a 24-hour period at two neighboring sites in our dataset shows the geo-diversity in traffic}}{76}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces BTS power consumption model. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{80}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Percentage reduction in energy consumption vs inter-optimization interval}}{89}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Percentage reduction in energy consumption vs inter-optimization interval}}{89}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{90}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon $, with a six minute inter-optimization interval}}{95}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Location of the BTS sites in our dataset (spread over a $31.25$ $km^2$ urban terrain)}}{73}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Empirical CDF of the number of potential serving BTSs for a call in our dataset (large metropolitan area)}}{74}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Normalized traffic for a 24-hour period at two neighboring sites in our dataset shows the geo-diversity in traffic}}{74}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces BTS power consumption model. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{78}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Percentage reduction in energy consumption vs inter-optimization interval}}{87}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Percentage reduction in energy consumption vs inter-optimization interval}}{87}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{88}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon $, with a six minute inter-optimization interval}}{93}
 \addvspace {10\p@ }

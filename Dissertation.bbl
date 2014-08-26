@@ -127,18 +127,6 @@ B.-Y. Choi, S.~Moon, Z.-L. Zhang, K.~Papagiannaki, and C.~Diot, ``Analysis of
   2004. Twenty-third AnnualJoint Conference of the IEEE Computer and
   Communications Societies}, vol.~3, pp.~1797--1807 vol.3, 2004.
 
-\bibitem{kellerer:knapsackproblems:2005}
-H.~Kellerer, U.~Pferschy, and D.~Pisinger, {\em Knapsack Problems}.
-\newblock Springer-Verlag, 2005.
-
-\bibitem{Chekuri99aptas}
-C.~Chekuri and S.~Khanna, ``A ptas for the multiple knapsack problem,''
-  pp.~213--222, 1999.
-
-\bibitem{unitcommit-trans}
-N.~Padhy, ``Unit commitment-a bibliographical survey,'' {\em Power Systems,
-  IEEE Transactions on}, vol.~19, no.~2, pp.~1196--1205, 2004.
-
 \bibitem{land60a}
 A.~H. Land and A.~G. Doig, ``An automatic method of solving discrete
   programming problems,'' {\em Econometrica}, vol.~28, no.~3, pp.~497--520,
@@ -445,6 +433,10 @@ R.~Thakur, A.~Sengupta, and C.~Siva Ram~Murthy, ``Improving capacity and energy
 R.~Estrada, A.~Jarray, H.~Otrok, Z.~Dziong, and H.~Barada, ``Energy-efficient
   resource allocation model for ofdma macro-femtocell networks,'' {\em
   Vehicular Technology, IEEE Transactions on}, vol.~PP, no.~99, pp.~1--1, 2013.
+
+\bibitem{kellerer:knapsackproblems:2005}
+H.~Kellerer, U.~Pferschy, and D.~Pisinger, {\em Knapsack Problems}.
+\newblock Springer-Verlag, 2005.
 
 \bibitem{Gerla:1995:MMM:276418.276421}
 M.~Gerla and J.~T.-C. Tsai, ``Multicluster, mobile, multimedia radio network,''
