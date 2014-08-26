@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  26 AUG 2014 16:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  26 AUG 2014 16:50
 entering extended mode
 **Dissertation.tex
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.tex
@@ -293,13 +293,13 @@ Chapter 3.
 
 ] [28] [29]
 File: pics/mappingexample.eps Graphic file (type eps)
- <pics/mappingexample.eps> [30] [31]
+ <pics/mappingexample.eps>
 
-LaTeX Warning: Reference `sec:background:differences' on page 32 undefined on i
-nput line 38.
+LaTeX Warning: Reference `sec:background:differences' on page 30 undefined on i
+nput line 36.
 
-[32]
-Overfull \hbox (7.39417pt too wide) in paragraph at lines 54--55
+[30] [31] [32]
+Overfull \hbox (7.39417pt too wide) in paragraph at lines 52--53
 [][]\OT1/cmr/m/n/12 Here $\OML/cmm/m/it/12 C\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S
 []\OT1/cmr/m/n/12 )$ rep-re-sents a func-tion that eval-u-ates the cost of be-i
 ng in state $\OML/cmm/m/it/12 S[]$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 T\OT1/
@@ -425,12 +425,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2095 strings out of 493922
- 30890 string characters out of 3147304
- 90291 words of memory out of 3000000
- 5286 multiletter control sequences out of 15000+200000
+ 2096 strings out of 493922
+ 30912 string characters out of 3147304
+ 90302 words of memory out of 3000000
+ 5287 multiletter control sequences out of 15000+200000
  12778 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,10n,24p,2555b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (123 pages, 341612 bytes).
+Output written on Dissertation.dvi (123 pages, 340820 bytes).

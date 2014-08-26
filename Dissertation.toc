@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {2.3}A comparison of data center and cellular networks}{25}
 \contentsline {section}{\numberline {2.4}Discussion}{26}
 \contentsline {chapter}{\numberline {3}A generalized framework for electricity cost optimization}{27}
-\contentsline {section}{\numberline {3.1}Problem Model}{28}
+\contentsline {section}{\numberline {3.1}Problem Model}{27}
 \contentsline {subsection}{\numberline {3.1.1}Illustrative Example}{28}
 \contentsline {subsection}{\numberline {3.1.2}Problem complexity}{30}
 \contentsline {section}{\numberline {3.2}Optimization problem formulation}{33}
