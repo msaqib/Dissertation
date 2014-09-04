@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  26 AUG 2014 19:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  5 SEP 2014 04:37
 entering extended mode
 **Dissertation.tex
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.tex
@@ -179,11 +179,7 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 (D:\users\saqib\documents\GitHub\Dissertation\sections/backgroundChapter2.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/frameworkChapter3.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIChapter4.aux)
-(D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.aux
-
-LaTeX Warning: Label `algo:heur1' multiply defined.
-
-)
+(D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.aux)
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -275,7 +271,7 @@ Chapter 2.
 ] [12]
 File: pics/googledcmap2.eps Graphic file (type eps)
  <pics/googledcmap2.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
 [][]\OT1/cmr/m/n/12 Figure 2.1: Google Data Cen-ter Lo-ca-tions - Source:
  []
 
@@ -284,78 +280,70 @@ File: pics/dcheir.eps Graphic file (type eps)
  <pics/dcheir.eps> [14] [15] [16]
 File: pics/dcloadbalance.eps Graphic file (type eps)
  <pics/dcloadbalance.eps> [17] [18]
-[19] [20] [21] [22] [23] [24] [25]) [26]
+[19] [20] [21] [22] [23] [24] [25] [26]) [27]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/frameworkChapter3.tex
 Chapter 3.
-[27
+[28
 
 
 
 ]
 File: pics/mappingexample.eps Graphic file (type eps)
- <pics/mappingexample.eps> [28] [29] [30] [31]
-Overfull \hbox (7.39417pt too wide) in paragraph at lines 49--50
-[][]\OT1/cmr/m/n/12 Here $\OML/cmm/m/it/12 C\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S
-[]\OT1/cmr/m/n/12 )$ rep-re-sents a func-tion that eval-u-ates the cost of be-i
-ng in state $\OML/cmm/m/it/12 S[]$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 T\OT1/
-cmr/m/n/12 (\OML/cmm/m/it/12 S[]; S[]\OT1/cmr/m/n/12 )$
- []
-
-[32] [33]) [34]
+ <pics/mappingexample.eps> [29] [30] [31] [32] [33] [34]) [35] [36]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIChapter4.tex
 Chapter 4.
-[35
+[37
 
 
 
-] [36] [37] [38] [39] [40] [41] [42]
-Overfull \hbox (37.09555pt too wide) in paragraph at lines 126--147
+] [38] [39] [40] [41] [42]
+Overfull \hbox (37.09555pt too wide) in paragraph at lines 73--94
  [][] 
  []
 
-[43] [44]
-
-LaTeX Warning: Reference `subsec:framework:complexity' on page 45 undefined on 
-input line 201.
-
-[45]
-Missing character: There is no ò in font cmr12!
- [46] [47] [48] [49]
+[43] [44] [45] [46] [47] [48] [49] [50]
 File: pics/workloadr.eps Graphic file (type eps)
  <pics/workloadr.eps>
 File: pics/workloadhist-new.eps Graphic file (type eps)
- <pics/workloadhist-new.eps>
-Overfull \hbox (19.44852pt too wide) in paragraph at lines 273--286
+
+<pics/workloadhist-new.eps>
+Overfull \hbox (19.44852pt too wide) in paragraph at lines 233--246
 [][][]   [] 
  []
 
-[50] [51] [52] [53] [54]
+[51] [52] [53]
 File: pics/s1vseqr.eps Graphic file (type eps)
- <pics/s1vseqr.eps> [55] [56] [57]
+ <pics/s1vseqr.eps>
+Overfull \hbox (37.46936pt too wide) in paragraph at lines 356--356
+[]\OT1/cmr/bx/n/14.4 Sensitivity of elec-tric-ity cost sav-ings to ex-tent of o
+ver-provisioning 
+ []
+
+[54] [55] [56]
 File: pics/s3r.eps Graphic file (type eps)
- <pics/s3r.eps>
-[58] [59] [60] [61]
+ <pics/s3r.eps> [57] [58]
+File: pics/s6.eps Graphic file (type eps)
+ <pics/s6.eps> [59] [60] [61] [62]
 File: pics/flowchart2.eps Graphic file (type eps)
- <pics/flowchart2.eps>
+
+<pics/flowchart2.eps>
 File: pics/workload-pred-error-mean.eps Graphic file (type eps)
  <pics/workload-pred-error-mean.eps>
 File: pics/traj-corr.eps Graphic file (type eps)
-
-<pics/traj-corr.eps>
+ <pics/traj-corr.eps>
 File: pics/workload-pred-error-2.eps Graphic file (type eps)
- <pics/workload-pred-error-2.eps> [62] [63] [64]
-File: pics/sw-cost-error-2.eps Graphic file (type eps)
 
-<pics/sw-cost-error-2.eps>
-File: pics/s6.eps Graphic file (type eps)
- <pics/s6.eps> [65] [66]
+<pics/workload-pred-error-2.eps> [63] [64] [65]
+File: pics/sw-cost-error-2.eps Graphic file (type eps)
+ <pics/sw-cost-error-2.eps>
+[66]
 File: pics/fvar-0.01bs.eps Graphic file (type eps)
  <pics/fvar-0.01bs.eps>
 File: pics/fvar-0.65bs.eps Graphic file (type eps)
-
-<pics/fvar-0.65bs.eps> [67] [68]
+ <pics/fvar-0.65bs.eps> [67] [68]
 File: pics/rb-heur1error.eps Graphic file (type eps)
- <pics/rb-heur1error.eps> [69]) [70] [71]
+
+<pics/rb-heur1error.eps> [69]) [70] [71]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.tex
 Chapter 5.
 [72
@@ -372,11 +360,11 @@ File: pics/traffic.eps Graphic file (type eps)
 [75] [76] [77]
 File: pics/powermodel.eps Graphic file (type eps)
  <pics/powermodel.eps> [78] [79] [80] [81] [82] [83] [84]
-[85]
+[85] [86]
 File: pics/perc.savings.red-bl.eps Graphic file (type eps)
  <pics/perc.savings.red-bl.eps>
 File: pics/e.savings.red-bl.eps Graphic file (type eps)
- <pics/e.savings.red-bl.eps> [86] [87]
+ <pics/e.savings.red-bl.eps> [87]
 File: pics/heuristicerror-touchedup.eps Graphic file (type eps)
 
 <pics/heuristicerror-touchedup.eps> [88] [89] [90] [91]
@@ -400,12 +388,12 @@ Underfull \hbox (badness 1406) in paragraph at lines 107--109
  []
 
 [100] [101]
-Underfull \hbox (badness 2478) in paragraph at lines 197--199
+Underfull \hbox (badness 2478) in paragraph at lines 188--190
 [][]\OT1/cmr/m/n/12 U. Bhaskar and L. Fleis-cher, ``On-line mixed pack-ing and 
 cov-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
  []
 
-[102] [103] [104] [105] [106] [107] [108]) [109]
+[102] [103] [104] [105] [106] [107]) [108]
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.aux
 (D:\users\saqib\documents\GitHub\Dissertation\sections/titlePage.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/abstractPage.aux)
@@ -415,21 +403,14 @@ cov-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIChapter4.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.aux)
-)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 2092 strings out of 493922
- 30824 string characters out of 3147304
- 91267 words of memory out of 3000000
- 5283 multiletter control sequences out of 15000+200000
+ 2091 strings out of 493922
+ 30774 string characters out of 3147304
+ 85235 words of memory out of 3000000
+ 5282 multiletter control sequences out of 15000+200000
  12778 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,10n,24p,2555b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,24p,2530b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (121 pages, 334764 bytes).
+Output written on Dissertation.dvi (120 pages, 328272 bytes).

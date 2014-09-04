@@ -11,55 +11,56 @@
 \contentsline {chapter}{\numberline {2}Background - Power consumption models in geo-diverse data centers and cellular networks}{11}
 \contentsline {section}{\numberline {2.1}Geo-Diverse Data Centers - enablers of cloud computing}{11}
 \contentsline {subsection}{\numberline {2.1.1}Structure of a data center}{13}
-\contentsline {subsection}{\numberline {2.1.2}Inter-data center traffic}{15}
+\contentsline {subsection}{\numberline {2.1.2}Interconnection of data centers}{15}
 \contentsline {subsection}{\numberline {2.1.3}Handling of client requests}{17}
-\contentsline {subsection}{\numberline {2.1.4}Data center power consumption model}{19}
+\contentsline {subsection}{\numberline {2.1.4}Data center power consumption model}{20}
 \contentsline {section}{\numberline {2.2}Cellular Networks}{20}
 \contentsline {subsection}{\numberline {2.2.1}Structure of a cellular network}{21}
 \contentsline {subsection}{\numberline {2.2.2}Call placement}{23}
-\contentsline {subsection}{\numberline {2.2.3}BTS power consumption model}{24}
+\contentsline {subsection}{\numberline {2.2.3}BTS power consumption model}{25}
 \contentsline {section}{\numberline {2.3}A comparison of data center and cellular networks}{25}
-\contentsline {section}{\numberline {2.4}Discussion}{26}
-\contentsline {chapter}{\numberline {3}A generalized framework for electricity cost optimization}{27}
-\contentsline {section}{\numberline {3.1}Problem Model}{27}
-\contentsline {section}{\numberline {3.2}Optimization problem formulation}{31}
-\contentsline {subsection}{\numberline {3.2.1}The objective function}{32}
-\contentsline {subsection}{\numberline {3.2.2}The constraints}{32}
-\contentsline {subsection}{\numberline {3.2.3}Comments on the problem formulation}{33}
-\contentsline {chapter}{\numberline {4}Case Study I: Geo-diverse Data Centers}{35}
-\contentsline {section}{\numberline {4.1}Prelude}{35}
-\contentsline {section}{\numberline {4.2}Related work}{37}
-\contentsline {section}{\numberline {4.3}Sources of transition costs in the data center scenario}{40}
-\contentsline {section}{\numberline {4.4}Instantiating the generalized optimization formulation}{41}
-\contentsline {section}{\numberline {4.5}Experimental setup}{50}
-\contentsline {subsection}{\numberline {4.5.1}Application workload}{50}
-\contentsline {subsection}{\numberline {4.5.2}Electricity prices}{51}
-\contentsline {subsection}{\numberline {4.5.3}Algorithms for Workload Distribution/Relocation}{51}
-\contentsline {section}{\numberline {4.6}Results}{55}
-\contentsline {subsection}{\numberline {4.6.1}Sensitivity of electricity cost savings to extent of overprovisioning}{56}
+\contentsline {section}{\numberline {2.4}Discussion}{27}
+\contentsline {chapter}{\numberline {3}A generalized framework for electricity cost optimization}{28}
+\contentsline {section}{\numberline {3.1}Optimization Problem Model}{28}
+\contentsline {section}{\numberline {3.2}Optimization problem formulation}{32}
+\contentsline {subsection}{\numberline {3.2.1}The objective function}{33}
+\contentsline {subsection}{\numberline {3.2.2}The constraints}{33}
+\contentsline {subsection}{\numberline {3.2.3}Comments on the problem formulation}{34}
+\contentsline {chapter}{\numberline {4}Case Study I: Geo-diverse Data Centers}{37}
+\contentsline {section}{\numberline {4.1}Prelude}{37}
+\contentsline {section}{\numberline {4.2}Related work}{38}
+\contentsline {section}{\numberline {4.3}Instantiating the generalized optimization formulation}{41}
+\contentsline {section}{\numberline {4.4}Sources of transition costs in the data center scenario}{45}
+\contentsline {subsection}{\numberline {4.4.1}Problem complexity and a heuristic}{46}
+\contentsline {section}{\numberline {4.5}Experimental setup}{51}
+\contentsline {subsection}{\numberline {4.5.1}Application workload}{51}
+\contentsline {subsection}{\numberline {4.5.2}Electricity prices}{52}
+\contentsline {subsection}{\numberline {4.5.3}Algorithms for Workload Distribution/Relocation}{52}
+\contentsline {section}{\numberline {4.6}Results}{54}
+\contentsline {subsection}{\numberline {4.6.1}Sensitivity of electricity cost savings to extent of over-provisioning}{56}
 \contentsline {subsection}{\numberline {4.6.2}Sensitivity of electricity cost savings to magnitude of transition costs}{57}
 \contentsline {subsection}{\numberline {4.6.3}Sensitivity of electricity cost savings to resource pruning granularity}{58}
-\contentsline {subsection}{\numberline {4.6.4}Sliding window re-optimization}{60}
-\contentsline {section}{\numberline {4.7}Sensitivity of electricity cost savings to the server idle-peak power ratio}{65}
+\contentsline {subsection}{\numberline {4.6.4}Sliding window re-optimization}{61}
+\contentsline {section}{\numberline {4.7}Sensitivity of electricity cost savings to the server idle-peak power ratio}{66}
 \contentsline {section}{\numberline {4.8}Performance of the heuristic algorithm}{68}
 \contentsline {section}{\numberline {4.9}Discussion}{69}
 \contentsline {chapter}{\numberline {5}Case Study II: Cellular Networks}{72}
 \contentsline {section}{\numberline {5.1}Prelude}{72}
 \contentsline {section}{\numberline {5.2}Related work}{75}
 \contentsline {section}{\numberline {5.3}Instantiating the generalized optimization formulation}{77}
-\contentsline {subsection}{\numberline {5.3.1}Single Base Transceiver Station (BTS)}{77}
+\contentsline {subsection}{\numberline {5.3.1}Single Base Transceiver Station (BTS)}{78}
 \contentsline {subsection}{\numberline {5.3.2}Multi-BTS Cellular Setting}{78}
-\contentsline {section}{\numberline {5.4}Experimental setup}{80}
-\contentsline {subsection}{\numberline {5.4.1}Site Characteristics}{83}
+\contentsline {section}{\numberline {5.4}Experimental setup}{82}
+\contentsline {subsection}{\numberline {5.4.1}Site Characteristics}{84}
 \contentsline {subsubsection}{Model 1}{84}
-\contentsline {subsubsection}{Model 2}{84}
+\contentsline {subsubsection}{Model 2}{85}
 \contentsline {subsubsection}{Model 3}{85}
-\contentsline {section}{\numberline {5.5}Results}{85}
-\contentsline {subsection}{\numberline {5.5.1}Sensitivity of electricity cost savings to the duration of an optimization interval}{86}
+\contentsline {section}{\numberline {5.5}Results}{86}
+\contentsline {subsection}{\numberline {5.5.1}Sensitivity of electricity cost savings to the duration of an optimization interval}{87}
 \contentsline {subsection}{\numberline {5.5.2}Comparison of our heuristic with the optimal solution}{88}
 \contentsline {subsection}{\numberline {5.5.3}Sensitivity of electricity cost savings to the resource pruning granularity}{89}
 \contentsline {subsection}{\numberline {5.5.4}Sensitivity of electricity cost savings to the margin of state-change damping}{92}
-\contentsline {section}{\numberline {5.6}Discussion}{92}
+\contentsline {section}{\numberline {5.6}Discussion}{93}
 \contentsline {chapter}{\numberline {6}Conclusions and Future Work}{94}
 \contentsline {section}{\numberline {6.1}Contributions}{94}
 \contentsline {section}{\numberline {6.2}Limitations}{96}

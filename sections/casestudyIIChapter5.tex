@@ -7,19 +7,19 @@ in significant operational expenditure, which is increasing with
 rising electricity and fuel prices, but is also a source of concern
 for ecological reasons. These concerns have motivated a lot of research aimed at reducing energy consumption in cellular networks.
 
-In this thesis, our discussion focuses on the legacy 2G GSM cellular networks, which have a significant market share. Our focus on GSM is also due to their dominance in the typically energy-starved developing countries with a large subscriber base. These GSM networks are expected to persist for the foreseeable future due to the upgrade expenses and return on investment (ROI) concerns of the operators. It is, therefore, important to optimize such GSM networks. The energy-saving techniques proposed in this paper may be applicable to 3G and 4G networks, but we make no claims as to the effectiveness of the same. 
+In this thesis, our discussion focuses on the legacy 2G GSM cellular networks, which have a significant market share. Our focus on GSM is also due to their dominance in the typically energy-starved developing countries with a large subscriber base. These GSM networks are expected to persist for the foreseeable future due to the upgrade expenses and return on investment (ROI) concerns of the operators. Furthermore, from a consumer's point of view, 3G and 4G handsets are quite expensive compared to GSM handsets. It is, therefore, important to optimize the electricity consumption of GSM networks. The energy-saving techniques proposed in this paper may be applicable to 3G and 4G networks, but we make no claims as to the effectiveness of the same. 
  
-We have seen in chapter~\ref{chap:intro} that cellular networks lack energy efficiency and which makes electricity cost minimization all the more important. We also highlighted that our thesis uses resource pruning and workload relocation jointly to minimize network electricity costs. The major sink of power in a cellular network are Base Transceiver Stations (BTSs), accounting for 60\% to 80\% of the total power consumption~\cite{Louhi:2007:BTSPower:INTELEC,Oh:Comm:2011,Peng:2011:BTSSaving:Mobicom}. In chapter~\ref{chap:background}, we discussed that in terms of our thesis, the TRXs are the resource units in a cellular network settings because they determine the network's traffic capacity and influence power consumption~\cite{Peng:2011:BTSSaving:Mobicom}. Therefore, the resource pruning strategy in a cellular network setting is deactivating presently redundant TRXs. 
+We have seen in chapter~\ref{chap:intro} that the lack of energy efficiency in cellular networks makes electricity cost minimization all the more important. We also highlighted that our thesis uses resource pruning and workload relocation jointly to minimize network electricity costs. The major sink of power in a cellular network are Base Transceiver Stations (BTSs), accounting for 60\% to 80\% of the total power consumption~\cite{Louhi:2007:BTSPower:INTELEC,Oh:Comm:2011,Peng:2011:BTSSaving:Mobicom}. In chapter~\ref{chap:background}, we discussed that in terms of our thesis, the TRXs are the resource units in a cellular network settings because they determine the network's traffic capacity and influence power consumption~\cite{Peng:2011:BTSSaving:Mobicom}. Therefore, the resource pruning strategy in a cellular network setting is deactivating presently redundant TRXs. 
 
 Also, since call volume determines a BTS's power consumption, the workload relocation strategy is call hand-off. In present day deployments, most callers
-receive sufficiently strong signal simultaneously from several nearby BTSs, especially in an urban setting, some of which may have relatively lower traffic~\cite{Peng:2011:BTSSaving:Mobicom}. Fig.~\ref{fig:btscdf} shows coverage diversity evident in the urban data from a large cellular provider that we used in our evaluations; one can see that about half of the callers have 3 or more candidates for serving BTS. Furthermore, Fig.~\ref{fig:traffic} shows normalized traffic at two neighboring sites in our dataset for a 24 hour period, which confirms the presence of geographic diversity in traffic. It is thus possible that by handing off some calls from a busy BTS to a less busy one, we may be able to prune more TRXs than we could without call hand-offs. Therefore, the workload relocation part of RED-BL maps onto call hand-offs. 
+receive sufficiently strong signal simultaneously from several nearby BTSs, especially in an urban setting, some of which may have relatively lower traffic~\cite{Peng:2011:BTSSaving:Mobicom}. Fig.~\ref{fig:btscdf} shows coverage diversity evident in the urban data from a large cellular provider that we used in our evaluations; one can see that about half of the callers have 3 or more candidates for serving BTS. Furthermore, Fig.~\ref{fig:traffic} shows normalized traffic at two neighboring sites in our dataset for a 24 hour period, which confirms the presence of geographic diversity in traffic. Thus, by handing off some calls from a busy BTS to a less busy one, we may be able to prune more TRXs than we could without call hand-offs. Therefore, the workload relocation part of RED-BL maps onto call hand-offs. 
 
 The goal of the above discussion is to highlight the applicability of RED-BL to the cellular network setting. However, before instantiating RED-BL for the cellular network scenario, we describe some of the related work in electricity cost optimization in cellular networks.
 
 \begin{figure}
 {
 \centering
-\includegraphics[width=0.3\textwidth]{pics/sites.eps}
+\includegraphics[width=0.8\textwidth]{pics/sites.eps}
 \caption{Location of the BTS sites in our dataset (spread over a $31.25$ $km^2$ urban terrain)}
 \label{fig:sites}
 }
@@ -27,7 +27,7 @@ The goal of the above discussion is to highlight the applicability of RED-BL to 
 
 \begin{figure}{
 \centering
-\includegraphics[width=0.4\textwidth]{pics/coveragecdf.eps}
+\includegraphics[width=0.8\textwidth]{pics/coveragecdf.eps}
 \caption{Empirical CDF of the number of potential serving BTSs for a call in our dataset (large metropolitan area)}
 \label{fig:btscdf}
 }
@@ -35,7 +35,7 @@ The goal of the above discussion is to highlight the applicability of RED-BL to 
 
 \begin{figure}
 \centering
-{\includegraphics[width=0.4\textwidth]{pics/traffic.eps}
+{\includegraphics[width=0.8\textwidth]{pics/traffic.eps}
 \caption{Normalized traffic for a 24-hour period at two neighboring sites in our dataset shows the geo-diversity in traffic}
 \label{fig:traffic}
 }
@@ -112,7 +112,7 @@ Let $\delta$ be the traffic threshold below which the \textit{BTS power savings}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.3\textwidth]{pics/powermodel.eps}
+\includegraphics[width=0.8\textwidth]{pics/powermodel.eps}
 \caption{BTS power consumption model. Low-power (BTS power savings) mode is optional and kicks in at low loads.}
 \label{fig:powermodel}
 \end{figure}
@@ -143,13 +143,13 @@ variables.
 
 The Low-Carb problem itself can be shown as NP-Hard by mapping the multiple knapsacks problem~\cite{kellerer:knapsackproblems:2005} to it. Our formulation itself is an NP-Hard Binary Integer Program
 (BIP), making it intractable to solve for an
-operator's entire network. It could, however, be applied separately to small disjoint network segments. Alternatively, a heuristic solution, such as the one we present in Algorithm~\ref{algo:heur1}, could be deployed over the entire network.
+operator's entire network. It could, however, be applied separately to small disjoint network segments. Alternatively, a heuristic solution, such as the one we present in Algorithm~\ref{algo:heur2}, could be deployed over the entire network.
 
 Our heuristic first partitions the set of BTSs $B$ into disjoint sets $B_1$ and $B_2$ where the latter includes all the BTSs in low-power mode and the former consists of all other BTSs. The heuristic iterates over a random permutation of the BTSs in $B_1$. Once a BTS $b_j$ from $B_1$ is selected (line 3), we determines the minimum number of calls that must be handed off from $b_j$ before it can be moved to $B_2$. We iterate over the calls being handled by $b_j$ and for each such call we try to find a candidate serving BTS in $B_2$ that may handle another call without leaving $B_2$. If such a BTS is found, the call is handed off to it. Calls are handed off from $b_j$ in this manner, until it moves into $B_2$, or we exhaust the set of active calls with other candidate BTSs ($b_j$ remains in $B_1$). 
 
 \begin{algorithm}
 \caption{Heuristic for the Low-Carb problem}
-\label{algo:heur1}
+\label{algo:heur2}
 \begin{algorithmic}[1]
 \REQUIRE $\delta$: the power-saving traffic threshold,\\B (the set of BTSs) =\{$b_1, b_2, ..., b_m$\},\\A (the set of active calls) =\{$a_1, a_2, ..., a_n$\},\\W (current call association) =\{$w_{i,j}$ = 1 if $a_i$ is being served through $b_j$, 0 otherwise\},\\C (Possible call association matrix) = \{$c_{i,j}$ = 1 if $a_i$ \\can be served through $b_j$, 0 otherwise\}
 \ENSURE A new and potentially more energy efficient mapping of calls to BTSs

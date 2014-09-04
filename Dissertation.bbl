@@ -140,14 +140,10 @@ K.~G. Brill, ``The invisible crisis in the data center: The economic meltdown
 C.~L. Belady, ``In the data center, power and cooling costs more than the it
   equipment it supports,'' {\em Electronics Cooling}, vol.~23, Jan. 2007.
 
-\bibitem{Pelley:dcpower:weed:2009}
-S.~Pelley, D.~Meisner, T.~F. Wenisch, and J.~W. VanGilder, ``Understanding and
-  abstracting total data center power,'' {\em Proc. 2009 Workshop on Energy
-  Efficient Design (WEED '09)}, June 2009.
-
-\bibitem{blackburn:serverpower:thegreengrid:2008}
-``Five ways to reduce data center server power consumption.'' White Paper, Apr.
-  2008.
+\bibitem{qureshi2009cutting}
+A.~Qureshi, R.~Weber, H.~Balakrishnan, J.~Guttag, and B.~Maggs, ``{Cutting the
+  Electric Bill for Internet-Scale Systems},'' in {\em ACM SIGCOMM},
+  (Barcelona, Spain), August 2009.
 
 \bibitem{Li:Optimal:TSG:2012}
 J.~Li, Z.~Li, K.~Ren, and X.~Liu, ``Towards optimal electric demand management
@@ -174,11 +170,6 @@ L.~Rao, X.~Liu, L.~Xie, and W.~Liu, ``{Minimizing Electricity Cost:
   Optimization of Distributed Internet Data Centers in a
   Multi-Electricity-Market Environment},'' in {\em IEEE Conference on Computer
   Communications 2010 (INFOCOM'2010)}, (San Diego, USA), March 2010.
-
-\bibitem{qureshi2009cutting}
-A.~Qureshi, R.~Weber, H.~Balakrishnan, J.~Guttag, and B.~Maggs, ``{Cutting the
-  Electric Bill for Internet-Scale Systems},'' in {\em ACM SIGCOMM},
-  (Barcelona, Spain), August 2009.
 
 \bibitem{Kayaaslan:2011:EQP:2009916.2010047}
 E.~Kayaaslan, B.~B. Cambazoglu, R.~Blanco, F.~P. Junqueira, and C.~Aykanat,
@@ -349,6 +340,10 @@ J.~Pang, A.~Akella, A.~Shaikh, B.~Krishnamurthy, and S.~Seshan, ``On the
 \bibitem{LabovitzSigcomm}
 C.~Labovitz, A.~Ahuja, A.~Bose, and F.~Jahanian, ``{Delayed Internet Routing
   Convergence},'' in {\em Proc. of the ACM SIGCOMM}, August 2000.
+
+\bibitem{unitcommit-trans}
+N.~Padhy, ``Unit commitment-a bibliographical survey,'' {\em Power Systems,
+  IEEE Transactions on}, vol.~19, no.~2, pp.~1196--1205, 2004.
 
 \bibitem{Nazir:2008:UFM:1452520.1452527}
 A.~Nazir, S.~Raza, and C.-N. Chuah, ``Unveiling facebook: a measurement study
