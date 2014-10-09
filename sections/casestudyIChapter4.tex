@@ -7,12 +7,12 @@ In the previous chapter we presented an abstract and generalized electricity cos
 
 The electricity cost savings resulting from workload relocation are somewhat limited due to lack of energy proportionality in today's data centers~\cite{10.1109/MC.2007.443}. Therefore, it was proposed to dynamically scale the active infrastructure in response to temporal variations in workload~\cite{10.1109/MC.2007.443,qureshi2009cutting}. This capacity scaling is expected to incur some overhead electricity cost which may be modeled as the \textit{state transition cost} in the state trajectory problem. 
 
-Theoretically, one can benefit from capacity scaling by shutting down some equipment when it is not needed. However, some equipment in data centers may not be shut down because it is critical in nature. We term such equipment as inelastic load and the rest of the equipment as elastic load. Resource pruning of elastic load in data centers minimizes the electricity consumption, but conventional wisdom suggests that restarts affect equipment lifetime and operators are generally reluctant to adopt this approach. On the other extreme, elastic load may be left in an idle state, but the reduction in electricity  consumption would be quite small. In between these two extremes would be Dynamic Voltage and Frequency Scaling (DVFS) techniques. The transition cost would be zero for the idling scheme since no state-change overhead is incurred. The transition costs would be quite high if elastic load is de-activated (and activated later when needed), whereas DVFS would account for transition costs somewhere between the two extremes~\cite{Meisner:2009:PES:1508244.1508269}. In this work, we experiment with the entire spectrum of transition costs in order to generalize our results.
+Theoretically, one can benefit from capacity scaling by shutting down some equipment when it is not needed. However, some equipment in data centers may not be shut down because it is critical in nature. We term such equipment as inelastic load and the rest of the equipment as elastic load. Resource pruning of elastic load in data centers minimizes the electricity consumption, but conventional wisdom suggests that restarts affect equipment lifetime and operators are generally reluctant to adopt this approach. On the other extreme, elastic load may be left in an idle state, but the reduction in electricity  consumption would be quite small. In between these two extremes would be Dynamic Voltage and Frequency Scaling (DVFS) techniques. The transition cost would be zero for the idling scheme since no state-change overhead is incurred. The transition costs would be quite high if elastic load is de-activated (and activated later when needed), whereas DVFS would account for transition costs somewhere between the two extremes~\cite{Meisner:2009:PES:1508244.1508269}. In this thesis, we experiment with the entire spectrum of transition costs in order to generalize our results.
 
 %The electricity load at a data center may be partitioned into two sets: one that is inelastic and must be on all the time and the other elastic portion that may be shutdown if there is no workload for the data center to handle. Let the first set comprise a fraction $r$ of the total data center power draw. The second part accordingly contributes a fraction $(1-r)$ of the total power draw. According to~\cite{Pelley:dcpower:weed:2009}, the breakup of power draw in a typical data center is servers: 56\%, cooling: 30\%, power conditioning: 8\%, network: 5\% and lighting: 1\%. Since we put only the servers in the elastic pool of devices, $r$ = 0.44. %In favor of ease of modeling, for most of the experiments discussed in our paper, we only put servers in the pool of elastic load. Some servers might need to always keep running, for instance, because they host critical services or in order to handle unexpectd traffic from end-hosts that have stale DNS or IP routing information. We expect these servers to contribute only a small amount of power consumption, in comparison to the pool of inelastic equipment and hence omitting this factor from the inelastic pool of equipment should not affect the results significantly. While airconditioning power draw is also somewhat load-dependent~\cite{Pelley:dcpower:weed:2009}, the assumption that airconditioning draws a constant amount of power irrespective of server status and workload does not favor the savings reported by our framework. A fraction of the power conditioning equipment that powers server may be shutdown along with the servers as needed, but the rest must stay on to keep the rest of the data center running. However, due to lack of statistics about the breakup of the power drawn by power conditioning equipment, we make the conservative assumption that all power conditioning equipment will keep running. Once again, this is an assumption that does not unduely favor the results of our framework. Shutting down networking equipment is expected to create undesirable transients in routing tables. Furthermore, if a small number of servers are required to always keep running, they will require layer-2 switches to be on as well. Hence, we place the network power draw completely in the inelastic pool. Placing lighting load in either pool should not create a significant deviation in the results. In our experiments, we take another conservative step by placing the lighting load in the inelastic pool.
 
 \section{Related work}
-To the best of our knowledge, prior work has largely taken a micro-scale view of this problem by scaling the data center capacity at the granularity of states of individual servers within a data center~\cite{Li:Optimal:TSG:2012,LinInfocom11,serverEnergy,Mazzucco2012415,rao2010,qureshi2009cutting} and, in some cases, has altogether ignored transition costs resulting from capacity scaling. These approaches lack scalability to multi-data center scenarios or are sub-optimal. In this paper, we address the challenges of scalability as well as incorporation of transition costs into the optimization problem.
+To the best of our knowledge, prior work has largely taken a micro-scale view of this problem by scaling the data center capacity at the granularity of states of individual servers within a data center~\cite{Li:Optimal:TSG:2012,LinInfocom11,serverEnergy,Mazzucco2012415,rao2010,qureshi2009cutting} and, in some cases, has altogether ignored transition costs resulting from capacity scaling. These approaches lack scalability to multi-data center scenarios or are sub-optimal. In this thesis, we address the challenges of scalability as well as incorporation of transition costs into the optimization problem.
 
 Li et. al. determined the electricity cost optimal mapping of workload to geo-diverse data centers by controlling the state of the individual servers within each data center~\cite{Li:Optimal:TSG:2012}. The state of the servers and their electricity consumption was controlled using Dynamic Voltage and Frequency Scaling (DVFS) and Dynamic Cluster Server Configuration (DCSC). Since their optimization problem formulation used Mixed Integer Programming (MIP) with decision variables per server, their approach is effective for small-scale problems such as an individual data center or a fraction thereof. This limitation is evident from the small number of servers used in the simulation-based evaluation in~\cite{Li:Optimal:TSG:2012}. One way to scale their approach to large distributed data centers is to use coarse granularity in their problem formulation. For instance, instead of controlling the state of each server independently, all servers in a single rack could be configured in the same state at a given time. They used the Soccer World Cup 1998 webserver workload traces and electricity prices at four different locations to evaluate their proposal. 
 
@@ -103,7 +103,7 @@ constraint. Inequality~\eqref{eq:p1} ensures that the elastic load in a data cen
 is active whenever there is any workload mapped to it. The constraint in Eq.~\eqref{eq:bcon} ensures that $b_i^j$ is 1 if the elastic load is inactive in interval $j-1$ and active in the next interval. The involvement of $b_i^j$ in the minimization objective function ensures that it is 0 otherwise. Similarly, the constraint in Eq.~\eqref{eq:scon} ensures that $s_i^j$ takes on the correct value depending on the deactivation of elastic load in the data centers. We assume that the elastic load in all data centers is initially inactive, therefore, an activation may be necessary at the first interval whereas deactivation in the first interval is not necessary. These conditions are ensured by the constraints in Eq.~\eqref{eq:bcon1}. It is easy to customize this constraint such that all data centers are assumed to be initially active.
 
 \section{Sources of transition costs in the data center scenario}
-Our present work uses the overhead of data center activation/deactivation as the transition costs. However, in practice, there can be other forms
+This thesis uses the overhead of data center activation/deactivation as the transition costs. However, in practice, there can be other forms
 of transition costs as well, which would vary from one deployment to the other. Examples of other sources of transition costs include, but may not be limited to, the following:
 
 \begin{itemize}
@@ -129,7 +129,7 @@ of transition costs as well, which would vary from one deployment to the other. 
     data store for the applications must be replicated and
     consistency must be maintained.  The cost of inter-data center traffic is quite high, hence this form of transition costs would be quite significant. The magnitude is not easy to predict because replication schemes are operator and
     application dependent. To the best of our knowledge, the current body
-of knowledge lacks a generic model for such traffic. Therefore, similar to~\cite{qureshi2009cutting}, in the present work, we assume
+of knowledge lacks a generic model for such traffic. Therefore, similar to~\cite{qureshi2009cutting}, in this thesis, we assume
 that content is perfectly replicated.
 \end{itemize}
 
@@ -141,7 +141,7 @@ modeling a specific deployment is limited. The question that is
 significant, however, is the impact on the possible electricity
 cost savings (resulting from geo-temporal diversity in
 electricity prices) of variation in the magnitude of transition
-costs relative to the electricity cost in a given interval. Therefore, we have used a normalized and parametrized model for transition costs in our problem formulation. Our aim in this paper is to present
+costs relative to the electricity cost in a given interval. Therefore, we have used a normalized and parametrized model for transition costs in our problem formulation. Our aim in this thesis is to present
 electricity cost optimization solutions which operators can
 use, along with the parameter data (idling costs, transition
 costs, number of data centers and their locations) from their
@@ -153,7 +153,7 @@ electricity generation and transmission scenario. In the unit
 commit problem, one determines the amount of power to be supplied from each generating resource and schedules the activation (ramp up), deactivation (ramp down) and idling (spinning reserves) of the generating resources, given time-varying demand for
 electricity. Due to a one-to-one mapping between the data center-workload mapping and Unit-Commit problems, it follows that if there is a polynomial time solution for the data center-workload mapping problem, Unit-Commit may also be solved in polynomial time. However, since the Unit-Commit
 problem is known to be NP-Complete~\cite{unitcommit-trans}, it follows that so is the
-workload-mapping problem that we are considering in this paper.
+workload-mapping problem that we are considering in this thesis.
 We will show later that we are able to solve reasonably large sized instances of the above NP-Hard MIP formulation for RED-BL using the CPLEX solver. Nonetheless, we now present a heuristic algorithm for it.
 
 The pseudo-code of our heuristic algorithm for RED-BL is given in Algorithm~\ref{algo:heur1}. Assume that the workload vector for the planning window starts at a trough, then rises in a non-decreasing manner to the peak before falling off in a non-increasing manner to another trough. Since the activation/deactivation costs are expected to be significant, our heuristic is designed to select a small number of data centers to operate in long continuous stretches during a given day. For the assumed characterization of the workload, elastic load at a few data centers would be sufficient to handle the workload early (and late) in the planning window. As the workload rises gradually, elastic load at some more data centers would need to be brought online. As the workload starts to fall, elastic load at some data centers may gradually be deactivated until the planning window ends. Our heuristic places two pointers at the beginning and end of the planning window, determines the number of data centers ($d_1$ and $d_2$) needed to handle the workload corresponding to the two pointers and picks the smaller of these two values. It then finds min($d_1$, $d_2$) best data centers in terms of having the least average electricity price over the planning window. The elastic load at these data centers will be kept active between the intervals corresponding to the two pointers. Furthermore, our algorithm assigns as much workload as possible to the selected data centers in ascending order of average electricity price in the chosen intervals. 
@@ -247,7 +247,7 @@ We used an year-long trace of hourly workload for $3$ social networking applicat
 
 \subsection{Electricity prices}
 \label{subsec:prices} We selected $33$ different regions in the USA for which hourly electricity prices are available online. These regions belong to the following Independent System Operators (ISOs): NYISO, CAISO, MISO, ISO-NE and PJM. %To ease reproducibility of our results, the names for these locations as used in the online datasets are listed in Table~\ref{tab:locations}. 
-We used the day-ahead prices for these locations, i.e., the electricity price negotiated for the same hour on the following day. In all the experiments for this work, we considered an operator with data centers at all 33 locations in our dataset. 
+We used the day-ahead prices for these locations, i.e., the electricity price negotiated for the same hour on the following day. In all the experiments for this thesis, we considered an operator with data centers at all 33 locations in our dataset. 
 
 %\begin{table}
 %\begin{center}
@@ -296,7 +296,7 @@ We used the day-ahead prices for these locations, i.e., the electricity price ne
 \item Over the planning window, does the algorithm report transition costs in the total electricity cost?
 \end{itemize}
 
-In this paper, we report comparative results for six workload placement algorithms.%, listed in Table~\ref{tab:algos}. 
+In this thesis, we report comparative results for six workload placement algorithms.%, listed in Table~\ref{tab:algos}. 
  The following list describes and differentiates these algorithms. The same comparison is also presented in tabular form in Table~\ref{tab:algosmatrix}.
 
 \begin{itemize}
@@ -335,7 +335,7 @@ In this paper, we report comparative results for six workload placement algorith
 \hline UNIFORM & N/A \\
 \hline
 \end{tabular}
-\caption{A comparison of the algorithms studied in this paper}
+\caption{A comparison of the algorithms studied in this thesis}
 \label{tab:algosmatrix}
 \end{center}
 \end{table}
@@ -544,4 +544,4 @@ Since RED-BL devises a deployment plan for a planning window based on workload f
 
 We used workload datasets from three live Internet applications. While the number of applications is quite small for a large geo-diverse data center operator, the statistical characteristics of the dataset are reasonably representative of such a scenario. We also used real electricity prices from 33 locations in the US that were publicly available.
 
-While we find that RED-BL finds a useful application in electricity cost optimization of geo-diverse data centers, our work is not the final word on this problem. Several avenues of further exploration are yet to be explored. We have listed some future work in Chapter~\ref{chap:conclusions}.
+While we find that RED-BL finds a useful application in electricity cost optimization of geo-diverse data centers, our thesis is not the final word on this problem. Several avenues of further exploration are yet to be explored. We have listed some future work in Chapter~\ref{chap:conclusions}.

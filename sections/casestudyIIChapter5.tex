@@ -7,7 +7,7 @@ in significant operational expenditure, which is increasing with
 rising electricity and fuel prices, but is also a source of concern
 for ecological reasons. These concerns have motivated a lot of research aimed at reducing energy consumption in cellular networks.
 
-In this thesis, our discussion focuses on the legacy 2G GSM cellular networks, which have a significant market share. Our focus on GSM is also due to their dominance in the typically energy-starved developing countries with a large subscriber base. These GSM networks are expected to persist for the foreseeable future due to the upgrade expenses and return on investment (ROI) concerns of the operators. Furthermore, from a consumer's point of view, 3G and 4G handsets are quite expensive compared to GSM handsets. It is, therefore, important to optimize the electricity consumption of GSM networks. The energy-saving techniques proposed in this paper may be applicable to 3G and 4G networks, but we make no claims as to the effectiveness of the same. 
+In this thesis, our discussion focuses on the legacy 2G GSM cellular networks, which have a significant market share. Our focus on GSM is also due to their dominance in the typically energy-starved developing countries with a large subscriber base. These GSM networks are expected to persist for the foreseeable future due to the upgrade expenses and return on investment (ROI) concerns of the operators. Furthermore, from a consumer's point of view, 3G and 4G handsets are quite expensive compared to GSM handsets. It is, therefore, important to optimize the electricity consumption of GSM networks. The energy-saving techniques proposed in this thesis may be applicable to 3G and 4G networks, but we make no claims as to the effectiveness of the same. 
  
 We have seen in chapter~\ref{chap:intro} that the lack of energy efficiency in cellular networks makes electricity cost minimization all the more important. We also highlighted that our thesis uses resource pruning and workload relocation jointly to minimize network electricity costs. The major sink of power in a cellular network are Base Transceiver Stations (BTSs), accounting for 60\% to 80\% of the total power consumption~\cite{Louhi:2007:BTSPower:INTELEC,Oh:Comm:2011,Peng:2011:BTSSaving:Mobicom}. In chapter~\ref{chap:background}, we discussed that in terms of our thesis, the TRXs are the resource units in a cellular network settings because they determine the network's traffic capacity and influence power consumption~\cite{Peng:2011:BTSSaving:Mobicom}. Therefore, the resource pruning strategy in a cellular network setting is deactivating presently redundant TRXs. 
 
@@ -43,17 +43,6 @@ The goal of the above discussion is to highlight the applicability of RED-BL to 
 
 \section{Related work}
 \label{sec:case2:related}
-There are generally two approaches to increase cellular network
-energy efficiency. First, a clean-slate redesign which includes
-innovations in communication systems, circuits and components.
-This approach is not attractive for existing GSM operators,
-which are the most prevalent in the developing world and are
-expected to stay as such for several years to come, primarily due to the required expensive upgrades. A
-second approach is to make optimizations to the existing system
-and equipment to get an improvement in overall energy
-efficiency. Our present work is aligned with this latter
-philosophy.
-
 One can improve the energy efficiency of a cellular network by
 adapting its ``online'' capacity to changes in traffic load.
 Recent work has proposed turning off base stations to reduce
@@ -97,7 +86,7 @@ Small cells such as pico and femto cells are also gaining popularity due to bett
 
 \section{Instantiating the generalized optimization formulation} %Derive the objective function and constraints. Clearly outline the assumptions that we've made about the geo-diverse data centers.
 \label{sec:case2:instantiate}
-The RED-BL optimization problem minimizes the sum of state and transition costs for a network over a sequence of consecutive intervals in a planning window. The state cost for a particular interval is the sum of electricity cost incurred at all BTSs in the network. In order to compute the state cost, we will first derive a mathematical model for electricity consumption at a single BTS. Then, we will generalize it to a multi-BTS cellular network setting to represent the state cost for a single interval. The transition cost would be the cost of electricity incurred in activating or deactivating TRXs. Our conversations with network operators reveal that transitions into and out of BTS Power Saving mode do not consume a noticeable amount of power. Also, these transitions are reasonably fast in contrast to the delayed convergence due to transitions in the geo-diverse data center scenario. The RED-BL transition costs in cellular networks may, therefore, be ignored.
+The RED-BL optimization problem minimizes the sum of state and transition costs for a network over a sequence of consecutive intervals in a planning window. The state cost for a particular interval is the sum of electricity cost incurred at all BTSs in the network. In order to compute the state cost, we will first derive a mathematical model for electricity consumption at a single BTS. Then, we will generalize it to a multi-BTS cellular network setting to represent the state cost for a single interval. The transition cost would be the cost of electricity incurred in activating or deactivating TRXs. Our conversations with network operators reveal that transitions into and out of BTS Power Saving mode do not consume a noticeable amount of power. These state transitions are reasonably fast in contrast to the delayed convergence due to transitions in the geo-diverse data center scenario. The RED-BL transition costs in cellular networks may, therefore, be ignored.
 
 \subsection{Single Base Transceiver Station (BTS)}
 \label{sec:case2:instantiate:single-cell}
@@ -117,13 +106,27 @@ Let $\delta$ be the traffic threshold below which the \textit{BTS power savings}
 \label{fig:powermodel}
 \end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{pics/powermodel2-1.eps}
+\caption{BTS power consumption model with finer granularity of BTS power saving.}
+\label{fig:powermodel2}
+\end{figure}
+
+The BTS equipment may be configurable in more than two-states, depending on the available granularity of TRX deactivation. for instance, a three-state BTS power consumption model is shown in Figure~\ref{fig:powermodel2}. If the traffic is above threshold $\delta_2$, the BTS operates in the default high-power mode. When the traffic drops below threshold $\delta_2$, two TRXs per sector are deactivated, and the BTS enter the medium-power mode (4+4+4 configuration). When the traffic falls below threshold $\delta_1$, two more TRXs are deactivated and the BTS enters the low-power mode. The drop in power consumption for each of the deactivation steps is $\gamma/2$, because compared to Figure~\ref{fig:powermodel1}, half as many TRXs are deactivated in each step.
+
+If traffic load is $\delta + \epsilon$ then the less granular model of Figure~\ref{fig:powermodel1} does not offer any energy savings but the more granular model ofFigure~\ref{fig:powermodel2} offers an energy saving of $\gamma/2$. The more granular model of Figure~\ref{fig:powermodel2} should, therefore, offer greater energy savings overall. We will show later that this greater energy saving is at the cost of increased complexity of the optimization problem.  
+
 \subsection{Multi-BTS Cellular Setting}
 \label{subsec:case2:instantiate:multi-cell}
 Consider an area with $n$ active callers being served by $m$ BTSs. We introduce indicator variable $w_{i,j}$, which is $1$ if call $i$ \textit{is being} handled at BTS $j$ and $0$ otherwise. We assume availability of an $n\times m$ matrix whose entry $c_{i,j}$ is $1$ if caller $i$ \textit{can be} served through
-BTS $j$ without exceeding the uplink or downlink budgets. This information can be extracted by the data periodically transmitted by each MS comprising the received signal strength from nearby BTSs during a call. We also introduce indicator variable $x_j$, which is $1$ if BTS $j$ is operating in high-power mode and $0$ otherwise. The total power consumption may, therefore, be given as $\sum_{j=1}^{m} \left[P_1+\sum_{i=1}^{n}\frac{w_{i,j}(P_2-P_1)}{t_{max}}-(1-x_j)\gamma\right]$. Using this as the objective function, we can formulate the Low-Carb optimization problem, subject to appropriate constraints. Constant additive terms play no role in an objective function and may be omitted. The first term ($P_1$) can, therefore, be be dropped from the objective function. Furthermore, in order to not affect the grade of service, we will not drop any active calls. Hence, the summation over $w_{i,j}$ is also constant and can also be excluded from the objective function. After removing the constant multiplier from the last remaining term in the objective function, Low-Carb may be stated as:
+BTS $j$ without exceeding the uplink or downlink budgets. This information can be extracted by the data periodically transmitted by each MS comprising the received signal strength from nearby BTSs during a call. We also introduce indicator variable $x_j$, which is $1$ if BTS $j$ is operating in high-power mode and $0$ otherwise. The total power consumption may, therefore, be given as $\sum_{j=1}^{m} \left[P_1+\sum_{i=1}^{n}\frac{w_{i,j}(P_2-P_1)}{t_{max}}-(1-x_j)\gamma\right]$. Using this as the objective function, we can formulate the Low-Carb optimization problem as:
 \begin{align}
-\textit{minimize} \quad \sum_{j=1}^{m} x_j
+\textit{minimize} \quad \sum_{j=1}^{m} \left[
+P_1+\sum_{i=1}^{n}\frac{w_{i,j}(P_2-P_1)}{t_{max}}-(1-x_j)\gamma
+\right]
 \end{align}
+
 subject to the following constraints:
 \begin{align}
 & \sum_{j=1}^m w_{i,j} = 1 \qquad \forall i \\
@@ -140,6 +143,15 @@ that is too far away. The third constraint picks the correct
 value for the decision variable $x_j$ ($M$ is a very large integer constant). The fourth constraint is the BTS capacity constraint, while the last
 constraint is the binary value constraint on the decision
 variables.
+
+Constant additive terms play no role in an optimization objective function and may be omitted. The first term ($P_1$) can, therefore, be be dropped from the objective function. Furthermore, in order to not affect the grade of service, we will not drop any active calls. Hence, the summation over $w_{i,j}$ is also constant and can also be excluded from the objective function. After removing the constant multiplier from the last remaining term in the objective function, it reduces to:
+\begin{align}
+\textit{minimize} \quad \sum_{j=1}^{m} x_j
+\end{align}
+
+\subsubsection{Problem complexity}
+\label{subsubsec:lowcarb:complexity}
+We will now show that the above optimization problem, which we call Low-Carb (short for Lower Carbon footprint), is NP-Hard. Suppose that there exists and algorithm that gives a polynomial running time optimal solution to Low-Carb. We will prove that this assumption is wrong by mapping an NP-Hard problem to Low-Carb. 
 
 The Low-Carb problem itself can be shown as NP-Hard by mapping the multiple knapsacks problem~\cite{kellerer:knapsackproblems:2005} to it. Our formulation itself is an NP-Hard Binary Integer Program
 (BIP), making it intractable to solve for an
@@ -176,8 +188,51 @@ Our heuristic first partitions the set of BTSs $B$ into disjoint sets $B_1$ and 
 \end{algorithmic}
 \end{algorithm}
 
+\subsection{Multi-level BTS scaling}
+\label{subsec:case2:multilevel}
+For the three-step BTS power-saving model of Figure~\ref{fig:powermodel2}, the optimization problem can be stated as:
+\begin{align}
+\textit{maximize} \quad \sum_{j=1}^{m} \left[
+x_j+y_j
+\right]
+\end{align}
+subject to the following constraints:
+\begin{align}
+& \sum_{j=1}^m w_{i,j} = 1 \qquad \forall i \\
+& w_{i,j} \leq c_{i,j} \qquad \forall i, j \\
+& \sum_{i=1}^nw_{i,j}-\delta_1 \leq Mx_j \qquad \forall j\\
+& \sum_{i=1}^nw_{i,j}-\delta_2 \leq My_j \qquad \forall j\\
+%\end{align}
+%\begin{align}
+& \sum_{i=1}^n w_{i,j} \le t_{max} \qquad \forall i \\
+%\end{align}
+%\begin{align}
+& w_{i,j}, x_j, y_j\in {0,1} \qquad \forall i, j%\\
+%x_j \in {0,1}
+\end{align}
+
+In the above formulation, we've added an indicator variable $y_j$, which is $1$ if BTS $j$ is in medium-power mode, $0$ otherwise. The fourth constraints ensures that $y_j$ takes on the proper value depending on the current traffic volume at BTS $j$. We call this optimization problem the three-step Low-Carb problem.
+
+Adding a granularity level introduces $m$ additional binary variables causing the solution space to grow by a factor of $2^m$. At the same time, $O(m)$ constraints are also added to the problem. Binary Integer Programming problems such as ours are NP-Hard. While solutions to small-sized problems may be obtained in a reasonable period of time, but it lacks scalability. Therefore, increasing the number of BTS operating modes causes an exponential increase in the execution time to obtain an optimal solution. 
+
+For ease of modeling and implementation, we assume that all sectors will be configured to have the same number of TRXs active at any given time. Thus a 6+6+6 site may have six possible states, 1+1+1, 2+2+2, ..., and 6+6+6. To develop the optimization model for a six-state BTS, consider an integer variable $z_j$ which represents the number of TRXs active in each sector of BTS $j$. The power consumption at BTS $j$ may be given by $P_1 + p \sum_{i=1}^{n} w_{i,j} + \gamma z_j$, where p is the slope of the power consumption vs traffic volume curve. The Low-Carb optimization problem for the multi-BTS setting in this case is:
+
+\begin{align}
+\textit{minimize} \quad \sum_{j=1}^{m} z_j
+\end{align}
+subject to the following constraints:
+\begin{align}
+& \sum_{j=1}^m w_{i,j} = 1 \qquad \forall i \\
+& w_{i,j} \leq c_{i,j} \qquad \forall i, j \\
+& \sum_{i=1}^nw_{i,j}-\delta_1 +\epsilon \leq Mz_j \qquad \forall j \\
+& \sum_{i=1}^n w_{i,j} \le t_{max} \qquad \forall i \\
+& w_{i,j} \in \{0,1\}; \quad z_j \in \{1,2,3,4,5,6\}\qquad \forall i, j%\\
+\end{align}
+
+The first constraint ensures that each call is handled at exactly one BTS. The second one ensures that a call is mapped to a BTS that may handle it. The third constraint ensures that $z_j$ picks a value at least equal to the minimum number of TRXs required at BTS $j$. Since the optimization is a minimization problem, the solver will pick $z_j$ to be exactly equal to the minimum number of TRXs required for the current traffic load. The fourth constraint is the capacity constraint on the BTS. The last set of constraints specify the domains of the decision variables.
+
 \section{Experimental setup} 
-\label{sec:case2:experiments} Our dataset is obtained from a cluster of 26 BTSs operated by a large network operator with more than 7000 sites. These sites are spread over a $31.25$ $km^2$ urban terrain (see Fig.~\ref{fig:sites}). We obtained each site's coverage prediction using a tool popular amongst the operators called Forsk Atoll. With this information, alongwith a caller's location, we can determine the candidate set of BTSs for the corresponding call (the $c_{i,j}$ parameters). Note that in this work, we do not incorporate user mobility into our model, since we are only interested in instantaneous optimization at small time scales and in determining bounds on the energy savings that Low-Carb can offer.
+\label{sec:case2:experiments} Our dataset is obtained from a cluster of 26 BTSs operated by a large network operator with more than 7000 sites. These sites are spread over a $31.25$ $km^2$ urban terrain (see Fig.~\ref{fig:sites}). We obtained each site's coverage prediction using a tool popular amongst the operators called Forsk Atoll. With this information, alongwith a caller's location, we can determine the candidate set of BTSs for the corresponding call (the $c_{i,j}$ parameters). Note that in this thesis, we do not incorporate user mobility into our model, since we are only interested in instantaneous optimization at small time scales and in determining bounds on the energy savings that Low-Carb can offer.
 
 Also available to us are the hourly cumulative traffic, in Erlang, for each of the sites, spanning two consecutive weekdays. The traffic remained remarkably similar across both days for each site. We have, therefore, only used one day's traffic data in our experiments.
 
@@ -194,11 +249,11 @@ First and foremost, a computational cost is incurred with each optimization. For
 In addition to the computational overhead, for every unit of energy saved some extra energy may be consumed in the network to perform call hand-offs or transitions into and out of BTS power-saving mode. Call hand-offs and TRX (de)activation involve signaling between a Base Station Controller (BSC), BTSs and MSs. The additional energy incurred thus, should be small, because it has been observed that variation in power consumption of network equipment with changes in traffic volume (data or control) is quite small~\cite{Chabarek08powerawareness}. As far as increased power consumption on MSs due to a greater number of call hand-offs is concerned, we opine that it may be negligible because the MSs energy consumption is far outweighed by that of BTSs.
 
 \subsection{Site Characteristics}
-\label{subsec:case2:experiments:sitetypes} All sites in our dataset had three sectors, each equipped with 6 TRXs, for a maximum of 132 simultaneous voice calls\footnote[1]{Each TRX's frequency is shared in time-domain  by 8 calls for  a total of $3\times6\times8=144$ channels. Four channels in each sector were reserved for control and broadcast purposes.}. The GSM standard includes a provision for half-rate calls, which enables handling greater traffic at the expense of reduced voice quality by allowing a single voice channel to be shared amongst two calls, each using a half-rate codec. In this paper, we only shuffle full-rate calls around, which may be, in reality, two half-rate calls. We do not foresee any significant error arising from using this convention.
+\label{subsec:case2:experiments:sitetypes} All sites in our dataset had three sectors, each equipped with 6 TRXs, for a maximum of 132 simultaneous voice calls\footnote[1]{Each TRX's frequency is shared in time-domain  by 8 calls for  a total of $3\times6\times8=144$ channels. Four channels in each sector were reserved for control and broadcast purposes.}. The GSM standard includes a provision for half-rate calls, which enables handling greater traffic at the expense of reduced voice quality by allowing a single voice channel to be shared amongst two calls, each using a half-rate codec. In this thesis, we only shuffle full-rate calls around, which may be, in reality, two half-rate calls. We do not foresee any significant error arising from using this convention.
 
 We consider a scaling down from a $``6+6+6"$ site to a $``2+2+2"$ site, which means that $\delta$ should be strictly less than $t_{max}/3$ to avoid quick oscillations into and out of BTS power-saving mode due to short-term traffic variations. We have arbitrarily set $\delta$ equal to $\lceil t_{max}/3\rceil -5$, because $5$ seemed to be a good enough number compared to a sector's overall capacity and the typical utilization of a site in our datasets.
 
-The BTS power consumption model parameters may vary from one BTS model to another. In this paper, we use three different sets of model parameters as listed in table~\ref{tab:models}. We now describe the sources and methods from which we obtained these models.
+The BTS power consumption model parameters may vary from one BTS model to another. In this thesis, we use three different sets of model parameters as listed in table~\ref{tab:models}. We now describe the sources and methods from which we obtained these models.
 \subsubsection{Model 1}
 \label{subsubsec:case2:experiments:sitetypes:model1}For the first model, we have used $1.5kW$ as the maximum power consumption~\cite{mbakwe:btshybribpower:2011:necec}, a $20W$ per TRX saving when scaling the BTS down~\cite{flexibsc} and a $5\%$ swing in power consumption between no-load and full-load~\cite{Peng:2011:BTSSaving:Mobicom}.
 
@@ -340,7 +395,7 @@ We carried out experiments to assess the impact of the value of $\epsilon$ on th
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{pics/epsilonresults.eps}
-\caption{The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon$, with a six minute inter-optimization interval}
+\caption{The percentage energy savings for all three BTS models considered in this thesis vs the value of $\epsilon$, with a six minute inter-optimization interval}
 \label{fig:case2:results6}
 \end{figure}
 

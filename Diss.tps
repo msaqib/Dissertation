@@ -13,12 +13,12 @@ NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1270
 NormalPos.bottom=495
-Class=LaTeXView
-Document=sections\casestudyIChapter4.tex
+Class=BibTeXView
+Document=ref.bib
 
 [Frame0_View0,0]
-TopLine=860
-Cursor=66702
+TopLine=3859
+Cursor=132951
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=1270
 NormalPos.bottom=495
 Class=LaTeXView
-Document=sections\frameworkChapter3.tex
+Document=Dissertation.tex
 
 [Frame1_View0,0]
-TopLine=181
-Cursor=18985
+TopLine=23
+Cursor=874
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=1270
 NormalPos.bottom=495
 Class=LaTeXView
-Document=Dissertation.tex
+Document=sections\frameworkChapter3.tex
 
 [Frame2_View0,0]
-TopLine=23
-Cursor=874
+TopLine=181
+Cursor=18985
 
 [Frame3]
 Flags=0
@@ -67,12 +67,12 @@ NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1270
 NormalPos.bottom=495
-Class=BibTeXView
-Document=ref.bib
+Class=LaTeXView
+Document=sections\casestudyIChapter4.tex
 
 [Frame3_View0,0]
-TopLine=3859
-Cursor=132951
+TopLine=872
+Cursor=66702
 
 [Frame4]
 Flags=0
@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=sections\casestudyIIChapter5.tex
 
 [Frame4_View0,0]
-TopLine=211
-Cursor=11433
+TopLine=307
+Cursor=22346
 
 [Frame5]
 Flags=0
@@ -104,11 +104,11 @@ NormalPos.top=26
 NormalPos.right=1270
 NormalPos.bottom=495
 Class=LaTeXView
-Document=sections\abstractPage.tex
+Document=sections\titlePage.tex
 
 [Frame5_View0,0]
-TopLine=0
-Cursor=31
+TopLine=50
+Cursor=2388
 
 [Frame6]
 Flags=0
@@ -122,11 +122,11 @@ NormalPos.top=26
 NormalPos.right=1270
 NormalPos.bottom=495
 Class=LaTeXView
-Document=sections\conclusionsChapter6.tex
+Document=sections\introChapter1.tex
 
 [Frame6_View0,0]
-TopLine=0
-Cursor=1509
+TopLine=182
+Cursor=18295
 
 [Frame7]
 Flags=0
@@ -158,11 +158,11 @@ NormalPos.top=26
 NormalPos.right=1270
 NormalPos.bottom=495
 Class=LaTeXView
-Document=sections\introChapter1.tex
+Document=sections\conclusionsChapter6.tex
 
 [Frame8_View0,0]
-TopLine=182
-Cursor=18295
+TopLine=0
+Cursor=1509
 
 [Frame9]
 Flags=0
@@ -176,11 +176,11 @@ NormalPos.top=26
 NormalPos.right=1270
 NormalPos.bottom=495
 Class=LaTeXView
-Document=sections\titlePage.tex
+Document=sections\abstractPage.tex
 
 [Frame9_View0,0]
-TopLine=50
-Cursor=2388
+TopLine=0
+Cursor=31
 
 [SessionInfo]
 FrameCount=10
