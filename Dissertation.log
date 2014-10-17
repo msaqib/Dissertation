@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  5 SEP 2014 04:37
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  17 OCT 2014 19:00
 entering extended mode
 **Dissertation.tex
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.tex
@@ -355,45 +355,57 @@ File: pics/sites.eps Graphic file (type eps)
  <pics/sites.eps>
 File: pics/coveragecdf.eps Graphic file (type eps)
  <pics/coveragecdf.eps>
-File: pics/traffic.eps Graphic file (type eps)
- <pics/traffic.eps> [73] [74]
-[75] [76] [77]
+File: pics/traffic-bw.eps Graphic file (type eps)
+ <pics/traffic-bw.eps> [73]
+[74] [75] [76] [77]
 File: pics/powermodel.eps Graphic file (type eps)
- <pics/powermodel.eps> [78] [79] [80] [81] [82] [83] [84]
-[85] [86]
-File: pics/perc.savings.red-bl.eps Graphic file (type eps)
- <pics/perc.savings.red-bl.eps>
+ <pics/powermodel.eps>
+File: pics/powermodel2-1.eps Graphic file (type eps)
+ <pics/powermodel2-1.eps>
+
+LaTeX Warning: Reference `fig:powermodel1' on page 78 undefined on input line 1
+16.
+
+[78]
+
+LaTeX Warning: Reference `fig:powermodel1' on page 79 undefined on input line 1
+18.
+
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89]
+File: pics/perc.savings.red-bl-bw.eps Graphic file (type eps)
+
+<pics/perc.savings.red-bl-bw.eps>
 File: pics/e.savings.red-bl.eps Graphic file (type eps)
- <pics/e.savings.red-bl.eps> [87]
+ <pics/e.savings.red-bl.eps> [90] [91]
 File: pics/heuristicerror-touchedup.eps Graphic file (type eps)
 
-<pics/heuristicerror-touchedup.eps> [88] [89] [90] [91]
+<pics/heuristicerror-touchedup.eps> [92] [93] [94] [95]
 File: pics/epsilonresults.eps Graphic file (type eps)
 
-<pics/epsilonresults.eps> [92]) [93]
+<pics/epsilonresults.eps> [96]) [97]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.tex
 Chapter 6.
-[94
+[98
 
 
 
-] [95] [96]) [97]
-(D:\users\saqib\documents\GitHub\Dissertation\Dissertation.bbl [98
+] [99] [100]) [101]
+(D:\users\saqib\documents\GitHub\Dissertation\Dissertation.bbl [102
 
 
-] [99]
+] [103]
 Underfull \hbox (badness 1406) in paragraph at lines 107--109
 [][]\OT1/cmr/m/n/12 T. Berners-Lee, R. Field-ing, and H. Frystyk, ``Hy-per-text
  Trans-fer Pro-to-col --
  []
 
-[100] [101]
+[104] [105]
 Underfull \hbox (badness 2478) in paragraph at lines 188--190
 [][]\OT1/cmr/m/n/12 U. Bhaskar and L. Fleis-cher, ``On-line mixed pack-ing and 
 cov-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
  []
 
-[102] [103] [104] [105] [106] [107]) [108]
+[106] [107] [108] [109] [110] [111]) [112]
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.aux
 (D:\users\saqib\documents\GitHub\Dissertation\sections/titlePage.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/abstractPage.aux)
@@ -403,14 +415,18 @@ cov-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIChapter4.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.aux)
-) ) 
+)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2091 strings out of 493922
- 30774 string characters out of 3147304
- 85235 words of memory out of 3000000
- 5282 multiletter control sequences out of 15000+200000
+ 2098 strings out of 493922
+ 30945 string characters out of 3147304
+ 85273 words of memory out of 3000000
+ 5288 multiletter control sequences out of 15000+200000
  12778 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,10n,24p,2530b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (120 pages, 328272 bytes).
+Output written on Dissertation.dvi (124 pages, 336572 bytes).

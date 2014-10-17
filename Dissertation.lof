@@ -25,9 +25,10 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Location of the BTS sites in our dataset (spread over a $31.25$ $km^2$ urban terrain)}}{74}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Empirical CDF of the number of potential serving BTSs for a call in our dataset (large metropolitan area)}}{74}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Normalized traffic for a 24-hour period at two neighboring sites in our dataset shows the geo-diversity in traffic}}{75}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces BTS power consumption model. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{79}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Percentage reduction in energy consumption vs inter-optimization interval}}{87}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Percentage reduction in energy consumption vs inter-optimization interval}}{88}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{89}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon $, with a six minute inter-optimization interval}}{93}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces BTS power consumption model. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{78}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces BTS power consumption model with finer granularity of BTS power saving.}}{79}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Percentage reduction in energy consumption vs inter-optimization interval}}{91}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Percentage reduction in energy consumption vs inter-optimization interval}}{91}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{92}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The percentage energy savings for all three BTS models considered in this thesis vs the value of $\epsilon $, with a six minute inter-optimization interval}}{96}
 \addvspace {10\p@ }
