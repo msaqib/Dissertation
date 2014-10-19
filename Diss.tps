@@ -17,8 +17,8 @@ Class=BibTeXView
 Document=ref.bib
 
 [Frame0_View0,0]
-TopLine=3859
-Cursor=132951
+TopLine=3553
+Cursor=123306
 
 [Frame1]
 Flags=0
@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=sections\casestudyIIChapter5.tex
 
 [Frame4_View0,0]
-TopLine=307
-Cursor=22346
+TopLine=450
+Cursor=32974
 
 [Frame5]
 Flags=0
@@ -184,5 +184,5 @@ Cursor=31
 
 [SessionInfo]
 FrameCount=10
-ActiveFrame=4
+ActiveFrame=0
 
