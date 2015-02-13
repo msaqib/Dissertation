@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  17 OCT 2014 19:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  13 FEB 2015 20:09
 entering extended mode
 **Dissertation.tex
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.tex
@@ -62,37 +62,71 @@ File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count88
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@ALC@unique=\count88
-\c@ALC@line=\count89
-\c@ALC@rem=\count90
-\c@ALC@depth=\count91
-\ALC@tlm=\skip44
-\algorithmicindent=\skip45
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count92
-\float@exts=\toks15
-\float@box=\box26
-\@float@everytoks=\toks16
-\@floatcapt=\box27
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
 )
-\@float@every@algorithm=\toks17
-\c@algorithm=\count93
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip44
+\skiplinenumber=\skip45
+\skiprule=\skip46
+\skiphlne=\skip47
+\skiptext=\skip48
+\skiplength=\skip49
+\algomargin=\skip50
+\skipalgocfslide=\skip51
+\algowidth=\dimen105
+\inoutsize=\dimen106
+\inoutindent=\dimen107
+\interspacetitleruled=\dimen108
+\interspacealgoruled=\dimen109
+\interspacetitleboxruled=\dimen110
+\algocf@inoutbox=\box26
+\algocf@inputbox=\box27
+\AlCapSkip=\skip52
+\AlCapHSkip=\skip53
+\algoskipindent=\skip54
+\algocf@nlbox=\box28
+\algocf@hangingbox=\box29
+\algocf@untilbox=\box30
+\algocf@skipuntil=\skip55
+\algocf@capbox=\box31
+\algoheightruledefault=\skip56
+\algoheightrule=\skip57
+\algotitleheightruledefault=\skip58
+\algotitleheightrule=\skip59
+\c@algocfline=\count89
+\c@algocfproc=\count90
+\c@algocf=\count91
+\algocf@algoframe=\box32
+\algocf@algobox=\box33
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count92
+\c@ALC@line=\count93
+\c@ALC@rem=\count94
+\c@ALC@depth=\count95
+\ALC@tlm=\skip60
+\algorithmicindent=\skip61
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip46
+\@mathmargin=\skip62
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
@@ -100,78 +134,211 @@ Package: amstext 2000/06/29 v2.01
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks18
-\ex@=\dimen105
+\@emptytoks=\toks15
+\ex@=\dimen111
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen106
+\pmbraise@=\dimen112
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count96
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count97
+\leftroot@=\count98
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count99
+\DOTSCASE@=\count100
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen107
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen113
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
-\tag@help=\toks19
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
-\andhelp@=\toks20
-\eqnshift@=\dimen108
-\alignsep@=\dimen109
-\tagshift@=\dimen110
-\tagwidth@=\dimen111
-\totwidth@=\dimen112
-\lineht@=\dimen113
-\@envbody=\toks21
-\multlinegap=\skip47
-\multlinetaggap=\skip48
-\mathdisplay@stack=\toks22
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks16
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks17
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks18
+\multlinegap=\skip63
+\multlinetaggap=\skip64
+\mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip49
-\subfigcapskip=\skip50
-\subfigcaptopadj=\dimen114
-\subfigbottomskip=\skip51
-\subfigcapmargin=\dimen115
-\subfiglabelskip=\skip52
-\c@subfigure=\count106
-\c@lofdepth=\count107
-\c@subtable=\count108
-\c@lotdepth=\count109
+\subfigtopskip=\skip65
+\subfigcapskip=\skip66
+\subfigcaptopadj=\dimen120
+\subfigbottomskip=\skip67
+\subfigcapmargin=\dimen121
+\subfiglabelskip=\skip68
+\c@subfigure=\count108
+\c@lofdepth=\count109
+\c@subtable=\count110
+\c@lotdepth=\count111
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
-\subfig@top=\skip53
-\subfig@bottom=\skip54
+\subfig@top=\skip69
+\subfig@bottom=\skip70
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen122
+\Hy@linkcounter=\count112
+\Hy@pagecounter=\count113
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count114
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `final' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count115
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen123
+\Fld@menulength=\count116
+\Field@Width=\dimen124
+\Fld@charsize=\dimen125
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
+)
+
+Package hyperref Message: Driver (default): hdvips.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hdvips.def"
+File: hdvips.def 2012/11/06 v6.83m Hyperref driver for dvips
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pdfmark.def"
+File: pdfmark.def 2012/11/06 v6.83m Hyperref definitions for pdfmark specials
+\pdf@docset=\toks20
+\pdf@box=\box36
+\pdf@toks=\toks21
+\pdf@defaulttoks=\toks22
+\HyField@AnnotCount=\count120
+\Fld@listcount=\count121
+\c@bookmark@seq@number=\count122
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip71
+))
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 36.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 36.
+Package hyperref Info: Option `colorlinks' set `true' on input line 36.
+
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.aux
 (D:\users\saqib\documents\GitHub\Dissertation\sections/titlePage.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/abstractPage.aux)
@@ -179,28 +346,74 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 (D:\users\saqib\documents\GitHub\Dissertation\sections/backgroundChapter2.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/frameworkChapter3.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIChapter4.aux)
-(D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.aux)
+(D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.aux
+
+LaTeX Warning: Label `algo:heur1' multiply defined.
+
+)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.aux)
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
- (D:\users\saqib\documents\GitHub\Dissertation\sections/titlePage.tex
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+\AtBeginShipoutBox=\box37
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+Package hyperref Info: Link coloring ON on input line 49.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count123
+)
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
+
+(D:\users\saqib\documents\GitHub\Dissertation\Dissertation.out)
+(D:\users\saqib\documents\GitHub\Dissertation\Dissertation.out)
+\@outlinefile=\write3
+
+(D:\users\saqib\documents\GitHub\Dissertation\sections/titlePage.tex
 File: ./pics/lums.eps Graphic file (type eps)
 
 <./pics/lums.eps> [1
 
 
 ] [2]
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Underfull \hbox (badness 10000) in paragraph at lines 59--65
 
  []
@@ -221,27 +434,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--65
  []
 
 [3]) [4] (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.toc
+Overfull \hbox (106.82268pt too wide) in paragraph at lines 11--11
+ [][] [] []  
+ []
+
 [5
 
 
 ] [6])
-\tf@toc=\write3
+\tf@toc=\write4
  [7] (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.lof
-Overfull \hbox (74.21025pt too wide) in paragraph at lines 5--5
- [][][] []\OT1/cmr/m/n/12 Google Data Cen-ter Lo-ca-tions - Source: www.google.
-com/about/datacenters/inside/locations/ []  
+Overfull \hbox (81.39073pt too wide) in paragraph at lines 5--5
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (3723.08379pt too wide) in paragraph at lines 9--9
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (92.83365pt too wide) in paragraph at lines 20--20
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (144.0026pt too wide) in paragraph at lines 23--23
+ [][][] [] [][]  
  []
 
 [8
 
-])
-\tf@lof=\write4
- [9] [10] (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.lot)
-\tf@lot=\write5
+]
+Overfull \hbox (451.36604pt too wide) in paragraph at lines 25--25
+ [][][] [] [][]  
+ []
 
-[11
 
-] (D:\users\saqib\documents\GitHub\Dissertation\sections/abstractPage.tex
+Overfull \hbox (270.44849pt too wide) in paragraph at lines 26--26
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (2554.24567pt too wide) in paragraph at lines 27--27
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (306.76895pt too wide) in paragraph at lines 28--28
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (342.5408pt too wide) in paragraph at lines 29--29
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (301.94676pt too wide) in paragraph at lines 30--30
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (102.2294pt too wide) in paragraph at lines 33--33
+ [][][] [] [][]  
+ []
+
+
+Overfull \hbox (331.85756pt too wide) in paragraph at lines 34--34
+ [][][] [] [][]  
+ []
+
+)
+\tf@lof=\write5
+ [9] (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.lot)
+\tf@lot=\write6
+ [10
+
+]
+(D:\users\saqib\documents\GitHub\Dissertation\sections/abstractPage.tex
 [1
 
 ]) (D:\users\saqib\documents\GitHub\Dissertation\sections/introChapter1.tex
@@ -272,7 +543,8 @@ Chapter 2.
 File: pics/googledcmap2.eps Graphic file (type eps)
  <pics/googledcmap2.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[][]\OT1/cmr/m/n/12 Figure 2.1: Google Data Cen-ter Lo-ca-tions - Source:
+[][]\OT1/cmr/m/n/12 Figure 2.1: [][][][][]  Google Data Cen-ter Lo-ca-tions - S
+ource:
  []
 
 [13]
@@ -301,12 +573,16 @@ Overfull \hbox (37.09555pt too wide) in paragraph at lines 73--94
  [][] 
  []
 
-[43] [44] [45] [46] [47] [48] [49] [50]
+[43] [44] [45] [46] [47]
+Overfull \hbox (17.62482pt too wide) detected at line 193
+[][] 
+ []
+
+[48] [49] [50]
 File: pics/workloadr.eps Graphic file (type eps)
  <pics/workloadr.eps>
 File: pics/workloadhist-new.eps Graphic file (type eps)
-
-<pics/workloadhist-new.eps>
+ <pics/workloadhist-new.eps>
 Overfull \hbox (19.44852pt too wide) in paragraph at lines 233--246
 [][][]   [] 
  []
@@ -351,61 +627,82 @@ Chapter 5.
 
 
 ]
-File: pics/sites.eps Graphic file (type eps)
- <pics/sites.eps>
-File: pics/coveragecdf.eps Graphic file (type eps)
- <pics/coveragecdf.eps>
-File: pics/traffic-bw.eps Graphic file (type eps)
- <pics/traffic-bw.eps> [73]
-[74] [75] [76] [77]
-File: pics/powermodel.eps Graphic file (type eps)
- <pics/powermodel.eps>
-File: pics/powermodel2-1.eps Graphic file (type eps)
- <pics/powermodel2-1.eps>
+File: pics/ilyas1.eps Graphic file (type eps)
+ <pics/ilyas1.eps> [73] [74]
+File: pics/ilyas2.eps Graphic file (type eps)
+ <pics/ilyas2.eps>
 
-LaTeX Warning: Reference `fig:powermodel1' on page 78 undefined on input line 1
-16.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[78]
+File: pics/ilyas3.eps Graphic file (type eps)
+<pics/ilyas3.eps> [75] [76] [77] [78] [79]
+File: pics/ilyas4a.eps Graphic file (type eps)
+ <pics/ilyas4a.eps>
+File: pics/ilyas4b.eps Graphic file (type eps)
 
-LaTeX Warning: Reference `fig:powermodel1' on page 79 undefined on input line 1
-18.
+<pics/ilyas4b.eps> [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90]
+[91]
+File: pics/ilyas5a.eps Graphic file (type eps)
+ <pics/ilyas5a.eps>
+File: pics/ilyas5b.eps Graphic file (type eps)
+ <pics/ilyas5b.eps>
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 405--410
+ [][][] 
+ []
 
-[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89]
-File: pics/perc.savings.red-bl-bw.eps Graphic file (type eps)
 
-<pics/perc.savings.red-bl-bw.eps>
-File: pics/e.savings.red-bl.eps Graphic file (type eps)
- <pics/e.savings.red-bl.eps> [90] [91]
-File: pics/heuristicerror-touchedup.eps Graphic file (type eps)
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 405--410
+ [][][]  [] 
+ []
 
-<pics/heuristicerror-touchedup.eps> [92] [93] [94] [95]
-File: pics/epsilonresults.eps Graphic file (type eps)
 
-<pics/epsilonresults.eps> [96]) [97]
+LaTeX Warning: Float too large for page by 12.93552pt on input line 412.
+
+[92] [93] [94]
+File: pics/ilyas6.eps Graphic file (type eps)
+ <pics/ilyas6.eps> [95]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 454.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\epsilon' on input line 454.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 454.
+
+[96]
+File: pics/ilyas7.eps Graphic file (type eps)
+ <pics/ilyas7.eps> [97]) [98]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.tex
 Chapter 6.
-[98
+[99
 
 
 
-] [99] [100]) [101]
-(D:\users\saqib\documents\GitHub\Dissertation\Dissertation.bbl [102
+] [100] [101]) [102]
+(D:\users\saqib\documents\GitHub\Dissertation\Dissertation.bbl [103
 
 
-] [103]
+] [104]
 Underfull \hbox (badness 1406) in paragraph at lines 107--109
 [][]\OT1/cmr/m/n/12 T. Berners-Lee, R. Field-ing, and H. Frystyk, ``Hy-per-text
  Trans-fer Pro-to-col --
  []
 
-[104] [105]
+[105] [106]
 Underfull \hbox (badness 2478) in paragraph at lines 188--190
 [][]\OT1/cmr/m/n/12 U. Bhaskar and L. Fleis-cher, ``On-line mixed pack-ing and 
 cov-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
  []
 
-[106] [107] [108] [109] [110] [111]) [112]
+[107] [108] [109] [110] [111] [112])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
+ [113]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.aux
 (D:\users\saqib\documents\GitHub\Dissertation\sections/titlePage.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/abstractPage.aux)
@@ -416,17 +713,23 @@ cov-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.aux)
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.aux)
 )
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 72.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package rerunfilecheck Info: File `Dissertation.out' has not changed.
+(rerunfilecheck)             Checksum: A2FEDE65875A2A8935D61088969B2725;5575.
 
-LaTeX Warning: There were undefined references.
 
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 2098 strings out of 493922
- 30945 string characters out of 3147304
- 85273 words of memory out of 3000000
- 5288 multiletter control sequences out of 15000+200000
- 12778 words of font info for 45 fonts, out of 3000000 for 9000
+ 7820 strings out of 493922
+ 115901 string characters out of 3147304
+ 237859 words of memory out of 3000000
+ 10935 multiletter control sequences out of 15000+200000
+ 16505 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,10n,24p,2530b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,27n,42p,2530b,831s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (124 pages, 336572 bytes).
+Output written on Dissertation.dvi (124 pages, 563172 bytes).
