@@ -1,6 +1,9 @@
 \chapter{Conclusions and Future Work}
-\label{chap:conclusions}
-\section{Contributions} In this thesis, we have made the following contributions:
+\label{chap:conclusions} Geo-diverse data centers and cellular networks may be abstractly represented as a set of resources. Each of these resources is constrained by the maximum amount of workload it can handle. Furthermore, the instantaneous power consumption for these resources is an affine function of the amount of workload they handle. The no-load power consumption for the resources in these networks is a large fraction of the full-load power consumption. 
+
+The workload is quite variable, and the network must be dimensioned according to peak workload demand. However, the workload peaks for only a short duration and drops to a much lower trough. Thus, these networks are energy inefficient and their electricity cost is quite high. One way to improve the energy efficiency and save electricity costs is to scale the networks resources in response to workload variations.
+
+We represent the status (on or off) of network resources and the workload mapped to them as a network state. Using this representation, we model the energy efficiency improvement problem as an optimal state trajectory problem, which we call Relocate Energy Demand to Better Locations (RED-BL). We used workload traces collected from real networks and real electricity costs to assess the utility of RED-BL. In doing so, we have made the following contributions:
 \begin{itemize}
 \item We identified abstractions for a generic power consumption model applicable to two different networks: geo-diverse data centers and cellular networks. Our model represents these networks as a set of resources that have an associated workload handling capacity. When a resource handles workload, some power is consumed. The power consumption for both of these networks is an affine function of workload. 
 \item The aggregate mapping of workload to resources may be viewed as a network state. We accordingly model the electricity cost minimization problem in networks as a multi-interval optimal state trajectory problem.

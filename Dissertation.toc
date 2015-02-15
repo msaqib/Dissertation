@@ -63,6 +63,5 @@
 \contentsline {subsection}{\numberline {5.4.4}Sensitivity to the value of $\epsilon $}{96}{subsection.5.4.4}
 \contentsline {section}{\numberline {5.5}Discussion}{97}{section.5.5}
 \contentsline {chapter}{\numberline {6}Conclusions and Future Work}{99}{chapter.6}
-\contentsline {section}{\numberline {6.1}Contributions}{99}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limitations}{101}{section.6.2}
-\contentsline {section}{\numberline {6.3}Future work}{102}{section.6.3}
+\contentsline {section}{\numberline {6.1}Limitations}{102}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{102}{section.6.2}
