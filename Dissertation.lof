@@ -13,7 +13,7 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Percentage savings with over-provisioning}}{55}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Total cost vs transition overhead}}{58}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Cost saving vs (de)activation granularity}}{60}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces What}}{63}{figure.4.6}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow of sliding window experiments}}{63}{figure.4.6}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Mean absolute workload prediction error vs sliding window size}}{64}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Local trajectory correction technique for three consecutive intervals}}{64}{figure.4.8}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Distribution of workload prediction error for sliding window size of 12 hours}}{64}{figure.4.9}
