@@ -9,10 +9,6 @@ A level-1 auxiliary file: sections/casestudyIIChapter5.aux
 A level-1 auxiliary file: sections/conclusionsChapter6.aux
 The style file: ieeetr.bst
 Database file #1: ref.bib
-Repeated entry---line 3939 of file ref.bib
- : @misc{proofcomm
- :                ,
-I'm skipping whatever remains of this entry
 A bad cross reference---entry "Lee:ServerConsolidation:2011:Globecom"
 refers to entry "DBLP:conf/globecom/2011", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/globecom/2011"
@@ -22,4 +18,4 @@ Warning--empty journal in FBLease
 Warning--can't use both volume and number fields in costCloud
 Warning--empty journal in TIAnnualReport
 Warning--empty journal in VirtualizationCutsPower
-(There were 2 error messages)
+(There was 1 error message)

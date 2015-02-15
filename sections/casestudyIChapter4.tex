@@ -38,13 +38,13 @@ Let the sum of elastic load's peak and idle power consumption over all data cent
 
 Data center power consumption is an affine function of the average CPU utilization of the servers~\cite{Fan:power:ICSA:2007}. Therefore, the average power consumption at data center $i$ during interval $j$ is: 
 \begin{align}
-P_i^j = c_i (P^{min}+\frac{x_i^j(P^{max}-P^{min})}{c_i})
+P_i^j = c_i \left(P^{min}+\frac{x_i^j\left(P^{max}-P^{min}\right)}{c_i}\right)
 \end{align}
 Dividing both sides of the above equation by $P^{max}$ gives the normalized power consumption for data center $i$ during interval $j$:
 
 \begin{align}
 \label{eq:dcpower}
-\hat{P_i^j} = fc_i + x_i^j(1-f)
+\hat{P_i^j} = fc_i + x_i^j\left(1-f\right)
 \end{align}
 where $f$ is the ratio of $P^{max}$ to $P^{min}$. If we set $x_i^j=0$, i.e., data center $i$ is not computing any workload during interval $j$, then the second term in equation~\ref{eq:dcpower} goes to zero and the power consumption reduces to the first term in equation~\ref{eq:dcpower} only, which we refer to as \textit{idle power consumption}. The second term in equation~\ref{eq:dcpower} indicates the workload-dependent \textit{computational power consumption}, which is independent of the data center capacity.
 
@@ -53,7 +53,7 @@ Let $\sigma$ and $\delta$ be the average power consumption, over a single interv
 Electricity cost incurred at data center $i$ during interval $j$ is a product of it's total power consumption (computing, idling, activation and deactivation), duration of the interval ($\lambda$) and the unit price of electricity ($e_i^j$). Hence, the RED-BL optimization problem formulation may be given as:
 
 \begin{align}
-\text{minimize } \sum_{j=1}^{n} \sum_{i=1}^{m} c_i e_i^j(p_i^j \lambda(f+(1-f)\frac{x_i^j}{c_i}) + b_i^j \sigma + s_i^j \delta) \label{eq:objective}
+\text{minimize } \sum_{j=1}^{n} \sum_{i=1}^{m} c_i e_i^j\left(p_i^j \lambda\left(f+\left(1-f\right)\frac{x_i^j}{c_i}\right) + b_i^j \sigma + s_i^j \delta\right) \label{eq:objective}
 \end{align}
 subject to:
 \begin{align}
@@ -204,10 +204,10 @@ Lines 17-22 update the two pointers until they either demark a section of the wo
 The if-block (line 6-16) will dominate the overall execution time. Within this if-statement, on line 7, the average electricity price is computed and then the data center indices are sorted in ascending order. In the worst case, the if-block will be entered in every iteration of the outer repeat-until loop and exactly one data center index will be removed from $a$ (line 13) in each iteration of the outer repeat-until loop. In this case, the computation of average electricity prices will require m$n$ + (m-1)($n$-1) + (m-2)($n$-2) + (m-3)($n$-3) + ... + (m-$n$+1) primitive operations. Sorting the electricity prices will require O(m lg m) + O((m-1) lg (m-1)) +  ... + O((m-$n$+1) lg (m-$n$+1)) running time, overall. Within the nested for-loops, line 13 is most complex which will require, in the worst case, (m-1) + (m-2) + (m-3) + ... + (m-$n$-1) primitive operations. This is smaller compared to the running time of the average electricity price computation, so in Big-Oh notation, we can ignore it. The overall worst case running time for the electricity price averaging can be computed as follows. We first consider that the electricity price averaging is done exactly $i$ times and will later replace $i$ by it's actual value of $n$.
 
 \begin{align}
-mn + (m-1) (n-1) + (m-2) (n-2) + ... + (m-i+1) (n-i+1)\notag \\
-i mn - n - 2n - ... - (i-1)n - m - 2m - ... - (i-1)m + 1 + 4 + ... + (i-1)^2\notag \\
-i m n - (n + m)(1 + 2 + ... + (i-1)) + 1 + 4 + ... + (i-1)^2\notag \\
-i mn - (n + m)\frac{i(i+1)}{2} + \frac{n(n-1)(2n-1)}{6}\notag
+mn + \left(m-1\right) \left(n-1\right) + \left(m-2\right) \left(n-2\right) + ... + \left(m-i+1\right) \left(n-i+1\right)\notag \\
+i mn - n - 2n - ... - \left(i-1\right)n - m - 2m - ... - \left(i-1\right)m + 1 + 4 + ... + \left(i-1\right)^2\notag \\
+i m n - \left(n + m\right)\left(1 + 2 + ... + \left(i-1\right)\right) + 1 + 4 + ... + \left(i-1\right)^2\notag \\
+i mn - \left(n + m\right)\frac{i\left(i+1\right)}{2} + \frac{n\left(n-1\right)\left(2n-1\right)}{6}\notag
 \end{align}
 Substituting $i$ by $n$, we get the overall worst case running time for the average electricity price calculation step as O(m$n^2$ + $n^3$). The overall worst case running time of the entire algorithm (including the average electriciry price sorting step) is O(m$n^2$ + $n^3$ + m lg m).
 
@@ -404,7 +404,7 @@ Granular (de)activation is expected to bring additional power savings. For insta
 The optimization problem formulation with $l$ granular (de)activation levels is given by:
  
 \begin{align}
-\text{minimize } \sum_{j=1}^{n} \sum_{i=1}^{m} c_i e_i^j(p_i^j \lambda(\frac{f}{l}+(1-f)\frac{x_i^j}{c_i}) + \frac{b_i^j \sigma}{l} + \frac{s_i^j \delta}{l})\notag
+\text{minimize } \sum_{j=1}^{n} \sum_{i=1}^{m} c_i e_i^j\left(p_i^j \lambda\left(\frac{f}{l}+\left(1-f\right)\frac{x_i^j}{c_i}\right) + \frac{b_i^j \sigma}{l} + \frac{s_i^j \delta}{l}\right)\notag
 \end{align}
 subject to:
 \begin{align}
@@ -442,7 +442,7 @@ On a relatively shorter timescale, in each interval, our algorithm locally corre
 The local trajectory correction for interval $j$ is an optimization problem that attempts to minimize the electricity cost of the corrected state $S_j$ and the cost of transition between the planned state $\hat{S}_j$ and the corrected state. The mixed integer linear programming formulation for the local trajectory correction step for interval $j$ is as follows:
     
 \begin{align}
-\text{minimize } \sum_{i=1}^{m} c_i e_i^j(p_i^j \lambda(f+(1-f)\frac{x_i^j}{c_i}) + (b_i^j+\hat{b}_i^j) \sigma + (s_i^j+\hat{s}_i^j) \delta)
+\text{minimize } \sum_{i=1}^{m} c_i e_i^j\left(p_i^j \lambda\left(f+\left(1-f\right)\frac{x_i^j}{c_i}\right) + \left(b_i^j+\hat{b}_i^j\right) \sigma + \left(s_i^j+\hat{s}_i^j\right) \delta\right)
 \end{align}
 subject to:
 \begin{align}
@@ -512,13 +512,13 @@ Figure~\ref{fig:fvar1} shows the variation of electricity cost savings as the va
  
 \begin{figure}
 \includegraphics[width=1\textwidth]{pics/fvar-0.01bs.eps}
-\caption{Average daily total electricity cost and it's components vs f, For bs = 0.01}
+\caption{Average daily total electricity cost and it's components vs f, For b\slash s = 0.01}
 \label{fig:fvar1}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=1\textwidth]{pics/fvar-0.65bs.eps}
-\caption{Average daily total electricity cost and it's components vs f, For bs = 0.65}
+\caption{Average daily total electricity cost and it's components vs f, For b\slash s = 0.65}
 \label{fig:fvar2}
 \end{figure}
 

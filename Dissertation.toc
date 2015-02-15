@@ -46,22 +46,22 @@
 \contentsline {section}{\numberline {4.9}Discussion}{69}{section.4.9}
 \contentsline {chapter}{\numberline {5}Case Study II: Cellular Networks}{72}{chapter.5}
 \contentsline {section}{\numberline {5.1}Prelude}{72}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Motivating Example}{75}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Motivating Example}{76}{subsection.5.1.1}
 \contentsline {section}{\numberline {5.2}Related Work}{78}{section.5.2}
 \contentsline {section}{\numberline {5.3}Instantiating the generalized optimization formulation}{79}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Multi-BTS Cellular Setting}{83}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Multi-BTS Cellular Setting}{80}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Problem Complexity}{84}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Heuristic solution to RED-BL for cellular networks}{86}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Site Characteristics}{90}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.4}Site Characteristics}{89}{subsection.5.3.4}
 \contentsline {subsubsection}{Model 1}{90}{section*.4}
 \contentsline {subsubsection}{Model 2}{90}{section*.5}
-\contentsline {subsubsection}{Model 3}{91}{section*.6}
+\contentsline {subsubsection}{Model 3}{90}{section*.6}
 \contentsline {section}{\numberline {5.4}Results}{91}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}BTS with two possible power states}{91}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Multi-state BTS}{94}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Performance of heuristic algorithm}{96}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.3}Performance of heuristic algorithm}{95}{subsection.5.4.3}
 \contentsline {subsection}{\numberline {5.4.4}Sensitivity to the value of $\epsilon $}{96}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Discussion}{97}{section.5.5}
+\contentsline {section}{\numberline {5.5}Discussion}{96}{section.5.5}
 \contentsline {chapter}{\numberline {6}Conclusions and Future Work}{99}{chapter.6}
 \contentsline {section}{\numberline {6.1}Scope of our work}{102}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future work}{102}{section.6.2}

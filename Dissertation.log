@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  15 FEB 2015 18:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  15 FEB 2015 19:51
 entering extended mode
 **Dissertation.tex
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.tex
@@ -550,22 +550,20 @@ Chapter 5.
 File: pics/ilyas1.eps Graphic file (type eps)
  <pics/ilyas1.eps> [73] [74]
 File: pics/ilyas2.eps Graphic file (type eps)
- <pics/ilyas2.eps>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ <pics/ilyas2.eps> [75]
 File: pics/ilyas3.eps Graphic file (type eps)
-<pics/ilyas3.eps> [75] [76] [77] [78] [79]
+ <pics/ilyas3.eps>
+[76] [77] [78] [79]
 File: pics/ilyas4a.eps Graphic file (type eps)
  <pics/ilyas4a.eps>
 File: pics/ilyas4b.eps Graphic file (type eps)
-
-<pics/ilyas4b.eps> [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90]
-[91]
+ <pics/ilyas4b.eps> [80] [81] [82]
+[83] [84] [85] [86] [87] [88] [89] [90] [91]
 File: pics/ilyas5a.eps Graphic file (type eps)
  <pics/ilyas5a.eps>
 File: pics/ilyas5b.eps Graphic file (type eps)
- <pics/ilyas5b.eps>
+
+<pics/ilyas5b.eps>
 Overfull \hbox (7.83325pt too wide) in paragraph at lines 405--410
  [][][] 
  []
@@ -578,9 +576,9 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 405--410
 
 LaTeX Warning: Float too large for page by 12.93552pt on input line 412.
 
-[92] [93] [94]
+[92] [93]
 File: pics/ilyas6.eps Graphic file (type eps)
- <pics/ilyas6.eps> [95]
+ <pics/ilyas6.eps> [94]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 454.
@@ -593,9 +591,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 454.
 
-[96]
+[95]
 File: pics/ilyas7.eps Graphic file (type eps)
- <pics/ilyas7.eps> [97]) [98]
+ <pics/ilyas7.eps> [96] [97]) [98]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.tex
 Chapter 6.
 [99
@@ -646,10 +644,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
 Here is how much of TeX's memory you used:
  7640 strings out of 493922
  112952 string characters out of 3147304
- 236899 words of memory out of 3000000
+ 236901 words of memory out of 3000000
  10762 multiletter control sequences out of 15000+200000
  16505 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,26n,42p,2530b,817s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (126 pages, 515884 bytes).
+Output written on Dissertation.dvi (126 pages, 516300 bytes).
