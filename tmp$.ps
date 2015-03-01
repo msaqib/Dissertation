@@ -1,0 +1,11 @@
+(gs_epsf.ps) findlibfile { /.epsfheader where {pop pop pop}{closefile run}ifelse} {pop} ifelse
+/NumbDict countdictstack def
+1 dict begin
+/showpage {} def
+userdict begin
+0.000000 0.000000 translate
+0.500000 0.500000 scale
+-0.000000 -0.000000 translate
+(./pics/lums-logo.eps) run
+countdictstack NumbDict sub {end} repeat
+showpage

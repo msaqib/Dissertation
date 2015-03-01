@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  15 FEB 2015 19:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.10.22)  1 MAR 2015 16:00
 entering extended mode
 **Dissertation.tex
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.tex
@@ -440,7 +440,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--65
 ] (D:\users\saqib\documents\GitHub\Dissertation\sections/abstractPage.tex
 [1
 
-]) (D:\users\saqib\documents\GitHub\Dissertation\sections/introChapter1.tex
+] [2] [3])
+(D:\users\saqib\documents\GitHub\Dissertation\sections/introChapter1.tex
 Chapter 1.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -481,7 +482,11 @@ Chapter 3.
 
 ]
 File: pics/mappingexample.eps Graphic file (type eps)
- <pics/mappingexample.eps> [29] [30] [31] [32] [33] [34]) [35] [36]
+ <pics/mappingexample.eps>
+
+LaTeX Warning: Float too large for page by 19.41588pt on input line 13.
+
+[29] [30] [31] [32] [33] [34]) [35] [36]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIChapter4.tex
 Chapter 4.
 [37
@@ -519,7 +524,7 @@ ver-provisioning
 File: pics/s3r.eps Graphic file (type eps)
  <pics/s3r.eps> [57] [58]
 File: pics/s6.eps Graphic file (type eps)
- <pics/s6.eps> [59] [60] [61] [62]
+ <pics/s6.eps> [59] [60] [61]
 File: pics/flowchart2.eps Graphic file (type eps)
 
 <pics/flowchart2.eps>
@@ -529,36 +534,36 @@ File: pics/traj-corr.eps Graphic file (type eps)
  <pics/traj-corr.eps>
 File: pics/workload-pred-error-2.eps Graphic file (type eps)
 
-<pics/workload-pred-error-2.eps> [63] [64] [65]
+<pics/workload-pred-error-2.eps> [62] [63] [64]
 File: pics/sw-cost-error-2.eps Graphic file (type eps)
  <pics/sw-cost-error-2.eps>
-[66]
+[65]
 File: pics/fvar-0.01bs.eps Graphic file (type eps)
  <pics/fvar-0.01bs.eps>
 File: pics/fvar-0.65bs.eps Graphic file (type eps)
- <pics/fvar-0.65bs.eps> [67] [68]
+ <pics/fvar-0.65bs.eps> [66] [67]
 File: pics/rb-heur1error.eps Graphic file (type eps)
 
-<pics/rb-heur1error.eps> [69]) [70] [71]
+<pics/rb-heur1error.eps> [68]) [69] [70]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/casestudyIIChapter5.tex
 Chapter 5.
-[72
+[71
 
 
 
 ]
 File: pics/ilyas1.eps Graphic file (type eps)
- <pics/ilyas1.eps> [73] [74]
+ <pics/ilyas1.eps> [72] [73]
 File: pics/ilyas2.eps Graphic file (type eps)
- <pics/ilyas2.eps> [75]
+ <pics/ilyas2.eps> [74]
 File: pics/ilyas3.eps Graphic file (type eps)
  <pics/ilyas3.eps>
-[76] [77] [78] [79]
+[75] [76] [77] [78]
 File: pics/ilyas4a.eps Graphic file (type eps)
  <pics/ilyas4a.eps>
 File: pics/ilyas4b.eps Graphic file (type eps)
- <pics/ilyas4b.eps> [80] [81] [82]
-[83] [84] [85] [86] [87] [88] [89] [90] [91]
+ <pics/ilyas4b.eps> [79] [80] [81]
+[82] [83] [84] [85] [86] [87] [88] [89] [90]
 File: pics/ilyas5a.eps Graphic file (type eps)
  <pics/ilyas5a.eps>
 File: pics/ilyas5b.eps Graphic file (type eps)
@@ -576,9 +581,9 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 405--410
 
 LaTeX Warning: Float too large for page by 12.93552pt on input line 412.
 
-[92] [93]
+[91] [92]
 File: pics/ilyas6.eps Graphic file (type eps)
- <pics/ilyas6.eps> [94]
+ <pics/ilyas6.eps> [93]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 454.
@@ -591,34 +596,34 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 454.
 
-[95]
+[94]
 File: pics/ilyas7.eps Graphic file (type eps)
- <pics/ilyas7.eps> [96] [97]) [98]
+ <pics/ilyas7.eps> [95] [96]) [97]
 (D:\users\saqib\documents\GitHub\Dissertation\sections/conclusionsChapter6.tex
 Chapter 6.
-[99
+[98
 
 
 
-] [100] [101] [102]) [103]
-(D:\users\saqib\documents\GitHub\Dissertation\Dissertation.bbl [104
+] [99] [100] [101]) [102]
+(D:\users\saqib\documents\GitHub\Dissertation\Dissertation.bbl [103
 
 
-] [105]
+] [104]
 Underfull \hbox (badness 1406) in paragraph at lines 107--109
 [][]\OT1/cmr/m/n/12 T. Berners-Lee, R. Field-ing, and H. Frystyk, ``Hy-per-text
  Trans-fer Pro-to-col --
  []
 
-[106] [107]
+[105] [106]
 Underfull \hbox (badness 2478) in paragraph at lines 188--190
 [][]\OT1/cmr/m/n/12 U. Bhaskar and L. Fleis-cher, ``On-line mixed pack-ing and 
 cov-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
  []
 
-[108] [109] [110] [111] [112] [113])
+[107] [108] [109] [110] [111] [112])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [114]
+ [113]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 
 (D:\users\saqib\documents\GitHub\Dissertation\Dissertation.aux
@@ -642,12 +647,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 7640 strings out of 493922
- 112952 string characters out of 3147304
- 236901 words of memory out of 3000000
- 10762 multiletter control sequences out of 15000+200000
+ 7639 strings out of 493922
+ 112941 string characters out of 3147304
+ 236870 words of memory out of 3000000
+ 10761 multiletter control sequences out of 15000+200000
  16505 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,26n,42p,2530b,817s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (126 pages, 516300 bytes).
+Output written on Dissertation.dvi (127 pages, 520704 bytes).

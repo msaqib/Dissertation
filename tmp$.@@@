@@ -1,0 +1,8 @@
+-q
+-dNOPAUSE
+-sDEVICE=bmp16m
+-sOUTPUTFILE=./figures/lums-logo.bmp
+-r100
+-g217x183
+tmp$.ps
+quit.ps

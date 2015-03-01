@@ -1,0 +1,1 @@
+C:\texmf\miktex\bin\makepk.exe cmbx12 1037 600 1+437/600C:\texmf\miktex\bin\makepk.exe cmbx12 864 600 1+264/600C:\texmf\miktex\bin\makepk.exe cmr17 600 600 600/600

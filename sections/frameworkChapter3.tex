@@ -7,7 +7,7 @@ In order to develop a generalized optimization problem for minimizing electricit
 
 \begin{figure}
 \centering
-\includegraphics[height=0.7\textheight]{pics/mappingexample.eps}
+\includegraphics[height=0.8\textheight]{pics/mappingexample.eps}
 \caption{An example of mapping variable workload to capacity-limited network resources with geo-temporal diversity in electricity prices. Three consecutive intervals $t_1$, $t_2$ and $t_3$ are considered. Workload and electricity prices may only change between two consecutive intervals. (a) Workload considered in this example. (b) Electricity prices for the locations at which the two network resources are situated. (c) A uniform mapping of workload to network resources does not exploit electricity price diversity. (d) Mapping workload to network resources in order of their current electricity price. Due to lack of energy proportionality, only slight savings in electricity cost are possible. (e) Deactivating idle resources alongwith the resource mapping strategy of (d) may result in significant electricity cost savings.}
 \label{fig:mappingexample}
 \end{figure}
@@ -48,7 +48,7 @@ The optimal state trajectory problem attempts to determine a sequence of states 
 
 Here $C(S^j)$ represents a function that evaluates the cost of being in state $S^j$. As per equation~\ref{eq:abdcpaper}, $C(S^j)$ may be given as:
 \begin{align}
-C(S^j) = \sum_{i=1}^m \{ P_{min} + x_i^j (P_{max} - P_{min}) \}
+C(S^j) = \sum_{i=1}^m \left\{ P_{min} + x_i^j (P_{max} - P_{min}) \right\}
 \end{align}
 
 Furthermore, $T(S^j,S^{j-1})$ represents a function that computes the cost of transitioning from state $S^{j-1}$ to state $S^j$ during consecutive intervals $j-1$ and $j$. The transition costs may be a result of factors such as overhead electricity consumption when turning network resources on or off. We will show in the next chapter that transition costs can be computed using the values of the indicator variables $p_i^j$ and $p_i^{j-1}$.
