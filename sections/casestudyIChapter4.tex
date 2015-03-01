@@ -459,7 +459,7 @@ s_i^j \ge \hat{p}_i^j - p_i^j \hspace{6 pt} \forall i \label{eq:lscon}\\
 \end{align}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{pics/flowchart2.eps}
+\includegraphics[width=1\linewidth]{pics/flowchart3.eps}
 \caption{Flow of sliding window experiments}
 \label{fig:flowchart}
 \end{figure}
@@ -474,7 +474,7 @@ s_i^j \ge \hat{p}_i^j - p_i^j \hspace{6 pt} \forall i \label{eq:lscon}\\
   %\hspace{0.5cm}
   \begin{minipage}{0.45\textwidth}
     \centering         
-    \includegraphics[width=0.8\textwidth]{pics/traj-corr.eps}
+    \includegraphics[width=0.8\textwidth]{pics/traj-corr2.eps}
     \caption{Local trajectory correction technique for three consecutive intervals}
     \label{fig:traj-corr}
     \end{minipage}
@@ -482,7 +482,7 @@ s_i^j \ge \hat{p}_i^j - p_i^j \hspace{6 pt} \forall i \label{eq:lscon}\\
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{pics/workload-pred-error-2.eps}
+\includegraphics[width=0.7\linewidth]{pics/workload-pred-error-2.eps}
     \caption{Distribution of workload prediction error for sliding window size of 12 hours}
     \label{fig:workload-pred-error-dist}
     \end{figure}
@@ -498,42 +498,42 @@ The difference of the electricity cost resulting from the use of the sliding win
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\textwidth]{pics/sw-cost-error-2.eps}
+    \includegraphics[width=0.8\textwidth]{pics/sw-cost-error-2.eps}
 \caption{Percentage error of sliding window forecasts compared to global optimal with error-free workload}
 \label{fig:s5r}
 \end{figure}
 
 
 
-\section{Sensitivity of electricity cost savings to the server idle-peak power ratio}
+\subsection{Sensitivity of electricity cost savings to the server idle-peak power ratio}
 Chip manufacturers and computer vendors are striving to improve server energy propotional/efficient. It would be interesting to see how the electricity cost savings for RED-BL would improve as the server's idle to peak power ratio ($f$) drops. To this end, we conducted a set of experiments in which we kept all other parameters fixed while varying $f$ from 0 to 1.  Note that $f$=0 means that the servers are completely energy proportional, whereas $f$=1 means that the server power consumption is totally inelastic.
 
 Figure~\ref{fig:fvar1} shows the variation of electricity cost savings as the value of $f$ is varied while the $b$/$s$ parameteres are kept at a low value of 0.01. In this setting, we wish to investigate if server energy proportionality improvement really matters if the bootup/shutdown costs were really low. Figure~\ref{fig:fvar1} shows that for an increase from $f$=0 to $f$=1, the global optimal solution over the planning window only spans an increase in average total electricity cost of 8.34\%. Also, a drop from the typical $f$=0.6 all the way to $f$=0 results in a 4.88\% drop in total electricity cost. It is noticeable that the bootup/shutdown overheads are really small and the idling fraction of electricity costs increases almost linearly with the value of $f$.
  
 \begin{figure}
-\includegraphics[width=1\textwidth]{pics/fvar-0.01bs.eps}
+\includegraphics[width=0.8\textwidth]{pics/fvar-0.01bs.eps}
 \caption{Average daily total electricity cost and it's components vs f, For b\slash s = 0.01}
 \label{fig:fvar1}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\textwidth]{pics/fvar-0.65bs.eps}
+\includegraphics[width=0.8\textwidth]{pics/fvar-0.65bs.eps}
 \caption{Average daily total electricity cost and it's components vs f, For b\slash s = 0.65}
 \label{fig:fvar2}
 \end{figure}
 
 Figure~\ref{fig:fvar2} shows the same results for $b$/$s$=0.65. In this case, an increase from $f$=0 to $f$=1 spans an 11.44\% increase in average daily total electricity costs. Also, as $f$ drops from the typical $f$=0.65 all the way to $f$=0, the total electricity cost of the global optimal solution over the planning window drops by 7.42\%. Since the bootup/shutdown overhead is significant in this case, for all values of $f$, the total electricity cost of the global optimal solution over the planning window is characterized by an almost fixed contribution from bootup/shutdown, while the idling fraction increase almost linearly.
 
-\section{Performance of the heuristic algorithm}
+\subsection{Performance of the heuristic algorithm}
 Figure~\ref{fig:heur1perf} shows the performance of our heuristic algorithm compared to the optimal solution of the problem for various values of the (de)activation overhead parameters. For each value of the $b$/$s$ parameters, we have plotted the average error over the seven days in our workload dataset (the curve) as well as the minimum and maximum error for any given day (the vertical bars). The performance of the heuristic is the worst for $b$/$s$ = 0, because the heuristic avoids bootup/shutdown which has zero cost for $b$/$s$ = 0. For other small values of $b$/$s$ also, the bootup/shutdown overhead is not significant and by avoiding it, our heuristic fares relatively poorly compared to the optimal solution. As the value of $b$/$s$ increases, our heuristic's error compared to the optimal solution drops until it starts a slight rise. The rising trend in the heuristic's performance for relatively high values of $b$/$s$ is because in this regime, it may often be better to allow idling of some data centers instead of a bootup at the intervals defined by $p_1$ and shutdown at those defined by $p_2$. We observed similar trends for other values of $f$ as well, when $b$/$s$ is varied from 0 to 1.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{pics/rb-heur1error.eps}
+\includegraphics[width=0.8\linewidth]{pics/rb-heur1error.eps}
 \caption{The minimum, maximum and average percentage difference between the cost of our heuristic and RED-BL}
 \label{fig:heur1perf}
 \end{figure}
 
-\section{Discussion}
+\section{Summary}
 In this chapter, we have instantiated the generalized problem formulation of joint workload relocation and resource pruning to optimize electricity costs for geo-diverse data centers. The generalized formulation performs a state trajectory optimization and in case of geo-diverse data centers, the network state consists of a combination of discrete as well as continuous variables. 
 
 Our formulation determines a deployment configuration plan that is optimal over a planning window consisting of several intervals in the form of bootup/shutdown times for each data center as well as the workload to be mapped to each data center for all intervals in the planning window. Discrete optimization problems such as ours are difficult to solve exactly because of their computational complexity. However, using the CPLEX solver we were able to compute the optimal plans for planning windows consisting of 24 one-hour intervals within a few seconds. 

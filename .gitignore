@@ -163,3 +163,10 @@ pip-log.txt
 .DS_Store
 Dissertation.dvi
 Dissertation.log
+Diss.tps
+*.tps
+Dissertation.dvi
+*.lof
+Dissertation.log
+*.lot
+Dissertation.out

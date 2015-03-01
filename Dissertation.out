@@ -41,9 +41,9 @@
 \BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Sensitivity of electricity cost savings to magnitude of transition costs}{section.4.6}% 41
 \BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Sensitivity of electricity cost savings to resource pruning granularity}{section.4.6}% 42
 \BOOKMARK [2][-]{subsection.4.6.4}{4.6.4 Sliding window re-optimization}{section.4.6}% 43
-\BOOKMARK [1][-]{section.4.7}{4.7 Sensitivity of electricity cost savings to the server idle-peak power ratio}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.8}{4.8 Performance of the heuristic algorithm}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.9}{4.9 Discussion}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.6.5}{4.6.5 Sensitivity of electricity cost savings to the server idle-peak power ratio}{section.4.6}% 44
+\BOOKMARK [2][-]{subsection.4.6.6}{4.6.6 Performance of the heuristic algorithm}{section.4.6}% 45
+\BOOKMARK [1][-]{section.4.7}{4.7 Summary}{chapter.4}% 46
 \BOOKMARK [0][-]{chapter.5}{5 Case Study II: Cellular Networks}{}% 47
 \BOOKMARK [1][-]{section.5.1}{5.1 Prelude}{chapter.5}% 48
 \BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Motivating Example}{section.5.1}% 49

@@ -16,9 +16,9 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Flow of sliding window experiments}}{63}{figure.4.6}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Mean absolute workload prediction error vs sliding window size}}{63}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Local trajectory correction technique for three consecutive intervals}}{63}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Distribution of workload prediction error for sliding window size of 12 hours}}{63}{figure.4.9}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Distribution of workload prediction error for sliding window size of 12 hours}}{64}{figure.4.9}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Percentage error of sliding window forecasts compared to global optimal with error-free workload}}{65}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Average daily total electricity cost and it's components vs f, For b/\penalty \exhyphenpenalty s = 0.01}}{66}{figure.4.11}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Average daily total electricity cost and it's components vs f, For b/\penalty \exhyphenpenalty s = 0.01}}{67}{figure.4.11}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Average daily total electricity cost and it's components vs f, For b/\penalty \exhyphenpenalty s = 0.65}}{67}{figure.4.12}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces The minimum, maximum and average percentage difference between the cost of our heuristic and RED-BL}}{68}{figure.4.13}
 \addvspace {10\p@ }
@@ -26,10 +26,10 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces CDF (cumulative distribution function) of the number of potential serving BTSs for a call in our dataset (large metropolitan area).}}{74}{figure.5.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces The scenario for the motivating example. Three BTSs (A, B and C) are shown along with eight active calls. Each call is handled by the BTS from which it receives the strongest signal (the default in GSM networks). The serving BTS for each call is shown using arrows. If the power savings mode can be enabled at a BTS only if it has up to two active calls, then only BTS C can be put in the power savings mode. However, if calls 7 and 8 were handed off to BTS C, both BTS A and B can be put into the power savings mode, thereby resulting in greater energy savings.}}{76}{figure.5.3}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Two-state power consumption model for a BTS with $r$ TRXs. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{80}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Three-state power consumption model for a BTS with $r$ TRXs. BTS power savings is applied in a more granular way, than the model of Figure\nobreakspace {}\ref {fig:powermodel1}.}}{81}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces (a) Percent reduction in energy consumption vs re-optimization interval, (b) Reduction in energy consumption vs re-optimization interval}}{92}{figure.5.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{92}{figure.5.6}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{92}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{94}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon $, with a six minute inter-optimization interval}}{96}{figure.5.8}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Three-state power consumption model for a BTS with $r$ TRXs. BTS power savings is applied in a more granular way, than the model of Figure\nobreakspace {}\ref {fig:powermodel1}.}}{80}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces (a) Percent reduction in energy consumption vs re-optimization interval, (b) Reduction in energy consumption vs re-optimization interval}}{91}{figure.5.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{91}{figure.5.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{91}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{93}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon $, with a six minute inter-optimization interval}}{95}{figure.5.8}
 \addvspace {10\p@ }
