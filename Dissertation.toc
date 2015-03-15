@@ -29,39 +29,39 @@
 \contentsline {chapter}{\numberline {4}Case Study I: Geo-diverse Data Centers}{37}{chapter.4}
 \contentsline {section}{\numberline {4.1}Prelude}{37}{section.4.1}
 \contentsline {section}{\numberline {4.2}Related work}{38}{section.4.2}
-\contentsline {section}{\numberline {4.3}Instantiating the generalized optimization formulation}{41}{section.4.3}
-\contentsline {section}{\numberline {4.4}Sources of transition costs in the data center scenario}{45}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Problem complexity and a heuristic}{46}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Experimental setup}{51}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Application workload}{51}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Electricity prices}{52}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Algorithms for Workload Distribution/Relocation}{52}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}Results}{54}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Sensitivity of electricity cost savings to extent of over-provisioning}{56}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Sensitivity of electricity cost savings to magnitude of transition costs}{57}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Sensitivity of electricity cost savings to resource pruning granularity}{58}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Sliding window re-optimization}{60}{subsection.4.6.4}
-\contentsline {subsection}{\numberline {4.6.5}Sensitivity of electricity cost savings to the server idle-peak power ratio}{66}{subsection.4.6.5}
-\contentsline {subsection}{\numberline {4.6.6}Performance of the heuristic algorithm}{68}{subsection.4.6.6}
-\contentsline {section}{\numberline {4.7}Summary}{69}{section.4.7}
-\contentsline {chapter}{\numberline {5}Case Study II: Cellular Networks}{71}{chapter.5}
-\contentsline {section}{\numberline {5.1}Prelude}{71}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Motivating Example}{75}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Related Work}{77}{section.5.2}
-\contentsline {section}{\numberline {5.3}Instantiating the generalized optimization formulation}{78}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Multi-BTS Cellular Setting}{79}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Problem Complexity}{82}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Heuristic solution to RED-BL for cellular networks}{84}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Site Characteristics}{87}{subsection.5.3.4}
-\contentsline {subsubsection}{Model 1}{88}{section*.4}
-\contentsline {subsubsection}{Model 2}{88}{section*.5}
-\contentsline {subsubsection}{Model 3}{88}{section*.6}
-\contentsline {section}{\numberline {5.4}Results}{89}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}BTS with two possible power states}{89}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Multi-state BTS}{92}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Performance of heuristic algorithm}{93}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Sensitivity to the value of $\epsilon $}{94}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Discussion}{94}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{96}{chapter.6}
-\contentsline {section}{\numberline {6.1}Scope of our work}{99}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future work}{99}{section.6.2}
+\contentsline {section}{\numberline {4.3}Instantiating the generalized optimization formulation}{43}{section.4.3}
+\contentsline {section}{\numberline {4.4}Sources of transition costs in the data center scenario}{47}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Problem complexity and a heuristic}{48}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Experimental setup}{53}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Application workload}{53}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Electricity prices}{54}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Algorithms for Workload Distribution/Relocation}{54}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Results}{56}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Sensitivity of electricity cost savings to extent of over-provisioning}{58}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Sensitivity of electricity cost savings to magnitude of transition costs}{59}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Sensitivity of electricity cost savings to resource pruning granularity}{60}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Sliding window re-optimization}{62}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Sensitivity of electricity cost savings to the server idle-peak power ratio}{68}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}Performance of the heuristic algorithm}{70}{subsection.4.6.6}
+\contentsline {section}{\numberline {4.7}Summary}{71}{section.4.7}
+\contentsline {chapter}{\numberline {5}Case Study II: Cellular Networks}{73}{chapter.5}
+\contentsline {section}{\numberline {5.1}Prelude}{73}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Motivating Example}{77}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Related Work}{79}{section.5.2}
+\contentsline {section}{\numberline {5.3}Instantiating the generalized optimization formulation}{80}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Multi-BTS Cellular Setting}{81}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Problem Complexity}{84}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Heuristic solution to RED-BL for cellular networks}{86}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Site Characteristics}{89}{subsection.5.3.4}
+\contentsline {subsubsection}{Model 1}{90}{section*.4}
+\contentsline {subsubsection}{Model 2}{90}{section*.5}
+\contentsline {subsubsection}{Model 3}{90}{section*.6}
+\contentsline {section}{\numberline {5.4}Results}{91}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}BTS with two possible power states}{91}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Multi-state BTS}{94}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Performance of heuristic algorithm}{95}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Sensitivity to the value of $\epsilon $}{96}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Discussion}{96}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{98}{chapter.6}
+\contentsline {section}{\numberline {6.1}Scope of our work}{101}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{101}{section.6.2}

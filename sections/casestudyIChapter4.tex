@@ -28,6 +28,64 @@ Another related theme of research is greening of data centers. Some examples of 
 
 All of the above work deals with problems that can be categorized broadly as optimal scheduling problems. Such problems arise in many different domains and prior work in such domains is relevant. For instance, System on Chip (SOC)~\cite{Fang:2011:COP:1995896.1995940}, electric power systems and smart grid~\cite{Javed:2008:ULP:1485753.1485792,Logenthiran2011138,Celli:2001:PICA,FahadJavedAdOpt.SASO.2009.26}, WiFi access points~\cite{Marsan:2010:SAM:1791314.1791340}, wide area networks~\cite{Cavdar:2011:ECOC}, cellular networks~\cite{Peng:2011:TPS:2030613.2030628} and high performance computing~\cite{Lee:ServerConsolidation:2011:Globecom,Pinheiro01loadbalancing,Yao:DCPowerReduction:2012:INFOCOM,Herodotou:Starfish:2011:CIDR,Herodotou:2011:NOS:2038916.2038934,Aikema:ElecCostHPC:2011:ISSST}.
 
+In the present work, we approach a scalable solution to this problem by treating all the elastic electric load\footnote{The electric load that may be turned on or off to save electricity cost without long delays or long-term impact on performance.} in a data center as an aggregate and determining this aggregate's state for each interval in a planning window. For every interval in the planning window, our coarse-granularity formulation provides the average utilization of the servers within a data center. Relaxing a discrete optimization problem to a continuous one typically introduces an approximation error. The magnitude of this error is expected to be small for large scale problems such as geo-diverse data centers. Determination of the approximation error's magnitude is beyond the scope of this paper and is left as future work.
+
+To motivate the significance of transition costs in the dynamic scaling of geo-diverse data center capacity and our scheme for incorporating the transition costs to the optimization problem, we will use a simple example shown in Figure~\ref{fig:mot-example}. It depicts an example instance of the
+state trajectory problem for a planning window consisting of
+three intervals represented along the horizontal axis. For each interval, we show three sample states represented using rounded rectangles. Each state is labeled with a name in the lower left corner and the corresponding electricity cost in the lower right corner. Moreover, transition between states in consecutive intervals is shown using arrows and the corresponding transition cost is shown as a label over the arrow. We consider three data centers in this example, represented using circles
+numbered 1, 2 and 3. In Figure~\ref{fig:mot-example}, the relative height of the circles in a given interval represents the diversity in electricity prices. For instance, in interval 3, data center 3 has the lowest electricity price. In a particular state, the workload mapped to each data center is represented using shading within the circle. For simplicity of demonstration, we assume that the cumulative
+workload is fixed at a value that equals 1.3 times a single
+data center's workload capacity. 
+
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{pics/ExampleTemplate3.eps}
+
+\caption{A motivating example that depicts the workload-mapping
+problem for three consecutive intervals involving three data
+centers of equal capacity. For this example, the workload is
+assumed to be constant equal to 1.3 times the capacity of a
+single data center, in all three intervals. Of many possible
+states in each interval, we show just three example candidate
+states along with the electricity cost for being in those
+states. Cost of transition from one state to another in the
+next interval are also labeled on the arrows representing the
+state transition.} \label{fig:mot-example}
+\end{figure}
+
+In the absence of transition costs, the optimal state
+trajectory could be obtained by making a \emph{greedy} choice of state in
+each
+interval (the path S2$\rightarrow$S6$\rightarrow$S8 in Figure~\ref{fig:mot-example})~\cite{qureshiHotnets,qureshi2009cutting,rao2010}.
+This is clearly the
+lowest possible sum of state costs without considering any
+transition costs.  
+With transition costs included, however, the
+greedy solution yields a total cost of $42$. We refer to such a strategy as Relocate Energy Demand to Cheaper
+Locations (RED-CL). 
+
+One may also consider a \emph{static} deployment configuration
+where an operator selects the data centers that have the lowest
+average electricity price over the planning window. This
+corresponds to the path S1$\rightarrow$S4$\rightarrow$S7, with
+the sum of state costs equal to $42$. Since the workload
+mapping does not change, there are no transition costs, and
+hence the total solution costs is also $42$. In general,
+depending on the magnitude of transition costs, the static
+solution could be better or worse compared to the greedy
+solution.
+
+The optimal solution from Fig.~\ref{fig:mot-example} is the
+path S3$\rightarrow$S5$\rightarrow$S9, with a total cost of
+$39$. For this state path, the sum of state costs is $39$,
+which is higher than the corresponding component for the greedy
+solution. However, the sum of transition costs is $0$ resulting
+in an overall lower total solution cost than both the static and the 
+greedy strategy. This simple example illustrates that it is
+important to consider the costs associated with relocating
+demands in operational data centers.
+
 \section{Instantiating the generalized optimization formulation}\label{sec:case1:instantiating} %Derive the objective function and constraints. Clearly outline the assumptions that we've made about the geo-diverse data centers.
 Consider a geo-distributed data center infrastructure
 comprising $m$ interconnected data
