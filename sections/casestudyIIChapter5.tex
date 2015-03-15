@@ -88,7 +88,7 @@ TRXs will result in a saving of
 
 \begin{figure}
 \centering
-\includegraphics[width=1\textwidth]{pics/ilyas3.eps}
+\includegraphics[width=0.7\textwidth]{pics/ilyas3.eps}
 \caption{The scenario for the motivating example. Three BTSs (A, B and C) are shown along with eight active calls. Each call is handled by the BTS from which it receives the strongest signal (the default in GSM networks). The serving BTS for each call is shown using arrows. If the power savings mode can be enabled at a BTS only if it has up to two active calls, then only BTS C can be put in the power savings mode. However, if calls 7 and 8 were handed off to BTS C, both BTS A and B can be put into the power savings mode, thereby resulting in greater energy savings.}
 \label{fig:illustrationall}
 \end{figure}
@@ -327,7 +327,7 @@ Using the above datasets, we conducted a set of simulation experiments mimicking
 Each experiment is a discrete event simulation of the arrival and placement of calls.
 Under the assumption of Poisson call arrivals and given the hourly traffic intensity (in Erlang) for each BTS, we use Little's law to determine the corresponding Poisson call arrival rate.
 Our simulator schedules call arrivals for \emph{each} BTS according to this Poisson call arrival process.
-For each call, it's departure event is also scheduled based on an exponential distribution of call durations with a mean of $180$ seconds~\cite{Gerla:1995:MMM:276418.276421}.
+For each call, its departure event is also scheduled based on an exponential distribution of call durations with a mean of $180$ seconds~\cite{Gerla:1995:MMM:276418.276421}.
 
 The location where each call originates in a cell is uniformly distributed over the corresponding BTS's coverage area. Based on the randomly picked location at which a particular call originates, the entries $c_{i,j}$ are determined such that $c_{i,j}$ = 1 if call $i$ is within service range of BTS $j$.
 
@@ -455,7 +455,7 @@ We also ran experiments for each BTS model in which the electricity cost for the
 
 \subsection{Sensitivity to the value of $\epsilon$}
 \label{subsec:results3}
-If the value of $\epsilon$ in our optimization is set too aggressively, a BTS may oscillate at times between low power and high power states rapidly due to short time scale traffic variations. Such state oscillations may be undesirable and to avoid these, the value of $\epsilon$ must be set at a safe value. Furthermore, if $\epsilon$ is set too aggressively, a BTS placed in low-power mode would be operating very close to it's \textit{new} and lower traffic capacity. If several calls arrive in a short time window, the BSC may not have sufficient time to bring the BTS back into high-power mode and, thus, some calls may be blocked. However, if $\epsilon$ is set too conservatively, the energy savings would be smaller.
+If the value of $\epsilon$ in our optimization is set too aggressively, a BTS may oscillate at times between low power and high power states rapidly due to short time scale traffic variations. Such state oscillations may be undesirable and to avoid these, the value of $\epsilon$ must be set at a safe value. Furthermore, if $\epsilon$ is set too aggressively, a BTS placed in low-power mode would be operating very close to its \textit{new} and lower traffic capacity. If several calls arrive in a short time window, the BSC may not have sufficient time to bring the BTS back into high-power mode and, thus, some calls may be blocked. However, if $\epsilon$ is set too conservatively, the energy savings would be smaller.
 
 We carried out experiments to assess the impact of the value of $\epsilon$ on the energy savings achievable through RED-BL. For this purpose, we fixed the inter-optimization interval at 6 minutes and carried out RED-BL optimizations for all three BTS models. Furthermore, we considered a two-state BTS model, i.e., a BTS may be placed in either a 6+6+6 or a 2+2+2 configuration. The range of possible values for epsilon were 5, 10, 15 and 25. Since the traffic capacity of a 2+2+2 BTS is 44\footnote{The capacity of the 2+2+2 BTS is 3$\times$2$\times$8 = 48, but 4 channels were reserved by the operator for control and broadcast channels.}, any larger value for $\epsilon$ did not make sense. Figure~\ref{fig:case2:results6} shows the results. As expected, the percentage savings deplete almost linearly with increasing values of $\epsilon$.
 
@@ -466,7 +466,7 @@ We carried out experiments to assess the impact of the value of $\epsilon$ on th
 \label{fig:case2:results6}
 \end{figure}
 
-\section{Discussion}
+\section{Summary}
 \label{sec:discuss:case2} In this chapter, we have seen an application of RED-BL to cellular networks. The nature of cellular networks is different compared to geo-diverse data centers (considered in the previous chapter) in the following ways:
 
 \begin{itemize}
