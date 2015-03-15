@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {3.2.3}Comments on the problem formulation}{34}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}Case Study I: Geo-diverse Data Centers}{37}{chapter.4}
 \contentsline {section}{\numberline {4.1}Prelude}{37}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related work}{38}{section.4.2}
+\contentsline {section}{\numberline {4.2}Related work}{40}{section.4.2}
 \contentsline {section}{\numberline {4.3}Instantiating the generalized optimization formulation}{43}{section.4.3}
 \contentsline {section}{\numberline {4.4}Sources of transition costs in the data center scenario}{47}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Problem complexity and a heuristic}{48}{subsection.4.4.1}

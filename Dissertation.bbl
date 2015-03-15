@@ -145,6 +145,12 @@ A.~Qureshi, R.~Weber, H.~Balakrishnan, J.~Guttag, and B.~Maggs, ``{Cutting the
   Electric Bill for Internet-Scale Systems},'' in {\em ACM SIGCOMM},
   (Barcelona, Spain), August 2009.
 
+\bibitem{rao2010}
+L.~Rao, X.~Liu, L.~Xie, and W.~Liu, ``{Minimizing Electricity Cost:
+  Optimization of Distributed Internet Data Centers in a
+  Multi-Electricity-Market Environment},'' in {\em IEEE Conference on Computer
+  Communications 2010 (INFOCOM'2010)}, (San Diego, USA), March 2010.
+
 \bibitem{Li:Optimal:TSG:2012}
 J.~Li, Z.~Li, K.~Ren, and X.~Liu, ``Towards optimal electric demand management
   for internet data centers,'' {\em IEEE Trans. Smart Grid}, vol.~3, no.~1,
@@ -164,12 +170,6 @@ Y.~Chen, A.~Das, W.~Qin, A.~Sivasubramaniam, Q.~Wang, and N.~Gautam, ``Managing
 M.~Mazzucco and D.~Dyachuk, ``Balancing electricity bill and performance in
   server farms with setup costs,'' {\em Future Generation Computer Systems},
   vol.~28, no.~2, pp.~415 -- 426, 2012.
-
-\bibitem{rao2010}
-L.~Rao, X.~Liu, L.~Xie, and W.~Liu, ``{Minimizing Electricity Cost:
-  Optimization of Distributed Internet Data Centers in a
-  Multi-Electricity-Market Environment},'' in {\em IEEE Conference on Computer
-  Communications 2010 (INFOCOM'2010)}, (San Diego, USA), March 2010.
 
 \bibitem{Kayaaslan:2011:EQP:2009916.2010047}
 E.~Kayaaslan, B.~B. Cambazoglu, R.~Blanco, F.~P. Junqueira, and C.~Aykanat,
