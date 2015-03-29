@@ -71,7 +71,7 @@ Class=BibTeXView
 Document=ref.bib
 
 [Frame3_View0,0]
-TopLine=3698
+TopLine=3743
 Cursor=123306
 
 [Frame4]
@@ -89,7 +89,7 @@ Class=LaTeXView
 Document=sections\introChapter1.tex
 
 [Frame4_View0,0]
-TopLine=66
+TopLine=71
 Cursor=7642
 
 [Frame5]
@@ -143,7 +143,7 @@ Class=LaTeXView
 Document=sections\casestudyIIChapter5.tex
 
 [Frame7_View0,0]
-TopLine=98
+TopLine=112
 Cursor=7371
 
 [Frame8]
@@ -179,10 +179,10 @@ Class=LaTeXView
 Document=sections\abstractPage.tex
 
 [Frame9_View0,0]
-TopLine=10
-Cursor=3433
+TopLine=0
+Cursor=87
 
 [SessionInfo]
 FrameCount=10
-ActiveFrame=7
+ActiveFrame=9
 
