@@ -12,7 +12,7 @@ All of these services, and many more, are powered by several computer networks. 
 A few years ago, the predominant means of connecting to the Internet was dialup over Public Switched Telephone Network (PSTN). These days, however, many end users use cellular networks to access Internet resources. In this context, the cellular network merely acts as an access mechanism to connect to an Internet Service Provider's network.
 
 
-\item \textbf{Internet Service Providers (ISPs):} The Internet itself is an interconnection of ISPs networks. End users connect to the Internet by connecting to an ISP's network. This is typically done by a paid subscription to use the ISP's network. 
+\item \textbf{Internet Service Providers (ISPs):} The Internet itself is an interconnection of ISP networks. End users connect to the Internet by connecting to an ISP's network. This is typically done by a paid subscription to use the ISP's network. 
 
 An ISP's network is a mostly dumb but fast carrier of IP packets, also known as IP traffic, from one point to another. The intelligence of Internet applications and the information that the Internet is so popular for, are provided by the networks run by other service providers such as the ones given below.
 \item \textbf{Geo-diverse data center network operators} Today's web-based services such as Google search and Facebook have such a large subscriber base that a huge number of servers is required to run these services. To enable such services, companies like Facebook, Amazon, Microsoft and Google operate geo-diverse data centers. Servers in these data center networks run applications like Google Search, Gmail, Youtube, Twitter, Bing and Facebook.
@@ -54,7 +54,7 @@ In order to meet peak expected workload amicably, networks are dimensioned accor
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{pics/waridworkload.eps}
-\caption{Call traffic for an oeprational cellular site over two days}
+\caption{Call traffic for an operational cellular site over two days}
 \label{fig:varwork}
 \end{figure} 
 
@@ -81,7 +81,7 @@ If the network workload is quite flexible in terms of where it is handled, then 
 
 Network workload exhibits varying levels of geo-flexibility. In geo-diverse data centers, for instance, the workload is highly geo-flexible, i.e., a client's request may be handled close by or even hundreds of miles away. On the other hand, the workload in cellular networks has very low geo-flexibility, i.e., a call must be handled at a cellular base station within a few hundred meters from the caller. Therefore, the amount of electricity cost savings achievable by exploiting geo-diversity in electricity prices through the use of WR is expected to be higher in data center networks than in cellular networks.
 
-Electricity prices also exhibit temporal diversity~\cite{qureshiHotnets}, i.e., the relative order of electricity prices at different locations keeps changing. If a city in Kansas presently has chepaer electricity than one in Oklahoma, an hour later, the reverse may be true. This means that mapping of workload to locations must be periodically updated. The granularity of these updates depends on how frequently electricity prices change. Deregulated electricity markets, such as the ones in the USA, exhibit price changes at two different time scales (15 minutes for real-time electricity prices and an hour for day-ahead prices). 
+Electricity prices also exhibit temporal diversity~\cite{qureshiHotnets}, i.e., the relative order of electricity prices at different locations keeps changing. If a city in Kansas presently has cheaper electricity than one in Oklahoma, an hour later, the reverse may be true. This means that mapping of workload to locations must be periodically updated. The granularity of these updates depends on how frequently electricity prices change. Deregulated electricity markets, such as the ones in the USA, exhibit price changes at two different time scales (15 minutes for real-time electricity prices and an hour for day-ahead prices). 
 
 
 \section{Our thesis} Based on the similarity in workload characteristics and the dependence of power consumption on workload, we opine that a generalized power optimization framework may be formulated that is applicable to many different types of networks. In this thesis, we focus specifically on geo-diverse data center networks and cellular networks. Our generalized electricity cost optimization framework would use workload relocation and resource pruning in tandem to reduce electricity costs\footnote{Hardware virtualization is complimentary to our framework}. 
