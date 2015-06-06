@@ -43,7 +43,7 @@ On a high-level, routine network operation involves distributing workload to net
 The optimal state trajectory problem attempts to determine a sequence of states such that the sum of state costs and the cost of transitions between states in consecutive intervals is minimized. Mathematically, we may present the objective function as:
 
 \begin{align}
-\sum_{j=1}^n C(S^j) + T(S^j, S^{j-1})
+\sum_{j=1}^n C(S^j) + T(S^j, S^{j-1})\label{eq:genobjective}
 \end{align}
 
 Here $C(S^j)$ represents a function that evaluates the cost of being in state $S^j$. As per equation~\ref{eq:abdcpaper}, $C(S^j)$ may be given as:

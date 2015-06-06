@@ -93,7 +93,7 @@ comprising $m$ interconnected data
 centers. At any given time, the workload is distributed amongst the data
 centers in the network. For ease of modeling, we assume that changes to the distribution of workload amongst data centers may be done at the start of discrete intervals of duration $\lambda$. We use $x_i^j$ to denote the fraction of workload during interval $j$ that is mapped to data center $i$.  We consider workload that is normalized over its peak, i.e., the workload values for any interval are between 0 and 1. The workload capacity of data center $i$, denoted $c_i$, is also normalized on the same scale. We assume that the network of data centers is over-subscribed so that $\sum_{i=1}^m c_i > 1$.
 
-Let the sum of elastic load's peak and idle power consumption over all data centers be $P^{max}$ and $P^{min}$, respectively. Assuming that the data centers are homogenous, an individual data center's workload capacity is directly related to its peak (or idle) power consumption. Thus, $P_i^{max} = c_iP^{max}$ and $P_i^{min} = c_iP^{min}$. 
+Let the sum of elastic load's peak and idle power consumption over all data centers be $P^{max}$ and $P^{min}$, respectively. Assuming that the data centers are homogeneous, an individual data center's workload capacity is directly related to its peak (or idle) power consumption. Thus, $P_i^{max} = c_iP^{max}$ and $P_i^{min} = c_iP^{min}$. 
 
 Data center power consumption is an affine function of the average CPU utilization of the servers~\cite{Fan:power:ICSA:2007}. Therefore, the average power consumption at data center $i$ during interval $j$ is: 
 \begin{align}
@@ -105,11 +105,19 @@ Dividing both sides of the above equation by $P^{max}$ gives the normalized powe
 \label{eq:dcpower}
 \hat{P_i^j} = fc_i + x_i^j\left(1-f\right)
 \end{align}
-where $f$ is the ratio of $P^{max}$ to $P^{min}$. If we set $x_i^j=0$, i.e., data center $i$ is not computing any workload during interval $j$, then the second term in equation~\ref{eq:dcpower} goes to zero and the power consumption reduces to the first term in equation~\ref{eq:dcpower} only, which we refer to as \textit{idle power consumption}. The second term in equation~\ref{eq:dcpower} indicates the workload-dependent \textit{computational power consumption}, which is independent of the data center capacity.
+where $f$ is the ratio of $P^{max}$ to $P^{min}$. If we set $x_i^j=0$, i.e., data center $i$ is not computing any workload during interval $j$, then the second term in equation~\ref{eq:dcpower} goes to zero and the power consumption reduces to the first term in equation~\ref{eq:dcpower} only, which we refer to as \textit{idle power consumption}. The second term in equation~\ref{eq:dcpower} indicates the workload-dependent \textit{computational power consumption}, which is independent of the data center capacity. Since electricity cost is the product of energy consumed and the unit price of electricity ($e_i^j$), the state cost $C(.)$ from equation~\ref{eq:genobjective} for interval $j$ may be given as:
 
-Let $\sigma$ and $\delta$ be the average power consumption, over a single interval, required to activate or deactivate, respectively, all of the elastic load at a unit capacity data center. Then, the power consumption for activation of the elastic load at data center $i$ is $\sigma c_i$. The electricity cost for activating data center $i$'s elastic load at the start of interval $j$ is, therefore\footnote{Multiplication with the duration of an interval, i.e., $\lambda$ is not necessary, because $\sigma$ is defined as the per interval cost.}, $c_ie_i^j\sigma$. Here, we are assuming that the elastic load at a data center may be activated within a single interval. The value of $\lambda$ that we used in our experiments is equal to one hour, which is a sufficiently large interval for server activation. Deactivation cost for elastic load may also be derived in a similar manner. 
+\begin{align}
+C(j) = \sum_{i=1}^{m} c_i e_i^j\left(p_i^j \lambda\left(f+\left(1-f\right)\frac{x_i^j}{c_i}\right)\right)
+\end{align}
 
-Electricity cost incurred at data center $i$ during interval $j$ is a product of its total power consumption (computing, idling, activation and deactivation), duration of the interval ($\lambda$) and the unit price of electricity ($e_i^j$). Hence, the RED-BL optimization problem formulation may be given as:
+Let $\sigma$ and $\delta$ be the average power consumption, over a single interval, required to activate or deactivate, respectively, all of the elastic load at a unit capacity data center. Then, the power consumption for activation of the elastic load at data center $i$ is $\sigma c_i$. The electricity cost for activating data center $i$'s elastic load at the start of interval $j$ is, therefore\footnote{Multiplication with the duration of an interval, i.e., $\lambda$ is not necessary, because $\sigma$ is defined as the per interval cost.}, $c_ie_i^j\sigma$. Here, we are assuming that the elastic load at a data center may be activated within a single interval. The value of $\lambda$ that we used in our experiments is equal to one hour, which is a sufficiently large interval for server activation. Deactivation cost for elastic load may also be derived in a similar manner. Therefore, the transition cost of entering a given state in interval $j$ may be given as:
+
+\begin{align}
+T (j) = \sum_{i=1}^{m} \left(b_i^j \sigma + s_i^j \delta\right)
+\end{align}
+
+Hence, the RED-BL optimization problem formulation may be given as:
 
 \begin{align}
 \text{minimize } \sum_{j=1}^{n} \sum_{i=1}^{m} c_i e_i^j\left(p_i^j \lambda\left(f+\left(1-f\right)\frac{x_i^j}{c_i}\right) + b_i^j \sigma + s_i^j \delta\right) \label{eq:objective}
