@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
+NormalPos.bottom=467
 Class=LaTeXView
 Document=sections\abstractPage.tex
 
 [Frame0_View0,0]
-TopLine=27
-Cursor=2240
+TopLine=47
+Cursor=5312
 
 [Frame1]
 Flags=0
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
+NormalPos.bottom=467
 Class=LaTeXView
-Document=sections\frameworkChapter3.tex
+Document=sections\introChapter1.tex
 
 [Frame1_View0,0]
-TopLine=218
-Cursor=17082
+TopLine=90
+Cursor=6478
 
 [Frame2]
 Flags=0
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
-Class=LaTeXView
-Document=sections\casestudyIIChapter5.tex
+NormalPos.bottom=467
+Class=BibTeXView
+Document=ref.bib
 
 [Frame2_View0,0]
-TopLine=133
-Cursor=7371
+TopLine=3959
+Cursor=123306
 
 [Frame3]
 Flags=0
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
+NormalPos.bottom=467
 Class=LaTeXView
-Document=sections\titlePage.tex
+Document=Dissertation.tex
 
 [Frame3_View0,0]
-TopLine=47
-Cursor=2388
+TopLine=23
+Cursor=874
 
 [Frame4]
 Flags=0
@@ -84,13 +84,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
+NormalPos.bottom=467
 Class=LaTeXView
-Document=sections\backgroundChapter2.tex
+Document=sections\casestudyIChapter4.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=0
+TopLine=16
+Cursor=2479
 
 [Frame5]
 Flags=0
@@ -102,7 +102,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
+NormalPos.bottom=467
 Class=LaTeXView
 Document=sections\conclusionsChapter6.tex
 
@@ -120,13 +120,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
+NormalPos.bottom=467
 Class=LaTeXView
-Document=sections\casestudyIChapter4.tex
+Document=sections\backgroundChapter2.tex
 
 [Frame6_View0,0]
-TopLine=14
-Cursor=2479
+TopLine=0
+Cursor=0
 
 [Frame7]
 Flags=0
@@ -138,13 +138,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
+NormalPos.bottom=467
 Class=LaTeXView
-Document=Dissertation.tex
+Document=sections\frameworkChapter3.tex
 
 [Frame7_View0,0]
-TopLine=23
-Cursor=874
+TopLine=222
+Cursor=17082
 
 [Frame8]
 Flags=0
@@ -156,13 +156,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
-Class=BibTeXView
-Document=ref.bib
+NormalPos.bottom=467
+Class=LaTeXView
+Document=sections\casestudyIIChapter5.tex
 
 [Frame8_View0,0]
-TopLine=3838
-Cursor=123306
+TopLine=158
+Cursor=7371
 
 [Frame9]
 Flags=0
@@ -174,15 +174,15 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1008
-NormalPos.bottom=227
+NormalPos.bottom=467
 Class=LaTeXView
-Document=sections\introChapter1.tex
+Document=sections\titlePage.tex
 
 [Frame9_View0,0]
-TopLine=70
-Cursor=7642
+TopLine=48
+Cursor=2388
 
 [SessionInfo]
 FrameCount=10
-ActiveFrame=0
+ActiveFrame=1
 

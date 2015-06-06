@@ -1,5 +1,5 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Networks lack energy proportionality}}{5}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Lack of energy proportionality in computer networks}}{5}{figure.1.1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Call traffic for an operational cellular site over two days}}{6}{figure.1.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Google Data Center Locations - Source: http://bit.ly/YhZqAF}}{14}{figure.2.1}
@@ -8,29 +8,29 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces An example of mapping variable workload to capacity-limited network resources with geo-temporal diversity in electricity prices. Three consecutive intervals $t_1$, $t_2$ and $t_3$ are considered. Workload and electricity prices may only change between two consecutive intervals. (a) Workload considered in this example. (b) Electricity prices for the locations at which the two network resources are situated. (c) A uniform mapping of workload to network resources does not exploit electricity price diversity. (d) Mapping workload to network resources in order of their current electricity price. Due to lack of energy proportionality, only slight savings in electricity cost are possible. (e) Deactivating idle resources alongwith the resource mapping strategy of (d) may result in significant electricity cost savings.}}{30}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A motivating example that depicts the workload-mapping problem for three consecutive intervals involving three data centers of equal capacity. For this example, the workload is assumed to be constant equal to 1.3 times the capacity of a single data center, in all three intervals. Of many possible states in each interval, we show just three example candidate states along with the electricity cost for being in those states. Cost of transition from one state to another in the next interval are also labeled on the arrows representing the state transition.}}{39}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Normalized workload}}{53}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Workload intensity histogram}}{53}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Percentage savings with over-provisioning}}{56}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Total cost vs transition overhead}}{59}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Cost saving vs (de)activation granularity}}{61}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow of sliding window experiments}}{64}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Mean absolute workload prediction error vs sliding window size}}{64}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Local trajectory correction technique for three consecutive intervals}}{64}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Distribution of workload prediction error for sliding window size of 12 hours}}{65}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Percentage error of sliding window forecasts compared to global optimal with error-free workload}}{66}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Average daily total electricity cost and its components vs f, For b/\penalty \exhyphenpenalty s = 0.01}}{68}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Average daily total electricity cost and its components vs f, For b/\penalty \exhyphenpenalty s = 0.65}}{68}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces The minimum, maximum and average percentage difference between the cost of our heuristic and RED-BL}}{69}{figure.4.14}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A motivating example that depicts the workload-mapping problem for three consecutive intervals involving three data centers of equal capacity. For this example, the workload is assumed to be constant equal to 1.3 times the capacity of a single data center, in all three intervals. Of many possible states in each interval, we show just three example candidate states along with the electricity cost for being in those states. Cost of transition from one state to another in the next interval are also labeled on the arrows representing the state transition.}}{40}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Normalized workload}}{54}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Workload intensity histogram}}{54}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Percentage savings with over-provisioning}}{57}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Total cost vs transition overhead}}{60}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Cost saving vs (de)activation granularity}}{62}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow of sliding window experiments}}{65}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mean absolute workload prediction error vs sliding window size}}{65}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Local trajectory correction technique for three consecutive intervals}}{65}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Distribution of workload prediction error for sliding window size of 12 hours}}{66}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Percentage error of sliding window forecasts compared to global optimal with error-free workload}}{67}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Average daily total electricity cost and its components vs f, For b/\penalty \exhyphenpenalty s = 0.01}}{69}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Average daily total electricity cost and its components vs f, For b/\penalty \exhyphenpenalty s = 0.65}}{69}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces The minimum, maximum and average percentage difference between the cost of our heuristic and RED-BL}}{70}{figure.4.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Traffic load variations at two neighboring BTSs during a single day from our dataset. For most of the day, the instantaneous load is a fraction of the peak traffic load.}}{73}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces CDF (cumulative distribution function) of the number of potential serving BTSs for a call in our dataset (large metropolitan area).}}{75}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The scenario for the motivating example. Three BTSs (A, B and C) are shown along with eight active calls. Each call is handled by the BTS from which it receives the strongest signal (the default in GSM networks). The serving BTS for each call is shown using arrows. If the power savings mode can be enabled at a BTS only if it has up to two active calls, then only BTS C can be put in the power savings mode. However, if calls 7 and 8 were handed off to BTS C, both BTS A and B can be put into the power savings mode, thereby resulting in greater energy savings.}}{77}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Two-state power consumption model for a BTS with $r$ TRXs. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{81}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Three-state power consumption model for a BTS with $r$ TRXs. BTS power savings is applied in a more granular way, than the model of Figure\nobreakspace {}\ref {fig:powermodel1}.}}{81}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces (a) Percent reduction in energy consumption vs re-optimization interval, (b) Reduction in energy consumption vs re-optimization interval}}{92}{figure.5.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{92}{figure.5.6}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{92}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{94}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon $, with a six minute inter-optimization interval}}{96}{figure.5.8}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Traffic load variations at two neighboring BTSs during a single day from our dataset. For most of the day, the instantaneous load is a fraction of the peak traffic load.}}{74}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces CDF (cumulative distribution function) of the number of potential serving BTSs for a call in our dataset (large metropolitan area).}}{76}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The scenario for the motivating example. Three BTSs (A, B and C) are shown along with eight active calls. Each call is handled by the BTS from which it receives the strongest signal (the default in GSM networks). The serving BTS for each call is shown using arrows. If the power savings mode can be enabled at a BTS only if it has up to two active calls, then only BTS C can be put in the power savings mode. However, if calls 7 and 8 were handed off to BTS C, both BTS A and B can be put into the power savings mode, thereby resulting in greater energy savings.}}{78}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Two-state power consumption model for a BTS with $r$ TRXs. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{82}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Three-state power consumption model for a BTS with $r$ TRXs. BTS power savings is applied in a more granular way, than the model of Figure\nobreakspace {}\ref {fig:powermodel1}.}}{82}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces (a) Percent reduction in energy consumption vs re-optimization interval, (b) Reduction in energy consumption vs re-optimization interval}}{93}{figure.5.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{93}{figure.5.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{93}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{95}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon $, with a six minute inter-optimization interval}}{97}{figure.5.8}
 \addvspace {10\p@ }
