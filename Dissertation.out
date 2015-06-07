@@ -39,7 +39,7 @@
 \BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Electricity prices}{section.4.5}% 39
 \BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Algorithms for workload distribution/relocation}{section.4.5}% 40
 \BOOKMARK [1][-]{section.4.6}{4.6 Results}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Sensitivity of electricity cost savings to extent of over-provisioning}{section.4.6}% 42
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Sensitivity of electricity cost savings to extent of over provisioning}{section.4.6}% 42
 \BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Sensitivity of electricity cost savings to magnitude of transition costs}{section.4.6}% 43
 \BOOKMARK [2][-]{subsection.4.6.3}{4.6.3 Sensitivity of electricity cost savings to resource pruning granularity}{section.4.6}% 44
 \BOOKMARK [2][-]{subsection.4.6.4}{4.6.4 Sliding window re-optimization}{section.4.6}% 45

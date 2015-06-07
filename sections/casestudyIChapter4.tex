@@ -420,7 +420,7 @@ seven experiments (one for each day's workload in our dataset) and report the av
     \label{fig:s1r}
 \end{figure}
 
-\subsection{Sensitivity of electricity cost savings to extent of over-provisioning}In this scenario, we investigate the relationship of the amount of data center capacity over-provisioning with the electricity cost savings. As we increase the amount of over-provisioning, each individual data center's capacity would increase enabling more and more workload to be mapped to data centers at locations with cheaper electricity price.
+\subsection{Sensitivity of electricity cost savings to extent of over provisioning}In this scenario, we investigate the relationship of the amount of data center capacity over-provisioning with the electricity cost savings. As we increase the amount of over-provisioning, each individual data center's capacity would increase enabling more and more workload to be mapped to data centers at locations with cheaper electricity price.
 
 With data centers at all
     $33$ locations in our dataset, we varied $c_i$ between $0.03$ and
@@ -477,7 +477,9 @@ subject to:
 \begin{align}
 x_i^j \le c_i \hspace{6 pt} \forall i, \forall j \label{eq:gcapcon}\\
 \sum_{i = 1}^{m} x_i^j = w^j \hspace{6 pt} \forall j \label{eq:gworkcon}\\
-p_i^j, b_i^j, s_i^j \in \{0,1,...,l\} \hspace{6 pt} \forall i, \forall j \label{eq:ginteger1}\\
+p_i^j, b_i^j, s_i^j \in \{0,1,...,l\} \hspace{6 pt} \forall i, \forall j \label{eq:ginteger1}
+\end{align}
+\begin{align}
 p_i^j \ge x_i^j*l/c_i \hspace{6 pt} \forall i, \forall j \label{eq:gp1}\\
 b_i^j \ge p_i^j - p_i^{j-1} \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:gbcon}\\
 %\end{align}

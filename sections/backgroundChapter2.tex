@@ -131,7 +131,6 @@ Lorincz et. al. performed a measurement study of BTS power consumption under rea
 From our discussion of geo-diverse data centers and cellular networks, we note that these networks have several similarities and some subtle differences apropos their power consumption. Keeping their similarities and differences in mind, abstractions can be identified to generically represent these networks. These similarities and differences are summarized in Table~\ref{tab:contrast}. Both of these networks are a collection of resources that handle workload. The resources are data centers and BTSs in case of geo-diverse data centers and cellular networks, respectively. The workload is clients' computing requests such as web page views in case of data centers, whereas it is voice calls in case of cellular networks. The workload in both types of networks exhibits diurnal patterns~\cite{10.1109/MC.2007.443,Peng:2011:TPS:2030613.2030628}. The network in both cases is provisioned according to peak workload demand. Since the network resources are not energy proportional, this means that in low-workload regimes, the network is heavily over-provisioned. Thus, both of these networks are energy inefficient. The power consumption for both networks is an affine function of the workload. 
 
 At any given time, if $x_i$ is the utilization of resource $i$, the power consumption for resource $i$ may be given as:
-
 \begin{align}
 P^i = P_{min} + x_i (P_{max} - P_{min})
 \end{align}
