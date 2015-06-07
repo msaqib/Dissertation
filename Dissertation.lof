@@ -2,7 +2,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Lack of energy proportionality in computer networks}}{5}{figure.1.1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Call traffic for an operational cellular site over two days}}{6}{figure.1.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Google Data Center Locations - Source: http://bit.ly/YhZqAF}}{15}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Google data center locations - Source: http://bit.ly/YhZqAF}}{15}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces A single-rooted data center's architecture}}{16}{figure.2.2}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Resolving the IP address for a server hosted in a data center}}{19}{figure.2.3}
 \addvspace {10\p@ }
@@ -24,13 +24,13 @@
 \contentsline {figure}{\numberline {4.14}{\ignorespaces The minimum, maximum and average percentage difference between the cost of our heuristic and RED-BL}}{72}{figure.4.14}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Traffic load variations at two neighboring BTSs during a single day from our dataset. For most of the day, the instantaneous load is a fraction of the peak traffic load.}}{76}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces CDF (cumulative distribution function) of the number of potential serving BTSs for a call in our dataset (large metropolitan area).}}{78}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The scenario for the motivating example. Three BTSs (A, B and C) are shown along with eight active calls. Each call is handled by the BTS from which it receives the strongest signal (the default in GSM networks). The serving BTS for each call is shown using arrows. If the power savings mode can be enabled at a BTS only if it has up to two active calls, then only BTS C can be put in the power savings mode. However, if calls 7 and 8 were handed off to BTS C, both BTS A and B can be put into the power savings mode, thereby resulting in greater energy savings.}}{80}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Two-state power consumption model for a BTS with $r$ TRXs. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{84}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Three-state power consumption model for a BTS with $r$ TRXs. BTS power savings is applied in a more granular way, than the model of Figure\nobreakspace {}\ref {fig:powermodel1}.}}{84}{figure.5.5}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Cumulative distribution function (CDF) of the number of potential serving BTSs for a call in our dataset (large metropolitan area).}}{78}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The scenario for the motivating example. Three BTSs (A, B and C) are shown along with eight active calls. Each call is handled by the BTS from which it receives the strongest signal (the default in GSM networks). The serving BTS for each call is shown using arrows. If the power savings mode can be enabled at a BTS that has up to two active calls, then only BTS C can be put in the power savings mode. However, if calls 7 and 8 were handed off to BTS C, both BTS A and B can be put into the power savings mode, thereby resulting in greater energy savings.}}{79}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Two-state power consumption model for a BTS with $r$ TRXs. Low-power (BTS power savings) mode is optional and kicks in at low loads.}}{83}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Three-state power consumption model for a BTS with $r$ TRXs. BTS power savings is applied in a more granular way than the model of Figure\nobreakspace {}\ref {fig:powermodel1}.}}{84}{figure.5.5}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces (a) Percent reduction in energy consumption vs re-optimization interval, (b) Reduction in energy consumption vs re-optimization interval}}{95}{figure.5.6}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{95}{figure.5.6}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{95}{figure.5.6}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{97}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon $, with a six minute inter-optimization interval}}{99}{figure.5.8}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered vs the value of $\epsilon $, with a six minute inter-optimization interval}}{99}{figure.5.8}
 \addvspace {10\p@ }

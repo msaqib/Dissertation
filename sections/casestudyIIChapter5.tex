@@ -33,7 +33,7 @@ As a result, a BTS also lacks energy proportionality and consumes power at about
 If the instantaneous power consumed at a BTS can be made proportional to the instantaneous
 workload, savings in power consumption will ensue.
 For the provider data available to us, a fully energy proportional BTS subsystem of a cellular network would save between $44\%$$-$$52\%$ of electrical energy depending on the BTS model.
-Thus, there exists potential to save electricity cost in a cellular network by reducing the energy consumption at low workloads.
+Thus, there exists a potential to save electricity cost in a cellular network by reducing the energy consumption at low workloads.
 RED-BL exploits this potential in two ways: (i) \textbf{Resource pruning}: shutting down part of the radio circuitry, and (ii) \textbf{workload relocation}: rerouting calls from one BTS to a nearby BTS.
 
  
@@ -71,7 +71,7 @@ possible through BTS power savings alone.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{pics/ilyas2.eps}
-\caption{CDF (cumulative distribution function) of the number of potential serving BTSs for a call in our dataset (large metropolitan area).}
+\caption{Cumulative distribution function (CDF) of the number of potential serving BTSs for a call in our dataset (large metropolitan area).}
 \label{fig:btscdf}
 \end{figure}
 
@@ -84,12 +84,12 @@ Thus, scaling a ``6+6+6'' to a ``2+2+2'' configuration, by deactivating 12
 TRXs will result in a saving of
 240W to 1200W on a single site.
 
-\subsection{Motivating Example}
+\subsection{Motivating example}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth]{pics/ilyas3.eps}
-\caption{The scenario for the motivating example. Three BTSs (A, B and C) are shown along with eight active calls. Each call is handled by the BTS from which it receives the strongest signal (the default in GSM networks). The serving BTS for each call is shown using arrows. If the power savings mode can be enabled at a BTS only if it has up to two active calls, then only BTS C can be put in the power savings mode. However, if calls 7 and 8 were handed off to BTS C, both BTS A and B can be put into the power savings mode, thereby resulting in greater energy savings.}
+\includegraphics[width=0.6\textwidth]{pics/ilyas3.eps}
+\caption{The scenario for the motivating example. Three BTSs (A, B and C) are shown along with eight active calls. Each call is handled by the BTS from which it receives the strongest signal (the default in GSM networks). The serving BTS for each call is shown using arrows. If the power savings mode can be enabled at a BTS that has up to two active calls, then only BTS C can be put in the power savings mode. However, if calls 7 and 8 were handed off to BTS C, both BTS A and B can be put into the power savings mode, thereby resulting in greater energy savings.}
 \label{fig:illustrationall}
 \end{figure}
 
@@ -120,7 +120,7 @@ Additional energy savings are possible by deploying RED-BL, which hands off call
 This example shows that the current practice of enabling power savings mode based on traffic conditions that are local to a BTS can result in sub-optimal energy savings.
 RED-BL achieves greater energy savings by jointly using call hand-off and BTS power savings.
 
-\section{Related Work}
+\section{Related work}
 \label{sec:related}
 
 In~\cite{Peng:2011:BTSSaving:Mobicom}, the authors proposed that when the traffic in an area being served is low, the serving BTS may be completely turned off to save power. Later, when the traffic volume rises, such BTS may be turned on again. To avoid lack of coverage when a BTS is turned off, its neighboring BTSs must, however, increase their transmit power.
@@ -130,7 +130,7 @@ Similar proposals are also reported in~\cite{Oh:TWC:2013,6503647,Oh:Globecom:201
 Coarse estimates of the energy saving potential of TRX deactivation were presented
 in~\cite{Blume:2010:BLTJ:CellularPower}.
 In contrast, we use site locations and real traffic traces from a large cellular network with more than 13 million subscribers to run a simulation study assessing the benefits of dynamic equipment scaling coupled
-with call hand-offs.
+with call hand-offs. Note that BTS power saving represents RP in the RED-BL framework whereas call handoff represents WR.
 
 There exists a large body of work on solutions to constrained resource optimization problem, like the one we formulate for RED-BL. For example, such problems have been addressed in the context of data centers~\cite{Jeyarani:2012:DIA:2148243.2148374,serverEnergy,Mazzucco:Maximizing:2011:CoRR,Oh:2011:ECS:2170444.2170458,Chase:2001:MES:502059.502045}, scheduling in compute clusters~\cite{AlDaoud2012745}, System on Chip (SOC)~\cite{Fang:2011:COP:1995896.1995940}, electric power systems and smart grids~\cite{Javed:2008:ULP:1485753.1485792,Logenthiran2011138,Celli:2001:PICA,FahadJavedAdOpt.SASO.2009.26}, WiFi access points~\cite{Marsan:2010:SAM:1791314.1791340}, wide area networks~\cite{Cavdar:2011:ECOC} and high performance computing~\cite{Lee:ServerConsolidation:2011:Globecom,Pinheiro01loadbalancing,Yao:DCPowerReduction:2012:INFOCOM,Herodotou:Starfish:2011:CIDR,Herodotou:2011:NOS:2038916.2038934,Aikema:ElecCostHPC:2011:ISSST}.
 
@@ -139,14 +139,14 @@ There exists a large body of work on solutions to constrained resource optimizat
 
 \section{Instantiating the generalized optimization formulation} %Derive the objective function and constraints. Clearly outline the assumptions that we've made about the geo-diverse data centers.
 \label{sec:case2:instantiate}
-The RED-BL optimization problem minimizes the sum of state and transition costs for a network over a sequence of consecutive intervals in a planning window. The state cost for a particular interval is the sum of electricity cost incurred at all BTSs in the network. In order to compute the state cost, we will first derive a mathematical model for electricity consumption at a single BTS. Then, we will generalize it to a multi-BTS cellular network setting to represent the state cost for a single interval. The transition cost would be the cost of electricity incurred in activating or deactivating TRXs. Our conversations with network operators reveal that transitions into and out of BTS Power Saving mode do not consume a noticeable amount of power. These state transitions are reasonably fast in contrast to the delayed convergence due to transitions in the geo-diverse data center scenario. The RED-BL transition costs in cellular networks may, therefore, be ignored.
+The RED-BL optimization problem minimizes the sum of state and transition costs for a network over a sequence of consecutive intervals in a planning window. The state cost for a particular interval is the sum of electricity cost incurred at all BTSs in the network. In order to compute the state cost, we will first derive a mathematical model for electricity consumption at a single BTS. Then, we will generalize it to a multi-BTS cellular network setting to represent the state cost for a single interval. The transition cost would be the cost of electricity incurred in activating or deactivating TRXs. Our conversations with network operators reveal that transitions into and out of BTS power saving mode do not consume a noticeable amount of power. These state transitions are reasonably fast in contrast to the delayed convergence due to transitions in the geo-diverse data center scenario. The RED-BL transition costs in cellular networks may, therefore, be ignored.
 
-If $\delta$ is the traffic capacity of a single TRX, then the traffic handling capacity of BTS with $r$ TRXs is $r\delta$. If $l$ is the number of calls currently in progress, and the power consumed by the BTS under no load and full load is $P_1$ and $P_2$, respectively, then the instantaneous BTS power consumption\footnote{In the following discussion, when we refer to BTS power consumption, the implication is the component of BTS power consumption due to TRXs only. Since TRXs account for a large fraction of BTS power consumption~\cite{Lorincz:BTS-Measure:Sensors:2012}, minimizing TRX power consumption will reduce BTS power consumption.}, $P$, approximated as an affine function of its traffic load~\cite{Peng:2011:BTSSaving:Mobicom}, is given by
+If $\delta$ is the traffic capacity of a single TRX, then the traffic handling capacity of BTS with $r$ TRXs is $r\delta$. If $x_i$ is the number of calls currently in progress at BTS $i$, and the power consumed by the BTS under no load and full load is $P_{min}$ and $P_{max}$, respectively, then the instantaneous BTS power consumption at the BTS\footnote{In the following discussion, when we refer to BTS power consumption, the implication is the component of BTS power consumption due to TRXs only. Since TRXs account for a large fraction of BTS power consumption~\cite{Lorincz:BTS-Measure:Sensors:2012}, minimizing TRX power consumption will reduce BTS power consumption.}, $P_i$, approximated as an affine function of its traffic load~\cite{Peng:2011:BTSSaving:Mobicom}, is given by
 \begin{align}
-P = P_1 + l(P_2-P_1)/r\delta\label{eq:btspower}
+P_i = P_{min} + x_i(P_{max}-P_{min})/r\delta\label{eq:btspower}
 \end{align}
 
-If a TRX's no-load power consumption is $\gamma$ (its value depends on the equipment type~\cite{Lorincz:BTS-Measure:Sensors:2012,flexibsc}), then $P_1=a\gamma$, where $a$ is the number of active TRXs.
+If a TRX's no-load power consumption is $\gamma$ (its value depends on the equipment type~\cite{Lorincz:BTS-Measure:Sensors:2012,flexibsc}), then $P_{min}=a\gamma$, where $a$ is the number of active TRXs.
 Thus, by scaling the number of active TRXs in response to traffic volume changes, BTS power consumption may be reduced.
 For example, if the traffic volume at a BTS falls below a power-saving threshold $r\delta/2$, then half of the TRXs may be turned off.
 As a result, the BTS will transition to the low-power mode whereby the power consumption profile drops by an amount $r\gamma/2$ as shown in Figure~\ref{fig:powermodel1}. The slope of the power consumption profile remains the same whether or not the BTS is operating in low-power mode. 
@@ -159,41 +159,41 @@ Instead of the all-or-half approach of Figure~\ref{fig:powermodel1}, power-savin
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{pics/ilyas4a.eps}
-\label{fig:powermodel1}
-\caption{Two-state power consumption model for a BTS with $r$ TRXs. Low-power (BTS power savings) mode is optional and kicks in at low loads.}
-\end{figure}
 
+\caption{Two-state power consumption model for a BTS with $r$ TRXs. Low-power (BTS power savings) mode is optional and kicks in at low loads.}
+\label{fig:powermodel1}
+\end{figure}
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{pics/ilyas4b.eps}
+\caption{Three-state power consumption model for a BTS with $r$ TRXs. BTS power savings is applied in a more granular way than the model of Figure~\ref{fig:powermodel1}.}
 \label{fig:powermodel2}
-\caption{Three-state power consumption model for a BTS with $r$ TRXs. BTS power savings is applied in a more granular way, than the model of Figure~\ref{fig:powermodel1}.}
 \end{figure}
 
-\subsection{Multi-BTS Cellular Setting}
+\subsection{Multi-BTS cellular setting}
 Since BTS power consumption is an additive function of the number of active TRXs, to minimize the power consumption over the network, we must minimize the total number of active TRXs.  Consider a cellular network consisting of $m$ BTSs and $n$ callers. 
 Let $c_{i,j}$ be a binary variable which is equal to one if caller $i$ \textit{can be} served through BTS $j$ and zero otherwise.
 Also, let $w_{i,j}$ be a binary variable which is equal to one if caller $i$ \textit{is} served through BTS $j$ and zero otherwise. Suppose that on a particular BTS, we may independently turn on/off a block of $\beta$ TRXs at a time.
 
-Our conversations with network operators reveal that the transition costs resulting from activating or deactivating TRXs using BTS power saving feature of the BTSs is negligible. Thus, the $T(.)$ part of equation~\ref{eq:genobjective} may be approximated as zero. According to equation~\ref{eq:btspower}, the state cost part, $C(.)$, from equation~\ref{eq:genobjective} is a linearly increasing function of the total number of TRXs in the network. If $x_j$ is the number of active TRX blocks at BTS $j$, then the RED-BL optimization problem may be given as: 
+Our conversations with network operators reveal that the transition costs resulting from activating or deactivating TRXs using BTS power saving feature of the BTSs is negligible. Thus, the $T(.)$ part of equation~\ref{eq:genobjective} may be approximated as zero. According to equation~\ref{eq:btspower}, the state cost part, $C(.)$, from equation~\ref{eq:genobjective} is a linearly increasing function of the total number of TRXs in the network. If $y_j$ is the number of active TRX blocks at BTS $j$, then the RED-BL optimization problem may be given as: 
 \begin{align}
-\textit{minimize} \quad \sum_{j=1}^{m} x_j
+\textit{minimize} \quad \sum_{j=1}^{m} y_j
 \end{align}
 subject to the following constraints: 
 \begin{align}
 & \sum_{j=1}^m w_{i,j} = 1 \qquad \forall i \label{eq:handleall}\\
 & w_{i,j} \leq c_{i,j} \qquad \forall i, j \label{eq:compatible}\\
-& \delta \beta x_j - \alpha - \sum_{i=1}^nw_{i,j} \geq \epsilon \label{eq:margin} \\
-& 1 \leq x_j \leq r / \beta \qquad (x_j \in \mathbb{N}) \qquad \forall j \label{eq:x}
+& \delta \beta y_j - \alpha - \sum_{i=1}^nw_{i,j} \geq \epsilon \label{eq:margin} \\
+& 1 \leq y_j \leq r / \beta \qquad (y_j \in \mathbb{N}) \qquad \forall j \label{eq:x}
 \end{align}
-The first constraint (Eq. \ref{eq:handleall}) ensures that every call is served by exactly one BTS. The second constraint (Eq. \ref{eq:compatible}) ensures that a call is served by a BTS that \textit{can} serve it, thereby securing the uplink and downlink TX power budget.
+The first constraint (Eq. \ref{eq:handleall}) ensures that every call is served by exactly one BTS. The second constraint (Eq. \ref{eq:compatible}) ensures that a call is served by a BTS that \textit{can} serve it, thereby securing the uplink and downlink transmit power budget.
 The third constraint (Eq. \ref{eq:margin}) ensures that the number of active TRXs is large enough such that there is a residual call capacity for at least $\epsilon$ more calls\footnote{A number of logical channels are reserved for control purposes in each sector. Here, $\alpha$ is the number of control channels per BTS}.
-The fourth constraint (Eq. \ref{eq:x}) specifies the range of values that $x_j$ may take.
+The fourth constraint (Eq. \ref{eq:x}) specifies the range of values that $y_j$ may take.
 
 The granularity of applying power-saving is determined in the above optimization formulation through the value of $\beta$. For instance, if $\beta$ equals 1, then each TRX may be independently turned on/off. Similarly, if $\beta$ equals $r/2$, the problem reduces to the two-step model of Figure.~\ref{fig:powermodel1}. Setting $\beta$ equal to $r/3$ results in the three-step model of Figure.~\ref{fig:powermodel2}.
 
 
-\subsection{Problem Complexity}
+\subsection{Problem complexity}
 \label{subsec:lccomplexity}
 In this section, we develop a proof of NP-Hardness for RED-BL as applied to cellular networks\footnote{This proof was done through personal communication with Dr. Mudassir Shabir}. For this proof, we define the RED-BL problem as:
 \medskip
@@ -283,7 +283,7 @@ Our heuristic is a O($rm^2n/\beta$) randomized algorithm, which is not guarantee
 \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
 \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
-\Input{$B$ (the set of BTSs) = \{$b_1, b_2, ..., b_m$\},\\$n$ (the number of calls),\\$W$ (call association) = \{$w_{i,j} | 1 \le i \le n,$\\ \quad $1 \le j \le m$\},\\$C$ (Adjacency matrix) = \{$c_{i,j}$ = 1 if $c_i$ can \\\quad be served through $b_j$, $0$ otherwise\}}
+\Input{$B$ (the set of BTSs) = \{$b_1, b_2, ..., b_m$\},\\$n$ (the number of calls),\\$W$ (call association) = \{$w_i^j | 1 \le i \le n,$\\ \quad $1 \le j \le m$\},\\$C$ (Adjacency matrix) = \{$c_{i,j}$ = 1 if $c_i$ can \\\quad be served through $b_j$, $0$ otherwise\}}
 \Output{A new and potentially more energy efficient mapping of calls to BTSs}
 \For{$k := 1$ to $r/\beta$}{
  $B_2$ = $\{b_j | \sum\limits_{i=1}^{n}w_i^j<k\delta\}$\;
@@ -320,6 +320,7 @@ Our heuristic is a O($rm^2n/\beta$) randomized algorithm, which is not guarantee
 \end{algorithm}
 \DecMargin{1em}
 
+\section{Experimental setup}
 Our dataset is obtained from a cluster of 26 BTSs operated by a large network operator with more than 7000 sites. These 26 sites are spread over a $31.25$\,$km^2$ urban terrain. We obtained each site's coverage prediction using a tool called Forsk Atoll which is quite popular in the cellular network operators community. Using this BTS coverage prediction and a caller's location, we can determine the candidate set of BTSs for the corresponding call (the $c_i^j$ parameters). 
 
 Also available to us are the hourly cumulative traffic, in Erlang, for each of the sites, spanning two consecutive weekdays. The traffic remained remarkably similar across both days for each site. We have, therefore, only used one day's traffic data in our experiments.
@@ -332,15 +333,15 @@ For each call, its departure event is also scheduled based on an exponential dis
 
 The location where each call originates in a cell is uniformly distributed over the corresponding BTS's coverage area. Based on the randomly picked location at which a particular call originates, the entries $c_{i,j}$ are determined such that $c_{i,j}$ = 1 if call $i$ is within service range of BTS $j$.
 
-To mimic present day practices in operational networks, our simulator associates each call to the BTS from which the received signal is strongest. Using this call-BTS association, a time series of traffic load for each BTS is calculated, which determines the power consumption profile for each BTS. Integrating the power consumption time series for each BTS gives its energy consumption over a 24 hour period. Summing the energy consumption for all BTSs gives the network's total energy consumption. This number represents a baseline for assessing the performance of the energy efficiency improvement techniques that we investigate in this paper.
+To mimic present day practices in operational networks, our simulator associates each call to the BTS from which the received signal is strongest. Using this call-BTS association, a time series of traffic load for each BTS is calculated, which determines the power consumption profile for each BTS. Integrating the power consumption time series for each BTS gives its energy consumption over a 24 hour period. Summing the energy consumption for all BTSs gives the network's total energy consumption. This number represents a baseline for assessing the performance of the energy efficiency improvement techniques that we investigate.
 
-Iterating over the traffic load time series for each BTS, our simulator places those BTSs that have sufficiently low traffic into power-saving mode. Using the power consumption functions shown in Figures~\ref{fig:powermodel1} and~\ref{fig:powermodel2}, our simulator calculates the energy consumption for the network over a 24 hour period when BTS power-saving is applied.
+Iterating over the traffic load time series for each BTS, our simulator places those BTSs that have sufficiently low traffic into power-saving mode. Using the power consumption functions given in equation~\ref{eq:btspower}, our simulator calculates the energy consumption for the network over a 24 hour period when BTS power-saving is applied.
 
 During the simulation, at a configurable frequency, we also invoke the RED-BL optimization problem on the current call traffic. We thus determine the energy consumption for the network over a 24 hour period when call hand off and BTS power saving are applied in a coordinated fashion.
 
 If RED-BL is invoked very frequently, the network will remain in an optimal state most of the time. Therefore, an aggressive re-optimization scheme will enable greater energy savings. In order to study how the energy savings scale with re-optimization frequency, we experimented with a range of intervals between successive optimizations, ranging from a minute to an hour.
 
-\subsection{Site Characteristics}
+\subsection{Site characteristics}
 \label{subsec:sitetypes} All sites in our dataset had three sectors, each equipped with 6 TRXs. The maximum number of simultaneous calls for each site is 132~\footnote{Each TRX's frequency is shared in time-domain  by 8 calls for  a total of $3\times6\times8=144$ channels. Four channels in each sector were reserved for control and broadcast purposes, resulting in 132 channels available for voice calls. The half-rate codec feature of GSM standard can be used to handle greater traffic volume, but we do not consider it in the present work in favor of model simplicity.}. 
 
 The BTS power consumption model parameters may vary from one equipment to another. In this paper, we use three different sets of model parameters as listed in table~\ref{tab:models}. We now describe the sources and methods from which we obtained these models.
@@ -349,11 +350,11 @@ The BTS power consumption model parameters may vary from one equipment to anothe
 \label{subsubsec:model1}For the first model, we have used $1.5$\,kW as the maximum power consumption~\cite{mbakwe:btshybribpower:2011:necec}, a $20$\,W per TRX saving when scaling the BTS down~\cite{flexibsc} and a $5$\,\% variation in power consumption between no-load and full-load~\cite{Peng:2011:BTSSaving:Mobicom}.
 
 \subsubsection{Model 2}
-\label{subsubsec:model2} Lorincz et. al reported the single sector DC power consumption for a GSM 900 BTS~\cite{Lorincz:BTS-Measure:Sensors:2012}. The sector under consideration had 7 TRXs, as opposed to 6 TRXs in our case. To approximate the DC power consumption for a site with 3 sectors, each with 6 TRXs, we scaled the power consumption by a factor of $3\times6/7$. The DC power consumption does not include the AC power consumed in the power supply units and in air-conditioning. We must, therefore, also compensate for those, to obtain the overall site power consumption. Power supply unit load is negligible compared to air-conditioning (typical A/C power consumption of 1 kW~\cite{mbakwe:btshybribpower:2011:necec}). We applied this scaling and addition to the minimum reported DC power consumption for the GSM 900 site to obtain an approximate value of $P_1$ for a site comparable to ours. Similarly, we used the maximum reported DC power consumption and applied the scaling and AC load correction to approximate the value of $P_2$. Furthermore, the authors measured a drop of $50$\,W in power consumption when a TRX is disable, which gives us the value of $\gamma$ as listed in Table~\ref{tab:models}.
+\label{subsubsec:model2} Lorincz et. al reported the single sector DC power consumption for a GSM 900 BTS~\cite{Lorincz:BTS-Measure:Sensors:2012}. The sector under consideration had 7 TRXs, as opposed to 6 TRXs in our case. To approximate the DC power consumption for a site with 3 sectors, each with 6 TRXs, we scaled the power consumption by a factor of $3\times6/7$. The DC power consumption does not include the AC power consumed in the power supply units and in air-conditioning. We must, therefore, also compensate for those, to obtain the overall site power consumption. Power supply unit load is negligible compared to air-conditioning (typical A/C power consumption of 1 kW~\cite{mbakwe:btshybribpower:2011:necec}). We applied this scaling and addition to the minimum reported DC power consumption for the GSM 900 site to obtain an approximate value of $P_{min}$ for a site comparable to ours. Similarly, we used the maximum reported DC power consumption and applied the scaling and AC load correction to approximate the value of $P_{max}$. Furthermore, the authors measured a drop of $50$\,W in power consumption when a TRX is disable, which gives us the value of $\gamma$ as listed in Table~\ref{tab:models}.
 
 
 \subsubsection{Model 3}
-\label{subsubsec:model3}We used the measurements for the GSM 1800 BTS reported in~\cite{Lorincz:BTS-Measure:Sensors:2012} to determine the values for for $P_1$ and $P_2$ in the same manner as described in section~\ref{subsubsec:model2}. The value of $\gamma$was reported to be $100$\,W~\cite{Lorincz:BTS-Measure:Sensors:2012}. The parameter values for this model are given in Table~\ref{tab:models}
+\label{subsubsec:model3}We used the measurements for the GSM 1800 BTS reported in~\cite{Lorincz:BTS-Measure:Sensors:2012} to determine the values for for $P_{min}$ and $P_{max}$ in the same manner as described in section~\ref{subsubsec:model2}. The value of $\gamma$was reported to be $100$\,W~\cite{Lorincz:BTS-Measure:Sensors:2012}. The parameter values for this model are given in Table~\ref{tab:models}
 
 \begin{table}
 \centering
@@ -361,8 +362,8 @@ The BTS power consumption model parameters may vary from one equipment to anothe
 \hline
 Parameter & \multicolumn{3}{|c|} {Value} \\
 \cline{2-4} \ & Model 1 & Model 2 & Model 3 \\
-\hline $P_1$ & 1425 & 2401.8 & 2341.5 \\
-\hline $P_2$ & 1500 & 3887.5 & 2973.9 \\
+\hline $P_{min}$ & 1425 & 2401.8 & 2341.5 \\
+\hline $P_{max}$ & 1500 & 3887.5 & 2973.9 \\
 \hline $\gamma$ & 20 & 50 & 100 \\
 \hline
 \end{tabular}
@@ -373,13 +374,13 @@ Parameter & \multicolumn{3}{|c|} {Value} \\
 
 \section{Results}
 \label{sec:results}
-
+We now present the results of the simulation experiments. These experiments were conducted on all three BTS models with varying inter-optimization interval.
 \subsection{BTS with two possible power states}
 \label{subsec:results1}
 
 First, we consider the benefit of BTS power-saving alone, compared to running the network in the default configuration. The percentage reduction in energy consumption is listed in Table~\ref{tab:psonly}. The results indicate that a saving of between 4\% and 12\% can be achieved in a network just by activating BTS power savings. We note here that some of these results are in agreement with Ericsson's claim of saving 10-20\% energy by using BTS power-saving on Germany's Vodafone network~\cite{ericssonclaim}.
 
-In absolute terms, this represents a cumulative saving of between 43\,kWh and 217\,kWh per day on 26\,BTSs. Now, consider that there are five cellular operators in Pakistan: Mobilink with more than 8500 sites~\cite{mobilinksitecount}, Ufone with more than 8000 sites~\cite{ptaannreport}, Zong with more than 5500 sites~\cite{ptaannreport}, Telenor with more than 7000 sites~\cite{telenorsitecount} and Warid with more than 4500 sites~\cite{ptaannreport}. Overall, there were more than 31000 sites in Pakistan at the end of 2011. We extrapolated the daily energy savings number over 26 BTSs to calculate the daily energy savings possible for a country like Pakistan with over 31000 BTSs (see the last row of Table~\ref{tab:psonly}). The results indicate that mere activation of BTS power saving option itself can save quite a bit of electrical energy, a critical resource, especially in a developing country. As we shall see next, greater energy savings are possible if we couple periodical call shuffling with BTS power savings in the network.
+In absolute terms, this represents a cumulative saving of between 43\,kWh and 217\,kWh per day on 26\,BTSs. Now, consider that there are five cellular operators in Pakistan: Mobilink with more than 8500 sites~\cite{mobilinksitecount}, Ufone with more than 8000 sites~\cite{ptaannreport}, Zong with more than 5500 sites~\cite{ptaannreport}, Telenor with more than 7000 sites~\cite{telenorsitecount} and Warid with more than 4500 sites~\cite{ptaannreport}. Overall, there were more than 31000 sites in Pakistan at the end of 2011. We extrapolated the daily energy savings number over 26 BTSs to calculate the daily energy savings possible for a country like Pakistan with over 31000 BTSs (see the last row of Table~\ref{tab:psonly}). The results indicate that mere activation of BTS power saving option itself can save quite a bit of electrical energy, a critical resource, especially in a developing country (see last row in Table~\ref{tab:psonly}. As we shall see next, greater energy savings are possible if we couple periodical call shuffling with) BTS power savings in the network.
 
 \begin{table}
 \centering
@@ -426,7 +427,7 @@ In the above extrapolation, we have assumed that the same amount of energy savin
 \label{subsec:results2}
 In our experimental results discussed so far, we have observed that going from a 6+6+6 configuration to a 2+2+2 configuration can save a significant amount of energy. Intuition suggests that going to a finer granularity of resource pruning should enable greater energy savings. We now present two cases that are different from the configuration considered so far. In the first case, we consider the ability to (de)activate TRXs in pairs, i.e., a site may be in one of three configurations at a given time: 6+6+6, 4+4+4 or 2+2+2. In the second case, we consider the ability to (de)activate each TRX on a site independently.
 
-In this scenario, we conducted simulation experiments where a re-optimization was performed every six minutes using model 1 BTS. The results of these experiments are given in Table~\ref{tab:granularityresults}. For all three BTS models, we see that going from a 2-state model to a 3-state model gives a relatively small increase in energy savings compared to the jump from 3-state to 6-state model.
+In this scenario, we conducted simulation experiments where a re-optimization was performed every six minutes using all three BTS models. The results of these experiments are given in Table~\ref{tab:granularityresults}. For all three BTS models, we see that going from a 2-state model to a 3-state model gives a relatively small increase in energy savings. However, when all TRXs may be independently controlled, we get a significant improvement in energy savings.
 
 \begin{table}
 \centering
@@ -463,7 +464,7 @@ We carried out experiments to assess the impact of the value of $\epsilon$ on th
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{pics/ilyas7.eps}
-\caption{The percentage energy savings for all three BTS models considered in this paper vs the value of $\epsilon$, with a six minute inter-optimization interval}
+\caption{The percentage energy savings for all three BTS models considered vs the value of $\epsilon$, with a six minute inter-optimization interval}
 \label{fig:case2:results6}
 \end{figure}
 

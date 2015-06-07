@@ -1,4 +1,4 @@
-\chapter{Case Study I: Geo-diverse Data Centers}
+\chapter{Case study I: geo-diverse data centers}
 \label{chap:casestudy1}
 \section{Prelude}
 Geo-diverse data centers enable robust and low-latency cloud services. The electricity cost for this huge infrastructure is a significant fraction of the operational cost (15\%)~\cite{costCloud} as well as capital cost~\cite{qureshiHotnets}. Due to increasing demand for cloud services and increasing electricity prices, it is essential for data center operators to cut their electricity bill~\cite{brill:DataCenterCrisis:UI:2007,Belady_EC_2007}.
@@ -11,7 +11,7 @@ Theoretically, one can benefit from capacity scaling by shutting down some equip
 
 To the best of our knowledge, prior work has largely taken a micro-scale view of this problem by scaling the data center capacity at the granularity of states of individual servers within a data center~\cite{Li:Optimal:TSG:2012,LinInfocom11,serverEnergy,Mazzucco2012415,rao2010,qureshi2009cutting} and, in some cases, has altogether ignored transition costs resulting from capacity scaling. These approaches lack scalability to multi-data center scenarios or are sub-optimal. In this thesis, we address the challenges of scalability as well as incorporation of transition costs into the optimization problem.
 
-In the present work, we approach a scalable solution to this problem by treating all the elastic electric load\footnote{The electric load that may be turned on or off to save electricity cost without long delays or long-term impact on performance.} in a data center as an aggregate and determining this aggregate's state for each interval in a planning window. For every interval in the planning window, our coarse-granularity formulation provides the average utilization of the servers within a data center. Relaxing a discrete optimization problem to a continuous one typically introduces an approximation error. The magnitude of this error is expected to be small for large scale problems such as geo-diverse data centers. Determination of the approximation error's magnitude is beyond the scope of this paper and is left as future work.
+In the present work, we approach a scalable solution to this problem by treating all the elastic electric load in a data center as an aggregate and determining this aggregate's state for each interval in a planning window. For every interval in the planning window, our coarse-granularity formulation provides the average utilization of the servers within a data center. Relaxing a discrete optimization problem to a continuous one typically introduces an approximation error. The magnitude of this error is expected to be small for large scale problems such as geo-diverse data centers. Determination of the approximation error's magnitude is beyond the scope of this paper and is left as future work.
 
 To motivate the significance of transition costs in the dynamic scaling of geo-diverse data center capacity and our scheme for incorporating the transition costs to the optimization problem, we will use a simple example shown in Figure~\ref{fig:mot-example}. It depicts an example instance of the
 state trajectory problem for a planning window consisting of
@@ -54,7 +54,7 @@ average electricity price over the planning window. This
 corresponds to the path S1$\rightarrow$S4$\rightarrow$S7, with
 the sum of state costs equal to $42$. Since the workload
 mapping does not change, there are no transition costs, and
-hence the total solution costs is also $42$. In general,
+hence the total solution cost is also $42$. In general,
 depending on the magnitude of transition costs, the static
 solution could be better or worse compared to the greedy
 solution.
@@ -73,13 +73,13 @@ demands in operational data centers.
 
 \section{Related work}
 
-Li et. al. determined the electricity cost optimal mapping of workload to geo-diverse data centers by controlling the state of the individual servers within each data center~\cite{Li:Optimal:TSG:2012}. The state of the servers and their electricity consumption was controlled using Dynamic Voltage and Frequency Scaling (DVFS) and Dynamic Cluster Server Configuration (DCSC). Since their optimization problem formulation used Mixed Integer Programming (MIP) with decision variables per server, their approach is effective for small-scale problems such as an individual data center or a fraction thereof. This limitation is evident from the small number of servers used in the simulation-based evaluation in~\cite{Li:Optimal:TSG:2012}. One way to scale their approach to large distributed data centers is to use coarse granularity in their problem formulation. For instance, instead of controlling the state of each server independently, all servers in a single rack could be configured in the same state at a given time. They used the Soccer World Cup 1998 web server workload traces and electricity prices at four different locations to evaluate their proposal. 
+Li et. al. determined the electricity cost optimal mapping of workload to geo-diverse data centers by controlling the state of the individual servers within each data center~\cite{Li:Optimal:TSG:2012}. The state of the servers and their electricity consumption was controlled using Dynamic Voltage and Frequency Scaling (DVFS) and Dynamic Cluster Server Configuration (DCSC). Since their optimization problem formulation used Mixed Integer Programming (MIP) with decision variables per server, their approach is effective for small-scale problems such as an individual data center or a fraction thereof. This limitation is evident from the small number of servers used in the simulation-based evaluation in~\cite{Li:Optimal:TSG:2012}. They used the Soccer World Cup 1998 web server workload traces and electricity prices at four different locations to evaluate their proposal. One way to scale their approach to large distributed data centers is to use coarse granularity in their problem formulation. For instance, instead of controlling the state of each server independently, all servers in a single rack could be configured in the same state at a given time. 
 
 Some researchers have also proposed algorithms for the data center electricity cost optimization problem. In the context of a web-search query processing system hosted on a geo-diverse data center network, Kayaaslan et. al. presented a bin-packing type of algorithm for shifting search query workload between data centers in~\cite{Kayaaslan:2011:EQP:2009916.2010047}. Buchbinder et. al. proposed online algorithms for relocating Map Reduce jobs between geo-diverse data centers to reduce the electricity bill while considering the cost of inter-data center bandwidth~\cite{Buchbinder:2011:OJR:2008780.2008798}. Their proposed algorithms consider the uncertainty in electricity prices and workload estimates while mapping the jobs to data centers. They evaluated their algorithms using electricity prices from $30$ locations across the US and workload data from a $10000$ node Map Reduce cluster. Bhaskar et. al. proposed online algorithms for mixed packing and covering, a problem which may be applied to optimally map workload to geo-diverse data centers~\cite{Bhaskar:2012:CoRR}. For configuring servers in a single data center with a view of minimizing electricity costs, Lin et. al. presented offline as well as online algorithms for dynamic scaling of server computational capacity~\cite{LinInfocom11}. Urgaonkar et. al. proposed an online optimization algorithm while proposing to disconnect data center devices from mains and running on UPS when the electricity prices are high~\cite{Urgaonkar:2011:OPC:1993744.1993766}. Their proposed scheme recharges the UPS units when the electricity prices are lower.
 
 Investigations of infrastructure scaling strategies to conserve power in a single data center are reported in~\cite{serverEnergy,Mazzucco:Maximizing:2011:CoRR,Oh:2011:ECS:2170444.2170458,Chase:2001:MES:502059.502045}. Chen et. al. proposed three different solutions that either shut down or frequency-scale servers in a web hosting data center with the objective of minimizing electricity and maintenance cost while ensuring SLA compliance~\cite{serverEnergy}. The first two of the proposed algorithms were based on a queuing theoretic and control theoretic analysis, respectively, while the third one was a hybrid scheme. While scaling the deployed capacity, their proposed scheme considers the cost of turning the servers on and off in terms of the resulting wear and tear. Mazzucco et. al. presented similar strategies in~\cite{Mazzucco:Maximizing:2011:CoRR}. Oh et. al. considered a virtualized environment and proposed solutions for optimally placing Virtual Machines (VMs) on servers and map workload to the VMs such that electricity costs are minimized~\cite{Oh:2011:ECS:2170444.2170458}. In~\cite{Chase:2001:MES:502059.502045}, Chase et. al. presented policies for resource allocation in a hosting center alongwith a switching infrastructure for routing requests to servers.
 
-Most of a the prior work in this area considers applications with short request-response type jobs. In~\cite{Chen:2008:ESP:1387589.1387613}, however, Chen et. al. considered connection-intensive applications such as video streaming, Internet gaming and instant messaging in the context of energy cost aware load dispatch. 
+Most of the prior work in this area considers applications with short request-response type jobs. In~\cite{Chen:2008:ESP:1387589.1387613}, however, Chen et. al. considered connection-intensive applications such as video streaming, Internet gaming and instant messaging in the context of energy cost aware load dispatch. 
 
 Rao et. al. consider data center operation in a futures electricity market and the possibility of hedging against uncertain electricity prices under a smart grid environment in~\cite{Rao:2011:TSG}. The authors used workload data from Google search cluster and evaluated a scenario of an operator with data centers at two different locations.
 
@@ -91,15 +91,15 @@ All of the above work deals with problems that can be categorized broadly as opt
 Consider a geo-distributed data center infrastructure
 comprising $m$ interconnected data
 centers. At any given time, the workload is distributed amongst the data
-centers in the network. For ease of modeling, we assume that changes to the distribution of workload amongst data centers may be done at the start of discrete intervals of duration $\lambda$. We use $x_i^j$ to denote the fraction of workload during interval $j$ that is mapped to data center $i$.  We consider workload that is normalized over its peak, i.e., the workload values for any interval are between 0 and 1. The workload capacity of data center $i$, denoted $c_i$, is also normalized on the same scale. We assume that the network of data centers is over-subscribed so that $\sum_{i=1}^m c_i > 1$.
+centers in the network. For ease of modeling, we assume that changes to the distribution of workload amongst data centers may be done at the start of discrete intervals of duration $\lambda$. We use $x_i^j$ to denote the fraction of workload during interval $j$ that is mapped to data center $i$.  We consider workload that is normalized over its peak, i.e., the workload values for any interval are between 0 and 1. The workload capacity of data center $i$, denoted $c_i$, is also normalized on the same scale. We assume that the network of data centers is over-provisioned so that $\sum_{i=1}^m c_i > 1$.
 
-Let the sum of elastic load's peak and idle power consumption over all data centers be $P^{max}$ and $P^{min}$, respectively. Assuming that the data centers are homogeneous, an individual data center's workload capacity is directly related to its peak (or idle) power consumption. Thus, $P_i^{max} = c_iP^{max}$ and $P_i^{min} = c_iP^{min}$. 
+Let the sum of elastic load's peak and idle power consumption over all data centers be $P_{max}$ and $P_{min}$, respectively. Assuming that the data centers are homogeneous, an individual data center's workload capacity is directly related to its peak (or idle) power consumption. Thus, the maximum power consumption for data center $i$ is $c_iP_{max}$ and the corresponding minimum is $c_iP_{min}$. 
 
 Data center power consumption is an affine function of the average CPU utilization of the servers~\cite{Fan:power:ICSA:2007}. Therefore, the average power consumption at data center $i$ during interval $j$ is: 
 \begin{align}
-P_i^j = c_i \left(P^{min}+\frac{x_i^j\left(P^{max}-P^{min}\right)}{c_i}\right)
+P_i^j = c_i \left(P_{min}+\frac{x_i^j\left(P_{max}-P_{min}\right)}{c_i}\right)
 \end{align}
-Dividing both sides of the above equation by $P^{max}$ gives the normalized power consumption for data center $i$ during interval $j$:
+Dividing both sides of the above equation by $P_{max}$ gives the normalized power consumption for data center $i$ during interval $j$:
 
 \begin{align}
 \label{eq:dcpower}
@@ -111,7 +111,9 @@ where $f$ is the ratio of $P^{max}$ to $P^{min}$. If we set $x_i^j=0$, i.e., dat
 C(j) = \sum_{i=1}^{m} c_i e_i^j\left(p_i^j \lambda\left(f+\left(1-f\right)\frac{x_i^j}{c_i}\right)\right)
 \end{align}
 
-Let $\sigma$ and $\delta$ be the average power consumption, over a single interval, required to activate or deactivate, respectively, all of the elastic load at a unit capacity data center. Then, the power consumption for activation of the elastic load at data center $i$ is $\sigma c_i$. The electricity cost for activating data center $i$'s elastic load at the start of interval $j$ is, therefore\footnote{Multiplication with the duration of an interval, i.e., $\lambda$ is not necessary, because $\sigma$ is defined as the per interval cost.}, $c_ie_i^j\sigma$. Here, we are assuming that the elastic load at a data center may be activated within a single interval. The value of $\lambda$ that we used in our experiments is equal to one hour, which is a sufficiently large interval for server activation. Deactivation cost for elastic load may also be derived in a similar manner. Therefore, the transition cost of entering a given state in interval $j$ may be given as:
+Here, decision variable $p_i^j$ is $1$ if the elastic load in data center $i$ is active during interval $j$, or $0$ otherwise. Multiplication by $p_i^j$ ensures that computation and idling costs are accounted for in interval $j$, only if the elastic load in data center $i$ is active during that interval.
+
+Let $\sigma$ and $\delta$ be the average power consumption, over a single interval, required to activate or deactivate, respectively, all of the elastic load at a unit capacity data center. Then, the power consumption for activation of the elastic load at data center $i$ is $\sigma c_i$ and the corresponding electricity cost\footnote{Multiplication with the duration of an interval, i.e., $\lambda$ is not necessary, because $\sigma$ is defined as the per interval cost.} is $c_ie_i^j\sigma$. Here, we are assuming that the elastic load at a data center may be activated within a single interval. The value of $\lambda$ that we used in our experiments is equal to one hour, which is a sufficiently large interval for server activation. Deactivation cost for elastic load may also be derived in a similar manner. Let $b_i^j$ be a binary variable which is $1$ if data center $i$ is activated in interval $j$ and $0$ otherwise. Similarly, let $s_i^j$ be a binary variable indicating if data center $i$ is deactivated in interval $j$, then the transition cost of entering a given state in interval $j$ may be given as:
 
 \begin{align}
 T (j) = \sum_{i=1}^{m} \left(b_i^j \sigma + s_i^j \delta\right)
@@ -126,11 +128,11 @@ subject to:
 \begin{align}
 x_i^j \le c_i \hspace{6 pt} \forall i, \forall j \label{eq:capcon}\\
 \sum_{i = 1}^{m} x_i^j = w^j \hspace{6 pt} \forall j \label{eq:workcon}\\
-p_i^j, b_i^j, s_i^j \in \{0,1\} \hspace{6 pt} \forall i, \forall j \label{eq:integer1}\\
+p_i^j, b_i^j, s_i^j \in \{0,1\} \hspace{6 pt} \forall i, \forall j \label{eq:integer1}
+\end{align}
+\begin{align}
 p_i^j \ge x_i^j \hspace{6 pt} \forall i, \forall j \label{eq:p1}\\
 b_i^j \ge p_i^j - p_i^{j-1} \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:bcon}\\
-%\end{align}
-%\begin{align}
 s_i^j \ge p_i^{j-1} - p_i^j \hspace{6 pt} \forall i, 2 \le j \le n \label{eq:scon}\\
 b_i^0 = p_i^0, s_i^0 = 0 \hspace{6 pt} \forall i \label{eq:bcon1}
 \end{align}
@@ -158,12 +160,10 @@ b_i^0 = p_i^0, s_i^0 = 0 \hspace{6 pt} \forall i \label{eq:bcon1}
  $s_i^j$ & 1 if data center $i$'s elastic load is deactivated at interval $j$, $0$ otherwise \\
 \hline
 \end{tabular}
-\caption{Data Center Network Model Parameters}
+\caption{Data center network model parameters}
 \label{tab:model}
 \end{center}
 \end{table}
-
-Decision variable $p_i^j$ is 1 if the elastic load in data center $i$ is active during interval $j$, or 0 otherwise. Similarly, $b_i^j$ ($s_i^j$) is 1 if the elastic load in data center $i$ is activated (deactivated) at the start of interval $j$. In equation~\eqref{eq:objective}, multiplication of the first two terms by $p_i^j$ ensures that computation and idling costs are accounted for in interval $j$, only if the elastic load in data center $i$ is active during that interval. Similarly, multiplication of the last two terms in equation~\eqref{eq:objective} by $b_i^j$ and $s_i^j$, respectively, ensures that activation and de-activation costs contribute to the summation only when the elastic load in a data center is activated or de-activated.
 
 The workload capacity constraint is given in~\eqref{eq:capcon}. Eq.~\eqref{eq:workcon} ensures that all incident workload is handled, while~\eqref{eq:integer1} represents the binary-value
 constraint. Inequality~\eqref{eq:p1} ensures that the elastic load in a data center
@@ -354,7 +354,7 @@ We used the day-ahead prices for these locations, i.e., the electricity price ne
 %\end{center}
 %\end{table}
 
-\subsection{Algorithms for Workload Distribution/Relocation}
+\subsection{Algorithms for workload distribution/relocation}
 \label{subsec:metrics} The workload relocation problem has the following dimensions based on which different algorithms may be formulated. 
 
 \begin{itemize}
@@ -402,7 +402,7 @@ In this thesis, we report comparative results for six workload placement algorit
 \hline UNIFORM & N/A \\
 \hline
 \end{tabular}
-\caption{A comparison of the algorithms studied in this thesis}
+\caption{A comparison of the data center workload distribution algorithms studied in this thesis}
 \label{tab:algosmatrix}
 \end{center}
 \end{table}
@@ -429,7 +429,7 @@ almost $300\%$ over-provisioning.
 
 We computed the total electricity cost for all algorithms while setting $f=\sigma=\delta=0.65$. The percentage savings in total electricity cost by various algorithms compared to UNIFORM are plotted against the data center capacity over-provisioning in Figure~\ref{fig:s1r}. We found that for the wide range of capacity over-provisioning that we considered, LI is able to do only slightly better than the naive UNIFORM algorithm (about 2\%). This is due to the significant idling costs incurred by LI under the experiment's conditions. For this reason, we have omitted LI from this plot.
 
-The most competitive practical variants of LI, i.e., LS was 10.35\% off from the ideal lower bound (LO). Meanwhile, RED-BL solution is quite close the ideal lower bound (LO). The reason for greater savings with RED-BL compared to the greedy solutions (LS and LD) is that, the transition costs being significant, the former does fewer state transitions. In several intervals, RED-BL chooses data centers with relatively higher electricity price than the greedy solutions, but makes up for the higher computational cost by a reduction in the transition costs incurred.
+The most competitive practical variants of LI, i.e., LS was 10.35\% off from the ideal lower bound (LO). Meanwhile, RED-BL solution is quite close to the ideal lower bound (LO). The reason for greater savings with RED-BL compared to the greedy solutions (LS and LD) is that, the transition costs being significant, the former does fewer state transitions. In several intervals, RED-BL chooses data centers with relatively higher electricity price than the greedy solutions, but makes up for the higher computational cost by a reduction in the transition costs incurred.
 
 \subsection{Sensitivity of electricity cost savings to magnitude of transition costs}
 As the magnitude of transition costs relative to the state cost for an interval grows beyond a certain point, the benefits of deactivating elastic load at data centers would diminish. Accordingly, the electricity cost savings achievable by the workload relocation schemes would drop with increase in transition costs. In this scenario, we determine the percentage savings in total
@@ -444,7 +444,7 @@ As the magnitude of transition costs relative to the state cost for an interval 
     higher than this does not make sense as a workload relocation scheme would be better off keeping the elastic load at unloaded data centers idle. In this scenario,
     we kept $f=0.65$.
 
-LI does not (de)activate unneeded elastic load and thus its electricity cost is independent of the magnitude of transition costs. We observed that it offered a saving of merely 1.74\% compared to UNIFORM. Figure~\ref{fig:s3r} shows the electricity cost savings for the other algorithms compared to UNIFORM. The LS and LD adaptations of the LI algorithm offer savings that scale almost linearly to the magnitude of transition costs. Both LS and LD also bring an average reduction in the elastic load's electricity cost by a factor of $4$, compared to that of LI. RED-BL not only scales better than LS and LD but also achieves electricity cost saving that is fairly close (only $3\%$ higher, on average) than the ideal lower bound as reported by LO.
+LI does not (de)activate unneeded elastic load and thus its electricity cost is independent of the magnitude of transition costs. We observed that it offered a saving of merely 1.74\% compared to UNIFORM. Figure~\ref{fig:s3r} shows the electricity cost savings for the other algorithms compared to UNIFORM. The LS and LD adaptations of the LI algorithm offer savings that scale almost linearly to the magnitude of transition costs. Both LS and LD also bring an average reduction in the elastic load's electricity cost by a factor of $4$, compared to that of LI. RED-BL not only scales better than LS and LD but also achieves electricity cost saving that is fairly close (only $3\%$ higher, on average) to the ideal lower bound as reported by LO.
 
 
 \begin{figure}[htbp]
@@ -498,7 +498,7 @@ There are three primary differences from the vanilla RED-BL formulation. The fir
 In the current evaluation scenario, we explore how the RED-BL electricity cost savings scale with change in size of the unit of independent (de)activation. In Figure~\ref{fig:granular-deactivation}, we have plotted the percentage savings in electricity cost vs the granularity of data center's elastic load (de)activation. The savings are computed against the scenario where only the entire elastic load in the data center may be (de)activated as a whole. This baseline corresponds to a value of $l$ equal to one. Accordingly, in Figure~\ref{fig:granular-deactivation} we see no savings for that value of $l$. We also see that the ability to independently (de)activate half of a data center's elastic load provides around $2.5\%$ additional such savings on top of what the vanilla RED-BL can achieve. The electricity cost savings grow almost linearly when going to more granular size of independent (de)activation.
 
 \subsection{Sliding window re-optimization}
-With the exception of scenario 3, all of our simulation scenarios have been driven by error-free workload traces. The underpinning assumption to the corresponding results, therefore, is the availability of accurate workload estimates. We opine that this is not such a bad assumption given that the cumulative workload on the granularity of an hour changes slowly from one hour to the next and from one hour on a day to the same hour the next day. However, workload forecasting will have some error, however small it may be. 
+So far, all of our simulation scenarios have been driven by error-free workload traces. The underpinning assumption to the corresponding results, therefore, is the availability of accurate workload estimates. We opine that this is not such a bad assumption given that the cumulative workload on the granularity of an hour changes slowly from one hour to the next and from one hour on a day to the same hour the next day. However, workload forecasting will have some error, however small it may be. 
 
 In order to accommodate workload mis-estimation, we propose a sliding window-based algorithm that is somewhat similar to receding horizon control~\cite{rhc}. The algorithm is so called because it performs workload forecasts for a planning window and later slides the window by a constant offset before making another workload forecast, this time for intervals currently in the planning window. 
 
@@ -573,7 +573,7 @@ The difference of the electricity cost resulting from the use of the sliding win
 
 
 \subsection{Sensitivity of electricity cost savings to the server idle-peak power ratio}
-Chip manufacturers and computer vendors are striving to improve server energy proportional/efficient. It would be interesting to see how the electricity cost savings for RED-BL would improve as the server's idle to peak power ratio ($f$) drops. To this end, we conducted a set of experiments in which we kept all other parameters fixed while varying $f$ from 0 to 1.  Note that $f$=0 means that the servers are completely energy proportional, whereas $f$=1 means that the server power consumption is totally inelastic.
+Chip manufacturers and computer vendors are striving to make servers more energy proportional/efficient. It would be interesting to see how the electricity cost savings for RED-BL would improve as the server's idle to peak power ratio ($f$) drops. To this end, we conducted a set of experiments in which we kept all other parameters fixed while varying $f$ from 0 to 1.  Note that $f$=0 means that the servers are completely energy proportional, whereas $f$=1 means that the server power consumption is totally inelastic.
 
 Figure~\ref{fig:fvar1} shows the variation of electricity cost savings as the value of $f$ is varied while the $b$/$s$ parameters are kept at a low value of 0.01. In this setting, we wish to investigate if server energy proportionality improvement really matters if the bootup/shutdown costs were really low. Figure~\ref{fig:fvar1} shows that for an increase from $f$=0 to $f$=1, the global optimal solution over the planning window only spans an increase in average total electricity cost of 8.34\%. Also, a drop from the typical $f$=0.6 all the way to $f$=0 results in a 4.88\% drop in total electricity cost. It is noticeable that the bootup/shutdown overheads are really small and the idling fraction of electricity costs increases almost linearly with the value of $f$.
  
@@ -589,7 +589,7 @@ Figure~\ref{fig:fvar1} shows the variation of electricity cost savings as the va
 \label{fig:fvar2}
 \end{figure}
 
-Figure~\ref{fig:fvar2} shows the same results for $b$/$s$=0.65. In this case, an increase from $f$=0 to $f$=1 spans an 11.44\% increase in average daily total electricity costs. Also, as $f$ drops from the typical $f$=0.65 all the way to $f$=0, the total electricity cost of the global optimal solution over the planning window drops by 7.42\%. Since the bootup/shutdown overhead is significant in this case, for all values of $f$, the total electricity cost of the global optimal solution over the planning window is characterized by an almost fixed contribution from bootup/shutdown, while the idling fraction increase almost linearly.
+Figure~\ref{fig:fvar2} shows the same results for $b$/$s$=0.65. In this case, an increase from $f$=0 to $f$=1 spans an 11.44\% increase in average daily total electricity costs. Also, as $f$ drops from the typical $f$=0.65 all the way to $f$=0, the total electricity cost of the global optimal solution over the planning window drops by 7.42\%. Since the bootup/shutdown overhead is significant in this case, for all values of $f$, the total electricity cost of the global optimal solution over the planning window is characterized by an almost fixed contribution from bootup/shutdown, while the idling fraction increases almost linearly.
 
 \subsection{Performance of the heuristic algorithm}
 Figure~\ref{fig:heur1perf} shows the performance of our heuristic algorithm compared to the optimal solution of the problem for various values of the (de)activation overhead parameters. For each value of the $b$/$s$ parameters, we have plotted the average error over the seven days in our workload dataset (the curve) as well as the minimum and maximum error for any given day (the vertical bars). The performance of the heuristic is the worst for $b$/$s$ = 0, because the heuristic avoids bootup/shutdown which has zero cost for $b$/$s$ = 0. For other small values of $b$/$s$ also, the bootup/shutdown overhead is not significant and by avoiding it, our heuristic fares relatively poorly compared to the optimal solution. As the value of $b$/$s$ increases, our heuristic's error compared to the optimal solution drops until it starts a slight rise. The rising trend in the heuristic's performance for relatively high values of $b$/$s$ is because in this regime, it may often be better to allow idling of some data centers instead of a bootup at the intervals defined by $p_1$ and shutdown at those defined by $p_2$. We observed similar trends for other values of $f$ as well, when $b$/$s$ is varied from 0 to 1.
@@ -603,7 +603,7 @@ Figure~\ref{fig:heur1perf} shows the performance of our heuristic algorithm comp
 \section{Summary}
 In this chapter, we have instantiated the generalized problem formulation of joint workload relocation and resource pruning to optimize electricity costs for geo-diverse data centers. The generalized formulation performs a state trajectory optimization and in case of geo-diverse data centers, the network state consists of a combination of discrete as well as continuous variables. 
 
-Our formulation determines a deployment configuration plan that is optimal over a planning window consisting of several intervals in the form of bootup/shutdown times for each data center as well as the workload to be mapped to each data center for all intervals in the planning window. Discrete optimization problems such as ours are difficult to solve exactly because of their computational complexity. However, using the CPLEX solver we were able to compute the optimal plans for planning windows consisting of 24 one-hour intervals within a few seconds. 
+Our formulation determines a deployment configuration plan that is optimal over a planning window consisting of several intervals. This deployment configuration consists of bootup/shutdown times for each data center as well as the workload to be mapped to each data center for all intervals in the planning window. Discrete optimization problems such as ours are difficult to solve exactly because of their computational complexity. However, using the CPLEX solver we were able to compute the optimal plans for planning windows consisting of 24 one-hour intervals within a few seconds. 
 
 Our problem formulation involves several parameters whose values are expected to vary over time (for instance, the value of idle to peak power consumption ratio is expected to improve as chip and server energy proportionality improves), from one operator to another (for instance, the over provisioning ratio) and from application to application (for instance, the value of the transition cost). With so many parameters, each with many possible values, it is not possible to exhaustively test RED-BL. However, in such a case, it suffices to know the sensitivity of electricity cost savings to the variation in each parameter, while all others are held at some reasonable default values. We performed a series of such experiments for each parameter and reported the results.
 

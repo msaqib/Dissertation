@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.5.28)  6 JUN 2015 20:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.5.28)  7 JUN 2015 21:04
 entering extended mode
 **Dissertation.tex
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\Dissertation.tex"
@@ -491,12 +491,8 @@ Chapter 3.
 
 
 ]
-File: pics/mappingexample.eps Graphic file (type eps)
- <pics/mappingexample.eps>
-
-LaTeX Warning: Float too large for page by 19.41588pt on input line 13.
-
-[30] [31] [32] [33] [34] [35]) [36] [37]
+File: pics/mappingexample-v2.eps Graphic file (type eps)
+ <pics/mappingexample-v2.eps> [30] [31] [32] [33] [34] [35]) [36] [37]
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\sections/casestudyIChapter
 4.tex"
 Chapter 4.
@@ -506,12 +502,12 @@ Chapter 4.
 
 ] [39]
 File: pics/ExampleTemplate3.eps Graphic file (type eps)
- <pics/ExampleTemplate3.eps> [40] [41] [42] [43] [44] [45]
-Overfull \hbox (37.09555pt too wide) in paragraph at lines 140--161
+ <pics/ExampleTemplate3.eps> [40] [41] [42] [43] [44] [45] [46]
+Overfull \hbox (37.09555pt too wide) in paragraph at lines 142--163
  [] 
  []
 
-[46] [47] [48] [49] [50]
+[47] [48] [49] [50]
 Overfull \hbox (17.62482pt too wide) detected at line 260
 [][] 
  []
@@ -582,50 +578,50 @@ File: pics/ilyas5a.eps Graphic file (type eps)
  <pics/ilyas5a.eps>
 File: pics/ilyas5b.eps Graphic file (type eps)
  <pics/ilyas5b.eps>
-[94] [95] [96]
+[94] [95]
 File: pics/ilyas6.eps Graphic file (type eps)
- <pics/ilyas6.eps> [97]
+ <pics/ilyas6.eps> [96] [97]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 457.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 457.
+(hyperref)                removing `math shift' on input line 458.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 457.
+(hyperref)                removing `\epsilon' on input line 458.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 458.
 
 File: pics/ilyas7.eps Graphic file (type eps)
-<pics/ilyas7.eps> [98]) [99] [100]
+<pics/ilyas7.eps> [98]) [99]
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\sections/conclusionsChapte
 r6.tex"
 Chapter 6.
-[101
+[100
 
 
 
-] [102] [103] [104]) [105]
-("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\Dissertation.bbl" [106
+] [101] [102] [103]) [104]
+("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\Dissertation.bbl" [105
 
 
 ]
-[107]
+[106]
 Underfull \hbox (badness 1406) in paragraph at lines 107--109
 []\OT1/cmr/m/n/12 T. Berners-Lee, R. Field-ing, and H. Frystyk, ``Hy-per-text T
 rans-fer Pro-to-col --
  []
 
-[108] [109]
+[107] [108]
 Underfull \hbox (badness 2478) in paragraph at lines 188--190
 []\OT1/cmr/m/n/12 U. Bhaskar and L. Fleis-cher, ``On-line mixed pack-ing and co
 v-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
  []
 
-[110] [111] [112] [113] [114] [115])
+[109] [110] [111] [112] [113] [114])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [116]
+ [115]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\Dissertation.aux"
@@ -647,7 +643,7 @@ r6.aux"))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 14838F3BB400D8ED2AB8673170DE433B;5622.
+(rerunfilecheck)             Checksum: A5D99979A8A031F726139E35BBDF72D9;5751.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -655,12 +651,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 7645 strings out of 493922
- 113502 string characters out of 3147287
- 237748 words of memory out of 3000000
- 10765 multiletter control sequences out of 15000+200000
+ 7647 strings out of 493922
+ 113534 string characters out of 3147287
+ 238123 words of memory out of 3000000
+ 10767 multiletter control sequences out of 15000+200000
  16505 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,26n,42p,2530b,817s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (129 pages, 487080 bytes).
+Output written on Dissertation.dvi (128 pages, 488500 bytes).
