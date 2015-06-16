@@ -170,3 +170,7 @@ Dissertation.dvi
 Dissertation.log
 *.lot
 Dissertation.out
+*.aux
+*.blg
+Dissertation.dvi
+*.log

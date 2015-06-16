@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.5.28)  7 JUN 2015 21:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.5.28)  15 JUN 2015 21:56
 entering extended mode
 **Dissertation.tex
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\Dissertation.tex"
@@ -603,20 +603,20 @@ Chapter 6.
 
 ]
 [105]
-Underfull \hbox (badness 1406) in paragraph at lines 107--109
+Underfull \hbox (badness 1406) in paragraph at lines 106--108
 []\OT1/cmr/m/n/12 T. Berners-Lee, R. Field-ing, and H. Frystyk, ``Hy-per-text T
 rans-fer Pro-to-col --
  []
 
 [106] [107]
-Underfull \hbox (badness 2478) in paragraph at lines 188--190
+Underfull \hbox (badness 2478) in paragraph at lines 187--189
 []\OT1/cmr/m/n/12 U. Bhaskar and L. Fleis-cher, ``On-line mixed pack-ing and co
 v-er-ing,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
  []
 
-[108] [109] [110] [111] [112] [113])
+[108] [109] [110] [111] [112])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [114]
+ [113]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\Dissertation.aux"
@@ -646,12 +646,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 7647 strings out of 493922
- 113534 string characters out of 3147287
- 238121 words of memory out of 3000000
- 10767 multiletter control sequences out of 15000+200000
+ 7646 strings out of 493922
+ 113503 string characters out of 3147287
+ 238069 words of memory out of 3000000
+ 10766 multiletter control sequences out of 15000+200000
  16505 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,26n,42p,2530b,817s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (127 pages, 488048 bytes).
+Output written on Dissertation.dvi (126 pages, 486056 bytes).
