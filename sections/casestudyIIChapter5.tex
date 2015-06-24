@@ -263,9 +263,9 @@ Invoking MDS on $G^{\prime}$ finds the minimum number of vertices in $V_1$ that 
 \label{subsec:heuristics} Even though the RED-BL problem for cellular networks is NP-Hard, for a 26 site dataset that we collected from a live cellular network, we were able to find the RED-BL optimal solution within a few seconds.
 However, for an entire cellular network, RED-BL becomes computationally infeasible.
 We propose two ways to handle this intractability. First, the entire network can be divided into several smaller regions and RED-BL can be applied to each region independently.
-Second, a heuristic solution to RED-BL, such as the one given in Algorithm~\ref{algo:heur1}, may be applied to the entire network.
+Second, a heuristic solution to RED-BL, such as the one given in Algorithm~\ref{algo:heur2}, may be applied to the entire network.
 
-The pseudo code for our proposed heuristic is given in Algorithm~\ref{algo:heur1}. In the first iteration of the outer loop (lines 1 through 29), our heuristic divides the set of BTSs into two sets.
+The pseudo code for our proposed heuristic is given in Algorithm~\ref{algo:heur2}. In the first iteration of the outer loop (lines 1 through 29), our heuristic divides the set of BTSs into two sets.
 Set $B_1$ consists of those BTSs that have traffic volume greater than $(r-\beta)\delta$. The set $B_2$ consists of all other BTSs.
 The heuristic algorithm picks a BTS from the set $B_1$ uniformly at random.
 It then attempts to move this BTS to set $B_2$ (lines 23--26) by handing off some calls to other BTSs in $B_2$ without exceeding the power-saving threshold\footnote{Note that if the traffic exceeds the power-saving threshold for one or more BTSs in the set $B_2$ after the calls are handed off, it would cause BTSs to move to set $B_1$, which is undesirable.} (lines 12--19).
@@ -316,7 +316,7 @@ Our heuristic is a O($rm^2n/\beta$) randomized algorithm, which is not guarantee
 		Deactivate $\beta$ TRXs on all BTSs $\in B_2$\;
 }
 \caption{Energy-saving heuristic}
-\label{algo:heur1}
+\label{algo:heur2}
 \end{algorithm}
 \DecMargin{1em}
 
