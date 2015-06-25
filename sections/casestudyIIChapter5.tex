@@ -1,7 +1,7 @@
 \chapter{Case Study II: Cellular Networks}
 \label{chap:casestudy2}
 \section{Prelude}
-Cellular networks consume several tens of TWhs (terawatt-hours) of electrical energy worldwide every year~\cite{Oh:Comm:2011}, exacerbating the rising ecological concerns. Beyond these concerns, the corresponding cost of electricity makes up a significant proportion of the overall operational cost of a cellular service provider.
+Cellular networks consume several tens of TWhs (terawatt-hours) of electrical energy worldwide every year~\cite{Oh:Comm:2011}, exacerbating rising ecological concerns. Beyond these concerns, the corresponding cost of electricity makes up a significant proportion of the overall operational cost of a cellular service provider.
 In European markets, for example, the electricity cost is
 estimated to be around 18\% of the operational costs~\cite{Blume:2010:BLTJ:CellularPower}.
 This fraction is even higher in developing regions due to the shortage of grid electricity and the use of small-scale generation powered by diesel fuel. Thus, cellular operators are keen on reducing the power consumption of their networks.
@@ -33,7 +33,7 @@ As a result, a BTS also lacks energy proportionality and consumes power at about
 If the instantaneous power consumed at a BTS can be made proportional to the instantaneous
 workload, savings in power consumption will ensue.
 For the provider data available to us, a fully energy proportional BTS subsystem of a cellular network would save between $44\%$$-$$52\%$ of electrical energy depending on the BTS model.
-Thus, there exists a potential to save electricity cost in a cellular network by reducing the energy consumption at low workloads.
+Thus, there exists potential to save electricity cost in a cellular network by reducing the energy consumption at low workloads.
 RED-BL exploits this potential in two ways: (i) \textbf{Resource pruning}: shutting down part of the radio circuitry, and (ii) \textbf{workload relocation}: rerouting calls from one BTS to a nearby BTS.
 
  
@@ -53,7 +53,7 @@ The novelty in our approach is that we couple BTS power savings with call hand-o
 energy savings possible through BTS power savings alone. While call hand-off is commonly used to
 reduce mobile station (MS) transmitted power, to the best of our knowledge, our work is the first to exploit call hand-offs for reducing BTS power consumption.
 
-Traffic traces collected from a large network operator indicates that if some calls are handed off between
+Traffic traces collected from a large network operator indicate that if some calls are handed off between
 neighboring BTSs, the number of BTSs that can be put in BTS power savings mode can be increased.
 Thus, RED-BL proposes to hand-off calls between neighboring BTSs, without making a negative
 impact on the network quality of service, such that the \textit{BTS power savings} can be applied to a
@@ -321,7 +321,7 @@ Our heuristic is a O($rm^2n/\beta$) randomized algorithm, which is not guarantee
 \DecMargin{1em}
 
 \section{Experimental setup}
-Our dataset is obtained from a cluster of 26 BTSs operated by a large network operator with more than 7000 sites. These 26 sites are spread over a $31.25$\,$km^2$ urban terrain. We obtained each site's coverage prediction using a tool called Forsk Atoll which is quite popular in the cellular network operators community. Using this BTS coverage prediction and a caller's location, we can determine the candidate set of BTSs for the corresponding call (the $c_i^j$ parameters). 
+Our dataset is obtained from a cluster of 26 BTSs operated by a large network operator with more than 7000 sites. These 26 sites are spread over a $31.25$\,$km^2$ urban terrain. We obtained each site's coverage prediction using a tool called Forsk Atoll~\cite{atoll} which is quite popular in the cellular network operators community. Using this BTS coverage prediction and a caller's location, we can determine the candidate set of BTSs for the corresponding call (the $c_i^j$ parameters). 
 
 Also available to us are the hourly cumulative traffic, in Erlang, for each of the sites, spanning two consecutive weekdays. The traffic remained remarkably similar across both days for each site. We have, therefore, only used one day's traffic data in our experiments.
 
@@ -344,17 +344,17 @@ If RED-BL is invoked very frequently, the network will remain in an optimal stat
 \subsection{Site characteristics}
 \label{subsec:sitetypes} All sites in our dataset had three sectors, each equipped with 6 TRXs. The maximum number of simultaneous calls for each site is 132~\footnote{Each TRX's frequency is shared in time-domain  by 8 calls for  a total of $3\times6\times8=144$ channels. Four channels in each sector were reserved for control and broadcast purposes, resulting in 132 channels available for voice calls. The half-rate codec feature of GSM standard can be used to handle greater traffic volume, but we do not consider it in the present work in favor of model simplicity.}. 
 
-The BTS power consumption model parameters may vary from one equipment to another. In this paper, we use three different sets of model parameters as listed in table~\ref{tab:models}. We now describe the sources and methods from which we obtained these models.
+The BTS power consumption model parameters may vary from one equipment to another. In this thesis, we use three different sets of model parameters as listed in table~\ref{tab:models}. We now describe the sources and methods from which we obtained these models.
 
 \subsubsection{Model 1}
 \label{subsubsec:model1}For the first model, we have used $1.5$\,kW as the maximum power consumption~\cite{mbakwe:btshybribpower:2011:necec}, a $20$\,W per TRX saving when scaling the BTS down~\cite{flexibsc} and a $5$\,\% variation in power consumption between no-load and full-load~\cite{Peng:2011:BTSSaving:Mobicom}.
 
 \subsubsection{Model 2}
-\label{subsubsec:model2} Lorincz et. al reported the single sector DC power consumption for a GSM 900 BTS~\cite{Lorincz:BTS-Measure:Sensors:2012}. The sector under consideration had 7 TRXs, as opposed to 6 TRXs in our case. To approximate the DC power consumption for a site with 3 sectors, each with 6 TRXs, we scaled the power consumption by a factor of $3\times6/7$. The DC power consumption does not include the AC power consumed in the power supply units and in air-conditioning. We must, therefore, also compensate for those, to obtain the overall site power consumption. Power supply unit load is negligible compared to air-conditioning (typical A/C power consumption of 1 kW~\cite{mbakwe:btshybribpower:2011:necec}). We applied this scaling and addition to the minimum reported DC power consumption for the GSM 900 site to obtain an approximate value of $P_{min}$ for a site comparable to ours. Similarly, we used the maximum reported DC power consumption and applied the scaling and AC load correction to approximate the value of $P_{max}$. Furthermore, the authors measured a drop of $50$\,W in power consumption when a TRX is disable, which gives us the value of $\gamma$ as listed in Table~\ref{tab:models}.
+\label{subsubsec:model2} Lorincz et al. reported the single sector DC power consumption for a GSM 900 BTS~\cite{Lorincz:BTS-Measure:Sensors:2012}. The sector under consideration had 7 TRXs, as opposed to 6 TRXs in our case. To approximate the DC power consumption for a site with 3 sectors, each with 6 TRXs, we scaled the power consumption by a factor of $3\times6/7$. The DC power consumption does not include the AC power consumed in the power supply units and in air-conditioning. We must, therefore, also compensate for those, to obtain the overall site power consumption. Power supply unit load is negligible compared to air-conditioning (typical A/C power consumption of 1 kW~\cite{mbakwe:btshybribpower:2011:necec}). We applied this scaling and addition to the minimum reported DC power consumption for the GSM 900 site to obtain an approximate value of $P_{min}$ for a site comparable to ours. Similarly, we used the maximum reported DC power consumption and applied the scaling and AC load correction to approximate the value of $P_{max}$. Furthermore, the authors measured a drop of $50$\,W in power consumption when a TRX is disabled, which gives us the value of $\gamma$ as listed in Table~\ref{tab:models}.
 
 
 \subsubsection{Model 3}
-\label{subsubsec:model3}We used the measurements for the GSM 1800 BTS reported in~\cite{Lorincz:BTS-Measure:Sensors:2012} to determine the values for for $P_{min}$ and $P_{max}$ in the same manner as described in section~\ref{subsubsec:model2}. The value of $\gamma$was reported to be $100$\,W~\cite{Lorincz:BTS-Measure:Sensors:2012}. The parameter values for this model are given in Table~\ref{tab:models}
+\label{subsubsec:model3}We used the measurements for the GSM 1800 BTS reported in~\cite{Lorincz:BTS-Measure:Sensors:2012} to determine the values for for $P_{min}$ and $P_{max}$ in the same manner as described in section~\ref{subsubsec:model2}. The value of $\gamma$ was reported to be $100$\,W~\cite{Lorincz:BTS-Measure:Sensors:2012}. The parameter values for this model are given in Table~\ref{tab:models}
 
 \begin{table}
 \centering
