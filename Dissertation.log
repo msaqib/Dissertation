@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.5.28)  8 NOV 2015 02:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.5.28)  8 NOV 2015 03:22
 entering extended mode
 **Dissertation.tex
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\Dissertation.tex"
@@ -507,27 +507,27 @@ Overfull \hbox (37.09555pt too wide) in paragraph at lines 142--163
  []
 
 [49] [50] [51] [52]
-Overfull \hbox (17.62482pt too wide) detected at line 260
+Overfull \hbox (17.62482pt too wide) detected at line 255
 [][] 
  []
 
-[53] [54] [55] [56]
+[53] [54] [55]
 File: pics/workloadr.eps Graphic file (type eps)
  <pics/workloadr.eps>
 File: pics/workloadhist-new.eps Graphic file (type eps)
  <pics/workloadhist-new.eps>
-Overfull \hbox (19.44852pt too wide) in paragraph at lines 300--313
+Overfull \hbox (19.44852pt too wide) in paragraph at lines 295--308
 [][]   [] 
  []
 
-[57] [58] [59] [60]
+[56] [57] [58]
 File: pics/s1vseqr.eps Graphic file (type eps)
- <pics/s1vseqr.eps> [61] [62]
+ <pics/s1vseqr.eps> [59] [60] [61]
 File: pics/s3r.eps Graphic file (type eps)
- <pics/s3r.eps> [63] [64]
+ <pics/s3r.eps> [62] [63]
 File: pics/s6.eps Graphic file (type eps)
 
-<pics/s6.eps> [65] [66] [67]
+<pics/s6.eps> [64] [65] [66]
 File: pics/flowchart3.eps Graphic file (type eps)
  <pics/flowchart3.eps>
 File: pics/workload-pred-error-mean.eps Graphic file (type eps)
@@ -537,17 +537,17 @@ File: pics/traj-corr2.eps Graphic file (type eps)
  <pics/traj-corr2.eps>
 File: pics/workload-pred-error-2.eps Graphic file (type eps)
 
-<pics/workload-pred-error-2.eps> [68] [69] [70]
+<pics/workload-pred-error-2.eps> [67] [68] [69]
 File: pics/sw-cost-error-2.eps Graphic file (type eps)
  <pics/sw-cost-error-2.eps>
-[71]
+[70]
 File: pics/fvar-0.01bs.eps Graphic file (type eps)
  <pics/fvar-0.01bs.eps>
 File: pics/fvar-0.65bs.eps Graphic file (type eps)
- <pics/fvar-0.65bs.eps> [72] [73]
+ <pics/fvar-0.65bs.eps> [71] [72]
 File: pics/rb-heur1error.eps Graphic file (type eps)
 
-<pics/rb-heur1error.eps> [74]) [75]
+<pics/rb-heur1error.eps> [73] [74]) [75]
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\sections/casestudyIIChapte
 r5.tex"
 Chapter 5.
@@ -649,4 +649,4 @@ Here is how much of TeX's memory you used:
  841 hyphenation exceptions out of 8191
  44i,26n,42p,2530b,817s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (129 pages, 499328 bytes).
+Output written on Dissertation.dvi (129 pages, 498648 bytes).
