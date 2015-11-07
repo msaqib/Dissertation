@@ -1,13 +1,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces A comparison of data center and cellular networks}}{27}{table.2.1}
+\contentsline {table}{\numberline {2.1}{\ignorespaces A comparison of data center and cellular networks}}{29}{table.2.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Data center network model parameters}}{47}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces A comparison of the data center workload distribution algorithms studied in this thesis}}{58}{table.4.2}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Data center network model parameters}}{49}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces A comparison of the data center workload distribution algorithms studied in this thesis}}{60}{table.4.2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces A comparison of schemes for BTS power savings}}{79}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces BTS model parameter values}}{92}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Energy savings by using BTS power savings only}}{93}{table.5.3}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Percentage electricity savings for different granularity of resource pruning}}{96}{table.5.4}
+\contentsline {table}{\numberline {5.1}{\ignorespaces A comparison of schemes for BTS power savings}}{81}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces BTS model parameter values}}{94}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Energy savings by using BTS power savings only}}{95}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Percentage electricity savings for different granularity of resource pruning}}{98}{table.5.4}
 \addvspace {10\p@ }

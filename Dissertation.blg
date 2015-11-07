@@ -15,6 +15,9 @@ Warning--empty journal in FBLease
 Warning--can't use both volume and number fields in costCloud
 Warning--empty journal in TIAnnualReport
 Warning--empty journal in VirtualizationCutsPower
+Warning--empty journal in schurman:latencycost:2009:velocity
+Warning--empty journal in dixon:latencycost:2009:velocity
+Warning--empty journal in artz:latencycost:2009:velocity
 Warning--empty year in Herodotou:2011:NOS:2038916.2038934
 Warning--empty year in Oh:Globecom:2010
-(There were 8 warnings)
+(There were 11 warnings)

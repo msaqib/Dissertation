@@ -19,6 +19,11 @@ A.~Greenberg, J.~Hamilton, D.~A. Maltz, and P.~Patel, ``The cost of a cloud:
   Research problems in data center networks,'' in {\em Computer Communications
   Review}, vol.~39, January 2009.
 
+\bibitem{Blume:2010:BLTJ:CellularPower}
+O.~Blume, ``Energy savings in mobile networks based on adaptation to traffic
+  statistics,'' {\em Bell Labs Technical Journal}, vol.~15, pp.~77--94,
+  September 2010.
+
 \bibitem{mbakwe:btshybribpower:2011:necec}
 S.~Mbakwe, M.~T. Iqbal, and A.~Hsaio, ``{Design of a 1.5kW Hybrid
   Wind/Photovoltiac Power System for a Telecoms Base Station in Remote Location
@@ -47,6 +52,11 @@ C.~Fraleigh, S.~Moon, B.~Lyles, C.~Cotton, M.~Khan, D.~Moll, R.~Rockell,
 \bibitem{10.1109/MC.2007.443}
 L.~A. Barroso and U.~Holzle, ``The case for energy-proportional computing,''
   {\em Computer}, vol.~40, pp.~33--37, 2007.
+
+\bibitem{Armbrust:2010:VCC:1721654.1721672}
+M.~Armbrust, A.~Fox, R.~Griffith, A.~D. Joseph, R.~Katz, A.~Konwinski, G.~Lee,
+  D.~Patterson, A.~Rabkin, I.~Stoica, and M.~Zaharia, ``A view of cloud
+  computing,'' {\em Commun. ACM}, vol.~53, pp.~50--58, Apr. 2010.
 
 \bibitem{VirtualizationCutsPower}
 V.~Inc, ``{Reduce Energy Costs and Go Green With VMWare Green IT Solutions},''
@@ -79,6 +89,57 @@ M.~Lin, A.~Wierman, L.~L.~H. Andrew, and E.~Thereska, ``Dynamic right-sizing
 A.~Qureshi, ``{Plugging Into Energy Market Diversity},'' in {\em 7th ACM
   Workshop on Hot Topics in Networks (HotNets)}, (Calgary, Canada), October
   2008.
+
+\bibitem{Li:Optimal:TSG:2012}
+J.~Li, Z.~Li, K.~Ren, and X.~Liu, ``Towards optimal electric demand management
+  for internet data centers,'' {\em IEEE Trans. Smart Grid}, vol.~3, no.~1,
+  pp.~183--192, 2012.
+
+\bibitem{LinInfocom11}
+M.~Lin, A.~Wierman, L.~Andrew, and E.~Thereska, ``Dynamic right-sizing for
+  power-proportional data centers,'' in {\em INFOCOM, 2011 Proceedings IEEE},
+  pp.~1098 --1106, april 2011.
+
+\bibitem{serverEnergy}
+Y.~Chen, A.~Das, W.~Qin, A.~Sivasubramaniam, Q.~Wang, and N.~Gautam, ``Managing
+  server energy and operational costs in hosting centers,'' in {\em ACM
+  SIGMETRICS}, pp.~303--314, 2005.
+
+\bibitem{Mazzucco2012415}
+M.~Mazzucco and D.~Dyachuk, ``Balancing electricity bill and performance in
+  server farms with setup costs,'' {\em Future Generation Computer Systems},
+  vol.~28, no.~2, pp.~415 -- 426, 2012.
+
+\bibitem{rao2010}
+L.~Rao, X.~Liu, L.~Xie, and W.~Liu, ``{Minimizing Electricity Cost:
+  Optimization of Distributed Internet Data Centers in a
+  Multi-Electricity-Market Environment},'' in {\em IEEE Conference on Computer
+  Communications 2010 (INFOCOM'2010)}, (San Diego, USA), March 2010.
+
+\bibitem{qureshi2009cutting}
+A.~Qureshi, R.~Weber, H.~Balakrishnan, J.~Guttag, and B.~Maggs, ``{Cutting the
+  Electric Bill for Internet-Scale Systems},'' in {\em ACM SIGCOMM},
+  (Barcelona, Spain), August 2009.
+
+\bibitem{kubernetes}
+``{Kubernetes: Manage a cluster of Linux containers as a single system to
+  accelerate Dev and simplify Ops}.''
+\newblock http://kubernetes.io.
+
+\bibitem{docker}
+``{Docker: An open platform for distributed applications for developers and
+  sysadmins}.''
+\newblock http://www.docker.com.
+
+\bibitem{schurman:latencycost:2009:velocity}
+E.~Schurman and J.~Brutlag, ``{The User and Business Impact of Server Delays,
+  Additional Bytes, and HTTP Chunking in Web Search},'' June 2009.
+
+\bibitem{dixon:latencycost:2009:velocity}
+P.~Dixon, ``{Shopzilla's site redo - you get what you measure},'' June 2009.
+
+\bibitem{artz:latencycost:2009:velocity}
+D.~Artz, ``{The secret weapons of the AOL optimization team},'' June 2009.
 
 \bibitem{dcnetworking:vahdat:micro:2010}
 A.~Vahdat, M.~Al-Fares, N.~Farrington, R.~Mysore, G.~Porter, and
@@ -138,37 +199,6 @@ K.~G. Brill, ``The invisible crisis in the data center: The economic meltdown
 \bibitem{Belady_EC_2007}
 C.~L. Belady, ``In the data center, power and cooling costs more than the it
   equipment it supports,'' {\em Electronics Cooling}, vol.~23, Jan. 2007.
-
-\bibitem{qureshi2009cutting}
-A.~Qureshi, R.~Weber, H.~Balakrishnan, J.~Guttag, and B.~Maggs, ``{Cutting the
-  Electric Bill for Internet-Scale Systems},'' in {\em ACM SIGCOMM},
-  (Barcelona, Spain), August 2009.
-
-\bibitem{Li:Optimal:TSG:2012}
-J.~Li, Z.~Li, K.~Ren, and X.~Liu, ``Towards optimal electric demand management
-  for internet data centers,'' {\em IEEE Trans. Smart Grid}, vol.~3, no.~1,
-  pp.~183--192, 2012.
-
-\bibitem{LinInfocom11}
-M.~Lin, A.~Wierman, L.~Andrew, and E.~Thereska, ``Dynamic right-sizing for
-  power-proportional data centers,'' in {\em INFOCOM, 2011 Proceedings IEEE},
-  pp.~1098 --1106, april 2011.
-
-\bibitem{serverEnergy}
-Y.~Chen, A.~Das, W.~Qin, A.~Sivasubramaniam, Q.~Wang, and N.~Gautam, ``Managing
-  server energy and operational costs in hosting centers,'' in {\em ACM
-  SIGMETRICS}, pp.~303--314, 2005.
-
-\bibitem{Mazzucco2012415}
-M.~Mazzucco and D.~Dyachuk, ``Balancing electricity bill and performance in
-  server farms with setup costs,'' {\em Future Generation Computer Systems},
-  vol.~28, no.~2, pp.~415 -- 426, 2012.
-
-\bibitem{rao2010}
-L.~Rao, X.~Liu, L.~Xie, and W.~Liu, ``{Minimizing Electricity Cost:
-  Optimization of Distributed Internet Data Centers in a
-  Multi-Electricity-Market Environment},'' in {\em IEEE Conference on Computer
-  Communications 2010 (INFOCOM'2010)}, (San Diego, USA), March 2010.
 
 \bibitem{Kayaaslan:2011:EQP:2009916.2010047}
 E.~Kayaaslan, B.~B. Cambazoglu, R.~Blanco, F.~P. Junqueira, and C.~Aykanat,
@@ -281,8 +311,8 @@ F.~Javed and N.~Arshad, ``{AdOpt: An Adaptive Optimization Framework for
   2009.
 
 \bibitem{Marsan:2010:SAM:1791314.1791340}
-M.~A. Marsan, L.~Chiaraviglio, D.~Ciullo, and M.~Meo, ``A simple analytical
-  model for the energy-efficient activation of access points in dense wlans,''
+M.~A. Marsan, L.~Chiaraviglio, D.~Ciullo, and M.~Meo, ``{A simple analytical
+  model for the energy-efficient activation of access points in dense WLANs},''
   in {\em Proceedings of the 1st International Conference on Energy-Efficient
   Computing and Networking}, e-Energy '10, pp.~159--168, 2010.
 
@@ -347,11 +377,6 @@ W.~H. Kwon and S.~H. Han, {\em Receding Horizon Control}.
 G.~Box, G.~M.~J. ~, and G.~C. Reinsel, {\em Time Series Analysis: Forecasting
   and Control}.
 \newblock Prentice-Hall, 1994.
-
-\bibitem{Blume:2010:BLTJ:CellularPower}
-O.~Blume, ``Energy savings in mobile networks based on adaptation to traffic
-  statistics,'' {\em Bell Labs Technical Journal}, vol.~15, pp.~77--94,
-  September 2010.
 
 \bibitem{Oh:TWC:2013}
 E.~Oh, K.~Son, and B.~Krishnamachari, ``Dynamic base station switching-on/off
