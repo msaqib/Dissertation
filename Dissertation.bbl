@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{CostOfADC}
 J.~Verge, ``{Google Pumps \$400 Million More into Iowa, Investment Now Tops
@@ -415,6 +415,58 @@ M.~Ilyas, G.~Baig, M.~Qureshi, Q.~Nadeem, A.~Raza, M.~Qazi, and B.~Rassool,
 \bibitem{flexibsc}
 {Nokia Siemens Networks}, ``{Flexi BSC (BSC14)}.'' \url{http://bit.ly/QMD8O5},
   June 2011.
+
+\bibitem{hasan:2011:green}
+Z.~Hasan, H.~Boostanimehr, and V.~K. Bhargava, ``Green cellular networks: A
+  survey, some research issues and challenges,'' {\em Communications Surveys \&
+  Tutorials, IEEE}, vol.~13, no.~4, pp.~524--540, 2011.
+
+\bibitem{ertl:2002:analysis}
+H.~Ertl, J.~W. Kolar, and F.~C. Zach, ``Analysis of a multilevel multicell
+  switch-mode power amplifier employing the" flying-battery" concept,'' {\em
+  Industrial Electronics, IEEE Transactions on}, vol.~49, no.~4, pp.~816--823,
+  2002.
+
+\bibitem{mccune:2005:high}
+E.~McCune, ``High-efficiency, multi-mode, multi-band terminal power
+  amplifiers,'' {\em Microwave Magazine, IEEE}, vol.~6, no.~1, pp.~44--55,
+  2005.
+
+\bibitem{yoo:2001:common}
+C.~Yoo and Q.~Huang, ``A common-gate switched 0.9-w class-e power amplifier
+  with 41\% pae in 0.25-$\mu$m cmos,'' {\em Solid-State Circuits, IEEE Journal
+  of}, vol.~36, no.~5, pp.~823--830, 2001.
+
+\bibitem{grebennikov:2012:switchmode}
+A.~Grebennikov, N.~O. Sokal, and M.~J. Franco, {\em Switchmode RF and microwave
+  power amplifiers}.
+\newblock Academic Press, 2012.
+
+\bibitem{amanna:2010:green}
+A.~Amanna, ``Green communications: Annotated review and research vision,'' {\em
+  Virginia Tech}, p.~87, 2010.
+
+\bibitem{claussen:2008:effects}
+H.~Claussen, L.~T. Ho, and F.~Pivit, ``Effects of joint macrocell and
+  residential picocell deployment on the network energy efficiency,'' in {\em
+  Personal, Indoor and Mobile Radio Communications, 2008. PIMRC 2008. IEEE 19th
+  International Symposium on}, pp.~1--6, IEEE, 2008.
+
+\bibitem{marsan:2011:energy}
+M.~A. Marsan and M.~Meo, ``Energy efficient wireless internet access with
+  cooperative cellular networks,'' {\em Computer Networks}, vol.~55, no.~2,
+  pp.~386--398, 2011.
+
+\bibitem{samdanis:2010:self}
+K.~Samdanis, D.~Kutscher, and M.~Brunner, ``Self-organized energy efficient
+  cellular networks,'' in {\em Personal Indoor and Mobile Radio Communications
+  (PIMRC), 2010 IEEE 21st International Symposium on}, pp.~1665--1670, IEEE,
+  2010.
+
+\bibitem{samdanis:2010:dynamic}
+K.~Samdanis, D.~Kutscher, and M.~Brunner, ``Dynamic energy-aware network
+  re-configuration for cellular urban infrastructures,'' in {\em GLOBECOM
+  Workshops (GC Wkshps), 2010 IEEE}, pp.~1448--1452, IEEE, 2010.
 
 \bibitem{Jeyarani:2012:DIA:2148243.2148374}
 R.~Jeyarani, N.~Nagaveni, and R.~Vasanth~Ram, ``{Design and implementation of
