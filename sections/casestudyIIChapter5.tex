@@ -1,6 +1,7 @@
 \chapter{Case Study II: Cellular Networks}
 \label{chap:casestudy2}
 \section{Prelude}
+
 Cellular networks consume several tens of TWhs (terawatt-hours) of electrical energy worldwide every year~\cite{Oh:Comm:2011}, exacerbating rising ecological concerns. Beyond these concerns, the corresponding cost of electricity makes up a significant proportion of the overall operational cost of a cellular service provider.
 In European markets, for example, the electricity cost is
 estimated to be around 18\% of the operational costs~\cite{Blume:2010:BLTJ:CellularPower}.
@@ -19,7 +20,7 @@ Figure~\ref{fig:workload-variation} shows the normalized load of consumer traffi
 Observe that while the traffic load peaks for a short period of time, it mostly stays at a fraction of its peak\footnote{Operational cellular networks have been widely observed to exhibit traffic load variations both over time and space \cite{Peng:2011:BTSSaving:Mobicom}.}.
 
 However, the radio circuitry at BTSs is provisioned in accordance with the peak load.
-This radio circuitry lacks energy proportionality i.e., its power consumption does not scale in proportion to the traffic load.
+This radio circuitry lacks energy proportionality, i.e., its power consumption does not scale in proportion to the traffic load.
 As a result, a BTS also lacks energy proportionality and consumes power at about the same level as it would at the peak load~\cite{Peng:2011:BTSSaving:Mobicom}. This leads to wasted energy, which RED-BL aims to reduce---by varying the power consumption at a BTS in accordance with its traffic load.
 
 \begin{figure}[t]
@@ -48,10 +49,6 @@ Most vendors' BTSs support such a feature, which we term as \textit{BTS power sa
 Our conversations with cellular operators reveal that they regularly use this feature. RED-BL also makes use
 of this feature.
 \end{itemize}
-
-The novelty in our approach is that we couple BTS power savings with call hand-offs to increase the
-energy savings possible through BTS power savings alone. While call hand-off is commonly used to
-reduce mobile station (MS) transmitted power, to the best of our knowledge, our work is the first to exploit call hand-offs for reducing BTS power consumption.
 
 Traffic traces collected from a large network operator indicate that if some calls are handed off between
 neighboring BTSs, the number of BTSs that can be put in BTS power savings mode can be increased.
@@ -123,7 +120,7 @@ RED-BL achieves greater energy savings by jointly using call hand-off and BTS po
 \section{Related work}
 \label{sec:related}
 
-The power consumption of a BTS depends on a number of factors. A BTS's power consumption increases with the number of TRXs. The frequency band, modulation scheme and operating conditions also influence a BTS's power consumption~\cite{hasan:2011:green}. Accordingly, the BTS energy efficiency improvement has been approached from various angles.
+The power consumption of a BTS depends on a number of factors. A BTS's power consumption increases with the number of TRXs. The frequency band, modulation scheme and operating conditions also influence a BTS's power consumption~\cite{hasan:2011:green}. Accordingly, various researchers have attacked the BTS energy efficiency improvement problem from various angles.
 
 For a given traffic load, the power consumption of a BTS may be reduced by using more energy efficient designs for the components such as TRXs. One such technique is to use switch mode power amplifiers instead of linear analogue power amplifiers~\cite{ertl:2002:analysis,mccune:2005:high,yoo:2001:common,grebennikov:2012:switchmode} or other architectural improvements~\cite{amanna:2010:green,claussen:2008:effects}. In~\cite{claussen:2008:effects}, the authors showed that the energy efficiency of macro-cell based deployments deteriorates with increasing demand for higher data rate services and proposed that a hybrid deployment of residential pico cells and macro-cells be used instead. They showed that this can result in a 60\% reduction in energy consumption. In contrast to~\cite{claussen:2008:effects}, our focus is on making incremental changes to a deployed network that is based predominantly on macro-cells to reduce the energy consumption.
  
@@ -137,6 +134,8 @@ Coarse estimates of the energy saving potential of TRX deactivation were present
 in~\cite{Blume:2010:BLTJ:CellularPower}.
 In contrast, we use site locations and real traffic traces from a large cellular network with more than 13 million subscribers to run a simulation study assessing the benefits of dynamic equipment scaling coupled
 with call hand-offs. Note that BTS power saving represents RP in the RED-BL framework whereas call handoff represents WR.
+
+Some prior work that has used call hand-off to optimize power consumption include~\cite{Dufkova:2010:EW,zhou:2009:mobicom,yang:2013:TVT}. In~\cite{Dufkova:2010:EW}, the authors determined the optimal association between mobile stations and base station in an LTE network to minimize BTS power consumption while considering only data traffic. In Pakistan, and many developing countries, voice traffic is still quite dominant in cellular networks. Data traffic and text messages are considered low-priority traffic. Hence, in our context, considering data traffic to minimize power consumption is not useful. In~\cite{zhou:2009:mobicom}, the authors used relay stations to hand off calls to other BTSs in order to minimize power consumption. The use of relay stations within cellular networks in developing countries is rare, hence we do not consider their use in this work. 
 
 There exists a large body of work on solutions to constrained resource optimization problem, like the one we formulate for RED-BL. For example, such problems have been addressed in the context of data centers~\cite{Jeyarani:2012:DIA:2148243.2148374,serverEnergy,Mazzucco:Maximizing:2011:CoRR,Oh:2011:ECS:2170444.2170458,Chase:2001:MES:502059.502045}, scheduling in compute clusters~\cite{AlDaoud2012745}, System on Chip (SOC)~\cite{Fang:2011:COP:1995896.1995940}, electric power systems and smart grids~\cite{Javed:2008:ULP:1485753.1485792,Logenthiran2011138,Celli:2001:PICA,FahadJavedAdOpt.SASO.2009.26}, WiFi access points~\cite{Marsan:2010:SAM:1791314.1791340}, wide area networks~\cite{Cavdar:2011:ECOC} and high performance computing~\cite{Lee:ServerConsolidation:2011:Globecom,Pinheiro01loadbalancing,Yao:DCPowerReduction:2012:INFOCOM,Herodotou:Starfish:2011:CIDR,Herodotou:2011:NOS:2038916.2038934,Aikema:ElecCostHPC:2011:ISSST}.
 
@@ -474,6 +473,94 @@ We carried out experiments to assess the impact of the value of $\epsilon$ on th
 \label{fig:case2:results6}
 \end{figure}
 
+\subsection{Increase in call blocking probability}
+\label{subsec:callblock} A measure of a cellular network's grade of service (GoS) is the call blocking probability ($P_b$), given by the Erlang B formula~\cite{rappaport}. The Erlang B formula is:
+
+$P_b = \frac{\frac{E^C}{C!}}{\sum_{k=0}^C\frac{E^k}{k!}}$
+
+Here, $E$ is the traffic intensity in Erlang and $C$ is the number of identical resources that are available to serve the traffic. According to this formula, if the offered traffic remains the same, but some serving resources, i.e., TRXs are turned off, the call blocking probability may increase. This makes intuitive sense because given a fixed call load, a new arriving call is more likely to find all TRXs busy if the number of active TRXs is reduced.
+
+We calculated the increase in call blocking probability, averaged over all BTSs and over the day, due to periodic optimization of the network's resources, compared to the default assignment of calls with no TRX deactivation. It turned out that more frequent re-optimization resulted in a greater increase in call blocking probability.  
+
+The increase in call blocking probability with the amount of energy savings (kWh) is plotted in Figure~\ref{fig:results25} for all three BTS models. Similarly, the increase in call blocking probability as a function of percentage energy savings is plotted in Figure~\ref{fig:results26} for all three BTS models. For all the plots, the actual data points are plotted using the plus symbols, the linear fit and quadratic fit based on least squared errors are plotted using the solid black line and the dashed black line respectively. The linear and quadratic polynomials polynomials that best fit the increase in call blocking probability as a function of amount and percentage of daily energy savings are given in Tables~\ref{tab:blockpoly1} and~\ref{tab:blockpoly2}, respectively.
+
+In all cases, a linear polynomial based on least squared error minimization fits the data quite well. However, the connotation in the low-savings region are unreasonable. As an example, for model 1 BTS, as shown in Figure~\ref{fig:results7.1}, the linear polynomial fit implies a reduction in call blocking probability when saving around 40 kWh compared to the default network operation. This does not make sense because turning off some TRXs to save power should result in an increase in call blocking probability. A quadratic fit to the data, however, is reasonable in all cases.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+BTS Model & Increase in call blocking probability as a function of \\
+\ & amount of daily energy savings (kWh)\\
+\hline Model 1 & Linear fit: $0.006888 x - 0.2816$\\
+\ & Quadratic fit: $0.0001178 x^2 - 0.006524 x + 0.08914$\\
+\hline Model 2 & Linear fit: $0.002262x - 0.2286$\\
+\ & Quadratic fit: $0.00001297 x^2 - 0.001623 x + 0.05131$\\ 
+\hline Model 3 & Linear fit: $0.001352x - 0.2766$ \\
+\ & Quadratic fit: $0.000004627 x^2 - 0.001295 x + 0.09101$\\
+\hline
+\end{tabular}
+\vspace{+0.1in}
+\caption{Polynomial fits of increase in call blocking probability to amount of daily energy savings}
+\label{tab:blockpoly1}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+BTS Model & Increase in call blocking probability as a function of \\
+\ & percentage of daily energy savings\\
+\hline Model 1 & Linear fit: $0.06368 x - 0.2835$\\
+\ & Quadratic fit: $0.008113 x^2 -0.03747 x + 0.02244$\\
+\hline Model 2 & Linear fit: $0.0457x - 0.2285$\\
+\ & Quadratic fit: $0.005285x^2 -0.03266 x + 0.05084$\\ 
+\hline Model 3 & Linear fit: $0.02276x - 0.2766$\\
+\ & Quadratic fit: $0.001315 x^2 -0.02193 x +0.09201$ \\
+\hline
+\end{tabular}
+\vspace{+0.1in}
+\caption{Polynomial fits of increase in call blocking probability to percentage of daily energy savings}
+\label{tab:blockpoly2}
+\end{table}
+
+
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.8\textwidth]{pics/1.SavingvsBlockingProbIncrease.eps}
+\label{fig:results7.1}
+}
+\subfigure[]{
+\includegraphics[width=0.8\textwidth]{pics/2.SavingvsBlockingProbIncrease.eps}
+\label{fig:results7.2}
+}
+\subfigure[]{
+\includegraphics[width=0.8\textwidth]{pics/3.SavingvsBlockingProbIncrease.eps}
+\label{fig:results7.3}
+}
+\caption{Increase in call blocking probability, averaged over all BTSs versus the amount of daily energy savings in kWh for (a) BTS model 1 (b) BTS model 2 and (c) BTS model 3}
+\label{fig:results25}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.8\textwidth]{pics/1.percSavingvsBlockingProbIncrease.eps}
+\label{fig:results7.4}
+}
+\subfigure[]{
+\includegraphics[width=0.8\textwidth]{pics/2.percSavingvsBlockingProbIncrease.eps}
+\label{fig:results7.5}
+}
+\subfigure[]{
+\includegraphics[width=0.8\textwidth]{pics/3.percSavingvsBlockingProbIncrease.eps}
+\label{fig:results7.6}
+}
+\caption{Increase in call blocking probability, averaged over all BTSs versus the percentage reduction in energy consumption for (a) BTS model 1 (b) BTS model 2 and (c) BTS model 3}
+\label{fig:results26}
+\end{figure}
+
 \section{Summary}
 \label{sec:discuss:case2} In this chapter, we have seen an application of RED-BL to cellular networks. The nature of cellular networks is different compared to geo-diverse data centers (considered in the previous chapter) in the following ways:
 
@@ -482,4 +569,4 @@ We carried out experiments to assess the impact of the value of $\epsilon$ on th
 \item There is no geo-diversity in electricity prices
 \end{itemize}
 
-For resource pruning and workload relocation, we utilized two features built in to currently deployed equipment in the form of BTS power savings and network-controlled call hand-off, respectively. Our simulation results show that jointly using workload relocation and resource pruning can bring in considerably higher gains in electricity savings compared to using resource pruning alone. Our results show the promising potential that RED-BL holds in greening current generation cellular networks.
+For resource pruning and workload relocation, we utilized two features built in to currently deployed equipment in the form of BTS power savings and network-controlled call hand-off, respectively. Our simulation results show that jointly using workload relocation and resource pruning can bring in considerably higher gains in electricity savings compared to using resource pruning alone. Our results show the promising potential that RED-BL holds in greening current generation cellular networks. However, dynamic deactivation of TRXs results in an increase in call blocking probability. We find that the increase in call blocking probability may be predicted from the amount or percentage of daily energy savings using a quadratic polynomial. An operator can pick the maximum amount of targeted energy savings based on their grade of service budget. This can, in turn, be used to decide how frequently traffic and TRX re-optimization should be performed.

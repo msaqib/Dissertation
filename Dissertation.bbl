@@ -468,6 +468,22 @@ K.~Samdanis, D.~Kutscher, and M.~Brunner, ``Dynamic energy-aware network
   re-configuration for cellular urban infrastructures,'' in {\em GLOBECOM
   Workshops (GC Wkshps), 2010 IEEE}, pp.~1448--1452, IEEE, 2010.
 
+\bibitem{Dufkova:2010:EW}
+K.~Dufkova?, M.~Bjelica, B.~Moon, L.~Kencl, and J.-Y. Le~Boudec, ``Energy
+  savings for cellular network with evaluation of impact on data traffic
+  performance,'' in {\em Wireless Conference (EW), 2010 European},
+  pp.~916--923, April 2010.
+
+\bibitem{zhou:2009:mobicom}
+S.~Zhou, J.~Gong, Z.~Yang, Z.~Niu, and P.~Yang, ``Green mobile access network
+  with dynamic base station energy saving,'' in {\em ACM MobiCom}, vol.~9,
+  pp.~10--12, 2009.
+
+\bibitem{yang:2013:TVT}
+Z.~Yang and Z.~Niu, ``Energy saving in cellular networks by dynamic rs--bs
+  association and bs switching,'' {\em Vehicular Technology, IEEE Transactions
+  on}, vol.~62, no.~9, pp.~4602--4614, 2013.
+
 \bibitem{Jeyarani:2012:DIA:2148243.2148374}
 R.~Jeyarani, N.~Nagaveni, and R.~Vasanth~Ram, ``{Design and implementation of
   adaptive power-aware virtual machine provisioner (APA-VMP) using swarm
@@ -506,5 +522,10 @@ Mobilink, ``{Mobilink Network}.'' \url{http://bit.ly/UWXYzB}, September 2012.
 \bibitem{telenorsitecount}
 Wikipedia, ``{Telenor Pakistan - Wikipedia}.'' \url{http://bit.ly/R1Uyqm},
   September 2012.
+
+\bibitem{rappaport}
+T.~S. Rappaport, {\em Wireless Communications - Principles and practice},
+  ch.~The cellular concept - System design fundamentals.
+\newblock Pearson Education, 2002.
 
 \end{thebibliography}

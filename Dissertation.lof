@@ -34,4 +34,12 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{97}{figure.5.6}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Empirical CDF of the difference between the cost offered by our heuristic compared to the optimal}}{99}{figure.5.7}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces The percentage energy savings for all three BTS models considered vs the value of $\epsilon $, with a six minute inter-optimization interval}}{101}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Increase in call blocking probability, averaged over all BTSs versus the amount of daily energy savings in kWh for (a) BTS model 1 (b) BTS model 2 and (c) BTS model 3}}{103}{figure.5.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{103}{figure.5.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{103}{figure.5.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{103}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Increase in call blocking probability, averaged over all BTSs versus the percentage reduction in energy consumption for (a) BTS model 1 (b) BTS model 2 and (c) BTS model 3}}{104}{figure.5.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{104}{figure.5.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{104}{figure.5.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{104}{figure.5.10}
 \addvspace {10\p@ }
