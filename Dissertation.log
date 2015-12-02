@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.5.28)  2 DEC 2015 16:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.5.28)  2 DEC 2015 23:07
 entering extended mode
 **Dissertation.tex
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\Dissertation.tex"
@@ -467,7 +467,7 @@ File: pics/waridworkload.eps Graphic file (type eps)
  <pics/waridworkload.eps> [6] [7]
 File: pics/electricitypricediversity.eps Graphic file (type eps)
 
-<pics/electricitypricediversity.eps> [8] [9] [10] [11]) [12] [13]
+<pics/electricitypricediversity.eps> [8] [9] [10] [11] [12]) [13]
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\sections/backgroundChapter
 2.tex"
 Chapter 2.
@@ -529,7 +529,7 @@ File: pics/s3r.eps Graphic file (type eps)
  <pics/s3r.eps> [62] [63]
 File: pics/s6.eps Graphic file (type eps)
 
-<pics/s6.eps> [64] [65] [66]
+<pics/s6.eps> [64] [65] [66] [67]
 File: pics/flowchart3.eps Graphic file (type eps)
  <pics/flowchart3.eps>
 File: pics/workload-pred-error-mean.eps Graphic file (type eps)
@@ -539,14 +539,14 @@ File: pics/traj-corr2.eps Graphic file (type eps)
  <pics/traj-corr2.eps>
 File: pics/workload-pred-error-2.eps Graphic file (type eps)
 
-<pics/workload-pred-error-2.eps> [67] [68] [69]
+<pics/workload-pred-error-2.eps> [68] [69] [70]
 File: pics/sw-cost-error-2.eps Graphic file (type eps)
  <pics/sw-cost-error-2.eps>
-[70]
+[71]
 File: pics/fvar-0.01bs.eps Graphic file (type eps)
  <pics/fvar-0.01bs.eps>
 File: pics/fvar-0.65bs.eps Graphic file (type eps)
- <pics/fvar-0.65bs.eps> [71] [72]
+ <pics/fvar-0.65bs.eps> [72]
 File: pics/rb-heur1error.eps Graphic file (type eps)
 
 <pics/rb-heur1error.eps> [73] [74]) [75]
@@ -579,18 +579,19 @@ File: pics/ilyas6.eps Graphic file (type eps)
  <pics/ilyas6.eps> [99]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 463.
+(hyperref)                removing `math shift' on input line 458.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 463.
+(hyperref)                removing `\epsilon' on input line 458.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 463.
+(hyperref)                removing `math shift' on input line 458.
 
+[100]
 File: pics/ilyas7.eps Graphic file (type eps)
-<pics/ilyas7.eps> [100] [101]
+ <pics/ilyas7.eps> [101]
 File: pics/1.SavingvsBlockingProbIncrease.eps Graphic file (type eps)
  <pics/1.SavingvsBlockingProbIncrease.eps>
 File: pics/2.SavingvsBlockingProbIncrease.eps Graphic file (type eps)
@@ -600,7 +601,7 @@ File: pics/3.SavingvsBlockingProbIncrease.eps Graphic file (type eps)
 
 <pics/3.SavingvsBlockingProbIncrease.eps>
 
-LaTeX Warning: Float too large for page by 21.15639pt on input line 544.
+LaTeX Warning: Float too large for page by 21.15639pt on input line 539.
 
 File: pics/1.percSavingvsBlockingProbIncrease.eps Graphic file (type eps)
 <pics/1.percSavingvsBlockingProbIncrease.eps>
@@ -611,9 +612,9 @@ File: pics/3.percSavingvsBlockingProbIncrease.eps Graphic file (type eps)
 
 <pics/3.percSavingvsBlockingProbIncrease.eps>
 
-LaTeX Warning: Float too large for page by 32.65639pt on input line 562.
+LaTeX Warning: Float too large for page by 32.65639pt on input line 557.
 
-[102] [103] [104]) [105] [106]
+[102] [103] [104] [105]) [106]
 ("E:\Users\Saqib Ilyas\Documents\GitHub\Dissertation\sections/conclusionsChapte
 r6.tex"
 Chapter 6.
@@ -660,12 +661,12 @@ Package rerunfilecheck Info: File `Dissertation.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 7703 strings out of 493922
- 114894 string characters out of 3147287
- 240558 words of memory out of 3000000
- 10816 multiletter control sequences out of 15000+200000
+ 7704 strings out of 493922
+ 114911 string characters out of 3147287
+ 239622 words of memory out of 3000000
+ 10817 multiletter control sequences out of 15000+200000
  16505 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,26n,42p,2530b,817s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Dissertation.dvi (138 pages, 529300 bytes).
+Output written on Dissertation.dvi (138 pages, 531444 bytes).

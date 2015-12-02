@@ -10,12 +10,11 @@ This fraction is even higher in developing regions due to the shortage of grid e
 In this chapter, we discuss RED-BL's application to save energy in cellular networks. To this end, we utilize \textit{Base
 Transceiver Station (BTS) Power Savings} and \textit{Call
 Hand-off} to reduce the BTS power consumption. Using deployment
-and traffic data from a cellular provider in a large metropolitan area in a developing region, we show that
-RED-BL can save about 10\% in the amount (and cost) of electrical energy.
+and traffic data from a cellular provider in a large metropolitan area in a developing region, we show that using RED-BL's optimal solution can save about 10\% in the amount (and cost) of electrical energy.
 This translates into millions of dollars in annual savings, just for this one service provider.
 
 
-RED-BL achieves this saving in energy consumption by reducing the power consumption at BTSs, which account for 60\% to 80\% of a cellular network's total power consumption~\cite{Oh:Comm:2011,Louhi:2007:BTSPower:INTELEC,Peng:2011:BTSSaving:Mobicom}, by making them more energy proportional.
+This saving in energy consumption is achieved by reducing the power consumption at BTSs, which account for 60\% to 80\% of a cellular network's total power consumption~\cite{Oh:Comm:2011,Louhi:2007:BTSPower:INTELEC,Peng:2011:BTSSaving:Mobicom}, by making them more energy proportional.
 Figure~\ref{fig:workload-variation} shows the normalized load of consumer traffic at two neighboring BTSs in our dataset.
 Observe that while the traffic load peaks for a short period of time, it mostly stays at a fraction of its peak\footnote{Operational cellular networks have been widely observed to exhibit traffic load variations both over time and space \cite{Peng:2011:BTSSaving:Mobicom}.}.
 
@@ -46,13 +45,12 @@ However, operators are often reluctant to switch on/off entire BTSs due to cover
 \item \textit{Frequency dimming}~\cite{Tipper:Dimming:Globecom:2010} proposes to turn off a fraction of
 the radio circuitry when traffic is low, such that the traffic may be handled by the circuitry that stays on.
 Most vendors' BTSs support such a feature, which we term as \textit{BTS power savings} in this paper.
-Our conversations with cellular operators reveal that they regularly use this feature. RED-BL also makes use
-of this feature.
+Our conversations with cellular operators reveal that they regularly use this feature. We use this feature as the RP strategy in the RED-BL formulation.
 \end{itemize}
 
 Traffic traces collected from a large network operator indicate that if some calls are handed off between
 neighboring BTSs, the number of BTSs that can be put in BTS power savings mode can be increased.
-Thus, RED-BL proposes to hand-off calls between neighboring BTSs, without making a negative
+Thus, we propose to hand-off calls between neighboring BTSs, without making a negative
 impact on the network quality of service, such that the \textit{BTS power savings} can be applied to a
 maximal number of base stations throughout the cellular network. In comparison to uncoordinated \textit{BTS power savings}, as used in current cellular network deployments, RED-BL
 offers additional power savings as it may allow a larger number of radio circuits to be deactivated.
@@ -111,7 +109,7 @@ By default, each call is served by the BTS from which the mobile station receive
 
 The first row in Table~\ref{tab:example} indicates that under default call association, no BTS in the example deployment of Figure~\ref{fig:illustrationall} is placed in power saving mode.
 With this default call association, the operator may still save some electrical energy by activating the power saving mode on BTS C (second row in Table~\ref{tab:example}).
-Additional energy savings are possible by deploying RED-BL, which hands off calls 7 and 8 to BTS C and enables power saving mode on two BTSs (A and B), as shown in the third row in Table~\ref{tab:example}.
+Additional energy savings are possible by deploying the optimal solution to RED-BL, which hands off calls 7 and 8 to BTS C and enables power saving mode on two BTSs (A and B), as shown in the third row in Table~\ref{tab:example}.
 
 
 This example shows that the current practice of enabling power savings mode based on traffic conditions that are local to a BTS can result in sub-optimal energy savings.
@@ -139,12 +137,9 @@ Some prior work that has used call hand-off to optimize power consumption includ
 
 There exists a large body of work on solutions to constrained resource optimization problem, like the one we formulate for RED-BL. For example, such problems have been addressed in the context of data centers~\cite{Jeyarani:2012:DIA:2148243.2148374,serverEnergy,Mazzucco:Maximizing:2011:CoRR,Oh:2011:ECS:2170444.2170458,Chase:2001:MES:502059.502045}, scheduling in compute clusters~\cite{AlDaoud2012745}, System on Chip (SOC)~\cite{Fang:2011:COP:1995896.1995940}, electric power systems and smart grids~\cite{Javed:2008:ULP:1485753.1485792,Logenthiran2011138,Celli:2001:PICA,FahadJavedAdOpt.SASO.2009.26}, WiFi access points~\cite{Marsan:2010:SAM:1791314.1791340}, wide area networks~\cite{Cavdar:2011:ECOC} and high performance computing~\cite{Lee:ServerConsolidation:2011:Globecom,Pinheiro01loadbalancing,Yao:DCPowerReduction:2012:INFOCOM,Herodotou:Starfish:2011:CIDR,Herodotou:2011:NOS:2038916.2038934,Aikema:ElecCostHPC:2011:ISSST}.
 
-
-
-
 \section{Instantiating the generalized optimization formulation} %Derive the objective function and constraints. Clearly outline the assumptions that we've made about the geo-diverse data centers.
 \label{sec:case2:instantiate}
-The RED-BL optimization problem minimizes the sum of state and transition costs for a network over a sequence of consecutive intervals in a planning window. The state cost for a particular interval is the sum of electricity cost incurred at all BTSs in the network. In order to compute the state cost, we will first derive a mathematical model for electricity consumption at a single BTS. Then, we will generalize it to a multi-BTS cellular network setting to represent the state cost for a single interval. The transition cost would be the cost of electricity incurred in activating or deactivating TRXs. Our conversations with network operators reveal that transitions into and out of BTS power saving mode do not consume a noticeable amount of power. These state transitions are reasonably fast in contrast to the delayed convergence due to transitions in the geo-diverse data center scenario. The RED-BL transition costs in cellular networks may, therefore, be ignored.
+The RED-BL optimization formulation minimizes the sum of state and transition costs for a network over a sequence of consecutive intervals in a planning window. The state cost for a particular interval is the sum of electricity cost incurred at all BTSs in the network. In order to compute the state cost, we will first derive a mathematical model for electricity consumption at a single BTS. Then, we will generalize it to a multi-BTS cellular network setting to represent the state cost for a single interval. The transition cost would be the cost of electricity incurred in activating or deactivating TRXs. Our conversations with network operators reveal that transitions into and out of BTS power saving mode do not consume a noticeable amount of power. These state transitions are reasonably fast in contrast to the delayed convergence due to transitions in the geo-diverse data center scenario. The same is confirmed from the results in~\cite{marsan:2011:ICC}. The transition costs in the RED-BL formulation as applied to a cellular networks may, therefore, be ignored.
 
 If $\delta$ is the traffic capacity of a single TRX, then the traffic handling capacity of BTS with $r$ TRXs is $r\delta$. If $x_i$ is the number of calls currently in progress at BTS $i$, and the power consumed by the BTS under no load and full load is $P_{min}$ and $P_{max}$, respectively, then the instantaneous BTS power consumption at the BTS\footnote{In the following discussion, when we refer to BTS power consumption, the implication is the component of BTS power consumption due to TRXs only. Since TRXs account for a large fraction of BTS power consumption~\cite{Lorincz:BTS-Measure:Sensors:2012}, minimizing TRX power consumption will reduce BTS power consumption.}, $P_i$, approximated as an affine function of its traffic load~\cite{Peng:2011:BTSSaving:Mobicom}, is given by
 \begin{align}
@@ -200,7 +195,7 @@ The granularity of applying power-saving is determined in the above optimization
 
 \subsection{Problem complexity}
 \label{subsec:lccomplexity}
-In this section, we develop a proof of NP-Hardness for RED-BL as applied to cellular networks\footnote{This proof was done through personal communication with Dr. Mudassir Shabir}. For this proof, we define the RED-BL problem as:
+In this section, we develop a proof of NP-Hardness of the energy cost optimization using coordinated WR and RP as applied to cellular networks\footnote{This proof was done through personal communication with Dr. Mudassir Shabir}. For this proof, we define the problem as:
 \medskip
 
 \noindent
@@ -221,7 +216,7 @@ We also define the modified dominating set problem (MDS) as follows:
 \textbf{Input:} A bipartite graph $G=\{E,V\}$ with sets of vertices $J$, $K$ such that every edge in $E$ connects a vertex in $J$ to a vertex in $K$.\\
 \textbf{Output:} A minimum cardinality set of vertices belonging to $J$ that cover every vertex in $K$.
 
-We claim that we can use RED-BL to solve MDS. If we set $\delta$ to 0 and $P_1$ to some non-zero value for RED-BL, then there is a set-up cost on each BTS, i.e., a fixed cost of $P_1$ is incurred for the first call on each BTS. Hence, in this case, the optimal solution to RED-BL will use the fewest number of BTSs to handle all calls. Therefore, if we invoke RED-BL as follows:
+We claim that we can use RED-BL to solve MDS. If we set $\delta$ to 0 and $P_1$ to some non-zero value for RED-BL, then there is a set-up cost on each BTS, i.e., a fixed cost of $P_1$ is incurred for the first call on each BTS. Hence, in this case, the optimal solution to RED-BL will use the fewest number of BTSs to handle all calls. Therefore, if we determine the optimal solution to RED-BL as follows:
 \begin{itemize}
 \item Set $C$ equal to the vertices in $K$
 \item Set $B$ equal to the vertices in $J$
@@ -231,7 +226,7 @@ We claim that we can use RED-BL to solve MDS. If we set $\delta$ to 0 and $P_1$ 
 \item Set $\delta$ equal to zero
 \end{itemize}
 
-then RED-BL will solve MDS, i.e., use the fewest number of vertices in $J$ to cover all vertices in $K$.
+then the optimal solution to RED-BL will solve MDS, i.e., use the fewest number of vertices in $J$ to cover all vertices in $K$.
 
 Now, consider the minimum dominating set problem (DS).
 \medskip
@@ -262,11 +257,11 @@ We can solve DS using MDS as follows:
 
 We first create two copies of the set of vertices in $G$, named $V_1$ and $V_2$ and add them to set $V^{\prime}$. We also create a set of edges $E_1$ as follows. If there is an edge between vertices $u$ and $v$ in graph $G$, then we add an edge from vertex $u$ in $V_1$ to vertex $v$ in $V_2$. Furthermore, we also add an edge between each vertex $u$ in $V_1$ to vertex $u$ in $V_2$. This results in a bipartite graph $G^{\prime}={V^{\prime}, E_1}$ where every edge in $E_1$ connects a vertex in subset $V_1$ of $V^{\prime}$ to a vertex in subset $V_2$ of $V^{\prime}$.
 
-Invoking MDS on $G^{\prime}$ finds the minimum number of vertices in $V_1$ that cover every vertex in $V_2$. Since $V_1$ and $V_2$ are essentially the same vertices, MDS finds the minimum cardinality set of vertices in $V$ to which all other vertices are connected. Thus, MDS solves DS. It is well know that DS is NP-Hard~\cite{Liedloff:2008:FDS:1390853.1390871}. Since RED-BL can solve DS, by reduction it is NP-Hard as well.
+Invoking MDS on $G^{\prime}$ finds the minimum number of vertices in $V_1$ that cover every vertex in $V_2$. Since $V_1$ and $V_2$ are essentially the same vertices, MDS finds the minimum cardinality set of vertices in $V$ to which all other vertices are connected. Thus, MDS solves DS. It is well know that DS is NP-Hard~\cite{Liedloff:2008:FDS:1390853.1390871}. Since the optimal solution to RED-BL can solve DS, by reduction the former is NP-Hard as well.
 
 \subsection{Heuristic solution to RED-BL for cellular networks}
-\label{subsec:heuristics} Even though the RED-BL problem for cellular networks is NP-Hard, for a 26 site dataset that we collected from a live cellular network, we were able to find the RED-BL optimal solution within a few seconds.
-However, for an entire cellular network, RED-BL becomes computationally infeasible.
+\label{subsec:heuristics} Even though the energy cost optimization problem using WR and RP is NP-Hard for cellular networks, for a 26 site dataset that we collected from a live cellular network, we were able to find the RED-BL optimal solution within a few seconds.
+However, for an entire cellular network, optimally solving RED-BL becomes computationally infeasible.
 We propose two ways to handle this intractability. First, the entire network can be divided into several smaller regions and RED-BL can be applied to each region independently.
 Second, a heuristic solution to RED-BL, such as the one given in Algorithm~\ref{algo:heur2}, may be applied to the entire network.
 
@@ -342,9 +337,9 @@ To mimic present day practices in operational networks, our simulator associates
 
 Iterating over the traffic load time series for each BTS, our simulator places those BTSs that have sufficiently low traffic into power-saving mode. Using the power consumption functions given in equation~\ref{eq:btspower}, our simulator calculates the energy consumption for the network over a 24 hour period when BTS power-saving is applied.
 
-During the simulation, at a configurable frequency, we also invoke the RED-BL optimization problem on the current call traffic. We thus determine the energy consumption for the network over a 24 hour period when call hand off and BTS power saving are applied in a coordinated fashion.
+During the simulation, at a configurable frequency, we also invoke the solver for RED-BL optimization formulation using the current call traffic. We thus determine the energy consumption for the network over a 24 hour period when call hand off and BTS power saving are applied in a coordinated fashion.
 
-If RED-BL is invoked very frequently, the network will remain in an optimal state most of the time. Therefore, an aggressive re-optimization scheme will enable greater energy savings. In order to study how the energy savings scale with re-optimization frequency, we experimented with a range of intervals between successive optimizations, ranging from a minute to an hour.
+If the solution to RED-BL formulation is determined and deployed very frequently, the network will remain in an optimal state most of the time. Therefore, an aggressive re-optimization scheme will enable greater energy savings. In order to study how the energy savings scale with re-optimization frequency, we experimented with a range of intervals between successive optimizations, ranging from a minute to an hour.
 
 \subsection{Site characteristics}
 \label{subsec:sitetypes} All sites in our dataset had three sectors, each equipped with 6 TRXs. The maximum number of simultaneous calls for each site is 132~\footnote{Each TRX's frequency is shared in time-domain  by 8 calls for  a total of $3\times6\times8=144$ channels. Four channels in each sector were reserved for control and broadcast purposes, resulting in 132 channels available for voice calls. The half-rate codec feature of GSM standard can be used to handle greater traffic volume, but we do not consider it in the present work in favor of model simplicity.}. 

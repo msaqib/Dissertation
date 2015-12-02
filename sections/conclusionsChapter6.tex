@@ -3,7 +3,7 @@
 
 The workload is quite variable, and the network must be dimensioned according to peak workload demand. However, the workload peaks for only a short duration and drops to a much lower trough. Thus, these networks are energy inefficient and their electricity cost is quite high. One way to improve the energy efficiency and save electricity costs is to scale the networks resources in response to workload variations.
 
-We represent the status (on or off) of network resources and the workload mapped to them as a network state. Using this representation, we model the energy efficiency improvement problem as an optimal state trajectory problem, which we call Relocate Energy Demand to Better Locations (RED-BL). We used workload traces collected from real networks and real electricity costs to assess the utility of RED-BL. In doing so, we have made the following contributions:
+We represent the status (on or off) of network resources and the workload mapped to them as a network state. Using this representation, we model the energy efficiency improvement problem as an optimal state trajectory formulation, which we call Relocate Energy Demand to Better Locations (RED-BL). We used workload traces collected from real networks and real electricity costs to assess the utility of RED-BL. In doing so, we have made the following contributions:
 \begin{itemize}
 \item We identified abstractions for a generic power consumption model applicable to two different networks: geo-diverse data centers and cellular networks. Our model represents these networks as a set of resources that have an associated workload handling capacity. When a resource handles workload, it consumes some power according to a power consumption function. 
 \item The aggregate mapping of workload to resources may be viewed as a network state. We accordingly model the electricity cost minimization problem in networks as a multi-interval optimal state trajectory problem.
@@ -23,7 +23,7 @@ We represent the status (on or off) of network resources and the workload mapped
 \begin{itemize}
 \item We only considered resource activation and deactivation costs as the source of transition costs. Data replication costs in geo-diverse data centers have not been evaluated because of (to the best of our knowledge) lack of models in the literature. Coming up with a general model for this cost is beyond the scope of this thesis.
 \item For geo-diverse data centers, we have experimented with day ahead electricity prices for the US market. 
-\item RED-BL computes the hourly traffic volume to be mapped to each data center. It does not provide a mapping of this workload to individual servers within the data center. This is a complementary research problem, which is presently receiving significant research attention.
+\item The optimal solution to RED-BL determines the hourly traffic volume to be mapped to each data center. It does not provide a mapping of this workload to individual servers within the data center. This is a complementary research problem, which is presently receiving significant research attention.
 \item In case of cellular networks, the ability to handle greater traffic volume through the half-rate codecs has not been considered.
 \end{itemize}
 
