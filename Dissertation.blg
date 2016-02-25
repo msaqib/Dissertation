@@ -9,6 +9,10 @@ A level-1 auxiliary file: sections/casestudyIIChapter5.aux
 A level-1 auxiliary file: sections/conclusionsChapter6.aux
 The style file: ieeetr.bst
 Database file #1: ref.bib
+Repeated entry---line 3944 of file ref.bib
+ : @article{schuramn:latencycost:2009:velocity
+ :                                            ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in CostOfADC
 Warning--empty author in costcellsite
 Warning--empty journal in FBLease
@@ -19,6 +23,7 @@ Warning--empty journal in schurman:latencycost:2009:velocity
 Warning--empty journal in dixon:latencycost:2009:velocity
 Warning--empty journal in artz:latencycost:2009:velocity
 Warning--empty year in Herodotou:2011:NOS:2038916.2038934
+Warning--empty journal in schuramn:latencycost:2009:velocity
 Warning--empty year in Oh:Globecom:2010
 Warning--can't use both volume and number fields in zhou:2009:mobicom
-(There were 12 warnings)
+(There was 1 error message)

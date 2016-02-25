@@ -369,6 +369,15 @@ A.~Nazir, S.~Raza, and C.-N. Chuah, ``Unveiling facebook: a measurement study
   SIGCOMM conference on Internet measurement}, IMC '08, (New York, NY, USA),
   pp.~43--56, ACM, 2008.
 
+\bibitem{Pelley:dcpower:weed:2009}
+S.~Pelley, D.~Meisner, T.~F. Wenisch, and J.~W. VanGilder, ``Understanding and
+  abstracting total data center power,'' {\em Proc. 2009 Workshop on Energy
+  Efficient Design (WEED '09)}, June 2009.
+
+\bibitem{eiaannreport2015}
+{U.S. Energy Information Administration}, ``{Annual Energy Outlook 2015}.''
+  \url{http://www.eia.gov/forecasts/aeo/}, April 2015.
+
 \bibitem{rhc}
 W.~H. Kwon and S.~H. Han, {\em Receding Horizon Control}.
 \newblock Elsevier, 2005.
@@ -377,6 +386,10 @@ W.~H. Kwon and S.~H. Han, {\em Receding Horizon Control}.
 G.~Box, G.~M.~J. ~, and G.~C. Reinsel, {\em Time Series Analysis: Forecasting
   and Control}.
 \newblock Prentice-Hall, 1994.
+
+\bibitem{schuramn:latencycost:2009:velocity}
+E.~Schurman and J.~Brutlag, ``{The User and Business Impact of Server Delays,
+  Additional Bytes, and HTTP Chunking in Web Search},'' June 2009.
 
 \bibitem{Oh:TWC:2013}
 E.~Oh, K.~Son, and B.~Krishnamachari, ``Dynamic base station switching-on/off

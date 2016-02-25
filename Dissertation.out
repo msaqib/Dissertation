@@ -45,24 +45,30 @@
 \BOOKMARK [2][-]{subsection.4.6.4}{4.6.4 Sliding window re-optimization}{section.4.6}% 45
 \BOOKMARK [2][-]{subsection.4.6.5}{4.6.5 Sensitivity of electricity cost savings to the server idle-peak power ratio}{section.4.6}% 46
 \BOOKMARK [2][-]{subsection.4.6.6}{4.6.6 Performance of the heuristic algorithm}{section.4.6}% 47
-\BOOKMARK [1][-]{section.4.7}{4.7 Summary}{chapter.4}% 48
-\BOOKMARK [0][-]{chapter.5}{5 Case Study II: Cellular Networks}{}% 49
-\BOOKMARK [1][-]{section.5.1}{5.1 Prelude}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Motivating example}{section.5.1}% 51
-\BOOKMARK [1][-]{section.5.2}{5.2 Related work}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.3}{5.3 Instantiating the generalized optimization formulation}{chapter.5}% 53
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Multi-BTS cellular setting}{section.5.3}% 54
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Problem complexity}{section.5.3}% 55
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Heuristic solution to RED-BL for cellular networks}{section.5.3}% 56
-\BOOKMARK [1][-]{section.5.4}{5.4 Experimental setup}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Site characteristics}{section.5.4}% 58
-\BOOKMARK [1][-]{section.5.5}{5.5 Results}{chapter.5}% 59
-\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 BTS with two possible power states}{section.5.5}% 60
-\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Multi-state BTS}{section.5.5}% 61
-\BOOKMARK [2][-]{subsection.5.5.3}{5.5.3 Performance of heuristic algorithm}{section.5.5}% 62
-\BOOKMARK [2][-]{subsection.5.5.4}{5.5.4 Sensitivity to the value of }{section.5.5}% 63
-\BOOKMARK [2][-]{subsection.5.5.5}{5.5.5 Increase in call blocking probability}{section.5.5}% 64
-\BOOKMARK [1][-]{section.5.6}{5.6 Summary}{chapter.5}% 65
-\BOOKMARK [0][-]{chapter.6}{6 Conclusions and future work}{}% 66
-\BOOKMARK [1][-]{section.6.1}{6.1 Scope of our work}{chapter.6}% 67
-\BOOKMARK [1][-]{section.6.2}{6.2 Future work}{chapter.6}% 68
+\BOOKMARK [1][-]{section.4.7}{4.7 Discussion}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.7.1}{4.7.1 Impact on clients}{section.4.7}% 49
+\BOOKMARK [2][-]{subsection.4.7.2}{4.7.2 Implementation of workload relocation}{section.4.7}% 50
+\BOOKMARK [2][-]{subsection.4.7.3}{4.7.3 Diversity in workload}{section.4.7}% 51
+\BOOKMARK [2][-]{subsection.4.7.4}{4.7.4 Potential increased network traffic}{section.4.7}% 52
+\BOOKMARK [1][-]{section.4.8}{4.8 Summary}{chapter.4}% 53
+\BOOKMARK [0][-]{chapter.5}{5 Case Study II: Cellular Networks}{}% 54
+\BOOKMARK [1][-]{section.5.1}{5.1 Prelude}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Motivating example}{section.5.1}% 56
+\BOOKMARK [1][-]{section.5.2}{5.2 Related work}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.3}{5.3 Instantiating the generalized optimization formulation}{chapter.5}% 58
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Multi-BTS cellular setting}{section.5.3}% 59
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Problem complexity}{section.5.3}% 60
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Heuristic solution to RED-BL for cellular networks}{section.5.3}% 61
+\BOOKMARK [1][-]{section.5.4}{5.4 Experimental setup}{chapter.5}% 62
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Site characteristics}{section.5.4}% 63
+\BOOKMARK [1][-]{section.5.5}{5.5 Results}{chapter.5}% 64
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 BTS with two possible power states}{section.5.5}% 65
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Multi-state BTS}{section.5.5}% 66
+\BOOKMARK [2][-]{subsection.5.5.3}{5.5.3 Performance of heuristic algorithm}{section.5.5}% 67
+\BOOKMARK [2][-]{subsection.5.5.4}{5.5.4 Sensitivity to the value of }{section.5.5}% 68
+\BOOKMARK [2][-]{subsection.5.5.5}{5.5.5 Increase in call blocking probability}{section.5.5}% 69
+\BOOKMARK [1][-]{section.5.6}{5.6 Limitations of our work}{chapter.5}% 70
+\BOOKMARK [1][-]{section.5.7}{5.7 Summary}{chapter.5}% 71
+\BOOKMARK [0][-]{chapter.6}{6 Conclusions and future work}{}% 72
+\BOOKMARK [1][-]{section.6.1}{6.1 Scope of our work}{chapter.6}% 73
+\BOOKMARK [1][-]{section.6.2}{6.2 Future work}{chapter.6}% 74

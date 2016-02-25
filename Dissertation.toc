@@ -40,32 +40,38 @@
 \contentsline {subsection}{\numberline {4.5.3}Algorithms for workload distribution/relocation}{57}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Results}{59}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Sensitivity of electricity cost savings to extent of over provisioning}{61}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Sensitivity of electricity cost savings to magnitude of transition costs}{62}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Sensitivity of electricity cost savings to resource pruning granularity}{63}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Sliding window re-optimization}{65}{subsection.4.6.4}
-\contentsline {subsection}{\numberline {4.6.5}Sensitivity of electricity cost savings to the server idle-peak power ratio}{71}{subsection.4.6.5}
-\contentsline {subsection}{\numberline {4.6.6}Performance of the heuristic algorithm}{73}{subsection.4.6.6}
-\contentsline {section}{\numberline {4.7}Summary}{74}{section.4.7}
-\contentsline {chapter}{\numberline {5}Case Study II: Cellular Networks}{76}{chapter.5}
-\contentsline {section}{\numberline {5.1}Prelude}{76}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Motivating example}{80}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Related work}{81}{section.5.2}
-\contentsline {section}{\numberline {5.3}Instantiating the generalized optimization formulation}{83}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Multi-BTS cellular setting}{86}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Problem complexity}{88}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Heuristic solution to RED-BL for cellular networks}{90}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Experimental setup}{91}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Site characteristics}{94}{subsection.5.4.1}
-\contentsline {subsubsection}{Model 1}{94}{section*.4}
-\contentsline {subsubsection}{Model 2}{94}{section*.5}
-\contentsline {subsubsection}{Model 3}{95}{section*.6}
-\contentsline {section}{\numberline {5.5}Results}{95}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}BTS with two possible power states}{95}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Multi-state BTS}{98}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Performance of heuristic algorithm}{100}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Sensitivity to the value of $\epsilon $}{100}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}Increase in call blocking probability}{101}{subsection.5.5.5}
-\contentsline {section}{\numberline {5.6}Summary}{102}{section.5.6}
-\contentsline {chapter}{\numberline {6}Conclusions and future work}{107}{chapter.6}
-\contentsline {section}{\numberline {6.1}Scope of our work}{110}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future work}{110}{section.6.2}
+\contentsline {subsection}{\numberline {4.6.2}Sensitivity of electricity cost savings to magnitude of transition costs}{63}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Sensitivity of electricity cost savings to resource pruning granularity}{65}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Sliding window re-optimization}{67}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Sensitivity of electricity cost savings to the server idle-peak power ratio}{72}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}Performance of the heuristic algorithm}{74}{subsection.4.6.6}
+\contentsline {section}{\numberline {4.7}Discussion}{75}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Impact on clients}{75}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Implementation of workload relocation}{77}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Diversity in workload}{77}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Potential increased network traffic}{78}{subsection.4.7.4}
+\contentsline {section}{\numberline {4.8}Summary}{78}{section.4.8}
+\contentsline {chapter}{\numberline {5}Case Study II: Cellular Networks}{81}{chapter.5}
+\contentsline {section}{\numberline {5.1}Prelude}{81}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Motivating example}{85}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Related work}{86}{section.5.2}
+\contentsline {section}{\numberline {5.3}Instantiating the generalized optimization formulation}{88}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Multi-BTS cellular setting}{91}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Problem complexity}{93}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Heuristic solution to RED-BL for cellular networks}{95}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Experimental setup}{96}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Site characteristics}{99}{subsection.5.4.1}
+\contentsline {subsubsection}{Model 1}{99}{section*.4}
+\contentsline {subsubsection}{Model 2}{99}{section*.5}
+\contentsline {subsubsection}{Model 3}{100}{section*.6}
+\contentsline {section}{\numberline {5.5}Results}{100}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}BTS with two possible power states}{100}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Multi-state BTS}{103}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Performance of heuristic algorithm}{105}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Sensitivity to the value of $\epsilon $}{105}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Increase in call blocking probability}{106}{subsection.5.5.5}
+\contentsline {section}{\numberline {5.6}Limitations of our work}{107}{section.5.6}
+\contentsline {section}{\numberline {5.7}Summary}{112}{section.5.7}
+\contentsline {chapter}{\numberline {6}Conclusions and future work}{113}{chapter.6}
+\contentsline {section}{\numberline {6.1}Scope of our work}{116}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{116}{section.6.2}
