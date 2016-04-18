@@ -1,3 +1,4 @@
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{4}{Doc-Start}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Computer networks pervade}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Electricity costs for operational networks}{3}{section.1.2}
